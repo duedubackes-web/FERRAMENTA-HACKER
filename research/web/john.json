@@ -1,0 +1,13 @@
+{
+  "url": "https://www.openwall.com/john/",
+  "final_url": "https://www.openwall.com/john/",
+  "status": 200,
+  "headers": {
+    "server": "envoy",
+    "date": "Sun, 15 Nov 2026 17:31:15 GMT",
+    "content-type": "text/html; charset=iso-8859-1",
+    "x-envoy-upstream-service-time": "635",
+    "connection": "close",
+    "transfer-encoding": "chunked"
+  }
+}

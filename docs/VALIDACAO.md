@@ -27,3 +27,12 @@
 - A navegação por URL file: foi bloqueada pela política do navegador do ambiente. O QA de conteúdo/layout usou Playwright setContent, sem alterar políticas do navegador; não é uma comprovação de abertura por arquivo em todos os ambientes.
 - O registro desta verificação está em research/comparison-browser-check.json. O exemplo pronto está em examples/nmap-comparison.html e usa somente dados sintéticos.
 - Não houve execução de scanner, novos testes dos motores originais ou coleta de rede nesta etapa.
+
+
+## Coleta John e ferramentas de pesquisa
+
+- 33 testes da base passaram, incluindo seis novos casos para catálogo lexical e verificação de snapshots.
+- O novo verificador conferiu os nove ZIPs, seus conjuntos de membros e hashes por entrada, sem extrair ou executar conteúdo. Resultados em `research/snapshot-verification.json`.
+- Os 2.128 caminhos John coincidiram entre o inventário próprio, Craft e REA. Os hashes do Craft coincidiram para todas as entradas; REA conferiu 2.126 arquivos regulares e não atribuiu hashes aos dois links simbólicos.
+- Catálogo do fonte: 380 arquivos com correspondências, 404 definições textuais de estruturas e 366 definições de labels literais; sem avaliação de pré-processador ou suporte real de builds.
+- A revisão semântica foi seletiva. John não foi compilado ou executado, e não foram realizados benchmarks ou tentativas de quebra de senhas.

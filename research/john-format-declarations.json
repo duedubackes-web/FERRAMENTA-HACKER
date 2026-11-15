@@ -1,0 +1,6505 @@
+{
+  "schema_version": 1,
+  "source_id": "john",
+  "source_commit": "37bebbe4b6442c8dd3888e5848ef062c0783e9f3",
+  "method": "Comment-aware lexical matching in tracked top-level src/*.c; no preprocessor, compiler or target execution",
+  "counts": {
+    "files_with_matches": 380,
+    "format_struct_definitions": 404,
+    "literal_label_definitions": 366
+  },
+  "files": [
+    {
+      "path": "src/7z_fmt_plug.c",
+      "sha256": "249163114382f27f8f888151e58e63c640ead329eb61a27ad692d2ad6bcf8912",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/7z_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_sevenzip",
+          "line": 349
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "7z",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "path": "src/AFS_fmt.c",
+      "sha256": "cfc4ef69f4109ed3e79ed729ba9b45058ab9c1c42576d1eff535be93a4004794",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/AFS_fmt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_AFS",
+          "line": 426
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "AFS",
+          "line": 21
+        }
+      ]
+    },
+    {
+      "path": "src/AzureAD_fmt_plug.c",
+      "sha256": "b43284c61d118937b98b003b9e961fcc7e690cb80cf543ae223c7afab1147b6b",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/AzureAD_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_AzureAD",
+          "line": 204
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "AzureAD",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "path": "src/BFEgg_fmt_plug.c",
+      "sha256": "5508a7dd1e57eea8865aa6a5de0c6794678c89db9c9565299b9c80f7f265f3a9",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/BFEgg_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_BFEgg",
+          "line": 182
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "bfegg",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/BF_fmt.c",
+      "sha256": "f99b61a706156cfd3dba830833b620e30d8258b2b553429f6ee0244a0cb7135f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/BF_fmt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_BF",
+          "line": 177
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "bcrypt",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "path": "src/BSDI_fmt.c",
+      "sha256": "8575ed77baf34544b7bac9ec821eb9ba532453a80596e63fdddcc7d723521c4b",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/BSDI_fmt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_BSDI",
+          "line": 395
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "bsdicrypt",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "path": "src/DES_fmt.c",
+      "sha256": "27b402327131fd9cbaa9f15e1f2cc1c45d1630cdfa9c3cf04a6c105f09a8889d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/DES_fmt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_DES",
+          "line": 374
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "descrypt",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "path": "src/DMD5_fmt_plug.c",
+      "sha256": "1df90f4fe2804cb442d281bba2e2a32e2eec1198462caf5433911ec44834fb43",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/DMD5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_DMD5",
+          "line": 398
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "dmd5",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "path": "src/DOMINOSEC8_fmt_plug.c",
+      "sha256": "ce274409c55bb779cc5c0c1c2e490a024bf608c4294e17457f53ed5e103bd8d4",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/DOMINOSEC8_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_DOMINOSEC8",
+          "line": 749
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "dominosec8",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "path": "src/DOMINOSEC_fmt_plug.c",
+      "sha256": "74dda90f476004d6f19589c6b3016f4df741be004b86459d967db14b5bc280f0",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/DOMINOSEC_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_DOMINOSEC",
+          "line": 724
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "dominosec",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "path": "src/EPI_fmt_plug.c",
+      "sha256": "68ad9e136bf4529491473588d9f31011791f56d2678ebc76e0765028bb978da1",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/EPI_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_EPI",
+          "line": 209
+        }
+      ],
+      "literal_label_definitions": []
+    },
+    {
+      "path": "src/FG2_fmt_plug.c",
+      "sha256": "a422d0c19f00e91737e116db42260b68da4ac616de3ad9e6bbb4ec2e3b42a9c5",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/FG2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_FG2",
+          "line": 216
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Fortigate256",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "path": "src/FGT_fmt_plug.c",
+      "sha256": "783b7f28e4a02b1c795ac563f60bea49a8f6058cccce1f12423b04d35eaac186",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/FGT_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_FGT",
+          "line": 225
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Fortigate",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "path": "src/HDAA_fmt_plug.c",
+      "sha256": "bae7fd3dbeca5727a9e79a27923d5b8e260b0c7cc393972bc15ce9edbcda80bb",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/HDAA_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_HDAA",
+          "line": 728
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "hdaa",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/IPB2_fmt_plug.c",
+      "sha256": "9c32d29b5aceac19b0a6ac828d3434d69e46fd956e9044974558b478abd4bc30",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/IPB2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_IPB2",
+          "line": 490
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "ipb2",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "path": "src/KRB4_fmt_plug.c",
+      "sha256": "875ccd8cf901d952934e2f402a3ba16dc113501aa9cb937360975a9ab12d8573",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/KRB4_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_KRB4",
+          "line": 260
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "krb4",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "path": "src/KRB5_fmt_plug.c",
+      "sha256": "477166c6f44cb695b09e60ce7c884313d7667fa0bbb874259a5a65aa2d67a884",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/KRB5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_KRB5",
+          "line": 307
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "krb5",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "path": "src/LM_fmt.c",
+      "sha256": "f539b5d8150fefad83e469645214f2e5c47336f61465f5d7aae52d7ff6805852",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/LM_fmt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_LM",
+          "line": 263
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "LM",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "path": "src/MD5_fmt.c",
+      "sha256": "bd66c71b4a2d4ac18e28d27e858e2ef94c344b1961c93988264f4178e21fb792",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/MD5_fmt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_MD5",
+          "line": 384
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "md5crypt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "path": "src/MSCHAPv2_bs_fmt_plug.c",
+      "sha256": "03aa48928ae3c5487ed773a4c6422bcee282ee93f7477866835f353c2d67ab5f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/MSCHAPv2_bs_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_MSCHAPv2_old",
+          "line": 600
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "mschapv2-naive",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "path": "src/NETLM_fmt_plug.c",
+      "sha256": "394f1435929c4656693c6b4f50ebf04608a62cad8390bb228618987ed4ad1fab",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/NETLM_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_NETLM",
+          "line": 331
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "netlm",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "path": "src/NETLMv2_fmt_plug.c",
+      "sha256": "179faec833a0fcd884bb376328e88b14427a977daa920c042f6da07cdf28fae5",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/NETLMv2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_NETLMv2",
+          "line": 393
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "netlmv2",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "path": "src/NETNTLM_bs_fmt_plug.c",
+      "sha256": "44bce40a73735319837f7cb54ea94dad57d76711b332bef65007c9bb412330bb",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/NETNTLM_bs_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_NETNTLM_old",
+          "line": 426
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "netntlm-naive",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "path": "src/NETNTLMv2_fmt_plug.c",
+      "sha256": "714170a43822560dc79dfc214b967437f4c08dcb71e2203808e529ee2efb53f5",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/NETNTLMv2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_NETNTLMv2",
+          "line": 466
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "netntlmv2",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "path": "src/NETSPLITLM_fmt_plug.c",
+      "sha256": "d1ffd387b51f83b0dbe152635e651d371b3dae9ca295ffd612002e5d31e612a3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/NETSPLITLM_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_NETHALFLM",
+          "line": 289
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "nethalflm",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "path": "src/NS_fmt_plug.c",
+      "sha256": "77336b98918ec08dca0f4ffe118263488b1bc7284413237f69077c592823d404",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/NS_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_NS",
+          "line": 147
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "md5ns",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "path": "src/NT-long_fmt_plug.c",
+      "sha256": "4e3a7f04a710ec7f5df5e68df14cc550d3365a6ee6809a26552824419c2d8eed",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/NT-long_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_NT_long",
+          "line": 162
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "NT-long",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "path": "src/PHPS2_fmt_plug.c",
+      "sha256": "1df88e3fcf8c6c29e5ce7cf1ecf6c7c0b87947cefc7ce5660652306f69973e46",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/PHPS2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_PHPS2",
+          "line": 172
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PHPS2",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "path": "src/PHPS_fmt_plug.c",
+      "sha256": "7d91f14cf957e7d9ff01c514eec3a989831d8acb6cf40d50e579698410b8bb2e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/PHPS_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_PHPS",
+          "line": 203
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PHPS",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "path": "src/PO_fmt_plug.c",
+      "sha256": "7fd44283eae499b5ce4b81e006db1f03f618bf37328a36022f746bfed07f1948",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/PO_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_PO",
+          "line": 169
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "po",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "path": "src/SKEY_fmt_plug.c",
+      "sha256": "c03771628a70146cf8bd3b006dd5803d78547e50acb4ee0497a8d6a0e64ab51a",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/SKEY_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_SKEY",
+          "line": 317
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "skey",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "path": "src/SybaseASE_fmt_plug.c",
+      "sha256": "18fdce737ee6e22c42a4626fa67074d198a33007ab68a2fd3bbcacc25431f7a2",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/SybaseASE_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_SybaseASE",
+          "line": 377
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "SybaseASE",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "path": "src/SybasePROP_fmt_plug.c",
+      "sha256": "4df53b9be5a25abc4570ce9a39cd67b2ce2801476ff1b12b46e361f0190fdbf9",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/SybasePROP_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_sybaseprop",
+          "line": 188
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Sybase-PROP",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "path": "src/XSHA512_fmt_plug.c",
+      "sha256": "92f85998c91f5bf0c7bf0da239a524446fa8c9bc63861dbe64bb7d8050c25843",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/XSHA512_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_XSHA512",
+          "line": 247
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "xsha512",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "path": "src/XSHA_fmt_plug.c",
+      "sha256": "2891dec3855963d2219698cf43c0accd8fc45299ed6ea32c2072d9e5b1cff307",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/XSHA_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_XSHA",
+          "line": 293
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "xsha",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/adxcrypt_fmt_plug.c",
+      "sha256": "ade0d15f9e943dde9833122553934653352fd2030073429de4a0c32e90469ccb",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/adxcrypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_adxcrypt",
+          "line": 222
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "adxcrypt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/agilekeychain_fmt_plug.c",
+      "sha256": "6ce04b3e25989ed822fa1b7e1e0150d42ee47ef51c9730f8ef5cc751020e9bc0",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/agilekeychain_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_agile_keychain",
+          "line": 192
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "agilekeychain",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "path": "src/aix_ssha_fmt_plug.c",
+      "sha256": "92d08e0a7cdf335375ea3480921b72d3af535883516a121c86c3ddd9ffa5aba3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/aix_ssha_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_aixssha1",
+          "line": 405
+        },
+        {
+          "symbol": "fmt_aixssha256",
+          "line": 470
+        },
+        {
+          "symbol": "fmt_aixssha512",
+          "line": 535
+        }
+      ],
+      "literal_label_definitions": []
+    },
+    {
+      "path": "src/andotp_fmt_plug.c",
+      "sha256": "c4c1a21a6829959db1fdb6c36a370c9011ee537f1936ada52b5471f8abbcfe58",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/andotp_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_andotp",
+          "line": 234
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "andOTP",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/androidbackup_fmt_plug.c",
+      "sha256": "5c3f6494c84369c0891ced18c75459cacb27e6ee2b6d1ee272e1049719b59bae",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/androidbackup_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ab",
+          "line": 241
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "AndroidBackup",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/androidfde_fmt_plug.c",
+      "sha256": "0e8a22023ba14723a9f002218f523ea61999fd79f7c7a14da21ba92b6183449b",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/androidfde_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_fde",
+          "line": 334
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "fde",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "path": "src/ansible_fmt_plug.c",
+      "sha256": "a8a5674fffec0dfb1f17b9b8246848e257ecf7ee043fe905bbf47669c71e7b67",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ansible_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ansible",
+          "line": 143
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "ansible",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/argon2_fmt_plug.c",
+      "sha256": "ca25b66ae1f4551d11ba5034c6be09567ce9d7b3e7e8db041c9bda73ee04b024",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/argon2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_argon2",
+          "line": 433
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Argon2",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/armory_fmt_plug.c",
+      "sha256": "5b621524e1c8d3ae4e3180ab4e9d525210354aa09e114542a435a6e7b963c1a6",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/armory_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_armory",
+          "line": 480
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "armory",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/as400_des_fmt_plug.c",
+      "sha256": "5f7430e938b33276211ca11f504ed2c4d9affd2ea574a0830b059b3b84a51bd0",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/as400_des_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_as400des",
+          "line": 344
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "as400-des",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "path": "src/as400_ssha1_fmt_plug.c",
+      "sha256": "5e9c219d1c875de315f35385fa7a37a6f7e03003e9acaf6b22332ef599aa36d4",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/as400_ssha1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_AS400_ssha1",
+          "line": 178
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "as400-ssha1",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "path": "src/asaMD5_fmt_plug.c",
+      "sha256": "495580f017aae1f08e60d4eb790991df534efd42d0056a7b4d77abff7e362b37",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/asaMD5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_asaMD5",
+          "line": 124
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "asa-md5",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "path": "src/axcrypt_fmt_plug.c",
+      "sha256": "89619dcda34a60fe204210495b566d079c79057a2c8f927f4a21456c9d28ed08",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/axcrypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_axcrypt",
+          "line": 293
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "AxCrypt",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "path": "src/bestcrypt_fmt_plug.c",
+      "sha256": "853ae4bca86a53b0d88269ff5168af4855c4ab639f7c38771f9a3aa850996225",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/bestcrypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_bestcrypt",
+          "line": 437
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "BestCrypt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/bestcrypt_ve_fmt_plug.c",
+      "sha256": "fa1989e4e8284bff7c377a3f90e4a5ff00ecd0af6c9a6d5535acc670aabf4aaa",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/bestcrypt_ve_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_bestcrypt_ve",
+          "line": 430
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "BestCryptVE4",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "path": "src/bitcoin_fmt_plug.c",
+      "sha256": "e5496d706ed954fdead01a34baf54d76c6a72b3823341a819ffa08c1388761b9",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/bitcoin_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_bitcoin",
+          "line": 397
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Bitcoin",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "path": "src/bitlocker_fmt_plug.c",
+      "sha256": "2ba70bb75b7848253288f450c64c21dbf4e7d13a5f25f45f85a8f20e8a9ebf65",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/bitlocker_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_bitlocker",
+          "line": 224
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "BitLocker",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "path": "src/bitshares_fmt_plug.c",
+      "sha256": "b6d3b1d8e301f9acb117f16675f2eda33c6c2d2e09efb887e91554af375ccaa1",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/bitshares_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_bitshares",
+          "line": 339
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "bitshares",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/bitwarden_fmt_plug.c",
+      "sha256": "1bcd133022eeb2033a993fd6cda535fb454d946b01e9a288ee106dff7afc4262",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/bitwarden_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_bitwarden",
+          "line": 165
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Bitwarden",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/bks_fmt_plug.c",
+      "sha256": "331940295e552ed94a54a15dba99602a99ba85af3b895988233152e7bda63a2f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/bks_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_bks",
+          "line": 435
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "BKS",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/blackberry_ES10_fmt_plug.c",
+      "sha256": "583331fa125299aae593e881be8e7396127535bc415bce0c91a880f696129adf",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/blackberry_ES10_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_blackberry1",
+          "line": 260
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Blackberry-ES10",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "path": "src/blockchain_fmt_plug.c",
+      "sha256": "9a6a4c90de56a423c58674af6cab1be7cd21ff265e682b1747096a98121a78a1",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/blockchain_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_blockchain",
+          "line": 164
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Blockchain",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "path": "src/c3_fmt.c",
+      "sha256": "8fed335be9495618d5394294046b00b427932dd713ecd668707fd60fbb347a77",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/c3_fmt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_crypt",
+          "line": 767
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "crypt",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "path": "src/cardano_fmt_plug.c",
+      "sha256": "bdd0e44465507f799bc6447c9217c75a50b9860f3af70721fff5241b78f42092",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/cardano_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_cardano",
+          "line": 188
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "cardano",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/chap_fmt_plug.c",
+      "sha256": "9b227d9d35643df0d8348faace5da69bda93a5de7fd2dc99efb1f67a76624794",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/chap_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_chap",
+          "line": 242
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "chap",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "path": "src/citrix_ns_fmt_plug.c",
+      "sha256": "95ce69af059bd08ec20d770d0876f56cae4801424ef376a23b38d2caf5982f85",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/citrix_ns_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ctrxns",
+          "line": 295
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Citrix_NS10",
+          "line": 58
+        }
+      ]
+    },
+    {
+      "path": "src/clipperz_srp_fmt_plug.c",
+      "sha256": "bba5890de815b39854cadcff3029543678a0b63cd4462ecb1094b6fe423c7b23",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/clipperz_srp_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_clipperz",
+          "line": 456
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Clipperz",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "path": "src/cloudkeychain_fmt_plug.c",
+      "sha256": "3390995a722a097e22dbc3e3f5d9b0d5bae9b250ace78d056d63c6b26677eed4",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/cloudkeychain_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_cloud_keychain",
+          "line": 237
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "cloudkeychain",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "path": "src/cq_fmt_plug.c",
+      "sha256": "4f39c1ed043c8202346132830630c684340db83125a735674616af1be0d8970e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/cq_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_cq",
+          "line": 473
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "cq",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "path": "src/crc32_fmt_plug.c",
+      "sha256": "e236f26ec363d249d993459ecbcc1fa99bf1fb657b3cafa5627986c45c04fe81",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/crc32_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_crc32",
+          "line": 258
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "CRC32",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "path": "src/cryptosafe_fmt_plug.c",
+      "sha256": "e82efe690b158afe20cfbde71a2942dcae90834590ca855728c5f11c9bd07a79",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/cryptosafe_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_cryptosafe",
+          "line": 148
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "cryptoSafe",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "path": "src/dahua_fmt_plug.c",
+      "sha256": "33355bf1219175b0a043792a62ebd5d4e115f3d8713c486d2edf6176a013cc94",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/dahua_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_dahua",
+          "line": 207
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "dahua",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "path": "src/dashlane_fmt_plug.c",
+      "sha256": "21151c10cdae6a250a37cf196d27e81b79d4bf4d319618473ddde3cc3a9343a7",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/dashlane_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_dashlane",
+          "line": 169
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "dashlane",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "path": "src/diskcryptor_fmt_plug.c",
+      "sha256": "79b787d1488b305a836231e2472be031e58add55a15a09abe71796f424d91688",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/diskcryptor_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_diskcryptor",
+          "line": 190
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "diskcryptor",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/django_fmt_plug.c",
+      "sha256": "6951926a1693de0734a49e17303714fce00283a828648999eefe2fde2640ff61",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/django_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_django",
+          "line": 273
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Django",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "path": "src/django_scrypt_fmt_plug.c",
+      "sha256": "0fb9fc20cb688caecc5f1adab566a5cf27a2f483cf7a65fd78ce47ce3d808326",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/django_scrypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_django_scrypt",
+          "line": 304
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "django-scrypt",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/dmg_fmt_plug.c",
+      "sha256": "f82fcc25e47f0f155b32f9bb2ffd99d12f9077f5a68292f6df9d408b3b973483",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/dmg_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_dmg",
+          "line": 692
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "dmg",
+          "line": 91
+        }
+      ]
+    },
+    {
+      "path": "src/dpapimk_fmt_plug.c",
+      "sha256": "f005b47f4e398c9f96117f20cbd4585950a348afc92b985338706794ad1fd210",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/dpapimk_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_DPAPImk",
+          "line": 484
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "DPAPImk",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "path": "src/dragonfly3_fmt_plug.c",
+      "sha256": "b1d706ec04c3b11ad17c83e953c30424b6736db41248c4f9b6eae825216a30ef",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/dragonfly3_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_dragonfly3_32",
+          "line": 276
+        },
+        {
+          "symbol": "fmt_dragonfly3_64",
+          "line": 332
+        }
+      ],
+      "literal_label_definitions": []
+    },
+    {
+      "path": "src/dragonfly4_fmt_plug.c",
+      "sha256": "4afe25763b108eb31017d50a35abc26794b94c08f7580ed5dddfc46bc19b0541",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/dragonfly4_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_dragonfly4_32",
+          "line": 278
+        },
+        {
+          "symbol": "fmt_dragonfly4_64",
+          "line": 334
+        }
+      ],
+      "literal_label_definitions": []
+    },
+    {
+      "path": "src/drupal7_fmt_plug.c",
+      "sha256": "23cd100473affeed0015b4eee5e591e437a70a43295dc8a948dd5e6443516cdf",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/drupal7_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_drupal7",
+          "line": 202
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Drupal7",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/dummy.c",
+      "sha256": "dda3a21c31327dea03d4741bde8812c3b1219582403fc8dc8ff1e55ed218c13c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/dummy.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_dummy",
+          "line": 316
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "dummy",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "path": "src/dynamic_compiler_fmt_plug.c",
+      "sha256": "ef1e16f1babb3ff409cd3dac3d9f894c6812c64a6de8af7c7602a716ed3a4174",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/dynamic_compiler_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_CompiledDynamic",
+          "line": 170
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "dynamic=",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "path": "src/dynamic_fmt.c",
+      "sha256": "d40b724ac9e4f8b4019ae96f9fb6b98114f4b6e5b41d0f10814a461bf80f8771",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/dynamic_fmt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_Dynamic",
+          "line": 2969
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "dynamic",
+          "line": 194
+        }
+      ]
+    },
+    {
+      "path": "src/ecryptfs_fmt_plug.c",
+      "sha256": "623dfa77756b66e444dfaff979ee525da5f5510448659fbf2ac940240cc5b495",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ecryptfs_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ecryptfs1",
+          "line": 277
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "eCryptfs",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "path": "src/eigrp_fmt_plug.c",
+      "sha256": "87551a194614e7528ea669a1de378354f904ebbb5c5183b42e587970c15f70c5",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/eigrp_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_eigrp",
+          "line": 332
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "eigrp",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/electrum_fmt_plug.c",
+      "sha256": "b1f10c62b06415019ace077f1d5822270ef0dfba94be8109c25ef69c92bb3029",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/electrum_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_electrum",
+          "line": 459
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "electrum",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "path": "src/encdatavault_md5_fmt_plug.c",
+      "sha256": "b6a6fdb13b69917da6df6fa62a9edd5a2d46b00fab24a645c4b4da58e8a25d03",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/encdatavault_md5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_encdadatavault_md5",
+          "line": 239
+        }
+      ],
+      "literal_label_definitions": []
+    },
+    {
+      "path": "src/encdatavault_pbkdf2_fmt_plug.c",
+      "sha256": "a1f8de1c1674b35f72e4f7563e7a3c480a5f60cf904ab75da1406994e9a7fb75",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/encdatavault_pbkdf2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_encdadatavault_pbkdf2",
+          "line": 236
+        }
+      ],
+      "literal_label_definitions": []
+    },
+    {
+      "path": "src/encfs_fmt_plug.c",
+      "sha256": "c93db54cad65511bb4986a6d0cf04e1f1210d091286d401758842e52f29adafe",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/encfs_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_encfs",
+          "line": 181
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "EncFS",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/enpass_fmt_plug.c",
+      "sha256": "43fde9fc2b527a52ef7dd28c5b1ce4835fe66967bf4f67d95033f03fe426b6b1",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/enpass_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_enpass",
+          "line": 249
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "enpass",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/episerver_fmt_plug.c",
+      "sha256": "7af8811b308826248f423ef5f5ef48ea65bec7a288d5bcb8b21105b05904e8ed",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/episerver_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_episerver",
+          "line": 626
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "EPiServer",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "path": "src/ethereum_fmt_plug.c",
+      "sha256": "0a76c3fb3a680ad73c55bc4ef7cf98f5de5bac2e0abbfd1808eafd6234b19e0b",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ethereum_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ethereum",
+          "line": 293
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "ethereum",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/formspring_fmt_plug.c",
+      "sha256": "886c6fad1cb5a7bb4f287872629c504e0ac929459fe62d98614c57b6f2a3b339",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/formspring_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_FORMSPRING",
+          "line": 136
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "FormSpring",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/fvde_fmt_plug.c",
+      "sha256": "4f8d3c4d74f6eb471a0fe78d995abf9a2f707063c8be26de56001955e5500e64",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/fvde_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_fvde",
+          "line": 211
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "FVDE",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/geli_fmt_plug.c",
+      "sha256": "bd3a4949ae4df9dd12e5e079fa8ff07bd613f55f3c975afe98602c5a21665300",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/geli_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_geli",
+          "line": 149
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "geli",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/gost12256hash_fmt_plug.c",
+      "sha256": "d08affdf7e7d31611511f48cd363a4aadb9a1dccc43160368bb5333f8938a210",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/gost12256hash_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_gost12256hash",
+          "line": 387
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "streebog256crypt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/gost12512hash_fmt_plug.c",
+      "sha256": "fb0d5f6e720df1410bf8e430c70e1bbe1b0f8ebd640219a303d6e57850de4045",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/gost12512hash_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_gost12512hash",
+          "line": 386
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "streebog512crypt",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/gost94hash_fmt_plug.c",
+      "sha256": "c38c66210b3e51f4a5555a72e0776505d8c64018febc80606b52036158a54c0a",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/gost94hash_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_gost94hash",
+          "line": 387
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "gost94crypt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/gost_fmt_plug.c",
+      "sha256": "74885eb2bbb1aba2638b6d281e4f4f46b46e22ded2990c2c7de9c3305c517a68",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/gost_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_gost",
+          "line": 233
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "gost",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/gpg_fmt_plug.c",
+      "sha256": "9d2685d6372e20423708ca35e2bae505da0e7542235b0c3dafd970e839f80ea9",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/gpg_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_gpg",
+          "line": 162
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "gpg",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "path": "src/h3c_fmt_plug.c",
+      "sha256": "0394945c6f83da89b337248691110fc878479c680aa359f94b70eedd04e8a51e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/h3c_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_h3c",
+          "line": 242
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "h3c",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/has160_fmt_plug.c",
+      "sha256": "845471c6034b5852743093e35a932b83dbeb67e20a106b38108b61a2754d454a",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/has160_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt__HAS160",
+          "line": 164
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "has-160",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/haval_fmt_plug.c",
+      "sha256": "2cf09344503fcb8cd5d32835dcf34a13612abb9d2a46ca30404c9c32dc82b72f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/haval_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_haval_256_3",
+          "line": 282
+        },
+        {
+          "symbol": "fmt_haval_128_4",
+          "line": 342
+        }
+      ],
+      "literal_label_definitions": []
+    },
+    {
+      "path": "src/hmacMD5_fmt_plug.c",
+      "sha256": "80d2104319eed40430bea90011b2d8f2268caf2df68cd48479f1ca9415288e43",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/hmacMD5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt__hmacMD5",
+          "line": 537
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "HMAC-MD5",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/hmacSHA1_fmt_plug.c",
+      "sha256": "5be9e60d7bb966b76b97741aa1f320a76be444dcd5113a1d2ab950d2f8988786",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/hmacSHA1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt__hmacSHA1",
+          "line": 458
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "HMAC-SHA1",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "path": "src/hmacSHA256_fmt_plug.c",
+      "sha256": "c357ae84c9726b79ea55d12c9c0c870b2d80a8c1909f4bd8fc54c8b299b3d349",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/hmacSHA256_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt__hmacSHA256",
+          "line": 625
+        },
+        {
+          "symbol": "fmt__hmacSHA224",
+          "line": 678
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "HMAC-SHA256",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/hmacSHA512_fmt_plug.c",
+      "sha256": "5032a6a0a4171265daec5ca20607600d75ec821ba5144a9cdd721f8daea4211a",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/hmacSHA512_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt__hmacSHA512",
+          "line": 673
+        },
+        {
+          "symbol": "fmt__hmacSHA384",
+          "line": 726
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "HMAC-SHA512",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/hmailserver_fmt_plug.c",
+      "sha256": "bca9c94bda4443f815c307cc52aa1972b15cf2bb2463000b65162c324869c595",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/hmailserver_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_hmailserver",
+          "line": 132
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "hMailServer",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "path": "src/hsrp_fmt_plug.c",
+      "sha256": "1b9b7e1410e4b47303bf2a26a2675647b53bd4e710d3b037664988460a18ea5c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/hsrp_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_hsrp",
+          "line": 256
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "hsrp",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/ike_fmt_plug.c",
+      "sha256": "5e9db4ed35d8fa24084455eb8754e86311ccd1af3684a9d0cd8eb5e93b4f3b04",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ike_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ike",
+          "line": 294
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "IKE",
+          "line": 70
+        }
+      ]
+    },
+    {
+      "path": "src/iterated_sha1_fmt_plug.c",
+      "sha256": "02f8148576e7a15aa9def0772ab77c751c4afa4a93228cfd0f1e782355e6f850",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/iterated_sha1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 217
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Iterated-SHA1",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/iterated_sha256_fmt_plug.c",
+      "sha256": "9aa341f9fc8b0f761229dbe9d2d7930480dc64f8176ade1b1e466412505879f3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/iterated_sha256_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_iterated_sha256",
+          "line": 244
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Iterated-SHA256",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/itunes_fmt_plug.c",
+      "sha256": "5dc5297e2842d1b0e9aa906a349b52d6ac386f8c19c1f024506ac346b3cace83",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/itunes_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_itunes",
+          "line": 197
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "itunes-backup",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/iwork_fmt_plug.c",
+      "sha256": "222d9f870e5c268976354e977c683fe412d35547d8908727b599e18e5a29149d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/iwork_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_iwork",
+          "line": 173
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "iwork",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/keepass_fmt_plug.c",
+      "sha256": "03e8288562ece2d33d8507b0c1da9afb3720b1f62a70e27521b4eae75e3feb4f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/keepass_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_KeePass",
+          "line": 445
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "KeePass",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "path": "src/keplr_fmt_plug.c",
+      "sha256": "a794438b37b05a2f88cacf8b3855f3eaf5614611f670b33deaa66c6c756bfc6a",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/keplr_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_keplr",
+          "line": 288
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "keplr",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "path": "src/keychain_fmt_plug.c",
+      "sha256": "7d82f032076f27a0adaa94e3f3b09d4cbee20ca457e0d50dfa9e5ad90f1a157d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/keychain_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_keychain",
+          "line": 189
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "keychain",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "path": "src/keyring_fmt_plug.c",
+      "sha256": "409f3f43516e10729d9d6d7f97889b533b781994d3465e746c263b411a2a8e39",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/keyring_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_keyring",
+          "line": 369
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "keyring",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/keystore_fmt_plug.c",
+      "sha256": "8f6d84e71be3643740239dda6730f801c5f7b4963aebfa48533eff66c522dcbf",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/keystore_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_keystore",
+          "line": 551
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "keystore",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "path": "src/known_hosts_fmt_plug.c",
+      "sha256": "47d96e0d7b1fc81cbc91729782b7fa6be22f0bb8c4943fdccf30d96cfb43e07c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/known_hosts_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_known_hosts",
+          "line": 213
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "known_hosts",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/krb5_asrep_fmt_plug.c",
+      "sha256": "9356d779af1b6b8d8caa392aa7e02e68e6341de20ca9fac2a5e671de46ebb948",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/krb5_asrep_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_krb5asrep",
+          "line": 353
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "krb5asrep",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "path": "src/krb5_db_fmt_plug.c",
+      "sha256": "53f71ad31e03b024a25b3d0b8f8414d32cceaff4416f0ec2cf35d2d90d07e03f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/krb5_db_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_krb5_18",
+          "line": 363
+        },
+        {
+          "symbol": "fmt_krb5_17",
+          "line": 412
+        },
+        {
+          "symbol": "fmt_krb5_3",
+          "line": 461
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "krb5-18",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "path": "src/krb5_tgs_fmt_plug.c",
+      "sha256": "7d4108474fd68f7ed1fa728aba0c4124a5f4d23a0c9b2c240f02083d9936448a",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/krb5_tgs_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_krb5tgs",
+          "line": 203
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "krb5tgs",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "path": "src/krb5_tgsrep_fmt_plug.c",
+      "sha256": "9b21158d909e3f9413f84d0db6c3743064d9c2af9d5e445b6c2f1eaaa7afa758",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/krb5_tgsrep_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_krb5tgs_aes",
+          "line": 208
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "krb5tgs-sha1",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/krb5pa-md5_fmt_plug.c",
+      "sha256": "1a28f363eb3ce437a17596f2f416a18a3b5ed15f1e32b6897cdfd21abe3dd0d8",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/krb5pa-md5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_krb5pa_md5",
+          "line": 413
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "krb5pa-md5",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "path": "src/krb5pa-sha1_fmt_plug.c",
+      "sha256": "6a79ba1d650ae118883110f18ff1cff405f205e2e7b6ea91b376d9e1984d2476",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/krb5pa-sha1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_krb5pa",
+          "line": 438
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "krb5pa-sha1",
+          "line": 66
+        }
+      ]
+    },
+    {
+      "path": "src/kwallet_fmt_plug.c",
+      "sha256": "aa11454f244e34ec78cfa2956b00b6863aabf1a41e54d279dece8fe5e102c0b2",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/kwallet_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_kwallet",
+          "line": 462
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "kwallet",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "path": "src/lastpass_cli_fmt_plug.c",
+      "sha256": "725d6e8d7be9cf83ffd8f2b8e728150055eaeef0034d484749c6929a0a78ef8f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/lastpass_cli_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_lastpass_cli",
+          "line": 173
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "lpcli",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/lastpass_fmt_plug.c",
+      "sha256": "1b367a93d6cc14b27b19a76f9ff728d16162b7c95f6be1786a32d13551210364",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/lastpass_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_lastpass",
+          "line": 156
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "lp",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/lastpass_sniffed_fmt_plug.c",
+      "sha256": "5520d68fba5c8ef4b7a0616a05a96d01572eb9fd9addb234d73b5b5791c238cd",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/lastpass_sniffed_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_sniffed_lastpass",
+          "line": 260
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "LastPass",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/leet_cc_fmt_plug.c",
+      "sha256": "8677c7036e295205b9846c9a5a6417629d7c127d397e3a198525879d9cd9249f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/leet_cc_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_leet",
+          "line": 353
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "leet",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "path": "src/lotus5_fmt_plug.c",
+      "sha256": "54e145526f55406e54cbc8576da2bba6d4be83114bb2cbf53b6426f05f940e6d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/lotus5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_lotus5",
+          "line": 352
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "lotus5",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/lotus85_fmt_plug.c",
+      "sha256": "ebab80c2c4f1cc2a1a03d3735b2ddb94a91376502fc5cbec4045d392ab7f5131",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/lotus85_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_lotus_85",
+          "line": 439
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "lotus85",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/luks_fmt_plug.c",
+      "sha256": "431238371dc596b7ba20a48603631abe300a621797a5aeaa4c0cc188ff72c640",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/luks_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_luks",
+          "line": 652
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "LUKS",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "path": "src/md2_fmt_plug.c",
+      "sha256": "0ce9813b44cfb4c36b55749cd6b1203bc460347cbca993136106d127f6c16b62",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/md2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_md2_",
+          "line": 178
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "MD2",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/md5crypt_long_fmt.c",
+      "sha256": "a4391b1c43f088f296bcfe31735124882d3343ee57714c150a4966c952bd273c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/md5crypt_long_fmt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_md5crypt_long",
+          "line": 390
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "md5crypt-long",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/mdc2_fmt_plug.c",
+      "sha256": "85142f56cbcea4cd428fbb26dc09e8fa6034eb034a542ce65d25a4897c7b1178",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/mdc2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_mdc2",
+          "line": 187
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "mdc2",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/mediawiki_fmt_plug.c",
+      "sha256": "de6cd744fd5b31c17a70005aa2b000ba660621658c980d4b2f0daf7ad95f7bdd",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/mediawiki_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_mediawiki",
+          "line": 193
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "MediaWiki",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "path": "src/monero_fmt_plug.c",
+      "sha256": "1cb1b86f42099be44e86463f7d9e40544360b621283eb4258d58b080c8b96de5",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/monero_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_monero",
+          "line": 304
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Monero",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/money_fmt_plug.c",
+      "sha256": "919f2b54255b9e009097415233d0ed9d0ad570cafb084777c79e13bded6153a8",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/money_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_money",
+          "line": 290
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "money",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "path": "src/mongodb_fmt_plug.c",
+      "sha256": "0343706956a8583a794279d326871b08d9be097e539673190ac1d27e03d15c0f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/mongodb_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_mongodb",
+          "line": 288
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "MongoDB",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/mongodb_scram_fmt_plug.c",
+      "sha256": "56626ca8fd5dc33b3f4c65934defe9eb0212e8eb50decba7d4fa1bac33a7b79c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/mongodb_scram_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_scram_sha1_mongodb",
+          "line": 285
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "SCRAM-PBKDF2-SHA1-MongoDB",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/mozilla_ng_fmt_plug.c",
+      "sha256": "46d1714fe79c46ea810491b2cf2e8ef186b10900f87191785f3afb487061f4cf",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/mozilla_ng_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_mozilla",
+          "line": 404
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Mozilla",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "path": "src/mscash1_fmt_plug.c",
+      "sha256": "39d5c85b170ef98dc53c4cbf06b2efe578740df7260e339328df469d30515441",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/mscash1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_mscash",
+          "line": 718
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "mscash",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "path": "src/mscash2_fmt_plug.c",
+      "sha256": "0fbd4fde0c5b3e0d5802c0eb193ad0c371cfe59a8b92b3a111f0fb6b3304db16",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/mscash2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_mscash2",
+          "line": 605
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "mscash2",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "path": "src/mssql-old_fmt_plug.c",
+      "sha256": "4e38ae2cf18c5bf4f28a712961a75973a4945870fd69b4ce8ecfef1b94f14ae7",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/mssql-old_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_mssql",
+          "line": 413
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "mssql",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "path": "src/mssql05_fmt_plug.c",
+      "sha256": "a87cd605623da41c7537d7792a7fa2f02dc93e25c7a1e5964d6b12755473e729",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/mssql05_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_mssql05",
+          "line": 611
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "mssql05",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "path": "src/mssql12_fmt_plug.c",
+      "sha256": "035f3544d0eed14e9202d9f42b112115d7f0b4322f2513af0bbd5267e5a1d3de",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/mssql12_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_mssql12",
+          "line": 430
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "mssql12",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "path": "src/multibit_fmt_plug.c",
+      "sha256": "86462290f9291d6a4316cf0fcebe25c34e56e549b14394f5404baf1d82a993f9",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/multibit_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_multibit",
+          "line": 489
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "multibit",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/mysqlSHA1_fmt_plug.c",
+      "sha256": "23bf9ea0607a2fe82997e6643f8437042b3f4462891cc7530c540c2c82ddcfff",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/mysqlSHA1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_mysqlSHA1",
+          "line": 254
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "mysql-sha1",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "path": "src/mysql_fmt_plug.c",
+      "sha256": "637ec5d50c55f0a7255c891b5a5d6d731291e4448ab95ceef362c0f86e5b693c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/mysql_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_MYSQL_fast",
+          "line": 256
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "mysql",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "path": "src/mysql_netauth_fmt_plug.c",
+      "sha256": "3f7912fc3639bd1031c74f669f2f9af88cdc1104de0bd989c58ca6bdf23b6f3d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/mysql_netauth_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_mysqlna",
+          "line": 228
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "mysqlna",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/net_ah_fmt_plug.c",
+      "sha256": "f0daa97b917c05a4d8ed0122402572fcf15d07cb8978363ae6aeca3f52b8cb70",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/net_ah_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_netah",
+          "line": 207
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "net-ah",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/net_md5_fmt_plug.c",
+      "sha256": "eaaf7e26d8059f388152af023933ffc5f7377d9f891e222c053fe55df92b4393",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/net_md5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_netmd5",
+          "line": 286
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "net-md5",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "path": "src/net_sha1_fmt_plug.c",
+      "sha256": "24ffa22b7be9bfe84f36d7139e8c46a16b7961026bbfaf7d124be849114ddf37",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/net_sha1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_netsha1",
+          "line": 275
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "net-sha1",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "path": "src/notes_fmt_plug.c",
+      "sha256": "fd172771e2a08eebad741423adf06460e5c34d1bbccbddb4165f11d1d8930a49",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/notes_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_notes",
+          "line": 199
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "notes",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/nsec3_fmt_plug.c",
+      "sha256": "93e91b5f99ae20e4b44a942ce6cb7a0534484f799b1ce15e22d70cd760970499",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/nsec3_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_nsec3",
+          "line": 410
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "nsec3",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "path": "src/nt2_fmt_plug.c",
+      "sha256": "807ffc23c1a2fb248732b0b3c54daf7ec6d15c02fa11650b73e73d9634ab8290",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/nt2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_NT2",
+          "line": 707
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "NT",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "path": "src/ntlmv1_mschapv2_fmt_plug.c",
+      "sha256": "9e4f858632ad1e4fd48896cdeaaebaf44add27ee4e071af0eb2d0f41a1f86105",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ntlmv1_mschapv2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_MSCHAPv2_new",
+          "line": 1368
+        },
+        {
+          "symbol": "fmt_NETNTLM_new",
+          "line": 1432
+        }
+      ],
+      "literal_label_definitions": []
+    },
+    {
+      "path": "src/nukedclan_fmt_plug.c",
+      "sha256": "58fbc23147438f9bad9acc9d0f6d1e8c465b6c58208a518e887047e3e1836f7e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/nukedclan_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_nk",
+          "line": 258
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "nk",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "path": "src/o10glogon_fmt_plug.c",
+      "sha256": "f941eab615d62daf03ee133ae2c2f07553c0a056b8ed5499e9d5e0a475500e65",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/o10glogon_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_o10glogon",
+          "line": 396
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "o10glogon",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "path": "src/o3logon_fmt_plug.c",
+      "sha256": "23423aff6165914c981d6803e5d8028f874452d1043af55ed99b23af4aea452d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/o3logon_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_o3logon",
+          "line": 369
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "o3logon",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "path": "src/o5logon_fmt_plug.c",
+      "sha256": "93ce4b241e7e7534072bb7decb4af80d53a4178d42604251516c90b6d37938a3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/o5logon_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_o5logon",
+          "line": 201
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "o5logon",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/odf_fmt_plug.c",
+      "sha256": "76c0337d02f9d186d53b52f87fa9f53f6f0148c2fca8ea1f654feb84687045cb",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/odf_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_odf",
+          "line": 239
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "ODF",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "path": "src/office_fmt_plug.c",
+      "sha256": "1883775feea9939eb05fb1ad066abce2ff1c05a37ba27e0677e366d94a124f2a",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/office_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_office",
+          "line": 768
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Office",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/oldoffice_fmt_plug.c",
+      "sha256": "a4977d4a0cae4935c68ffee8ac708f6ce647641d97c7afa6d3fdb3b65df74fd9",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/oldoffice_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_oldoffice",
+          "line": 261
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "oldoffice",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "path": "src/openbsdsoftraid_fmt_plug.c",
+      "sha256": "bfb5f3817eb99528184d55e0929984f2ff7aad7bda5f9a7f498f0a14aa342282",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/openbsdsoftraid_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_openbsd_softraid",
+          "line": 196
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "OpenBSD-SoftRAID",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_7z_fmt_plug.c",
+      "sha256": "96b85014694909e6481390d19ce6dcbeb0544faf9e2a6cd9f19d60bd7a0f72dd",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_7z_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_sevenzip",
+          "line": 416
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "7z-opencl",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_DES_fmt_plug.c",
+      "sha256": "5fa3cfa5ec186160a8810c536b1ca32c808b3809c4567f948c03aa311f78ae77",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_DES_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_cryptdes",
+          "line": 300
+        }
+      ],
+      "literal_label_definitions": []
+    },
+    {
+      "path": "src/opencl_agilekeychain_fmt_plug.c",
+      "sha256": "1e67d16f46fe430003a27bafba50d14dc488b202755e9321e682db5aefc39ed5",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_agilekeychain_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_agilekeychain",
+          "line": 290
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "agilekeychain-opencl",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_androidbackup_fmt_plug.c",
+      "sha256": "de749b0dda5457a792f00d563172e397773bf707c764b2b287c42a9906b49975",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_androidbackup_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_ab",
+          "line": 328
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "AndroidBackup-opencl",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_ansible_fmt_plug.c",
+      "sha256": "16ce2407a5f62a8a9f0b67ec6358e33a69a3b2cb7b089d7d19782aaf7768fdb8",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_ansible_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_ansible",
+          "line": 292
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "ansible-opencl",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_argon2_fmt_plug.c",
+      "sha256": "2dbfb08a21bce59d1b3e3ed6ccf774a5c3a85cd582fa6b3f821a3abcb78c44c9",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_argon2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_argon2",
+          "line": 1223
+        },
+        {
+          "symbol": "fmt_opencl_keepass_argon2",
+          "line": 1289
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "argon2-opencl",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_axcrypt2_fmt_plug.c",
+      "sha256": "7298f197335fd6ec856facda8e7cba6a77a7fdf8624a4dedf145ca5b58adb143",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_axcrypt2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_axcrypt2",
+          "line": 398
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "axcrypt2-opencl",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_axcrypt_fmt_plug.c",
+      "sha256": "d272bcbc1e8add02f2e3194546485965f4e0e306948d167091318fe1bf583184",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_axcrypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_axcrypt",
+          "line": 277
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "axcrypt-opencl",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_bf_fmt_plug.c",
+      "sha256": "d40ad20e08afdaca75f4d35d4863553ada86c00683c6a85af2df2dc0d1993231",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_bf_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_cryptb",
+          "line": 165
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "bcrypt-opencl",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_bitcoin_fmt_plug.c",
+      "sha256": "3221a8023912a4df837d9bd1252fce69e498c29aa88b8551fe16855ee0164943",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_bitcoin_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_bitcoin",
+          "line": 483
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Bitcoin-opencl",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_bitlocker_fmt_plug.c",
+      "sha256": "e9dc18b0a789efcea3c9eec386d9fcc1e93e79ad4b7f272c2e753175328f0639",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_bitlocker_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_bitlocker",
+          "line": 756
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "BitLocker-opencl",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_bitwarden_fmt_plug.c",
+      "sha256": "100edadb2467ffc79ef9b10d66ce7fe73d30e38d03cf11b862ee16608bf8da25",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_bitwarden_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_bitwarden",
+          "line": 308
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "bitwarden-opencl",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_blockchain_fmt_plug.c",
+      "sha256": "6b6109cd1e0bb77fe9cc3496b0c5df84bb468cb951517220df4b71a8b8f20036",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_blockchain_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_blockchain",
+          "line": 295
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "blockchain-opencl",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_cloudkeychain_fmt_plug.c",
+      "sha256": "23340d5cf1457663c8cc879a36e5a5b82e7a477872a2e1741ed6800d89b11348",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_cloudkeychain_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_cloudkeychain",
+          "line": 389
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "cloudkeychain-opencl",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_cryptosafe_fmt_plug.c",
+      "sha256": "f57cd98b7ef4305c314f1f55a21668d3b9c5445d1d6cb776fed3058bd527b26d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_cryptosafe_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FORMAT_STRUCT",
+          "line": 363
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "cryptosafe-opencl",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_dashlane_fmt_plug.c",
+      "sha256": "d605d060efd95df19a198b47f105892a833638f78468aa744e57b7f2f162afcd",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_dashlane_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_dashlane",
+          "line": 330
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "dashlane-opencl",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_diskcryptor_aes_fmt_plug.c",
+      "sha256": "dd4df0498c4b884e7e6c0798820052e58421efc9d522300b967882f458d5c869",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_diskcryptor_aes_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_diskcryptor_aes",
+          "line": 376
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "diskcryptor-aes-opencl",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_diskcryptor_fmt_plug.c",
+      "sha256": "13364cd82b040a292d9a54503bf75f77b83afcc68c3a7a2893ff0ec925e0781b",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_diskcryptor_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_diskcryptor",
+          "line": 386
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "diskcryptor-opencl",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_dmg_fmt_plug.c",
+      "sha256": "13ad46aff70693ba3e69fffceed640de25246bde020046afb091c21b41d9c861",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_dmg_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_dmg",
+          "line": 584
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "dmg-opencl",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_electrum_modern_fmt_plug.c",
+      "sha256": "dfee11365c7ba43b049d6850b0e99d17e2087adf60dc80b0aa15ca4410c55ea7",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_electrum_modern_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_electrum_modern",
+          "line": 535
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "electrum-modern-opencl",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_encfs_fmt_plug.c",
+      "sha256": "63a0ff196da6042149fb664be599edd326350a46e6b5d9f7a1d573ab4fe3865b",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_encfs_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_encfs",
+          "line": 341
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "EncFS-opencl",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_enpass_fmt_plug.c",
+      "sha256": "46845512f21d803a9ffb22056a5606fc0103ca2c5cf8110ad100ace9b06b7075",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_enpass_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_enpass",
+          "line": 399
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "enpass-opencl",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_ethereum_fmt_plug.c",
+      "sha256": "6eae86207c4df5ef4a9733a35d08d7e86bcb0ef70fca7a1d925c02a1d63e3025",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_ethereum_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_ethereum",
+          "line": 351
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "ethereum-opencl",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_ethereum_presale_fmt_plug.c",
+      "sha256": "d9fcfc7ca85944600e566c6beef6020d4f44f98da9e658b23f07ddef84e58ced",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_ethereum_presale_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_ethereum_presale",
+          "line": 347
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "ethereum-presale-opencl",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_fvde_fmt_plug.c",
+      "sha256": "1caeaac17c69c4b5d70cdbb4f5fae77ee94c5b52afb8a2c44e358b1d4d230cc4",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_fvde_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_fvde",
+          "line": 308
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "FVDE-opencl",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_geli_fmt_plug.c",
+      "sha256": "bbb9dad6300a456da8b328b1cb198594a4b7039c5940d56cf2629f5b89641ebf",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_geli_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_geli",
+          "line": 376
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "geli-opencl",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_gost12256hash_fmt_plug.c",
+      "sha256": "246165bd6af16b62d73a4fdcc7da5dddef7d87a3f605dd55949367c526a322d3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_gost12256hash_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_cryptstreebog256",
+          "line": 423
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "streebog256crypt-opencl",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_gost12512hash_fmt_plug.c",
+      "sha256": "0c3fb88904959b87e7b090e43c182ed1100c61e2db2176a2529efa60b4940098",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_gost12512hash_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_cryptstreebog512",
+          "line": 422
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "streebog512crypt-opencl",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_gost94hash_fmt_plug.c",
+      "sha256": "206af636de999ed0874385995401786c74da11c1cec79b3a65040dfc460a4dcd",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_gost94hash_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_cryptgost94",
+          "line": 415
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "gost94crypt-opencl",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_gpg_fmt_plug.c",
+      "sha256": "ba41d50a65f045eca36e56852bd712a54f5003b7808bfe99a476ab2badb343fd",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_gpg_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_gpg",
+          "line": 371
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "gpg-opencl",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_iterated_sha1_fmt_plug.c",
+      "sha256": "b0fc72bbcf93c27f5408293f8eb94365bfc051592ca340b34ae4220fcc584f95",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_iterated_sha1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 921
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Iterated-SHA1-opencl",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_iterated_sha256_fmt_plug.c",
+      "sha256": "84d47d174e510a8e2293dadf2eeac55fbd4e34f6922608b09c7fd05f4a1c792e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_iterated_sha256_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 1070
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Iterated-SHA256-opencl",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_iwork_fmt_plug.c",
+      "sha256": "9fdf0b60e41eb3a6b26e344bd726fc657602e15a0b2bb95b2a52e14d23589b3d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_iwork_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_iwork",
+          "line": 305
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "iwork-opencl",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_keepass_fmt_plug.c",
+      "sha256": "1ef03486976be7c15aab730d2c7d601978d96a5ac79ed512ff4532acad988d02",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_keepass_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_KeePass",
+          "line": 377
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "KeePass-opencl",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_keychain_fmt_plug.c",
+      "sha256": "6854774ed07e8ac7ae939096c1675ca33be7f06468cfbbb6b26491df90411a3a",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_keychain_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_keychain",
+          "line": 284
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "keychain-opencl",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_keyring_fmt_plug.c",
+      "sha256": "50f99d1bc2b8a107d09b8b5581645c9a861e23dc3e0edaf4910896ae2aa9ea42",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_keyring_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_keyring",
+          "line": 391
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "keyring-opencl",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_keystore_fmt_plug.c",
+      "sha256": "3a0505f1629bd5662b095c8de784247304a6a30542f08014a4bde7943630d6dd",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_keystore_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_keystore",
+          "line": 431
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "keystore-opencl",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_krb5_asrep_aes_fmt_plug.c",
+      "sha256": "2eb02e32d735d8128b05e62a1f0d38f50fa6fa9d304c5496df5aacd17a174af4",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_krb5_asrep_aes_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_krb5_asrep_aes",
+          "line": 380
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "krb5asrep-aes-opencl",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_krb5_tgs_fmt_plug.c",
+      "sha256": "3aa907d7236d1da6604e0388f90a4aa66ae9854b77ab288c02c3ff6974835f74",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_krb5_tgs_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 464
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "krb5tgs-opencl",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_krb5_tgsrep_fmt_plug.c",
+      "sha256": "e9ab5fc8b7be33558542bcb890c7336193a0068c8b117f71fd772aa2227c95db",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_krb5_tgsrep_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_krb5_tgs_aes",
+          "line": 358
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "krb5tgs-sha1-opencl",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_krb5pa-md5_fmt_plug.c",
+      "sha256": "29fef0fb28cb60c1403e220ee4b11cd646fa5d53d3a07addd5f866fef2e79b19",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_krb5pa-md5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 943
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "krb5pa-md5-opencl",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_krb5pa-sha1_fmt_plug.c",
+      "sha256": "4b5897e824952e345ca090e945932896ec1ef40e59c73e2127441a71c3a961c3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_krb5pa-sha1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_krb5pa_sha1",
+          "line": 559
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "krb5pa-sha1-opencl",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_lastpass_cli_fmt_plug.c",
+      "sha256": "8c024ecbac9d49e401e99a1063f83cf11ae7948cc909cba7b41e0ee22e9f084c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_lastpass_cli_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_lastpass_cli",
+          "line": 282
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "lpcli-opencl",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_lastpass_fmt_plug.c",
+      "sha256": "55804a638588ba79f3efe4eaca2d1a2612e1a89587d286ec39bcf9b15cd2e514",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_lastpass_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_lastpass",
+          "line": 276
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "lp-opencl",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_lm_fmt_plug.c",
+      "sha256": "cd9bd7fb3a5b603ca5823b3ab14dbff6420c605a3961f0c40429b39ee3f2c3b3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_lm_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_lm",
+          "line": 241
+        }
+      ],
+      "literal_label_definitions": []
+    },
+    {
+      "path": "src/opencl_lotus5_fmt_plug.c",
+      "sha256": "da10b3e3c683b03067945a7756090b36f304a10dcf4feb2803450766f963a63a",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_lotus5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_lotus5",
+          "line": 275
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "lotus5-opencl",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_md5crypt_fmt_plug.c",
+      "sha256": "9d1e1a842e42a810539eb318b7a6f88b82ddca30c645acfd1fdf038a5bea088b",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_md5crypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_cryptMD5",
+          "line": 478
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "md5crypt-opencl",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_mscash2_fmt_plug.c",
+      "sha256": "4d7bbe54ffb61e7e36bb607c265dfa8dd8ccc9172a9b815b1836669f8fa625dd",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_mscash2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_mscash2",
+          "line": 362
+        }
+      ],
+      "literal_label_definitions": []
+    },
+    {
+      "path": "src/opencl_mscash_fmt_plug.c",
+      "sha256": "f44f68fa1d8bd43b8b65ae49b9a9c7b6fba58fc180d0842885bf8404f3f21d1b",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_mscash_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 759
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "mscash-opencl",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_mysqlsha1_fmt_plug.c",
+      "sha256": "e9470d217bcb796c12ae072a5bacb2054ca77137026dce7e20c2df1885d7a7f6",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_mysqlsha1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 1010
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "mysql-sha1-opencl",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_notes_fmt_plug.c",
+      "sha256": "1d3b5e5a6dbe210cb527d721df86614116f5c7ddb5cb8f5564445fcb5f165ad3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_notes_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_notes",
+          "line": 311
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "notes-opencl",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_nt_fmt_plug.c",
+      "sha256": "cce5415773201711b0b23fcf05f87d4a8d2a9f57facd241b1218f8afec881ffd",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_nt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_NT",
+          "line": 703
+        },
+        {
+          "symbol": "fmt_opencl_NT_long",
+          "line": 764
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "NT-opencl",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_ntlmv2_fmt_plug.c",
+      "sha256": "df291f4357d6dbe8d2d754ca6504fdb51c3a40fbd952769eb5d6f7092ac93535",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_ntlmv2_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 983
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "ntlmv2-opencl",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_o5logon_fmt_plug.c",
+      "sha256": "6d6ad27ba7f5255b0fd10d3e4fd0a87994404241c1ebf942ce8a68f745ff1b25",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_o5logon_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FORMAT_STRUCT",
+          "line": 359
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "o5logon-opencl",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_odf_fmt_plug.c",
+      "sha256": "94863fb7094bd5799448f6882d9bbc673cfb141eb4a504b90cac5f303d7fc102",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_odf_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_odf_aes",
+          "line": 283
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "ODF-opencl",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_office_fmt_plug.c",
+      "sha256": "80f3ad697daea439caa8944ee098b8f40bd720c21e8525f0cc48404d1be4ea08",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_office_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_office",
+          "line": 465
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "office-opencl",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_oldoffice_fmt_plug.c",
+      "sha256": "8d303723c53350ebf8f2bea1371d2f386e5ea8e6bab63a20526e119f025cadb1",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_oldoffice_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FORMAT_STRUCT",
+          "line": 699
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "oldoffice-opencl",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_openbsdsoftraid_fmt_plug.c",
+      "sha256": "e3c63ad28639da8107cea8c007b110d8946467fbaa5688b085937725fdd44c84",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_openbsdsoftraid_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_openbsd_softraid",
+          "line": 318
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "OpenBSD-SoftRAID-opencl",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_pbkdf2_hmac_md4_fmt_plug.c",
+      "sha256": "ed3edcc6305e596e542357bb61a70fd355898ce47b80c28244bf741b59a67672",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_pbkdf2_hmac_md4_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_pbkdf2_md4",
+          "line": 362
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PBKDF2-HMAC-MD4-opencl",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_pbkdf2_hmac_md5_fmt_plug.c",
+      "sha256": "0860f57c0daf753350a1a492985e491d2e3e500a8a2670428d53798c176f0ac6",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_pbkdf2_hmac_md5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_pbkdf2_md5",
+          "line": 355
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PBKDF2-HMAC-MD5-opencl",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_pbkdf2_hmac_sha1_fmt_plug.c",
+      "sha256": "dd01605cef955a2e6b2850734a27acfa97590249ad5ccf3c1760d992227a0dcc",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_pbkdf2_hmac_sha1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_pbkdf2_sha1",
+          "line": 380
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PBKDF2-HMAC-SHA1-opencl",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_pbkdf2_hmac_sha256_fmt_plug.c",
+      "sha256": "3b1afe46b3f7e7031b54d485e9a580d346ac8885275b38f47634d1f065ae6534",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_pbkdf2_hmac_sha256_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_pbkdf2_sha256",
+          "line": 367
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PBKDF2-HMAC-SHA256-opencl",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_pbkdf2_hmac_sha512_fmt_plug.c",
+      "sha256": "12b4d0f6db63876cf10f7244c8902f8c78c42130818a72b57f6cd28e6a71e879",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_pbkdf2_hmac_sha512_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_pbkdf2_sha512",
+          "line": 365
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PBKDF2-HMAC-SHA512-opencl",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_pdf_fmt_plug.c",
+      "sha256": "af087b3d0f57742f6654b701d631b14c4b8f254bf7b8d6558e9b958d4822e020",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_pdf_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FORMAT_STRUCT",
+          "line": 397
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "pdf-opencl",
+          "line": 22
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_pem_fmt_plug.c",
+      "sha256": "32deafe71ca82804fd8efa6619b3802e4ab648afffb7ca50fa323cc62e28cbeb",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_pem_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_pem",
+          "line": 334
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "pem-opencl",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_pfx_fmt_plug.c",
+      "sha256": "64cc422f8997bb02b25352847af8aa4bab6d421d53c43cbf65c79765ce8721e7",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_pfx_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_pfx",
+          "line": 304
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "pfx-opencl",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_pgpdisk_fmt_plug.c",
+      "sha256": "da392f095fb05288be91e1f44bf9eaea86ba33c8826ff9ee1fec2881087c2618",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_pgpdisk_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_pgpdisk",
+          "line": 322
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "pgpdisk-opencl",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_pgpsda_fmt_plug.c",
+      "sha256": "347f21e2ec447c8335a02f830da8ade3cafbe71b896f809d0c0026c414633f17",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_pgpsda_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_pgpsda",
+          "line": 276
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "pgpsda-opencl",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_pgpwde_fmt_plug.c",
+      "sha256": "28a45a3c162b5501203b02bc97aef887a76ef195920d45ef3518c2cd14c8dd34",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_pgpwde_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_pgpwde",
+          "line": 263
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "pgpwde-opencl",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_phpass_fmt_plug.c",
+      "sha256": "bf7175b8427f7327839093f29ec597dff7a8bcdbb727c2def799606e6a839c30",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_phpass_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_phpass",
+          "line": 315
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "phpass-opencl",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_pwsafe_fmt_plug.c",
+      "sha256": "2dae58fb320a5977cc203d4b3aff2d87cdf5ac3391fe1cd2f25fc0f87b4145b6",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_pwsafe_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_pwsafe",
+          "line": 359
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "pwsafe-opencl",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_rakp_md5_fmt_plug.c",
+      "sha256": "12f4931cf43d829be539f6d39069da2d8870bb954f161c667d5cc3278821971c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_rakp_md5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_rakp_md5",
+          "line": 322
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "RAKP-MD5-opencl",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_rakp_sha1_fmt_plug.c",
+      "sha256": "8f4a65cd8cfbfae834d70692efa98899a78a72e6c837b8cdf164a075a131791c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_rakp_sha1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_rakp_sha1",
+          "line": 412
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "RAKP-SHA1-opencl",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_rakp_sha256_fmt_plug.c",
+      "sha256": "cf9398455807ae4877cb965c5c988f130b49617c384430bea03f15087cbf4cd3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_rakp_sha256_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_rakp_sha256",
+          "line": 322
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "RAKP-SHA256-opencl",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_rar5_fmt_plug.c",
+      "sha256": "4e1171952e888a81371cdd238035bf956f955983a8d99a72a4572f3f0adaa6ee",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_rar5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_rar5",
+          "line": 319
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "RAR5-opencl",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_rar_fmt_plug.c",
+      "sha256": "9ad88979e44bfda9874081494809135c9673659967e2154613460d3ca76d2625",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_rar_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_rar",
+          "line": 410
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "rar-opencl",
+          "line": 80
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_rawmd4_fmt_plug.c",
+      "sha256": "61187816cc12da8914e5ebb893899a5036ed973e2bc50b0617caf02f96f22dfd",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_rawmd4_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 633
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "raw-MD4-opencl",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_rawmd5_fmt_plug.c",
+      "sha256": "ea6ad543ff7a8296e667a602107e2fefb3db3494fd1455b701a03498f0853f1f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_rawmd5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 630
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "raw-MD5-opencl",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_rawsha1_fmt_plug.c",
+      "sha256": "85b1762d2c866871d71e19503a366c5f4369b8f9bbd08a91453119038ec8398d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_rawsha1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 963
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "raw-SHA1-opencl",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_rawsha256_fmt_plug.c",
+      "sha256": "7e164e123bd56e01d0a26df9159ec5138987ea4ab8649cc22687f957574e22f6",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_rawsha256_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_rawsha256",
+          "line": 719
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "raw-SHA256-opencl",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_rawsha512_fmt_plug.c",
+      "sha256": "a6de1209da7ab6b3118bc61d5f7f8afa3797003c51c2c7d121f7cf360370641c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_rawsha512_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_rawsha512",
+          "line": 386
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "raw-SHA512-free-opencl",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_rawsha512_gpl_fmt_plug.c",
+      "sha256": "e6bf5cbceec249d5d297540620a03ff2bd1d452cc92adda5629815c35faf6713",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_rawsha512_gpl_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_rawsha512_gpl",
+          "line": 821
+        },
+        {
+          "symbol": "fmt_opencl_xsha512_gpl",
+          "line": 882
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "raw-SHA512-opencl",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_salted_sha_fmt_plug.c",
+      "sha256": "04cb28d2ab9193662b4231605da59decbaa8699b98f0a146c78ec7c43f40da70",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_salted_sha_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 983
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "salted-SHA1-opencl",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_sappse_fmt_plug.c",
+      "sha256": "b5de01b5f8805cb4ab4f2b65c616aad7cccefe0fba51b8374bb41c2e9c180e82",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_sappse_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_sappse",
+          "line": 275
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sappse-opencl",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_sha1crypt_fmt_plug.c",
+      "sha256": "de8f8cb2074ec4485bdc3c088440abc7302014f3ead0507460f78759e6579877",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_sha1crypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_cryptsha1",
+          "line": 394
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sha1crypt-opencl",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_sha256crypt_fmt_plug.c",
+      "sha256": "c6e3b3dfae28456a54bc361c20de97d8d90ba50ec1ad0097ac5d3c47ea62293e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_sha256crypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_cryptsha256",
+          "line": 738
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sha256crypt-opencl",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_sha512crypt_fmt_plug.c",
+      "sha256": "d0e77e3bc6e9cd2732c96fd26e3ae73ac2c665469efd0cfa696f734981fcb4cc",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_sha512crypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_cryptsha512",
+          "line": 754
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sha512crypt-opencl",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_sl3_fmt_plug.c",
+      "sha256": "5029e1856a39e9b4a6368ce268476eabc73596dc6ce92277d8a803026f9d086e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_sl3_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 935
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "SL3-opencl",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_sm3crypt_fmt_plug.c",
+      "sha256": "f5d6413f642252cba0f584a0569e8bac715a300302dadb5ccaed651e76cec263",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_sm3crypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_cryptsm3",
+          "line": 413
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sm3crypt-opencl",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_solarwinds_fmt_plug.c",
+      "sha256": "f840bbca006f760f3604447b2c3f788efd308c0eaab729e19a4f1843211443de",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_solarwinds_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_solarwinds",
+          "line": 317
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "solarwinds-opencl",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_ssh_fmt_plug.c",
+      "sha256": "4e4de33f57f50991803d18cae4e0c66a0b8b2190ee57082e64bc34536aa7eff5",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_ssh_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_ssh",
+          "line": 275
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "ssh-opencl",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_sspr_fmt_plug.c",
+      "sha256": "2200cc47980cf32741cde698ae245aae262ac611a2366549240396ea6d3b08cf",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_sspr_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_sspr",
+          "line": 360
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sspr-opencl",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_strip_fmt_plug.c",
+      "sha256": "96707efab3ea8f2872fb3e6442ef779a3351523d8d464c7715ffcc541b8144a5",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_strip_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_strip",
+          "line": 285
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "strip-opencl",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_tc_fmt_plug.c",
+      "sha256": "a700c53ae21f59018d9e23f635c81d341846db1c4cc9c527542481ca32ce4a15",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_tc_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 575
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "TrueCrypt-opencl",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_telegram_fmt_plug.c",
+      "sha256": "f6844b7f4bd31ec3a301131909f3932a2d094d9f7949e38998ddff8ab60ecfb1",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_telegram_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_telegram",
+          "line": 369
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "telegram-opencl",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_tezos_fmt_plug.c",
+      "sha256": "29c89937b26a8dfd898e8015c55e6308a973e9a4e980e40ae2d5aa53a8fb81fc",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_tezos_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_tezos",
+          "line": 363
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "tezos-opencl",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_timeroast_fmt_plug.c",
+      "sha256": "b4809cae60f2da3e1b7be7e44d6abc9c68f51668363412ea0156bc6704a1f53e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_timeroast_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 717
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "timeroast-opencl",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_vmx_fmt_plug.c",
+      "sha256": "32dffffbdf7d3c253b0b46542feb2f41171245093495f2438d00d5e2e31e84cc",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_vmx_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_vmx",
+          "line": 310
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "vmx-opencl",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_wpapmk_fmt_plug.c",
+      "sha256": "4b40831a2377bca006a22587b4f8cc8060013ba5db6ff6e35be9fb87d323cb0f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_wpapmk_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_wpapsk_pmk",
+          "line": 298
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "wpapsk-pmk-opencl",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_wpapsk_fmt_plug.c",
+      "sha256": "791ad87dcf81bb8ee84d4505a79ebef09f60dc07775457fbb95a3f8b931db5d9",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_wpapsk_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_wpapsk",
+          "line": 353
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "wpapsk-opencl",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_xsha512_fmt_plug.c",
+      "sha256": "d2a03e69a90f3675f7aa956697ccef5110252fccb8da3f15495f0cdbb6ce1a85",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_xsha512_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_xsha512",
+          "line": 439
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "XSHA512-free-opencl",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_zed_fmt_plug.c",
+      "sha256": "2ed6882e4426a8b4dc6d7f8d82c293981f80dff6364b0fb26d72546cfd26c3e3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_zed_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_zed",
+          "line": 274
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "zed-opencl",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "path": "src/opencl_zip_fmt_plug.c",
+      "sha256": "f84dfa66f44d172114b2b96cf18c2a73682cb637392a6f8241d7d7eff1191013",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/opencl_zip_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_opencl_zip",
+          "line": 386
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "ZIP-opencl",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/openssl_enc_fmt_plug.c",
+      "sha256": "040e76245820ee7e048c2c8915c5175ce374c18933b31a6aa9a01bdaf3b9e53f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/openssl_enc_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_openssl",
+          "line": 479
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "openssl-enc",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "path": "src/oracle11_fmt_plug.c",
+      "sha256": "7831549669e44ae8b73e3fad8ae4f982b237edc233364099932afd62a6d56de9",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/oracle11_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_oracle11",
+          "line": 404
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "oracle11",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "path": "src/oracle12c_fmt_plug.c",
+      "sha256": "76e9a16a5867d07beaef59cbd13c0dc8dd8530ca85afa35091cdb2bb7e159ea2",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/oracle12c_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_oracle12c",
+          "line": 245
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Oracle12C",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/oracle_fmt_plug.c",
+      "sha256": "0dcf3f3f19890d05dafc902c2f27e2039c89b576860ea5a00f8de04968a4b143",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/oracle_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_oracle",
+          "line": 398
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "oracle",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/osc_fmt_plug.c",
+      "sha256": "1612564fca50049e9838b2d211c4c60519006024b25f086e489daa133f669161",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/osc_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_OSC",
+          "line": 160
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "osc",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "path": "src/ospf_fmt_plug.c",
+      "sha256": "207839f40f2cbc125f8e7691aca29a113cccc353c7a4da1016086dae9f6ecd10",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ospf_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ospf",
+          "line": 310
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "ospf",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/oubliette_blowfish_fmt_plug.c",
+      "sha256": "8cd1574bd0165f796ca7a876dc377e6874e80418d90e425b3640cb5d9b3e1d59",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/oubliette_blowfish_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_oubliette_blowfish",
+          "line": 202
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Oubliette-Blowfish",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/oubliette_idea_fmt_plug.c",
+      "sha256": "22aae739f61476a7e4dd2957ec60786cea1f7f1c46a2e8d638a7e6a6404f5cbf",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/oubliette_idea_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_oubliette_idea",
+          "line": 200
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Oubliette-IDEA",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/padlock_fmt_plug.c",
+      "sha256": "e691abd21ef80ccf6867b5daa4e3d7eef90e5865cf9e46aca7987a730f5ca7e3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/padlock_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_padlock",
+          "line": 327
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Padlock",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/palshop_fmt_plug.c",
+      "sha256": "61b2f7ed3aea5add4e3d6dc09eb55ffbaacb9f458191dbc1fa96ea6e2f85f3c3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/palshop_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_palshop",
+          "line": 220
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Palshop",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/panama_fmt_plug.c",
+      "sha256": "addea8843c0e835c5b1dbe94a3ffb7e2620643f7813149697e7b5a138eb41849",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/panama_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_panama_",
+          "line": 178
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Panama",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/pbkdf2-hmac-md4_fmt_plug.c",
+      "sha256": "c50517727ef0513c8570299e693b8397151d24854badaa07e6de80b924531895",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pbkdf2-hmac-md4_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pbkdf2_hmac_md4",
+          "line": 189
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PBKDF2-HMAC-MD4",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "path": "src/pbkdf2-hmac-md5_fmt_plug.c",
+      "sha256": "0f4c01b4159f5d6340cf6cb0a6f69bd7775e8ce4c490b3be2d14df5d48c8e65b",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pbkdf2-hmac-md5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pbkdf2_hmac_md5",
+          "line": 186
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PBKDF2-HMAC-MD5",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "path": "src/pbkdf2-hmac-sha1_fmt_plug.c",
+      "sha256": "27cffab887ef9f13e2558e9efc5fd5fc8a7fd2606a231dd4c1892540a86504d2",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pbkdf2-hmac-sha1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pbkdf2_hmac_sha1",
+          "line": 197
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PBKDF2-HMAC-SHA1",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "path": "src/pbkdf2-hmac-sha512_fmt_plug.c",
+      "sha256": "dfba30fd5c2d6d9f237eeeaf230be82a963ea6f5a34caf6cb9492fb3611c279c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pbkdf2-hmac-sha512_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pbkdf2_hmac_sha512",
+          "line": 202
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PBKDF2-HMAC-SHA512",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "path": "src/pbkdf2_hmac_sha256_fmt_plug.c",
+      "sha256": "63f4037ae3ae95d4293cbd470c72540f99e159d9d0ec488a175409e930b28a9c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pbkdf2_hmac_sha256_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pbkdf2_hmac_sha256",
+          "line": 204
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PBKDF2-HMAC-SHA256",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "path": "src/pdf_fmt_plug.c",
+      "sha256": "12c96d67508271a0fa86bbc3fd9228fd1f8fe243ad4b05fab541b9f5d79cbca0",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pdf_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pdf",
+          "line": 342
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PDF",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "path": "src/pem_fmt_plug.c",
+      "sha256": "13b175044ebd6474de35e3dabbaa290db3c6c381cb96f473b6d8a6e46303e13e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pem_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pem",
+          "line": 154
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PEM",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "path": "src/pfx_fmt_plug.c",
+      "sha256": "a7b4d1cb311293d1c43456c6732ec17619de10590b558ef435f31dd3ec775d7d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pfx_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pfx",
+          "line": 369
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "pfx",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/pgpdisk_fmt_plug.c",
+      "sha256": "3de2762527f75d560edfd02202739e5c49e3afa1cdc1b5c0c48abd6679927889",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pgpdisk_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pgpdisk",
+          "line": 214
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "pgpdisk",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "path": "src/pgpsda_fmt_plug.c",
+      "sha256": "bc956a2b6917c994ca4ddcdc43c324ff2d64d0233a50ad8133ea4b225b74d641",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pgpsda_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pgpsda",
+          "line": 175
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "pgpsda",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "path": "src/pgpwde_fmt_plug.c",
+      "sha256": "a4b07479bc1b83e0b49249b333e386bc938fa95a3879f3d168ffd2af8d04cf20",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pgpwde_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pgpwde",
+          "line": 168
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "pgpwde",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/phpassMD5_fmt_plug.c",
+      "sha256": "6c67f3f37fb12efad7dc3ead6065595f9195fef1469e6ddc02b8106f6a57c6f3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/phpassMD5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_phpassmd5",
+          "line": 328
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "phpass",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "path": "src/pixMD5_fmt_plug.c",
+      "sha256": "1b0a32cb74612a285cf1f25a8859331165008d4039e7f2465765e73fa50f3a3c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pixMD5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pixMD5",
+          "line": 102
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "pix-md5",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "path": "src/pkzip_fmt_plug.c",
+      "sha256": "b9f2f4aa89f9fc8734563fae1cce7b0b8a232c71340f3ceaea979511cef64461",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pkzip_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pkzip",
+          "line": 1343
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PKZIP",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "path": "src/plaintext_fmt_plug.c",
+      "sha256": "c0639cb57a8d457858010da0a89e26ceadc758c3f22a81bc798289fc91ff8aa0",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/plaintext_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "FMT_STRUCT",
+          "line": 267
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "plaintext",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/postgres_fmt_plug.c",
+      "sha256": "4fdad7521c729505035d864377fcab3078370f597e5ac5cc27cd9a1fa643e206",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/postgres_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_postgres",
+          "line": 264
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "postgres",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/pst_fmt_plug.c",
+      "sha256": "f052fa92d0751927711dfae044c7749cf3e38706eb44598b822ffefb7b2dd188",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pst_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pst",
+          "line": 164
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PST",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/putty_fmt_plug.c",
+      "sha256": "8ced2837c6331c0bf0e7bd68baaaad4a8c594ed7bea76be64215b6eb7b38a17e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/putty_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_putty",
+          "line": 400
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "PuTTY",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/pwsafe_fmt_plug.c",
+      "sha256": "aa1cd4dec7312755d325312a3edbde4d62666cfd85fac325f8f1f9697848be9d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/pwsafe_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_pwsafe",
+          "line": 566
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "pwsafe",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/qnx_fmt_plug.c",
+      "sha256": "2ad6bca3dd96f8098f4b569a151fadaa134c857f36c595e1ef3f107a15d97a08",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/qnx_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_qnx",
+          "line": 335
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "qnx",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "path": "src/racf_fmt_plug.c",
+      "sha256": "2d7db2d07ab40bf087de3a29f918ebaa4c66ba358728fe238f9551638435b1e4",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/racf_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_racf",
+          "line": 317
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "RACF",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "path": "src/racf_kdfaes_fmt_plug.c",
+      "sha256": "7168939dc7aa93a860cd5c4a7d73f281230798836c2ee2f5e170f236a7307c43",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/racf_kdfaes_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_racf_kdfaes",
+          "line": 502
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "RACF-KDFAES",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "path": "src/radius_fmt_plug.c",
+      "sha256": "cdf78856e906a676a5b6a4adab5b13b4170b8a51bfa7b9ee664f21ecab3115cb",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/radius_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_radius",
+          "line": 318
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "radius",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "path": "src/radmin_fmt_plug.c",
+      "sha256": "d56c2bce1335ae7918028f9a749da1b98dbd42054b5ebe6f73ecf58183f76ab4",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/radmin_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_radmin",
+          "line": 185
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "RAdmin",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/rakp_md5_fmt_plug.c",
+      "sha256": "501c95d53b974c20f9d68011e5b0f2c2456224a0a8d5368506578bc7cefdce46",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rakp_md5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rakp_md5",
+          "line": 471
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "RAKP-MD5",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/rakp_sha1_fmt_plug.c",
+      "sha256": "a3ae7dd4d465eaddefc071638b59d152eb946f323d90349e1fcf4e08c1f1123b",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rakp_sha1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rakp_sha1",
+          "line": 454
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "RAKP-SHA1",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "path": "src/rakp_sha256_fmt_plug.c",
+      "sha256": "bad09c01cc1db2343f36c38a1ac26a88291cb345982f7c1bb804159a202ed55e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rakp_sha256_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rakp_sha256",
+          "line": 454
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "RAKP-SHA256",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/rar5_fmt_plug.c",
+      "sha256": "51008d58ac003c9e81c359c4fbffb426a18e7b068b2808dbf76247958f1e0a0d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rar5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rar5",
+          "line": 178
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "RAR5",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "path": "src/rar_fmt_plug.c",
+      "sha256": "9ef01e2d150a59f744b5354d00ff4a38d9838b51dd1c7ea60b27ec8707acc7c4",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rar_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rar",
+          "line": 397
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "rar",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "path": "src/rawBLAKE2_512_fmt_plug.c",
+      "sha256": "2b65fa360cdd91963595e1916d084a20ae0f1644f5c61796179b298dee8579e0",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rawBLAKE2_512_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rawBLAKE2",
+          "line": 190
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-Blake2",
+          "line": 27
+        }
+      ]
+    },
+    {
+      "path": "src/rawKeccak_256_fmt_plug.c",
+      "sha256": "e35d6d66ff75db4e44897a042787db644c65c02c31f017660da4f4efe0781dd3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rawKeccak_256_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rawKeccak_256",
+          "line": 186
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-Keccak-256",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/rawKeccak_512_fmt_plug.c",
+      "sha256": "a7a0230c2db119974375eb670b3e087a787ac8b0982b796ebe80c038b44ebe5f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rawKeccak_512_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rawKeccak",
+          "line": 183
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-Keccak",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "path": "src/rawMD4_fmt_plug.c",
+      "sha256": "addd6e02b06a0fec76f9b0b30f827007ce0509375cf2d9b185c9cd4775c116db",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rawMD4_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rawMD4",
+          "line": 362
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-MD4",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/rawMD5_fmt_plug.c",
+      "sha256": "aea82fdf41ecda8f782b73ba90fcc06fbf233beaccfc3d3fe7d039caaa9bc571",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rawMD5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rawMD5",
+          "line": 337
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-MD5",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/rawMD5flat_fmt_plug.c",
+      "sha256": "97d5679d60f585473b5cacfebc108754a1a219ae9c76d6710fee918740dd0f84",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rawMD5flat_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rawMD5f",
+          "line": 286
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-MD5-flat",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "path": "src/rawSHA1_fmt_plug.c",
+      "sha256": "bf06eb7a046ce972e3d2a619af6e1a25a39c7aa9100ab8c9368a2044d6222dee",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rawSHA1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rawSHA1",
+          "line": 317
+        },
+        {
+          "symbol": "fmt_rawSHA1_axcrypt",
+          "line": 381
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-SHA1",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "path": "src/rawSHA1_linkedIn_fmt_plug.c",
+      "sha256": "27e44eef03af374be5dd3416d482fcb5d054c9e3f2b8b51a32d64815d90d2d85",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rawSHA1_linkedIn_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rawSHA1_LI",
+          "line": 248
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-SHA1-Linkedin",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "path": "src/rawSHA224_fmt_plug.c",
+      "sha256": "0999dbef3119cf871d450c3afc5b6d1bed2c2dc800cb4e0c7c3f6fcff2ce004b",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rawSHA224_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rawSHA224",
+          "line": 291
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-SHA224",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/rawSHA256_fmt_plug.c",
+      "sha256": "565e88d725e6c5eae9f23240955aa8717867a24db62854ed09c9433542ed39f3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rawSHA256_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rawSHA256",
+          "line": 235
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-SHA256",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "path": "src/rawSHA384_fmt_plug.c",
+      "sha256": "215bdd2adde7761872aa577999f2cc050599198295269a60d61864ba71cac0ff",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rawSHA384_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rawSHA384",
+          "line": 300
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-SHA384",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/rawSHA512_fmt_plug.c",
+      "sha256": "aea2b1bd3af1b4f7f636e978057e268ef15219a4291624bc3dc36648debd412f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rawSHA512_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_raw0_SHA512",
+          "line": 254
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-SHA512",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "path": "src/rawSM3_fmt_plug.c",
+      "sha256": "dcad27be99e653ecb200dfe0104c37043c688514641d12b29db5299c3f8d594d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rawSM3_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_sm3",
+          "line": 180
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-SM3",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/rawmd5u_fmt_plug.c",
+      "sha256": "4626f2d5f088c6837990a88c9f1a2938e43e44c71bb5a717a514236f2e9cbe1f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rawmd5u_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rawmd5uthick",
+          "line": 546
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-MD5u",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/restic_fmt_plug.c",
+      "sha256": "02ebac243bc59664d9f9a63d69fcc0391e9e1bbdfe16e5a2c35e9cd249093d7e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/restic_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_restic",
+          "line": 328
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "restic",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/ripemd_fmt_plug.c",
+      "sha256": "5ca8193a0398a4959d692d5b23f46583fa3968f2f8b0851cad8a7b0c6857315e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ripemd_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ripemd_160",
+          "line": 272
+        },
+        {
+          "symbol": "fmt_ripemd_128",
+          "line": 332
+        }
+      ],
+      "literal_label_definitions": []
+    },
+    {
+      "path": "src/rsvp_fmt_plug.c",
+      "sha256": "ed8d5fbce970410676d47155d0d1f6afa2229b0aff67aee17236f7e5f511a586",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rsvp_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rsvp",
+          "line": 559
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "rsvp",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "path": "src/rvary_fmt_plug.c",
+      "sha256": "d05643514e622fea09e72d3a2cc8679ea3914d07a03bfdf2c3a0579fd9c8f0e8",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/rvary_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rvary",
+          "line": 272
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "RVARY",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "path": "src/salted_sha1_fmt_plug.c",
+      "sha256": "36cd4c48898292d746bef44ef2e4fe9d9d809f78674091504b2a1f123da8bca6",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/salted_sha1_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_saltedsha",
+          "line": 242
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Salted-SHA1",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/sapB_fmt_plug.c",
+      "sha256": "2628153e85953077c260e9d2cb1116a1e86e1bbe55db6d08c948529c439b0e59",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/sapB_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_sapB",
+          "line": 775
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sapb",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/sapG_fmt_plug.c",
+      "sha256": "2f63b8fce07f7f51cfec191c4e234fb0df887fde96c878aa60195f1c40f7b50b",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/sapG_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_sapG",
+          "line": 786
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sapg",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "path": "src/sapH_fmt_plug.c",
+      "sha256": "7d36b32203c9ee1400c77aab95a91ccd8ab9de81a9e0f12cadd84b6ae69c5b13",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/sapH_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_sapH",
+          "line": 716
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "saph",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "path": "src/sap_pse_fmt_plug.c",
+      "sha256": "edfdde2ee2c0a85ed26097dcced2e3f023c0cb2cde1163f0b2e7db9464df7662",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/sap_pse_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_sappse",
+          "line": 198
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sappse",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "path": "src/scram_sha256_fmt_plug.c",
+      "sha256": "403d656058ff034d2245e34a9ddae173004d3c3b5da50dc20765a45f5dd3776e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/scram_sha256_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_scram_sha256",
+          "line": 284
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "SCRAM-PBKDF2-SHA256",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "path": "src/scrypt_fmt.c",
+      "sha256": "b69dcb4c38c0009e31f6469ad2beceb52480fe6a01fa08161deaf1e6d1c46be3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/scrypt_fmt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_scrypt",
+          "line": 566
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "scrypt",
+          "line": 30
+        }
+      ]
+    },
+    {
+      "path": "src/securezip_fmt_plug.c",
+      "sha256": "5a283df5de51bc5ebf5d6c58ea26a6894035ce37b73b484d9987d429ccd7d449",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/securezip_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_securezip",
+          "line": 178
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "securezip",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "path": "src/sha1crypt_fmt_plug.c",
+      "sha256": "38959d5b6a129571cb6a8d7c4f8e04c2230077a46ba9d666c33adff4fee4bc51",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/sha1crypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_cryptsha1",
+          "line": 213
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sha1crypt",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/sha256crypt_fmt_plug.c",
+      "sha256": "9888cafefc881d412a1e056c6818cec80885bc2f64fa548f405f79d8031f2c68",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/sha256crypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_cryptsha256",
+          "line": 887
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sha256crypt",
+          "line": 131
+        }
+      ]
+    },
+    {
+      "path": "src/sha3_512_fmt_plug.c",
+      "sha256": "b75decf1b978a660dc3bfe067b0de5f8545923f20cd99986f4b19b68ae89629e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/sha3_512_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_rawSHA3",
+          "line": 179
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Raw-SHA3",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "path": "src/sha512crypt_fmt_plug.c",
+      "sha256": "574fc864bb54832069a4db9155a1d3edcc1af13f817b2c03a0d35048ef38acc8",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/sha512crypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_cryptsha512",
+          "line": 874
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sha512crypt",
+          "line": 111
+        }
+      ]
+    },
+    {
+      "path": "src/siemens-s7_fmt_plug.c",
+      "sha256": "7a7f526e9bcfd276d1769a61a8b5be8b81fe0f78321852cfd62cf7f93b223561",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/siemens-s7_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_s7",
+          "line": 269
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Siemens-S7",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/signal_fmt_plug.c",
+      "sha256": "3da8904d495262ccfeee25853526b056308559345647b2d56459fb304879b68e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/signal_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_signal",
+          "line": 238
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Signal",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/sip_fmt_plug.c",
+      "sha256": "060d608561671e48b3479d36e5e04be5f70af6e21da555127d1e488ac1c3dc1c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/sip_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_sip",
+          "line": 359
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "SIP",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "path": "src/skein_fmt_plug.c",
+      "sha256": "e88395cb2592a9035df995db9337a4ebaa2acba34558054aa9ba62d808121f2f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/skein_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_skein_256",
+          "line": 252
+        },
+        {
+          "symbol": "fmt_skein_512",
+          "line": 309
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Skein",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/sl3_fmt_plug.c",
+      "sha256": "e0dbb69d24505a1db3f979f502a568e8d86aec055d68fcfcd5d61455797e2a49",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/sl3_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_sl3",
+          "line": 269
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "SL3",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/sm3crypt_fmt_plug.c",
+      "sha256": "d0ef6f6402c4b8f1bf49df33b3835c355b39acb3c9098bb7e390eed293b8b283",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/sm3crypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_sm3crypt",
+          "line": 384
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sm3crypt",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/snefru_fmt_plug.c",
+      "sha256": "cf08163ffc76e680a3b259ddd90c9c00c951e1931d3d8394e4b970f51744a36f",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/snefru_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_snefru_256",
+          "line": 244
+        },
+        {
+          "symbol": "fmt_snefru_128",
+          "line": 301
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Snefru",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "path": "src/snmp_fmt_plug.c",
+      "sha256": "b5745610d60791673b52b560874e613d685459ab9a179731a15a9a160222f49c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/snmp_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_snmp",
+          "line": 372
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "SNMP",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/solarwinds_fmt_plug.c",
+      "sha256": "9d7cfdc245beff54713ad163078f0ea2991b1a2b56e478b5c52f481c4b2cd64b",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/solarwinds_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_solarwinds",
+          "line": 159
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "solarwinds",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "path": "src/ssh_fmt_plug.c",
+      "sha256": "8dfcf459567c3e505d70447330d0a40958bd67006439baca92074709150fb614",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ssh_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ssh",
+          "line": 425
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "SSH",
+          "line": 62
+        }
+      ]
+    },
+    {
+      "path": "src/ssha512_fmt_plug.c",
+      "sha256": "e88bd7643fd368f3cc2ee6a9cd97f8aca0a2d4535a7ac76bbdb5cedfa85317df",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ssha512_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_saltedsha2",
+          "line": 262
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "SSHA512",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/sspr_fmt_plug.c",
+      "sha256": "140d6ed254b39dd6a87a8b34aa8e2582d69adf9ae316557682c91cd07ec09c03",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/sspr_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_sspr",
+          "line": 171
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sspr",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/stribog_fmt_plug.c",
+      "sha256": "7f55522016178e23215b0f1e4f6f5f72c0b3bc1e6560938edebf540aec651240",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/stribog_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_stribog_256",
+          "line": 349
+        },
+        {
+          "symbol": "fmt_stribog_512",
+          "line": 410
+        }
+      ],
+      "literal_label_definitions": []
+    },
+    {
+      "path": "src/strip_fmt_plug.c",
+      "sha256": "6af522ded31f068e1d6ad923a2d7a88c557460bddf2628423259132c752a8d88",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/strip_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_strip",
+          "line": 171
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "STRIP",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/sunmd5_fmt_plug.c",
+      "sha256": "b18e0d62105cc7b6fbaeaf55e5d5d4ae95f2ea945d2c9bf604da7c11fdf07e62",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/sunmd5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_sunmd5",
+          "line": 859
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "SunMD5",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "path": "src/tacacs_plus_fmt_plug.c",
+      "sha256": "bc5c2598e574d48651bb503d65c9c231e748c6609d288d20d526fd94793ef5a8",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/tacacs_plus_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_tacacsplus",
+          "line": 256
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "tacacs-plus",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/tcp_md5_fmt_plug.c",
+      "sha256": "7350b1689776bab3c4b278113119ee72a35fc01a107eb431cb60dc5ae6ed404d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/tcp_md5_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_tcpmd5",
+          "line": 211
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "tcp-md5",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/telegram_fmt_plug.c",
+      "sha256": "d706d4c8c31b02aeb8bef0a8e7fd69f6c27a1e4548af37a85b5b9ff12e22c4c2",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/telegram_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_telegram",
+          "line": 220
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "telegram",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/tezos_fmt_plug.c",
+      "sha256": "6051002f4db250ce24d427d2e971f3544fd244be0e042a662591c08e89282027",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/tezos_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_tezos",
+          "line": 207
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "tezos",
+          "line": 43
+        }
+      ]
+    },
+    {
+      "path": "src/tiger_fmt_plug.c",
+      "sha256": "fde1300d4a12a1dd663a1f7b8fbcc8f5fff2c56a42fe9de2bdded4aef6262323",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/tiger_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_tiger",
+          "line": 187
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Tiger",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/timeroast_fmt_plug.c",
+      "sha256": "9b19d366f2e3e749d971ffe4ac433a78d54c155ddaf5991b3b349f266ea9be4d",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/timeroast_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_timeroast",
+          "line": 528
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "timeroast",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/trip_fmt.c",
+      "sha256": "139d1c3bb5f65e2485c5ebcc0c36b41dd740cf3ad34d0d4741a354295da536c5",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/trip_fmt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_trip",
+          "line": 576
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "tripcode",
+          "line": 24
+        }
+      ]
+    },
+    {
+      "path": "src/truecrypt_fmt_plug.c",
+      "sha256": "e191b517aa166f63ba3a5f27e616e7810706d2863f58592c9c3c849e4c9582a1",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/truecrypt_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_truecrypt",
+          "line": 575
+        },
+        {
+          "symbol": "fmt_truecrypt_ripemd160",
+          "line": 641
+        },
+        {
+          "symbol": "fmt_truecrypt_ripemd160boot",
+          "line": 690
+        },
+        {
+          "symbol": "fmt_truecrypt_sha512",
+          "line": 739
+        },
+        {
+          "symbol": "fmt_truecrypt_whirlpool",
+          "line": 801
+        }
+      ],
+      "literal_label_definitions": []
+    },
+    {
+      "path": "src/vdi_fmt_plug.c",
+      "sha256": "94c4d5799668fe498268cebdd11af4fa9dfb7706c813edd40ed477f914983f5e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/vdi_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_vdi",
+          "line": 339
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "vdi",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "path": "src/vms_fmt_plug.c",
+      "sha256": "ce6fb278fd819e0152a2d22c7bf9d14cf57e3bb93de874c50513a52a803d8a99",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/vms_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_VMS",
+          "line": 247
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "OpenVMS",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "path": "src/vmx_fmt_plug.c",
+      "sha256": "26832e71befd7338b8e7adf841a2443b4fb789f7b1c0fef9e191665f57d8fb20",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/vmx_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_vmx",
+          "line": 160
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "vmx",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/vnc_fmt_plug.c",
+      "sha256": "29625f9c9955c0092fd6fc6d532c07a1c254b3adacf72a4acb1bd917953f8f25",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/vnc_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_vnc",
+          "line": 297
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "VNC",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "path": "src/vtp_fmt_plug.c",
+      "sha256": "e55e063da035d983a2bdd0e75127c72c2600b581fce0be26ecf0a0b60606c693",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/vtp_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_vtp",
+          "line": 389
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "vtp",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "path": "src/wbb3_fmt_plug.c",
+      "sha256": "ef7f81a3808861ee34d5136d9331b8860f37e6e486643ef629bf0cd717e42861",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/wbb3_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_wbb3",
+          "line": 253
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "wbb3",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "path": "src/whirlpool_fmt_plug.c",
+      "sha256": "8fd7c21e70c832225e8b0f3c2e59cb92e70386e6963d7f2d7186c00d9d0101dc",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/whirlpool_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_whirlpool_0",
+          "line": 259
+        },
+        {
+          "symbol": "fmt_whirlpool_1",
+          "line": 317
+        },
+        {
+          "symbol": "fmt_whirlpool",
+          "line": 375
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Whirpool",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "path": "src/wow_srp_fmt_plug.c",
+      "sha256": "05b669765bddf7bdec15c3444aa2922ecbae288d8860591b768507eb842fb642",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/wow_srp_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_blizzard",
+          "line": 518
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "WoWSRP",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "path": "src/wpapmk_fmt_plug.c",
+      "sha256": "8a37ef28c382f01a05217dac15ca14bace4cf625ada94ee76e0340e56e2fcc59",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/wpapmk_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_wpapsk_pmk",
+          "line": 111
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "wpapsk-pmk",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/wpapsk_fmt_plug.c",
+      "sha256": "cc700d708b53aa8b51fc9215a1d11c3ce645c32c88622dbdf263f77c9795f198",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/wpapsk_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_wpapsk",
+          "line": 163
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "wpapsk",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "path": "src/xmpp_scram_fmt_plug.c",
+      "sha256": "8a5b6b186edc8a5cb4b68190979a8e9a4835bde01afbca6516edb74c12e171fb",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/xmpp_scram_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_scram_sha1",
+          "line": 292
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "SCRAM-PBKDF2-SHA1",
+          "line": 44
+        }
+      ]
+    },
+    {
+      "path": "src/zed_fmt_plug.c",
+      "sha256": "73c64950d77bf76f37e3f74ca893ec43f0ded643b264b5b81a1e3f06ce7faf96",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/zed_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_zed",
+          "line": 198
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "zed",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/zip_fmt_plug.c",
+      "sha256": "9a561e2124a1b5477f3ab5a05af02fada6015631f820a2a80ae8c398c4b5f8f3",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/zip_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_zip",
+          "line": 211
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "ZIP",
+          "line": 42
+        }
+      ]
+    },
+    {
+      "path": "src/zipmonster_fmt_plug.c",
+      "sha256": "f0ae78b5e8ec1ca5f5148fa3793abde31e3f4e7ca7f1fec636cd46c75477ad1e",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/zipmonster_fmt_plug.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_zipmonster",
+          "line": 316
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "ZipMonster",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "src/ztex_bcrypt.c",
+      "sha256": "3824b31f4ad8e630f8dc7afbc38d4619d00aa2be777918dd7cbb00ba9195b532",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ztex_bcrypt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ztex_bcrypt",
+          "line": 285
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "bcrypt-ztex",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "path": "src/ztex_descrypt.c",
+      "sha256": "77b82467eb534c285861f8d2ad6ca8f3fb9f441510f5610ca71054fe6256aa06",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ztex_descrypt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ztex_descrypt",
+          "line": 392
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "descrypt-ztex",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "path": "src/ztex_drupal7.c",
+      "sha256": "9ba75348960e8133b5f78557021d025c7182843aa96c63f71d24635f422c9f4a",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ztex_drupal7.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ztex_drupal7",
+          "line": 149
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "Drupal7-ztex",
+          "line": 33
+        }
+      ]
+    },
+    {
+      "path": "src/ztex_md5crypt.c",
+      "sha256": "ab736b7b64ec0817acc90427ecdf09c03864335654df094063d1f1cd35dfcffd",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ztex_md5crypt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ztex_md5crypt",
+          "line": 215
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "md5crypt-ztex",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "path": "src/ztex_phpass.c",
+      "sha256": "1e849ee3d14ed7ca4d1cb81e3bf300e6f9d355394f1fa0f1b62bbad3c9e85918",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ztex_phpass.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ztex_phpass",
+          "line": 197
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "phpass-ztex",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "path": "src/ztex_sha256crypt.c",
+      "sha256": "a800cb670ee5aa33fe9d4fa0cae4ad7f249e208f0be022d3bd65ec99f2dddb24",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ztex_sha256crypt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ztex_sha256crypt",
+          "line": 385
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sha256crypt-ztex",
+          "line": 36
+        }
+      ]
+    },
+    {
+      "path": "src/ztex_sha512crypt.c",
+      "sha256": "0eb5a76cd7dfaa743c04c955c53b883812921d1830ffb4dd10e745522b01029c",
+      "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/ztex_sha512crypt.c",
+      "format_structs": [
+        {
+          "symbol": "fmt_ztex_sha512crypt",
+          "line": 335
+        }
+      ],
+      "literal_label_definitions": [
+        {
+          "literal": "sha512crypt-ztex",
+          "line": 32
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Conditional compilation is not evaluated; declarations do not establish runtime support.",
+    "Macro-generated declarations, included headers, nested source directories and nonliteral label expressions are outside this catalog.",
+    "File-level label declarations are not automatically associated with individual format structures.",
+    "No test hashes, passwords, candidate lists, format algorithms or performance measurements are extracted."
+  ]
+}

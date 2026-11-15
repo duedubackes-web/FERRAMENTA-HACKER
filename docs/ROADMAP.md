@@ -60,3 +60,17 @@ Use `.github/ISSUE_TEMPLATE/work-item.yml` para converter cada item em uma taref
 - [x] Verificar CLI, escapes HTML, recusas de sobrescrita e comportamento responsivo do exemplo sintético.
 - [ ] Validar tarefas de investigação com usuários e artefatos sanitizados reais.
 - [ ] Implementar conector TShark offline e correlação entre inventário e tráfego, preservando proveniência e limites de identidade.
+
+
+## John the Ripper — 15/11/2026
+
+- [x] Coletar `openwall/john` em `bleeding-jumbo`, fixar commit e indexar 2.128 entradas rastreadas.
+- [x] Executar Craft Anything e REA no snapshot e registrar a lacuna de hashes de dois links simbólicos no REA.
+- [x] Conferir caminhos e todos os hashes disponíveis entre ferramentas e inventário próprio.
+- [x] Catalogar definições textuais de formatos com linha, hash e URL, sem inferir formatos ativos no runtime.
+- [x] Preservar licenças, responsabilidades de arquitetura e decisões de integração.
+- [x] Disponibilizar verificador reutilizável de snapshots e testar detecção de alterações e divergências.
+- [ ] Comparar uma release core com a variante jumbo e identificar diferenças por componente.
+- [ ] Registrar capacidades observadas de builds específicos em laboratório próprio, separadas das declarações estáticas.
+- [ ] Definir contrato de importação de resultados agregados/sanitizados de auditoria, com proveniência e minimização dos dados necessários.
+- [ ] Medir custo, utilidade e compatibilidade de uma eventual integração após definir escopo, plataforma e modelo de distribuição.

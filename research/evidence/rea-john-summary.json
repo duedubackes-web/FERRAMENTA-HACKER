@@ -1,0 +1,73 @@
+{
+  "evidence_id": "ev_fd9e99f63984bd441ccb80cb7a8de474621df1d43414c52eeb93a71c06e72641",
+  "subject": {
+    "name": "john-37bebbe4b644.zip",
+    "digest": {
+      "sha256": "2f9f3fb793c34296132289ab3bdef8786ba35e5fa97ca10bcf624e42abf95a1f"
+    },
+    "local_path": "/workspace/output/source-snapshots/john-37bebbe4b644.zip",
+    "format": "zip",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-artifact-graph",
+    "name": "REA safe artifact graph provider",
+    "version": "1"
+  },
+  "operation": "inspect_artifact",
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "limitations": [
+    "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+    "ZIP inventory lists central-directory entries only. Non-entry bytes, including leading bytes before the first entry such as a self-extractor stub, an APK Signing Block before the central directory or a ZIP comment after it, are not occurrences."
+  ],
+  "evidence_links": [
+    "ev_497397fa7332f4a0b7f661ff47892a03fe2db6074dd52ee8ec5496930b60dcaf"
+  ],
+  "cli_version": "6.9.0",
+  "coverage": {
+    "status": "complete-within-substeps",
+    "substeps_completed": 1,
+    "observations_retained": 1,
+    "observations_omitted": 0,
+    "hypotheses_retained": 0,
+    "hypotheses_omitted": 0,
+    "unexplored_branches_retained": 0,
+    "unexplored_branches_omitted": 0,
+    "next_probes_retained": 0,
+    "next_probes_omitted": 0
+  },
+  "inventory_manifest": {
+    "manifest_id": "agm_161f716290a0a4106c2fe7abcfd53d0c301cf4edea84790fa84314b6e6c4e315",
+    "root_artifact_id": "art_017176e3ead669514b0bdabb3288f9b85972d960e860955d2685f15be2c12019",
+    "root_sha256": "2f9f3fb793c34296132289ab3bdef8786ba35e5fa97ca10bcf624e42abf95a1f",
+    "root_format": "zip",
+    "graph_sha256": "c7879d1094d7bf4885372e3a872bb77657b1eb8dfade891ec8dabc3de7e50e85",
+    "node_count": 2071,
+    "occurrence_count": 2129,
+    "edge_count": 2126
+  },
+  "inventory_coverage": {
+    "scope": "container-entries",
+    "status": "complete"
+  },
+  "integrity_contradictions": [],
+  "unhashed_entries": [
+    {
+      "logical_path": "doc/LICENSE",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    },
+    {
+      "logical_path": "doc/README",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 [
   {
     "source": "craft-anything",
+    "source_commit": "88d1d9cac852aec1c7fd97886db451e005e49d2a",
     "checked_files": 1082,
     "unfetched_gitlinks": 0,
     "archive_sha256_verified": true,
@@ -8,6 +9,7 @@
   },
   {
     "source": "hydra",
+    "source_commit": "707c822e88938c526279fcabc10a8a265bbc53c4",
     "checked_files": 134,
     "unfetched_gitlinks": 0,
     "archive_sha256_verified": true,
@@ -15,6 +17,7 @@
   },
   {
     "source": "kali-live-build",
+    "source_commit": "adb2e38941662f105b57134e0155ec468da294ad",
     "checked_files": 56,
     "unfetched_gitlinks": 0,
     "archive_sha256_verified": true,
@@ -22,6 +25,7 @@
   },
   {
     "source": "kali-meta",
+    "source_commit": "6af96b4cbc8d1741a8bf859886f1324639175cab",
     "checked_files": 13,
     "unfetched_gitlinks": 0,
     "archive_sha256_verified": true,
@@ -29,6 +33,7 @@
   },
   {
     "source": "rea",
+    "source_commit": "1c90a0fcdb83a6d1178367b0ba2c361613955bd9",
     "checked_files": 8609,
     "unfetched_gitlinks": 5,
     "archive_sha256_verified": true,
@@ -36,6 +41,7 @@
   },
   {
     "source": "wireshark",
+    "source_commit": "7f040529364d6d572134867bbb34fd9525306fbf",
     "checked_files": 9461,
     "unfetched_gitlinks": 0,
     "archive_sha256_verified": true,
@@ -43,6 +49,7 @@
   },
   {
     "source": "nmap",
+    "source_commit": "68739db8e4ec139c3865a33073c76c6fd13fb96c",
     "checked_files": 2611,
     "unfetched_gitlinks": 0,
     "archive_sha256_verified": true,
@@ -50,7 +57,16 @@
   },
   {
     "source": "sqlmap",
+    "source_commit": "8b78b676c1376ae28feccd957b03bbecea05eff1",
     "checked_files": 896,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "john",
+    "source_commit": "37bebbe4b6442c8dd3888e5848ef062c0783e9f3",
+    "checked_files": 2128,
     "unfetched_gitlinks": 0,
     "archive_sha256_verified": true,
     "per_entry_sha256_verified": true

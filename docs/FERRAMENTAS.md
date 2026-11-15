@@ -68,3 +68,14 @@ A chamada inicial usou profundidade 0 e reportou arquivos compactados não abert
 Resultados completos e expandidos são preservados; IDs finais, cobertura e hashes estão em `research/evidence/craft-summary.json`.
 REA executou `analyze-javascript-application /workspace/work/web-next/nmap-scripts --format json` e o equivalente `sqlmap-scripts`.
 O alvo dessas chamadas é o JavaScript entregue pelos sites, não o código nativo/Python dos motores. Consulte `NMAP-SQLMAP.md` para resultados e limites de ambas as análises.
+
+
+## Rodada John the Ripper
+
+Mesmas CLIs fixadas: Craft Anything 0.6.1 e REA 6.9.0. O alvo das duas ferramentas foi o ZIP da árvore rastreada do commit John, não um binário executável.
+Craft: `--deep core-archive-show --json PARAMETROS_JSON`, profundidade 1, até 20.000 entradas e 1.000.000.000 bytes. Reportou 2.128/2.128 entradas.
+REA: `inspect-artifact CAMINHO_DO_ZIP --format json`. Produziu inspeção e inventário do contêiner; não realizou decompilação nem execução de John.
+Os conjuntos de caminhos coincidiram. Os 2.128 hashes do Craft coincidiram com o inventário próprio; REA conferiu 2.126 arquivos regulares e deixou os dois links simbólicos sem hash.
+A síntese explicita essa lacuna mesmo com a cobertura global declarada como completa para entradas do contêiner.
+Resultados integrais: `research/evidence/craft-john.json.gz` e `rea-john-artifact.json.gz`. Corroboração: `john-inventory-crosscheck.json`.
+O mapa de arquitetura vem de leitura normal do fonte, conforme a orientação REA para repositórios completos. Consulte `JOHN-THE-RIPPER.md` para escopo e IDs.

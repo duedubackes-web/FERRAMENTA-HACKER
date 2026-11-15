@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "source_id": "john",
+  "commit": "37bebbe4b6442c8dd3888e5848ef062c0783e9f3",
+  "archive_sha256": "2f9f3fb793c34296132289ab3bdef8786ba35e5fa97ca10bcf624e42abf95a1f",
+  "compared_paths": 2128,
+  "craft_evidence_id": "ev_02d487eac0afd74b739368e02ef739ca4ea927c0879cc74a5763bbe3e736e2ff",
+  "rea_evidence_id": "ev_fd9e99f63984bd441ccb80cb7a8de474621df1d43414c52eeb93a71c06e72641",
+  "rea_inventory_evidence_id": "ev_497397fa7332f4a0b7f661ff47892a03fe2db6074dd52ee8ec5496930b60dcaf",
+  "path_sets_match": true,
+  "craft_entry_hashes_matched": 2128,
+  "rea_entry_hashes_matched": 2126,
+  "rea_unhashed_entries": [
+    {
+      "logical_path": "doc/LICENSE",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    },
+    {
+      "logical_path": "doc/README",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    }
+  ],
+  "all_available_entry_sha256_match": true,
+  "limit": "REA did not hash symlink entries. Agreement establishes collected-byte inventory consistency, not code correctness, authenticity, runtime support or password strength."
+}

@@ -322,5 +322,101 @@
     "quote": "* Executes sqlmap and parses the results (as opposed to typical shell or",
     "url": "https://github.com/sqlmapproject/sqlmap/blob/8b78b676c1376ae28feccd957b03bbecea05eff1/LICENSE#L21",
     "limit": "Leitura estática seletiva; não demonstra execução nem segurança."
+  },
+  {
+    "id": "J01",
+    "kind": "source-derived",
+    "claim": "A árvore coletada é a variante comunitária jumbo, não uma garantia de equivalência com uma release core.",
+    "source_id": "john",
+    "commit": "37bebbe4b6442c8dd3888e5848ef062c0783e9f3",
+    "path": "README.md",
+    "line": 10,
+    "quote": "This is the community-enhanced, \"jumbo\" version of John the Ripper.",
+    "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/README.md#L10",
+    "limit": "Selective static source reading; no target execution, runtime capability test or full semantic audit."
+  },
+  {
+    "id": "J02",
+    "kind": "source-derived",
+    "claim": "A licença geral declara GPLv2-ou-posterior; o mesmo texto descreve exceções e termos específicos por componente.",
+    "source_id": "john",
+    "commit": "37bebbe4b6442c8dd3888e5848ef062c0783e9f3",
+    "path": "LICENSE",
+    "line": 8,
+    "quote": "the Free Software Foundation; either version 2 of the License, or",
+    "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/LICENSE#L8",
+    "limit": "Selective static source reading; no target execution, runtime capability test or full semantic audit."
+  },
+  {
+    "id": "J03",
+    "kind": "source-derived",
+    "claim": "A interface de formatos possui um marcador explícito de versão da estrutura.",
+    "source_id": "john",
+    "commit": "37bebbe4b6442c8dd3888e5848ef062c0783e9f3",
+    "path": "src/formats.h",
+    "line": 24,
+    "quote": "#define FMT_MAIN_VERSION 14\t/* change if structure fmt_main changes */",
+    "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/formats.h#L24",
+    "limit": "Selective static source reading; no target execution, runtime capability test or full semantic audit."
+  },
+  {
+    "id": "J04",
+    "kind": "source-derived",
+    "claim": "A estrutura de formato reúne parâmetros, métodos, estado privado e encadeamento.",
+    "source_id": "john",
+    "commit": "37bebbe4b6442c8dd3888e5848ef062c0783e9f3",
+    "path": "src/formats.h",
+    "line": 420,
+    "quote": "struct fmt_main {",
+    "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/formats.h#L420",
+    "limit": "Selective static source reading; no target execution, runtime capability test or full semantic audit."
+  },
+  {
+    "id": "J05",
+    "kind": "source-derived",
+    "claim": "A gestão de formatos possui uma função de registro explícita.",
+    "source_id": "john",
+    "commit": "37bebbe4b6442c8dd3888e5848ef062c0783e9f3",
+    "path": "src/formats.c",
+    "line": 452,
+    "quote": "void fmt_register(struct fmt_main *format)",
+    "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/formats.c#L452",
+    "limit": "Selective static source reading; no target execution, runtime capability test or full semantic audit."
+  },
+  {
+    "id": "J06",
+    "kind": "source-derived",
+    "claim": "O ponto de integração do programa reúne o registro dos formatos; condições de configuração/compilação afetam a seleção.",
+    "source_id": "john",
+    "commit": "37bebbe4b6442c8dd3888e5848ef062c0783e9f3",
+    "path": "src/john.c",
+    "line": 229,
+    "quote": "static void john_register_all(void)",
+    "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/john.c#L229",
+    "limit": "Selective static source reading; no target execution, runtime capability test or full semantic audit."
+  },
+  {
+    "id": "J07",
+    "kind": "source-derived",
+    "claim": "A persistência de sessão está separada em recovery.c; não foi testada dinamicamente.",
+    "source_id": "john",
+    "commit": "37bebbe4b6442c8dd3888e5848ef062c0783e9f3",
+    "path": "src/recovery.c",
+    "line": 234,
+    "quote": "void rec_save(void)",
+    "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/src/recovery.c#L234",
+    "limit": "Selective static source reading; no target execution, runtime capability test or full semantic audit."
+  },
+  {
+    "id": "J08",
+    "kind": "source-derived",
+    "claim": "A própria documentação OpenCL alerta que parte das instruções está desatualizada; elas não foram adotadas como recomendações atuais de drivers.",
+    "source_id": "john",
+    "commit": "37bebbe4b6442c8dd3888e5848ef062c0783e9f3",
+    "path": "doc/README-OPENCL",
+    "line": 7,
+    "quote": "generic instructions below are unfortunately somewhat out of date compared",
+    "url": "https://github.com/openwall/john/blob/37bebbe4b6442c8dd3888e5848ef062c0783e9f3/doc/README-OPENCL#L7",
+    "limit": "Selective static source reading; no target execution, runtime capability test or full semantic audit."
   }
 ]

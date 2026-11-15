@@ -61,3 +61,11 @@ As correspondências usam IPs canônicos em relação única. Ambiguidades, vers
 A ausência de um registro não vira um estado inferido; alterações em detecção de serviço não viram confirmação de atualização ou vulnerabilidade.
 O identificador considera os hashes e versões de importação/comparação. Caminhos locais não participam da identidade por conteúdo.
 A geração HTML não depende de JavaScript ou recursos externos; dados do XML são escapados e os links são internos ao relatório.
+
+
+## John: referência de contratos e composição
+
+A leitura seletiva do John identificou um contrato de formato versionado (`FMT_MAIN_VERSION`), registro em `formats.c`/`john.c` e persistência em `recovery.c`.
+Esses pontos reforçam a separação entre contrato do adaptador, registro de módulos e estado de execução na arquitetura própria.
+O catálogo lexical da pesquisa guarda declarações do fonte; um futuro catálogo de capacidades de runtime deverá registrar build, plataforma e evidências de observação separadamente.
+Nenhum algoritmo do John, motor de processamento de senhas ou integração de execução foi incorporado nesta etapa. Os detalhes e fontes estão em `JOHN-THE-RIPPER.md`.

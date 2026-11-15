@@ -10,6 +10,7 @@
 | Kali live-build | LICENSE contém GPLv2 | Preservado; permissões específicas exigem revisão dos arquivos usados |
 | Nmap | NPSL 0.95, licença própria | LICENSE preservado; revisar redistribuição, incorporação e condições OEM |
 | sqlmap | GPLv2-ou-posterior com esclarecimentos e exceções próprios | LICENSE e avisos terceiros preservados; o texto trata execução e parsing de resultados |
+| John the Ripper jumbo | GPLv2-ou-posterior, exceção OpenSSL/unRAR e termos por componente | LICENSE, doc/LICENSE e doc/COPYING preservados; sem incorporação do motor na base MIT |
 
 Kali como distribuição não tem uma única licença que cubra todos os seus pacotes.
 Metadados do GitHub não substituem textos de licença do commit ou declarações por arquivo.
@@ -26,3 +27,5 @@ Não aplicar uma licença permissiva global sobre arquivos de terceiros. Marcas,
 O HTML do Wireshark é evidência de pesquisa, não uma licença para reutilizar sua interface ou identidade visual.
 
 O novo importador XML é código original, não inclui nem executa os motores. NPSL discute explicitamente a leitura de resultados fornecidos por usuários e usos que não requerem os direitos concedidos pela licença; isso não concede automaticamente direitos para redistribuir o motor. O relatório NMAP-SQLMAP cita as linhas relevantes dos dois projetos.
+
+Na coleta John, doc/LICENSE é um link simbólico para a licença raiz. O snapshot mantém seu tipo e texto de destino; a pasta de avisos disponibiliza uma cópia regular do texto da licença. Não se infere licença uniforme para dependências ou componentes de terceiros.

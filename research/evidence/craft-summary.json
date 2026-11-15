@@ -142,5 +142,29 @@
     ],
     "source_id": "sqlmap",
     "archive_sha256": "e1d00c14315b6b42a02349f8d8a181db31d8fe620a4998ca556159cd6e74728f"
+  },
+  {
+    "id": "ev_02d487eac0afd74b739368e02ef739ca4ea927c0879cc74a5763bbe3e736e2ff",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 2128,
+      "status": "complete",
+      "total": 2128
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "john-37bebbe4b644.zip (zip) holds 2128 files in 2128 entries; 0 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "john",
+    "archive_sha256": "2f9f3fb793c34296132289ab3bdef8786ba35e5fa97ca10bcf624e42abf95a1f"
   }
 ]

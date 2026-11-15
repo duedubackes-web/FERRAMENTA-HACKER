@@ -110,6 +110,19 @@
       "scope": "HEAD tracked tree; no history, no recursive submodules, no LFS hydration",
       "snapshot_method": "Git tracked working tree bytes; symlink text preserved; gitlinks omitted; no export transformations",
       "unfetched_gitlinks": []
+    },
+    {
+      "id": "john",
+      "url": "https://github.com/openwall/john.git",
+      "commit": "37bebbe4b6442c8dd3888e5848ef062c0783e9f3",
+      "tracked_files": 2128,
+      "archive": "john-37bebbe4b644.zip",
+      "archive_sha256": "2f9f3fb793c34296132289ab3bdef8786ba35e5fa97ca10bcf624e42abf95a1f",
+      "archive_bytes": 57393808,
+      "collected_at": "2026-11-15T17:32:27.582081+00:00",
+      "scope": "HEAD tracked tree; no history, no recursive submodules, no LFS hydration",
+      "snapshot_method": "Git tracked working tree bytes; symlink text preserved; gitlinks omitted; no export transformations",
+      "unfetched_gitlinks": []
     }
   ]
 }
