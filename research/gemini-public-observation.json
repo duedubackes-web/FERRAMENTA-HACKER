@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "fetch": {
+    "requested_url": "https://gemini.google.com/app?hl=pt-BR",
+    "final_url": "https://gemini.google.com/app?hl=pt-BR",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 922860,
+    "sha256": "ebcf2593e0e5bf29f7da63446dce43787a7dc22898ff7e6b8a7935455b9cd00f",
+    "authenticated": false,
+    "request_scope": "public GET only; no cookies or account credentials supplied"
+  },
+  "page_title": "Google Gemini",
+  "public_text_observed": [
+    "Fazer login",
+    "Google Apps"
+  ],
+  "assets": {
+    "page_url": "https://gemini.google.com/app?hl=pt-BR",
+    "authenticated": false,
+    "scripts": [
+      {
+        "url": "https://gemini.gstatic.com/_/mss/boq-gemini-web-uiserver/_/js/k=boq-gemini-web-uiserver.BardChatUi.pt_BR.Mv9tGwDPxQw.2018.O/am=wl8IgAL7AEz7_-AC_wQ6cEABioCcIAhdAAAAAIAQ/d=1/excm=_b/ed=1/dg=0/wt=2/ujg=1/rs=AKrAJMp5Kygr9WeAr4yWxdbfR2W8KBtoJA/ee=EmZ2Bf:zr1jrb;NJ1rfe:yGfSdd;Pjplud:PoEs9b;QGR0gd:Mlhmy;ScI3Yc:e7Hzgb;USPTDe:samWqd;UYRIEb:HzTAQc;Uvc8o:VDovNc;YIZmRd:A1yn5d;cEt90b:ws9Tlc;dIoSBb:SpsfSb;dowIGb:ebZ3mb;eBAeSb:zbML3c;iFQyKf:vfuNJf;lOO0Vd:OTA3Ae;oGtAuc:sOXFj;qQEoOc:KUM7Z;qddgKe:xQtZb;wR5FRb:siKnQd;yxTchf:KUM7Z/dti=1/m=_b?wli=BardChatUi.uYjGpSOGRT8.mediaIntentWasm.O%3A%3B",
+        "file": "public-00.js",
+        "bytes": 172768,
+        "sha256": "a8253fd24b3947cb93a254e0499cff82c877294cf5244643a09106c1c1cea46c",
+        "status": "retained-locally",
+        "redistribution": "Full proprietary bundle not committed to project repository"
+      },
+      {
+        "url": "https://www.gstatic.com/bg3/boq-bard-web/islands/assets/islands-CREb8cyF.js",
+        "file": "public-01.js",
+        "bytes": 3067,
+        "sha256": "17f2d85bee4cbd3ec491a7a897f9d902b852fd333f2d3a787f96b69d751e9b7a",
+        "status": "retained-locally",
+        "redistribution": "Full proprietary bundle not committed to project repository"
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KKRLL9S",
+        "status": "not-collected",
+        "reason": "Third-party telemetry is outside app-script scope"
+      }
+    ]
+  },
+  "rea": {
+    "cli_version": "6.9.0",
+    "summary_evidence_id": "ev_50b43a7cbf7f01f2d80ead7c600dae66b8d9db4a835273ef5745ba37d3c7d37c",
+    "parent_evidence_id": "ev_cbbf14db70f41c1995eeb3bc8ef366ded87b0ca06824df7ffca350e73bd00766",
+    "statistics": {
+      "relevant_files": 2,
+      "nested_asar_containers": 0,
+      "text_bytes_read": 175835,
+      "invalid_utf8_files": 0,
+      "parsed_javascript_files": 2,
+      "skipped_javascript_files": 0,
+      "visited_ast_nodes": 67553,
+      "findings": 78,
+      "modules": 0,
+      "parse_failures": 0
+    },
+    "summary_view_coverage": {
+      "status": "complete-within-view",
+      "examined": 71,
+      "total": 71,
+      "next_offset": null,
+      "exhausted": true
+    },
+    "limitations": [
+      "Alias selection expansion was conservatively bounded (maximum 512 additional selector states); selected paths remain unknown. Semantic alias-selections budget reached: semantic_precision.alias_selections=512 additional selector states (default 512). Increase semantic_precision.alias_selections on the next analysis call (analyze_javascript_application or analyze_web_bundle), or pass --semantic-precision JSON on the CLI; no REA restart is required. Worker memory, transfer and graph-retention limits remain independent. Cyclic or unsupported evaluations remain unknown regardless of budget.",
+      "Boundary extraction covers unshadowed JSON/global coercions plus parse and validation method candidates.",
+      "Child-process extraction covers asynchronous node:child_process creation, literal argv/env/stdio options, exit/error listeners, and kill signals.",
+      "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+      "Configuration extraction covers process.env, process.argv, node:fs reads, and direct logical defaults.",
+      "Event extraction covers EventEmitter-style literal registrations, removals, and dispatch candidates; dynamic names remain unknown.",
+      "Function fingerprints are static candidates; equal digests can remain ambiguous and do not prove behavioral equivalence.",
+      "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+      "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+      "Local data flow does not claim control-flow-sensitive reaching definitions or arbitrary dynamic property resolution.",
+      "Promise ownership covers explicit unshadowed Promise construction, static factories, aggregation, chaining, and await syntax only.",
+      "Request extraction covers fetch, WebSocket, node:http/node:https construction, direct option fields, and exact local response consumers.",
+      "Resource extraction covers built-in filesystem/network acquisition and exact local close/destroy/end handles.",
+      "Semantic node retention reached max_semantic_nodes_per_file is 20000 (default 20000; an integer from 1 to 1000000). Set max_semantic_nodes_per_file on the next analyze_javascript_application call (CLI: --max-semantic-nodes-per-file). The change applies to that next analysis and does not restart the worker or the REA server. Raising it does not raise max_semantic_unknowns, max_heap_mb, transfer ceilings, or the parent result budget. Coverage reports the same effective values as semantic_graph_node_ceiling and semantic_graph_file_node_ceiling.",
+      "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+      "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+      "The semantic graph contains static syntax observations and conservative relationship candidates; it does not claim runtime execution.",
+      "Timer extraction covers global or node:timers scheduling and exact local-handle cancellation.",
+      "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+    ],
+    "local_complete_bundle_sha256": "310a75e0ba92015a975d6db69cae6c77a8b40591f77d070021f8c6a9b6fa7d68",
+    "local_complete_bundle_bytes": 39392083,
+    "complete_bundle_published": false
+  },
+  "craft": {
+    "cli_version": "0.6.1",
+    "evidence_id": "ev_424a18eb46d00114e27ad6ab29e044cefc875a9bc7c14add19b5cb73d7027f3b",
+    "coverage": {
+      "examined": 2,
+      "status": "complete",
+      "total": 2
+    },
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ]
+  },
+  "limits": [
+    "Public unauthenticated HTML and two explicitly referenced initial scripts only; no browser interaction or lazy-loaded chunk crawl.",
+    "Static graph coverage is incomplete, including bounded alias expansion; findings are not confirmed vulnerabilities.",
+    "No model call, account access, conversation access, backend source, model weights, training data or internal instructions were acquired.",
+    "Raw page, inline bootstrap and proprietary bundles remain local; only original observation metadata, hashes and source links are published.",
+    "Related open-source CLI and SDK snapshots are separate products and do not reconstruct the hosted Gemini app."
+  ]
+}

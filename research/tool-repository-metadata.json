@@ -1,0 +1,596 @@
+{
+  "retrieved_date": "2026-11-15",
+  "projects": [
+    {
+      "requested": "zaproxy/zaproxy",
+      "full_name": "zaproxy/zaproxy",
+      "description": "The ZAP by Checkmarx Core project",
+      "homepage": "https://www.zaproxy.org",
+      "default_branch": "main",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-13T17:26:17Z",
+      "html_url": "https://github.com/zaproxy/zaproxy",
+      "clone_url": "https://github.com/zaproxy/zaproxy.git"
+    },
+    {
+      "requested": "projectdiscovery/nuclei",
+      "full_name": "projectdiscovery/nuclei",
+      "description": "Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations.",
+      "homepage": "https://docs.projectdiscovery.io/tools/nuclei",
+      "default_branch": "dev",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-14T21:41:50Z",
+      "html_url": "https://github.com/projectdiscovery/nuclei",
+      "clone_url": "https://github.com/projectdiscovery/nuclei.git"
+    },
+    {
+      "requested": "projectdiscovery/httpx",
+      "full_name": "projectdiscovery/httpx",
+      "description": "httpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library.",
+      "homepage": "https://docs.projectdiscovery.io/tools/httpx",
+      "default_branch": "dev",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-13T22:11:55Z",
+      "html_url": "https://github.com/projectdiscovery/httpx",
+      "clone_url": "https://github.com/projectdiscovery/httpx.git"
+    },
+    {
+      "requested": "projectdiscovery/subfinder",
+      "full_name": "projectdiscovery/subfinder",
+      "description": "Fast passive subdomain enumeration tool.",
+      "homepage": "https://projectdiscovery.io",
+      "default_branch": "dev",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-09T10:29:33Z",
+      "html_url": "https://github.com/projectdiscovery/subfinder",
+      "clone_url": "https://github.com/projectdiscovery/subfinder.git"
+    },
+    {
+      "requested": "owasp-amass/amass",
+      "full_name": "owasp-amass/amass",
+      "description": "In-depth attack surface mapping and asset discovery",
+      "homepage": "https://owasp.org/www-project-amass/",
+      "default_branch": "main",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-15T17:40:16Z",
+      "html_url": "https://github.com/owasp-amass/amass",
+      "clone_url": "https://github.com/owasp-amass/amass.git"
+    },
+    {
+      "requested": "sullo/nikto",
+      "full_name": "sullo/nikto",
+      "description": "Nikto web server scanner",
+      "homepage": "",
+      "default_branch": "main",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-13T14:09:30Z",
+      "html_url": "https://github.com/sullo/nikto",
+      "clone_url": "https://github.com/sullo/nikto.git"
+    },
+    {
+      "requested": "ffuf/ffuf",
+      "full_name": "ffuf/ffuf",
+      "description": "Fast web fuzzer written in Go",
+      "homepage": "",
+      "default_branch": "master",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-09-26T08:58:08Z",
+      "html_url": "https://github.com/ffuf/ffuf",
+      "clone_url": "https://github.com/ffuf/ffuf.git"
+    },
+    {
+      "requested": "OJ/gobuster",
+      "full_name": "OJ/gobuster",
+      "description": "Directory/File, DNS and VHost busting tool written in Go",
+      "homepage": "",
+      "default_branch": "master",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-12T04:02:16Z",
+      "html_url": "https://github.com/OJ/gobuster",
+      "clone_url": "https://github.com/OJ/gobuster.git"
+    },
+    {
+      "requested": "aircrack-ng/aircrack-ng",
+      "full_name": "aircrack-ng/aircrack-ng",
+      "description": "WiFi security auditing tools suite",
+      "homepage": "https://aircrack-ng.org",
+      "default_branch": "master",
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-10-09T16:45:03Z",
+      "html_url": "https://github.com/aircrack-ng/aircrack-ng",
+      "clone_url": "https://github.com/aircrack-ng/aircrack-ng.git"
+    },
+    {
+      "requested": "bettercap/bettercap",
+      "full_name": "bettercap/bettercap",
+      "description": "The Swiss Army knife for 802.11, BLE, HID, CAN-bus, IPv4 and IPv6 networks reconnaissance and MITM attacks.",
+      "homepage": "https://www.bettercap.org/",
+      "default_branch": "master",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-10T16:00:13Z",
+      "html_url": "https://github.com/bettercap/bettercap",
+      "clone_url": "https://github.com/bettercap/bettercap.git"
+    },
+    {
+      "requested": "mitmproxy/mitmproxy",
+      "full_name": "mitmproxy/mitmproxy",
+      "description": "An interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.",
+      "homepage": "https://mitmproxy.org",
+      "default_branch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-14T23:27:21Z",
+      "html_url": "https://github.com/mitmproxy/mitmproxy",
+      "clone_url": "https://github.com/mitmproxy/mitmproxy.git"
+    },
+    {
+      "requested": "zeek/zeek",
+      "full_name": "zeek/zeek",
+      "description": "Zeek is a powerful network analysis framework that is much different from the typical IDS you may know.",
+      "homepage": "https://www.zeek.org",
+      "default_branch": "master",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-15T00:04:18Z",
+      "html_url": "https://github.com/zeek/zeek",
+      "clone_url": "https://github.com/zeek/zeek.git"
+    },
+    {
+      "requested": "OISF/suricata",
+      "full_name": "OISF/suricata",
+      "description": "Suricata is a network Intrusion Detection System, Intrusion Prevention System and Network Security Monitoring engine developed by the OISF and the Suricata community.",
+      "homepage": "https://suricata.io",
+      "default_branch": "main",
+      "license": {
+        "key": "gpl-2.0",
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "node_id": "MDc6TGljZW5zZTg="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-12T06:33:33Z",
+      "html_url": "https://github.com/OISF/suricata",
+      "clone_url": "https://github.com/OISF/suricata.git"
+    },
+    {
+      "requested": "aquasecurity/trivy",
+      "full_name": "aquasecurity/trivy",
+      "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
+      "homepage": "https://trivy.dev",
+      "default_branch": "main",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-14T05:39:21Z",
+      "html_url": "https://github.com/aquasecurity/trivy",
+      "clone_url": "https://github.com/aquasecurity/trivy.git"
+    },
+    {
+      "requested": "anchore/syft",
+      "full_name": "anchore/syft",
+      "description": "CLI tool and library for generating a Software Bill of Materials from container images and filesystems",
+      "homepage": "",
+      "default_branch": "main",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-14T10:48:26Z",
+      "html_url": "https://github.com/anchore/syft",
+      "clone_url": "https://github.com/anchore/syft.git"
+    },
+    {
+      "requested": "semgrep/semgrep",
+      "full_name": "semgrep/semgrep",
+      "description": "Lightweight static analysis for many languages. Find bug variants with patterns that look like source code.",
+      "homepage": "https://semgrep.dev",
+      "default_branch": "develop",
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-13T00:03:04Z",
+      "html_url": "https://github.com/semgrep/semgrep",
+      "clone_url": "https://github.com/semgrep/semgrep.git"
+    },
+    {
+      "requested": "trufflesecurity/trufflehog",
+      "full_name": "trufflesecurity/trufflehog",
+      "description": "Find, verify, and analyze leaked credentials",
+      "homepage": "https://trufflesecurity.com",
+      "default_branch": "main",
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-14T11:07:54Z",
+      "html_url": "https://github.com/trufflesecurity/trufflehog",
+      "clone_url": "https://github.com/trufflesecurity/trufflehog.git"
+    },
+    {
+      "requested": "gitleaks/gitleaks",
+      "full_name": "gitleaks/gitleaks",
+      "description": "Find secrets with Gitleaks 🔑",
+      "homepage": "https://gitleaks.io",
+      "default_branch": "master",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-10-28T04:14:29Z",
+      "html_url": "https://github.com/gitleaks/gitleaks",
+      "clone_url": "https://github.com/gitleaks/gitleaks.git"
+    },
+    {
+      "requested": "osquery/osquery",
+      "full_name": "osquery/osquery",
+      "description": "SQL powered operating system instrumentation, monitoring, and analytics.",
+      "homepage": "https://osquery.io",
+      "default_branch": "master",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-12T21:17:43Z",
+      "html_url": "https://github.com/osquery/osquery",
+      "clone_url": "https://github.com/osquery/osquery.git"
+    },
+    {
+      "requested": "Velocidex/velociraptor",
+      "full_name": "Velocidex/velociraptor",
+      "description": "Digging Deeper....",
+      "homepage": "https://docs.velociraptor.app/",
+      "default_branch": "master",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-15T05:44:35Z",
+      "html_url": "https://github.com/Velocidex/velociraptor",
+      "clone_url": "https://github.com/Velocidex/velociraptor.git"
+    },
+    {
+      "requested": "DefectDojo/django-DefectDojo",
+      "full_name": "DefectDojo/django-DefectDojo",
+      "description": "Open-Source Unified Vulnerability Management, DevSecOps & ASPM",
+      "homepage": "https://defectdojo.com",
+      "default_branch": "master",
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-15T17:46:40Z",
+      "html_url": "https://github.com/DefectDojo/django-DefectDojo",
+      "clone_url": "https://github.com/DefectDojo/django-DefectDojo.git"
+    },
+    {
+      "requested": "redcanaryco/atomic-red-team",
+      "full_name": "redcanaryco/atomic-red-team",
+      "description": "Small and highly portable detection tests based on MITRE's ATT&CK.",
+      "homepage": "",
+      "default_branch": "master",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-09T11:15:26Z",
+      "html_url": "https://github.com/redcanaryco/atomic-red-team",
+      "clone_url": "https://github.com/redcanaryco/atomic-red-team.git"
+    },
+    {
+      "requested": "SpecterOps/BloodHound",
+      "full_name": "SpecterOps/BloodHound",
+      "description": "Six Degrees of Domain Admin",
+      "homepage": "https://specterops.io/bloodhound-enterprise/",
+      "default_branch": "main",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-14T04:24:44Z",
+      "html_url": "https://github.com/SpecterOps/BloodHound",
+      "clone_url": "https://github.com/SpecterOps/BloodHound.git"
+    },
+    {
+      "requested": "fortra/impacket",
+      "full_name": "fortra/impacket",
+      "description": "Impacket is a collection of Python classes for working with network protocols.",
+      "homepage": "https://www.coresecurity.com",
+      "default_branch": "master",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-11T12:57:09Z",
+      "html_url": "https://github.com/fortra/impacket",
+      "clone_url": "https://github.com/fortra/impacket.git"
+    },
+    {
+      "requested": "rapid7/metasploit-framework",
+      "full_name": "rapid7/metasploit-framework",
+      "description": "Metasploit Framework",
+      "homepage": "https://www.metasploit.com/",
+      "default_branch": "master",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-13T17:51:05Z",
+      "html_url": "https://github.com/rapid7/metasploit-framework",
+      "clone_url": "https://github.com/rapid7/metasploit-framework.git"
+    },
+    {
+      "requested": "apache/caldera",
+      "full_name": "apache/caldera",
+      "description": "Automated Adversary Emulation Platform",
+      "homepage": "https://caldera.apache.org/",
+      "default_branch": "master",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-10-12T19:16:34Z",
+      "html_url": "https://github.com/apache/caldera",
+      "clone_url": "https://github.com/apache/caldera.git"
+    },
+    {
+      "requested": "RustScan/RustScan",
+      "full_name": "bee-san/RustScan",
+      "description": "🤖 The Modern Port Scanner 🤖",
+      "homepage": "",
+      "default_branch": "master",
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-04T09:29:27Z",
+      "html_url": "https://github.com/bee-san/RustScan",
+      "clone_url": "https://github.com/bee-san/RustScan.git"
+    },
+    {
+      "requested": "google-gemini/gemini-cli",
+      "full_name": "google-gemini/gemini-cli",
+      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "homepage": "https://geminicli.com",
+      "default_branch": "main",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-15T01:12:38Z",
+      "html_url": "https://github.com/google-gemini/gemini-cli",
+      "clone_url": "https://github.com/google-gemini/gemini-cli.git"
+    },
+    {
+      "requested": "googleapis/js-genai",
+      "full_name": "googleapis/js-genai",
+      "description": "TypeScript/JavaScript SDK for Gemini and Vertex AI.",
+      "homepage": "https://googleapis.github.io/js-genai/",
+      "default_branch": "main",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "archived": false,
+      "disabled": false,
+      "fork": false,
+      "pushed_at": "2026-11-15T15:10:39Z",
+      "html_url": "https://github.com/googleapis/js-genai",
+      "clone_url": "https://github.com/googleapis/js-genai.git"
+    }
+  ],
+  "failures": [],
+  "redirects": [
+    {
+      "requested": "RustScan/RustScan",
+      "canonical": "bee-san/RustScan"
+    },
+    {
+      "requested": "mitre/caldera",
+      "canonical": "apache/caldera"
+    }
+  ]
+}

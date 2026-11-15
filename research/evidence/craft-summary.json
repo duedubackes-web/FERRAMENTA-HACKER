@@ -166,5 +166,249 @@
     ],
     "source_id": "john",
     "archive_sha256": "2f9f3fb793c34296132289ab3bdef8786ba35e5fa97ca10bcf624e42abf95a1f"
+  },
+  {
+    "id": "ev_e748d5e806b8edef37f9dedf0ad9f5ac232a4154f19d4ca6f92b6c7730742fa0",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 2301,
+      "status": "complete",
+      "total": 2301
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "zaproxy-17c25b45ad0f.zip (zip) holds 2301 files in 2301 entries; 1 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "zaproxy",
+    "archive_sha256": "980685159c4df5090cd23c11fe3e49f66b40131fc882430d790c955f1feb5710"
+  },
+  {
+    "id": "ev_1f1887de5524f99a2e788e5e72f20a77fcd2ac91a912e6e0b328f5526278b89b",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 1559,
+      "status": "complete",
+      "total": 1559
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "nuclei-fe3421e77f96.zip (zip) holds 1559 files in 1559 entries; 0 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "nuclei",
+    "archive_sha256": "b3cce3a939e5ec7c672c1eeafad4a02c077c90ce00a8a0e018fcf89e45e6ee9d"
+  },
+  {
+    "id": "ev_efc00692823da8d7e6d6b3c43d7cccc0ff8a3f47e523dee2e9cadfd0fce232b6",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 1358,
+      "status": "complete",
+      "total": 1358
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "mitmproxy-f7701d5f6b69.zip (zip) holds 1358 files in 1358 entries; 2 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "mitmproxy",
+    "archive_sha256": "535a15811bccd804a64be6b52a01a6032ac01619979fc8ac0db507292f426c09"
+  },
+  {
+    "id": "ev_5467c56671149d86279f3be1cf43a946a147581fc90b1a1d268f60cad2e5654e",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 725,
+      "status": "complete",
+      "total": 725
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "aircrack-ng-7e2256f38f35.zip (zip) holds 725 files in 725 entries; 0 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "aircrack-ng",
+    "archive_sha256": "195274d2bb84be6c9fc99003f72eb1d368b3f785ba80ef0415c995ba3e264825"
+  },
+  {
+    "id": "ev_d028cee1e45c925278f30f199ec4c8eaa8436cf4c53856676deb5a451d066351",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 13904,
+      "status": "complete",
+      "total": 13904
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "zeek-f98a92789a56.zip (zip) holds 13904 files in 13904 entries; 35 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "zeek",
+    "archive_sha256": "b5fe53d9cf393373466376aab9ae093de72a44b423b0e5961c52bd64535ebdd6"
+  },
+  {
+    "id": "ev_4d12beb96e064fb5a45082f30abf1cee638daeb3f331af4a0cf489f37a2de1cf",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 4039,
+      "status": "partial",
+      "total": 4039
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "trivy-239be7b2671a.zip (zip) holds 3969 files in 4039 entries; 26 nested container(s).",
+    "limitations": [
+      {
+        "code": "nested_not_opened",
+        "message": "22 nested archive(s) were not opened (depth or size limit; each entry's note says which); raise max_depth to open deeper ones."
+      },
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "trivy",
+    "archive_sha256": "8f954c51bfe7f41facec175b872e87d975e169646b47db7c61df104778771ef7"
+  },
+  {
+    "id": "ev_28d82957677c5bd9d90a344f8488d210c3b248c93496f23a73a3a89cf0e13949",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 9061,
+      "status": "complete",
+      "total": 9061
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "defectdojo-f6cee25f3e0f.zip (zip) holds 9047 files in 9061 entries; 27 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "defectdojo",
+    "archive_sha256": "b2de23dae76a71bb6679ab8c11eba6d13669998bed0b957f0029b17de2543524"
+  },
+  {
+    "id": "ev_925e108a9674b38b371621081d057b3623f4aa10a097740a9098cbf058f32d11",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 390,
+      "status": "complete",
+      "total": 390
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "caldera-cb8d6a8160e0.zip (zip) holds 390 files in 390 entries; 0 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "caldera",
+    "archive_sha256": "0d596925f4693f3fdae4577795def14fa7052316ca6aed665bd24ec0a8752f16"
+  },
+  {
+    "id": "ev_41addad5cc4fd69a4cfcbca94a08f3babc8428511a8786c924337c979ca25f37",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 3057,
+      "status": "complete",
+      "total": 3057
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "gemini-cli-4ed06ed0ddc5.zip (zip) holds 3057 files in 3057 entries; 0 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "gemini-cli",
+    "archive_sha256": "37a90e9aef7d851a7072589b1921679e696b973bd6769742aa310f0aac46da42"
+  },
+  {
+    "id": "ev_2a6330169d72fa4fb1de65c3aaa96b0454c41269fa16d50a563e15fbcd2caea8",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 972,
+      "status": "complete",
+      "total": 972
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "google-genai-js-4e849b1434ba.zip (zip) holds 972 files in 972 entries; 0 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "google-genai-js",
+    "archive_sha256": "951fa71a84980d6d92c33ae55a44c97ee13adeacd92934bcaad436603523e76a"
   }
 ]

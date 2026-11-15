@@ -36,3 +36,13 @@
 - Os 2.128 caminhos John coincidiram entre o inventário próprio, Craft e REA. Os hashes do Craft coincidiram para todas as entradas; REA conferiu 2.126 arquivos regulares e não atribuiu hashes aos dois links simbólicos.
 - Catálogo do fonte: 380 arquivos com correspondências, 404 definições textuais de estruturas e 366 definições de labels literais; sem avaliação de pré-processador ou suporte real de builds.
 - A revisão semântica foi seletiva. John não foi compilado ou executado, e não foram realizados benchmarks ou tentativas de quebra de senhas.
+
+
+## Catálogo ampliado e Gemini
+
+- 39 testes locais passaram, incluindo filtros por categoria/acentos/aliases, referências reais ao lock e preservação de alternativas e restrições dos pacotes Kali.
+- As consultas CLI `catalog --query gemini`, `catalog --query "red team"` e `packages --query nmap` retornaram respectivamente 3, 2 e 2 registros no recorte atual.
+- O verificador conferiu os 19 ZIPs locais e seus arquivos rastreados; 45 gitlinks não baixados permanecem explícitos. O total é 59.740 entradas, com 59.695 entradas de arquivo verificadas nos ZIPs.
+- Craft/REA corroboraram caminhos raiz e todos os hashes disponíveis das oito novas árvores de segurança. Trivy manteve cobertura parcial de conteúdo aninhado; entradas sem hash no REA não foram tratadas como verificadas.
+- No Gemini público: HTTP 200 sem autenticação, dois scripts iniciais inventariados e analisados como texto; alias expansion e grafo estático com lacunas explícitas.
+- Os testes são da base própria. Nenhum teste dos novos motores de pentest, agente Gemini, chamada de modelo ou operação de intrusão foi executado.

@@ -79,3 +79,13 @@ Os conjuntos de caminhos coincidiram. Os 2.128 hashes do Craft coincidiram com o
 A síntese explicita essa lacuna mesmo com a cobertura global declarada como completa para entradas do contêiner.
 Resultados integrais: `research/evidence/craft-john.json.gz` e `rea-john-artifact.json.gz`. Corroboração: `john-inventory-crosscheck.json`.
 O mapa de arquitetura vem de leitura normal do fonte, conforme a orientação REA para repositórios completos. Consulte `JOHN-THE-RIPPER.md` para escopo e IDs.
+
+
+## Ampliação de catálogo, snapshots e Gemini
+
+Craft Anything 0.6.1 inventariou dez novos ZIPs: oito projetos de segurança, Gemini CLI e Google Gen AI SDK.
+Os ZIPs de segurança também passaram por REA 6.9.0 `inspect-artifact`, com `artifact-limits.expanded_bytes=1073741824`. Craft usou profundidade 1, limite total de 50.000 entradas, página de até 20.000 e orçamento de 1 GiB para os oito projetos.
+O inventário Craft de Trivy é parcial para arquivos aninhados não abertos; os demais estados e lacunas por entrada estão em `research/evidence/expanded-inventory-crosschecks.json`.
+Para os dois ZIPs relacionados a Gemini, Craft usou o mesmo orçamento, até 20.000 entradas e profundidade 1; isso não analisa o serviço hospedado.
+REA e Craft também leram dois scripts públicos iniciais referenciados pelo HTML Gemini, sem executar esses scripts. A evidência REA completa do material proprietário permanece local; a síntese publicada guarda estatísticas, hashes e limitações.
+A separação entre inspeção do ZIP, leitura seletiva de fonte e observação pública do app está detalhada em `CATALOGO-FERRAMENTAS.md` e `GEMINI.md`.

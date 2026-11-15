@@ -1,0 +1,80 @@
+{
+  "evidence_id": "ev_a1e47567836368895001605c424b714f69a73761eb53f447de1fe3267f4db9b8",
+  "subject": {
+    "name": "trivy-239be7b2671a.zip",
+    "digest": {
+      "sha256": "8f954c51bfe7f41facec175b872e87d975e169646b47db7c61df104778771ef7"
+    },
+    "local_path": "/workspace/output/source-snapshots/trivy-239be7b2671a.zip",
+    "format": "zip",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-artifact-graph",
+    "name": "REA safe artifact graph provider",
+    "version": "1"
+  },
+  "operation": "inspect_artifact",
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "limitations": [
+    "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+    "ZIP inventory lists central-directory entries only. Non-entry bytes, including leading bytes before the first entry such as a self-extractor stub, an APK Signing Block before the central directory or a ZIP comment after it, are not occurrences."
+  ],
+  "evidence_links": [
+    "ev_82417d60b49ab122022e7ad21fdf9dab5f62f36404a6be054a81cc1f4f55e2c0"
+  ],
+  "cli_version": "6.9.0",
+  "coverage": {
+    "status": "complete-within-substeps",
+    "substeps_completed": 1,
+    "observations_retained": 1,
+    "observations_omitted": 0,
+    "hypotheses_retained": 0,
+    "hypotheses_omitted": 0,
+    "unexplored_branches_retained": 0,
+    "unexplored_branches_omitted": 0,
+    "next_probes_retained": 0,
+    "next_probes_omitted": 0
+  },
+  "inventory_manifest": {
+    "manifest_id": "agm_1195264853477dc60105ce991d2a3bf85c675bf312c24357d6ca76601e33dfea",
+    "root_artifact_id": "art_d1d8cceda208a8e54890c000cbe2067cd57254bb0488eac277800c037862c381",
+    "root_sha256": "8f954c51bfe7f41facec175b872e87d975e169646b47db7c61df104778771ef7",
+    "root_format": "zip",
+    "graph_sha256": "78bd173a0e996cc2111071cba122f46cce16e7a081bfb60b35863e1767205739",
+    "node_count": 3277,
+    "occurrence_count": 3455,
+    "edge_count": 3451
+  },
+  "inventory_coverage": {
+    "scope": "container-entries",
+    "status": "complete"
+  },
+  "unhashed_root_entries": [
+    {
+      "logical_path": "pkg/fanal/analyzer/language/golang/binary/testdata/symlink",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    },
+    {
+      "logical_path": "pkg/fanal/analyzer/language/rust/binary/testdata/symlink",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    },
+    {
+      "logical_path": "pkg/fanal/walker/testdata/fs/sym.txt",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    }
+  ]
+}

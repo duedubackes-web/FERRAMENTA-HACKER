@@ -1,0 +1,88 @@
+{
+  "evidence_id": "ev_4045e66efb5bba7a1fa791003a87c0dbca082eeddfdd8848717dc483a9e0f190",
+  "subject": {
+    "name": "defectdojo-f6cee25f3e0f.zip",
+    "digest": {
+      "sha256": "b2de23dae76a71bb6679ab8c11eba6d13669998bed0b957f0029b17de2543524"
+    },
+    "local_path": "/workspace/output/source-snapshots/defectdojo-f6cee25f3e0f.zip",
+    "format": "zip",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-artifact-graph",
+    "name": "REA safe artifact graph provider",
+    "version": "1"
+  },
+  "operation": "inspect_artifact",
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "limitations": [
+    "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+    "ZIP inventory lists central-directory entries only. Non-entry bytes, including leading bytes before the first entry such as a self-extractor stub, an APK Signing Block before the central directory or a ZIP comment after it, are not occurrences."
+  ],
+  "evidence_links": [
+    "ev_d04124319cff8eac1642e1807f976fac42bb02362081a8d224113f5a48384d72"
+  ],
+  "cli_version": "6.9.0",
+  "coverage": {
+    "status": "complete-within-substeps",
+    "substeps_completed": 1,
+    "observations_retained": 1,
+    "observations_omitted": 0,
+    "hypotheses_retained": 0,
+    "hypotheses_omitted": 0,
+    "unexplored_branches_retained": 0,
+    "unexplored_branches_omitted": 0,
+    "next_probes_retained": 0,
+    "next_probes_omitted": 0
+  },
+  "inventory_manifest": {
+    "manifest_id": "agm_d872d750db65d97da452b92784a27c6f12c33e3e3b49f10687ac37fe5c242405",
+    "root_artifact_id": "art_abcb39bd0aa943121378bfb41255c72f1b750e1a9c23aec9f6330302d67f2741",
+    "root_sha256": "b2de23dae76a71bb6679ab8c11eba6d13669998bed0b957f0029b17de2543524",
+    "root_format": "zip",
+    "graph_sha256": "28a5ba1e9a1cf0b214a9806126c4e02f459ece7843107d01333aae265ac9078a",
+    "node_count": 8195,
+    "occurrence_count": 8747,
+    "edge_count": 8742
+  },
+  "inventory_coverage": {
+    "scope": "container-entries",
+    "status": "complete"
+  },
+  "unhashed_root_entries": [
+    {
+      "logical_path": "dojo/notifications/templates/notifications/mail/scan_added_empty.tpl",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    },
+    {
+      "logical_path": "dojo/notifications/templates/notifications/msteams/scan_added_empty.tpl",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    },
+    {
+      "logical_path": "dojo/notifications/templates/notifications/slack/scan_added_empty.tpl",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    },
+    {
+      "logical_path": "dojo/notifications/templates/notifications/webhooks/scan_added_empty.tpl",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "evidence_id": "ev_1740e2388948df69a3cdddd717a10e68f1d51ffd0afc29b9966cc0172ec158ad",
+  "subject": {
+    "name": "zaproxy-17c25b45ad0f.zip",
+    "digest": {
+      "sha256": "980685159c4df5090cd23c11fe3e49f66b40131fc882430d790c955f1feb5710"
+    },
+    "local_path": "/workspace/output/source-snapshots/zaproxy-17c25b45ad0f.zip",
+    "format": "zip",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-artifact-graph",
+    "name": "REA safe artifact graph provider",
+    "version": "1"
+  },
+  "operation": "inspect_artifact",
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "limitations": [
+    "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+    "ZIP inventory lists central-directory entries only. Non-entry bytes, including leading bytes before the first entry such as a self-extractor stub, an APK Signing Block before the central directory or a ZIP comment after it, are not occurrences."
+  ],
+  "evidence_links": [
+    "ev_4a08c68a5a2e7442f57a6b66f5eeed41dc8284dcfb30c00d5385506dcf6bde88"
+  ],
+  "cli_version": "6.9.0",
+  "coverage": {
+    "status": "complete-within-substeps",
+    "substeps_completed": 1,
+    "observations_retained": 1,
+    "observations_omitted": 0,
+    "hypotheses_retained": 0,
+    "hypotheses_omitted": 0,
+    "unexplored_branches_retained": 0,
+    "unexplored_branches_omitted": 0,
+    "next_probes_retained": 0,
+    "next_probes_omitted": 0
+  },
+  "inventory_manifest": {
+    "manifest_id": "agm_0ac837829f03ee27e18a230110b610562408db726e3e9619a69ea77c6ab04243",
+    "root_artifact_id": "art_53c648ea4807f03471070bb805942965ac61e4f42ee954f20d7b07a5b46b799b",
+    "root_sha256": "980685159c4df5090cd23c11fe3e49f66b40131fc882430d790c955f1feb5710",
+    "root_format": "zip",
+    "graph_sha256": "731431f81811928aec003d053df3337711021e762e1c7ed779bddc69d5ae438b",
+    "node_count": 2259,
+    "occurrence_count": 2269,
+    "edge_count": 2268
+  },
+  "inventory_coverage": {
+    "scope": "container-entries",
+    "status": "complete"
+  },
+  "unhashed_root_entries": []
+}

@@ -1,0 +1,104 @@
+{
+  "evidence_id": "ev_25c7c533ee780483f6f126a4eac7c941d54a7b47b78238c6d48aef99ac20e102",
+  "subject": {
+    "name": "zeek-f98a92789a56.zip",
+    "digest": {
+      "sha256": "b5fe53d9cf393373466376aab9ae093de72a44b423b0e5961c52bd64535ebdd6"
+    },
+    "local_path": "/workspace/output/source-snapshots/zeek-f98a92789a56.zip",
+    "format": "zip",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-artifact-graph",
+    "name": "REA safe artifact graph provider",
+    "version": "1"
+  },
+  "operation": "inspect_artifact",
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "limitations": [
+    "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+    "ZIP inventory lists central-directory entries only. Non-entry bytes, including leading bytes before the first entry such as a self-extractor stub, an APK Signing Block before the central directory or a ZIP comment after it, are not occurrences."
+  ],
+  "evidence_links": [
+    "ev_d00e18aa26089c1a37998994acbe5b9cf3b41930f7adb53b13611fc9efae400e"
+  ],
+  "cli_version": "6.9.0",
+  "coverage": {
+    "status": "complete-within-substeps",
+    "substeps_completed": 1,
+    "observations_retained": 1,
+    "observations_omitted": 0,
+    "hypotheses_retained": 0,
+    "hypotheses_omitted": 0,
+    "unexplored_branches_retained": 0,
+    "unexplored_branches_omitted": 0,
+    "next_probes_retained": 0,
+    "next_probes_omitted": 0
+  },
+  "inventory_manifest": {
+    "manifest_id": "agm_9fabadb3dc77e69a0734df07b08fb97244b34b16a2702f0a47315c30d9f1c951",
+    "root_artifact_id": "art_3d2b072c8f4b9c312b26f6d8786352368d6f85981d64088ce2109b90df259be9",
+    "root_sha256": "b5fe53d9cf393373466376aab9ae093de72a44b423b0e5961c52bd64535ebdd6",
+    "root_format": "zip",
+    "graph_sha256": "12f5a15ce6a953d0239f3f873564a26c64d3f4cc74b71c40132d3dbbe03e5178",
+    "node_count": 11072,
+    "occurrence_count": 12244,
+    "edge_count": 12237
+  },
+  "inventory_coverage": {
+    "scope": "container-entries",
+    "status": "complete"
+  },
+  "unhashed_root_entries": [
+    {
+      "logical_path": "INSTALL",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    },
+    {
+      "logical_path": "README",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    },
+    {
+      "logical_path": "doc/README",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    },
+    {
+      "logical_path": "testing/external/scripts/external-ca-list.zeek",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    },
+    {
+      "logical_path": "testing/external/scripts/external-ct-list.zeek",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    },
+    {
+      "logical_path": "zeek-path-dev.in",
+      "entry_kind": "symlink",
+      "hash_status": "not-hashed",
+      "limitations": [
+        "Archive symlink target was not read."
+      ]
+    }
+  ]
+}

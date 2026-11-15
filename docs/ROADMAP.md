@@ -74,3 +74,18 @@ Use `.github/ISSUE_TEMPLATE/work-item.yml` para converter cada item em uma taref
 - [ ] Registrar capacidades observadas de builds específicos em laboratório próprio, separadas das declarações estáticas.
 - [ ] Definir contrato de importação de resultados agregados/sanitizados de auditoria, com proveniência e minimização dos dados necessários.
 - [ ] Medir custo, utilidade e compatibilidade de uma eventual integração após definir escopo, plataforma e modelo de distribuição.
+
+
+## Catálogo amplo e Google Gemini — 15/11/2026
+
+- [x] Verificar endereços e reter metadados de 29 repositórios adicionais para o diretório de pesquisa; preservar fontes já fixadas.
+- [x] Organizar 38 projetos em categorias e distinguir registro de catálogo, fonte indexada e evidência de execução limitada.
+- [x] Coletar oito árvores adicionais de segurança e dois projetos abertos relacionados ao Gemini, sem executar os motores.
+- [x] Aplicar REA/Craft aos snapshots e aos dois scripts iniciais públicos do app Gemini, preservando cobertura parcial e lacunas.
+- [x] Gerar índice de 409 candidatos diretamente declarados em 29 perfis kali-tools-*, sem resolver ou instalar dependências.
+- [x] Adicionar busca offline por categoria/aliases e consultas ao índice de pacotes, com testes.
+- [x] Separar Gemini web, CLI e SDK; publicar observações e hashes sem republicar bundles proprietários ou bootstrap de sessão.
+- [ ] Revisar componentes e dependências dos projetos selecionados antes de qualquer incorporação ou distribuição de motores.
+- [ ] Priorizar os próximos adaptadores de importação de relatórios, usando formatos documentados de Trivy, ZAP e outros produtores.
+- [ ] Validar com usuários o valor de busca fundamentada e comparação de evidências; uma interface conversacional permanece proposta, sem integração de modelos.
+- [ ] Definir corpus de tarefas e critérios antes de avaliar funcionalidades interativas de assistentes de IA.

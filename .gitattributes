@@ -3,3 +3,5 @@
 # Captured source is evidence; preserve its original whitespace.
 research/web/** -whitespace
 third_party/notices/** -whitespace
+# Original license headings contain seven equals signs, not merge conflicts.
+third_party/notices/defectdojo/NOTICE conflict-marker-size=32

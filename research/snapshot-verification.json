@@ -70,5 +70,85 @@
     "unfetched_gitlinks": 0,
     "archive_sha256_verified": true,
     "per_entry_sha256_verified": true
+  },
+  {
+    "source": "zaproxy",
+    "source_commit": "17c25b45ad0f79631ae8d611a6fa647275aa131b",
+    "checked_files": 2268,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "nuclei",
+    "source_commit": "fe3421e77f96f8081c39105b12b82789b59b9006",
+    "checked_files": 1559,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "mitmproxy",
+    "source_commit": "f7701d5f6b69e103bcc4995a641447ae70574e99",
+    "checked_files": 1291,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "aircrack-ng",
+    "source_commit": "7e2256f38f3590af4c19a6ae14ed79bab02242e6",
+    "checked_files": 725,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "zeek",
+    "source_commit": "f98a92789a560b77d57aa27e625c6a7bdf85ecee",
+    "checked_files": 12243,
+    "unfetched_gitlinks": 24,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "trivy",
+    "source_commit": "239be7b2671a3c9706bbfec2ba4677210cbdcdec",
+    "checked_files": 3454,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "defectdojo",
+    "source_commit": "f6cee25f3e0fca85c8ccfc6e3764a4e69a2f0c0f",
+    "checked_files": 8746,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "caldera",
+    "source_commit": "cb8d6a8160e0f4990af323a7c071d5e8482b42c7",
+    "checked_files": 390,
+    "unfetched_gitlinks": 16,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "gemini-cli",
+    "source_commit": "4ed06ed0ddc523a6d356a4ad35ddfea331041888",
+    "checked_files": 3057,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "google-genai-js",
+    "source_commit": "4e849b1434ba0c7dbb3a49e35ca31d5d689b2af4",
+    "checked_files": 972,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
   }
 ]

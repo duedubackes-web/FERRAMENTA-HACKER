@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Offline inventory and integrity CLI. Never executes collected software."""
+"""Offline research catalogs, artifact integrity and local report workflows. Never executes collected engines."""
 from __future__ import annotations
 
 import argparse
@@ -73,6 +73,13 @@ def main(argv=None) -> int:
     compare.add_argument('after', type=Path)
     compare.add_argument('--output', type=Path, help='Create a comparison JSON file')
     compare.add_argument('--html', type=Path, help='Create an offline HTML report')
+    catalog = commands.add_parser('catalog', help='Search retained project metadata, categories and source-review status')
+    catalog.add_argument('--query', default='')
+    catalog.add_argument('--category')
+    catalog.add_argument('--source-indexed', action='store_true')
+    packages = commands.add_parser('packages', help='Search direct package candidates declared in Kali tools profiles')
+    packages.add_argument('--query', default='')
+    packages.add_argument('--profile')
     args = parser.parse_args(argv)
     try:
         if args.command == 'verify':
@@ -112,6 +119,14 @@ def main(argv=None) -> int:
                     stream.write(render_html(report))
             if args.output:
                 print(f'Compared {report["summary"]["matched_hosts"]} host pairs; {report["summary"]["changes"]} recorded differences')
+        elif args.command == 'catalog':
+            from research_catalog import filter_tools
+            data = json.loads((ROOT/'research/tool-catalog.json').read_text())
+            print(json.dumps(filter_tools(data, args.query, args.category, args.source_indexed), ensure_ascii=False, indent=2))
+        elif args.command == 'packages':
+            from research_catalog import filter_packages
+            data = json.loads((ROOT/'research/kali-tool-package-index.json').read_text())
+            print(json.dumps(filter_packages(data, args.query, args.profile), ensure_ascii=False, indent=2))
         else:
             count = 0
             for row in inventory(ROOT, args.source):

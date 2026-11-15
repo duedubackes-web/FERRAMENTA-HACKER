@@ -69,3 +69,11 @@ A leitura seletiva do John identificou um contrato de formato versionado (`FMT_M
 Esses pontos reforçam a separação entre contrato do adaptador, registro de módulos e estado de execução na arquitetura própria.
 O catálogo lexical da pesquisa guarda declarações do fonte; um futuro catálogo de capacidades de runtime deverá registrar build, plataforma e evidências de observação separadamente.
 Nenhum algoritmo do John, motor de processamento de senhas ou integração de execução foi incorporado nesta etapa. Os detalhes e fontes estão em `JOHN-THE-RIPPER.md`.
+
+
+## Diretório e pesquisa de assistentes
+
+`research_catalog` oferece buscas locais sobre metadados retidos e candidatos de pacotes. O gerador lê curadoria, metadados e lock; o catálogo não é um executor de ferramentas.
+A implementação preserva a diferença entre fonte coletada e capacidade observada, incluindo gitlinks ausentes e análises parciais.
+As fontes selecionadas fornecem referências de contratos de extensões, representação de fluxos, relatórios e importação; não houve incorporação de seus motores.
+A pesquisa Gemini diferencia a observação pública do app dos componentes abertos CLI/SDK. Uma futura camada conversacional deve consumir evidências e adaptadores documentados; não está implementada nesta etapa.

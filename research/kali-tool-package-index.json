@@ -1,0 +1,6227 @@
+{
+  "schema_version": 1,
+  "source": {
+    "source_id": "kali-meta",
+    "commit": "6af96b4cbc8d1741a8bf859886f1324639175cab",
+    "path": "debian/control"
+  },
+  "scope": "Direct dependency candidates declared in kali-tools-* profiles; alternatives and constraints are retained. No APT resolution, installation or transitive dependency closure.",
+  "profiles": [
+    "kali-tools-802-11",
+    "kali-tools-bluetooth",
+    "kali-tools-crypto-stego",
+    "kali-tools-database",
+    "kali-tools-detect",
+    "kali-tools-exploitation",
+    "kali-tools-forensics",
+    "kali-tools-fuzzing",
+    "kali-tools-gpu",
+    "kali-tools-hardware",
+    "kali-tools-identify",
+    "kali-tools-information-gathering",
+    "kali-tools-passwords",
+    "kali-tools-post-exploitation",
+    "kali-tools-protect",
+    "kali-tools-recover",
+    "kali-tools-reporting",
+    "kali-tools-respond",
+    "kali-tools-reverse-engineering",
+    "kali-tools-rfid",
+    "kali-tools-sdr",
+    "kali-tools-sniffing-spoofing",
+    "kali-tools-social-engineering",
+    "kali-tools-top10",
+    "kali-tools-voip",
+    "kali-tools-vulnerability",
+    "kali-tools-web",
+    "kali-tools-windows-resources",
+    "kali-tools-wireless"
+  ],
+  "count": 409,
+  "packages": [
+    {
+      "name": "0trace",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "0trace",
+          "alternative": "0trace",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "7zip",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "7zip",
+          "alternative": "7zip",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "above",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "above",
+          "alternative": "above",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "aesfix",
+      "declarations": [
+        {
+          "profile": "kali-tools-crypto-stego",
+          "field": "Depends",
+          "clause": "aesfix",
+          "alternative": "aesfix",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "aeskeyfind",
+      "declarations": [
+        {
+          "profile": "kali-tools-crypto-stego",
+          "field": "Depends",
+          "clause": "aeskeyfind [amd64 i386]",
+          "alternative": "aeskeyfind [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "afflib-tools",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "afflib-tools",
+          "alternative": "afflib-tools",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "afl++",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "afl++",
+          "alternative": "afl++",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-fuzzing",
+          "field": "Depends",
+          "clause": "afl++",
+          "alternative": "afl++",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "aircrack-ng",
+      "declarations": [
+        {
+          "profile": "kali-tools-top10",
+          "field": "Depends",
+          "clause": "aircrack-ng",
+          "alternative": "aircrack-ng",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "aircrack-ng",
+          "alternative": "aircrack-ng",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "airgeddon",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "airgeddon",
+          "alternative": "airgeddon",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "amass",
+      "declarations": [
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "amass",
+          "alternative": "amass",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "apache-users",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "apache-users",
+          "alternative": "apache-users",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "apache2",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "apache2",
+          "alternative": "apache2",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "apktool",
+      "declarations": [
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "apktool",
+          "alternative": "apktool",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "apktool",
+          "alternative": "apktool",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "armitage",
+      "declarations": [
+        {
+          "profile": "kali-tools-exploitation",
+          "field": "Depends",
+          "clause": "armitage [!armhf]",
+          "alternative": "armitage [!armhf]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "arping",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "arping | iputils-arping",
+          "alternative": "arping",
+          "alternatives_in_clause": 2
+        }
+      ]
+    },
+    {
+      "name": "asleap",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "asleap",
+          "alternative": "asleap",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "assetfinder",
+      "declarations": [
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "assetfinder",
+          "alternative": "assetfinder",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "autopsy",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "autopsy",
+          "alternative": "autopsy",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "bed",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "bed",
+          "alternative": "bed",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "beef-xss",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "beef-xss",
+          "alternative": "beef-xss",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-exploitation",
+          "field": "Depends",
+          "clause": "beef-xss",
+          "alternative": "beef-xss",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-social-engineering",
+          "field": "Depends",
+          "clause": "beef-xss",
+          "alternative": "beef-xss",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "bettercap",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "bettercap",
+          "alternative": "bettercap",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "binwalk",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "binwalk",
+          "alternative": "binwalk",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-hardware",
+          "field": "Depends",
+          "clause": "binwalk",
+          "alternative": "binwalk",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "binwalk3",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "binwalk3 [amd64 arm64]",
+          "alternative": "binwalk3 [amd64 arm64]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-hardware",
+          "field": "Depends",
+          "clause": "binwalk3 [amd64 arm64]",
+          "alternative": "binwalk3 [amd64 arm64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "blue-hydra",
+      "declarations": [
+        {
+          "profile": "kali-tools-bluetooth",
+          "field": "Depends",
+          "clause": "blue-hydra",
+          "alternative": "blue-hydra",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "bluelog",
+      "declarations": [
+        {
+          "profile": "kali-tools-bluetooth",
+          "field": "Depends",
+          "clause": "bluelog",
+          "alternative": "bluelog",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "blueranger",
+      "declarations": [
+        {
+          "profile": "kali-tools-bluetooth",
+          "field": "Depends",
+          "clause": "blueranger",
+          "alternative": "blueranger",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "bluesnarfer",
+      "declarations": [
+        {
+          "profile": "kali-tools-bluetooth",
+          "field": "Depends",
+          "clause": "bluesnarfer",
+          "alternative": "bluesnarfer",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "bluez",
+      "declarations": [
+        {
+          "profile": "kali-tools-bluetooth",
+          "field": "Depends",
+          "clause": "bluez",
+          "alternative": "bluez",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "braa",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "braa",
+          "alternative": "braa",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "btscanner",
+      "declarations": [
+        {
+          "profile": "kali-tools-bluetooth",
+          "field": "Depends",
+          "clause": "btscanner",
+          "alternative": "btscanner",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "bulk-extractor",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "bulk-extractor [amd64 arm64]",
+          "alternative": "bulk-extractor [amd64 arm64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "bully",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "bully",
+          "alternative": "bully",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "burpsuite",
+      "declarations": [
+        {
+          "profile": "kali-tools-top10",
+          "field": "Depends",
+          "clause": "burpsuite [amd64]",
+          "alternative": "burpsuite [amd64]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "burpsuite [amd64]",
+          "alternative": "burpsuite [amd64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "bytecode-viewer",
+      "declarations": [
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "bytecode-viewer",
+          "alternative": "bytecode-viewer",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "bytecode-viewer",
+          "alternative": "bytecode-viewer",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cabextract",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "cabextract",
+          "alternative": "cabextract",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cadaver",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "cadaver",
+          "alternative": "cadaver",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ccrypt",
+      "declarations": [
+        {
+          "profile": "kali-tools-crypto-stego",
+          "field": "Depends",
+          "clause": "ccrypt",
+          "alternative": "ccrypt",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cewl",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "cewl",
+          "alternative": "cewl",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "chirp",
+      "declarations": [
+        {
+          "profile": "kali-tools-sdr",
+          "field": "Depends",
+          "clause": "chirp",
+          "alternative": "chirp",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "chkrootkit",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "chkrootkit",
+          "alternative": "chkrootkit",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "chntpw",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "chntpw",
+          "alternative": "chntpw",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cisco-auditing-tool",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "cisco-auditing-tool",
+          "alternative": "cisco-auditing-tool",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "cisco-auditing-tool",
+          "alternative": "cisco-auditing-tool",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "cisco-auditing-tool",
+          "alternative": "cisco-auditing-tool",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cisco-global-exploiter",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "cisco-global-exploiter",
+          "alternative": "cisco-global-exploiter",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cisco-ocs",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "cisco-ocs",
+          "alternative": "cisco-ocs",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cisco-torch",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "cisco-torch",
+          "alternative": "cisco-torch",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "clamav",
+      "declarations": [
+        {
+          "profile": "kali-tools-protect",
+          "field": "Depends",
+          "clause": "clamav",
+          "alternative": "clamav",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "clang",
+      "declarations": [
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "clang",
+          "alternative": "clang",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cmospwd",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "cmospwd [amd64 i386]",
+          "alternative": "cmospwd [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "commix",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "commix",
+          "alternative": "commix",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "copy-router-config",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "copy-router-config [amd64 i386]",
+          "alternative": "copy-router-config [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cowpatty",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "cowpatty",
+          "alternative": "cowpatty",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "crackle",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "crackle",
+          "alternative": "crackle",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-bluetooth",
+          "field": "Depends",
+          "clause": "crackle",
+          "alternative": "crackle",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "creddump7",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "creddump7",
+          "alternative": "creddump7",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "creddump7",
+          "alternative": "creddump7",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "crunch",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "crunch",
+          "alternative": "crunch",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cryptsetup",
+      "declarations": [
+        {
+          "profile": "kali-tools-protect",
+          "field": "Depends",
+          "clause": "cryptsetup",
+          "alternative": "cryptsetup",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cryptsetup-initramfs",
+      "declarations": [
+        {
+          "profile": "kali-tools-protect",
+          "field": "Depends",
+          "clause": "cryptsetup-initramfs",
+          "alternative": "cryptsetup-initramfs",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cryptsetup-nuke-password",
+      "declarations": [
+        {
+          "profile": "kali-tools-protect",
+          "field": "Depends",
+          "clause": "cryptsetup-nuke-password",
+          "alternative": "cryptsetup-nuke-password",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cutecom",
+      "declarations": [
+        {
+          "profile": "kali-tools-hardware",
+          "field": "Depends",
+          "clause": "cutecom",
+          "alternative": "cutecom",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cutycapt",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "cutycapt",
+          "alternative": "cutycapt",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-reporting",
+          "field": "Depends",
+          "clause": "cutycapt",
+          "alternative": "cutycapt",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "cymothoa",
+      "declarations": [
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "cymothoa [amd64 i386]",
+          "alternative": "cymothoa [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "darkstat",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "darkstat",
+          "alternative": "darkstat",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "davtest",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "davtest",
+          "alternative": "davtest",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dbd",
+      "declarations": [
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "dbd",
+          "alternative": "dbd",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "dbd",
+          "alternative": "dbd",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dc3dd",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "dc3dd",
+          "alternative": "dc3dd",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dcfldd",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "dcfldd",
+          "alternative": "dcfldd",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ddrescue",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "ddrescue [amd64 arm64]",
+          "alternative": "ddrescue [amd64 arm64]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-recover",
+          "field": "Depends",
+          "clause": "ddrescue [amd64 arm64]",
+          "alternative": "ddrescue [amd64 arm64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "default-mysql-server",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "default-mysql-server",
+          "alternative": "default-mysql-server",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "defectdojo",
+      "declarations": [
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "defectdojo [amd64 arm64 armhf]",
+          "alternative": "defectdojo [amd64 arm64 armhf]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dex2jar",
+      "declarations": [
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "dex2jar",
+          "alternative": "dex2jar",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dhcpig",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "dhcpig",
+          "alternative": "dhcpig",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dirb",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "dirb",
+          "alternative": "dirb",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dirbuster",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "dirbuster",
+          "alternative": "dirbuster",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dmitry",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "dmitry",
+          "alternative": "dmitry",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dns2tcp",
+      "declarations": [
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "dns2tcp",
+          "alternative": "dns2tcp",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dnschef",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "dnschef",
+          "alternative": "dnschef",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "dnschef",
+          "alternative": "dnschef",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dnsenum",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "dnsenum",
+          "alternative": "dnsenum",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dnsmap",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "dnsmap",
+          "alternative": "dnsmap",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dnsrecon",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "dnsrecon",
+          "alternative": "dnsrecon",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dnstracer",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "dnstracer",
+          "alternative": "dnstracer",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dnswalk",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "dnswalk",
+          "alternative": "dnswalk",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dotdotpwn",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "dotdotpwn",
+          "alternative": "dotdotpwn",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dradis",
+      "declarations": [
+        {
+          "profile": "kali-tools-reporting",
+          "field": "Depends",
+          "clause": "dradis [amd64]",
+          "alternative": "dradis [amd64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "driftnet",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "driftnet",
+          "alternative": "driftnet",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dsniff",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "dsniff",
+          "alternative": "dsniff",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "dumpzilla",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "dumpzilla",
+          "alternative": "dumpzilla",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "eapmd5pass",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "eapmd5pass",
+          "alternative": "eapmd5pass",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "edb-debugger",
+      "declarations": [
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "edb-debugger [amd64 i386]",
+          "alternative": "edb-debugger [amd64 i386]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "edb-debugger [amd64 i386]",
+          "alternative": "edb-debugger [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "enum4linux",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "enum4linux",
+          "alternative": "enum4linux",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "enumiax",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "enumiax",
+          "alternative": "enumiax",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "enumiax",
+          "alternative": "enumiax",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ettercap-graphical",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "ettercap-graphical | ettercap-text-only",
+          "alternative": "ettercap-graphical",
+          "alternatives_in_clause": 2
+        }
+      ]
+    },
+    {
+      "name": "ettercap-text-only",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "ettercap-graphical | ettercap-text-only",
+          "alternative": "ettercap-text-only",
+          "alternatives_in_clause": 2
+        }
+      ]
+    },
+    {
+      "name": "ewf-tools",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "ewf-tools",
+          "alternative": "ewf-tools",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-respond",
+          "field": "Depends",
+          "clause": "ewf-tools",
+          "alternative": "ewf-tools",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "exe2hexbat",
+      "declarations": [
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "exe2hexbat",
+          "alternative": "exe2hexbat",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "exifprobe",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "exifprobe",
+          "alternative": "exifprobe",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "exiv2",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "exiv2",
+          "alternative": "exiv2",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "exploitdb",
+      "declarations": [
+        {
+          "profile": "kali-tools-exploitation",
+          "field": "Depends",
+          "clause": "exploitdb",
+          "alternative": "exploitdb",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "exploitdb",
+          "alternative": "exploitdb",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ext3grep",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "ext3grep",
+          "alternative": "ext3grep",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-recover",
+          "field": "Depends",
+          "clause": "ext3grep",
+          "alternative": "ext3grep",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ext4magic",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "ext4magic",
+          "alternative": "ext4magic",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "extundelete",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "extundelete",
+          "alternative": "extundelete",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-recover",
+          "field": "Depends",
+          "clause": "extundelete",
+          "alternative": "extundelete",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "eyewitness",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "eyewitness [amd64 arm64 i386]",
+          "alternative": "eyewitness [amd64 arm64 i386]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-reporting",
+          "field": "Depends",
+          "clause": "eyewitness [amd64 arm64 i386]",
+          "alternative": "eyewitness [amd64 arm64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "faraday",
+      "declarations": [
+        {
+          "profile": "kali-tools-reporting",
+          "field": "Depends",
+          "clause": "faraday",
+          "alternative": "faraday",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "fcrackzip",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "fcrackzip",
+          "alternative": "fcrackzip",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "fcrackzip",
+          "alternative": "fcrackzip",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "fern-wifi-cracker",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "fern-wifi-cracker",
+          "alternative": "fern-wifi-cracker",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ferret-sidejack",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "ferret-sidejack",
+          "alternative": "ferret-sidejack",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "ferret-sidejack",
+          "alternative": "ferret-sidejack",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "fierce",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "fierce",
+          "alternative": "fierce",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "fiked",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "fiked",
+          "alternative": "fiked",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "firewalk",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "firewalk",
+          "alternative": "firewalk",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "firmware-mod-kit",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "firmware-mod-kit [amd64 i386]",
+          "alternative": "firmware-mod-kit [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "flashrom",
+      "declarations": [
+        {
+          "profile": "kali-tools-hardware",
+          "field": "Depends",
+          "clause": "flashrom",
+          "alternative": "flashrom",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "foremost",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "foremost",
+          "alternative": "foremost",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "forensic-artifacts",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "forensic-artifacts",
+          "alternative": "forensic-artifacts",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "forensics-colorize",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "forensics-colorize",
+          "alternative": "forensics-colorize",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "fping",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "fping",
+          "alternative": "fping",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "fragrouter",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "fragrouter",
+          "alternative": "fragrouter",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "freeradius-wpe",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "freeradius-wpe",
+          "alternative": "freeradius-wpe",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "freerdp-x11",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "freerdp-x11",
+          "alternative": "freerdp-x11",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ftester",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "ftester",
+          "alternative": "ftester",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "ftester",
+          "alternative": "ftester",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "fwbuilder",
+      "declarations": [
+        {
+          "profile": "kali-tools-protect",
+          "field": "Depends",
+          "clause": "fwbuilder",
+          "alternative": "fwbuilder",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "galleta",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "galleta",
+          "alternative": "galleta",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "gdb",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "gdb",
+          "alternative": "gdb",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ghidra",
+      "declarations": [
+        {
+          "profile": "kali-tools-respond",
+          "field": "Depends",
+          "clause": "ghidra [amd64]",
+          "alternative": "ghidra [amd64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "gpart",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "gpart [amd64 i386]",
+          "alternative": "gpart [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "gparted",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "gparted",
+          "alternative": "gparted",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "gpp-decrypt",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "gpp-decrypt",
+          "alternative": "gpp-decrypt",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "grokevt",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "grokevt",
+          "alternative": "grokevt",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-detect",
+          "field": "Depends",
+          "clause": "grokevt",
+          "alternative": "grokevt",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "guymager",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "guymager",
+          "alternative": "guymager",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-respond",
+          "field": "Depends",
+          "clause": "guymager",
+          "alternative": "guymager",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "gvm",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "gvm [amd64 arm64 armhf]",
+          "alternative": "gvm [amd64 arm64 armhf]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hackrf",
+      "declarations": [
+        {
+          "profile": "kali-tools-sdr",
+          "field": "Depends",
+          "clause": "hackrf",
+          "alternative": "hackrf",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hakrawler",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "hakrawler",
+          "alternative": "hakrawler",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hamster-sidejack",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "hamster-sidejack",
+          "alternative": "hamster-sidejack",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "hamster-sidejack",
+          "alternative": "hamster-sidejack",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hash-identifier",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "hash-identifier",
+          "alternative": "hash-identifier",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hashcat",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "hashcat",
+          "alternative": "hashcat",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "hashcat",
+          "alternative": "hashcat",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hashcat-utils",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "hashcat-utils",
+          "alternative": "hashcat-utils",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hashdeep",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "hashdeep",
+          "alternative": "hashdeep",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hashid",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "hashid",
+          "alternative": "hashid",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hashrat",
+      "declarations": [
+        {
+          "profile": "kali-tools-respond",
+          "field": "Depends",
+          "clause": "hashrat",
+          "alternative": "hashrat",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hb-honeypot",
+      "declarations": [
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "hb-honeypot [amd64]",
+          "alternative": "hb-honeypot [amd64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "heartleech",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "heartleech",
+          "alternative": "heartleech",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "heartleech",
+          "alternative": "heartleech",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hexinject",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "hexinject",
+          "alternative": "hexinject",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hostapd-wpe",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "hostapd-wpe",
+          "alternative": "hostapd-wpe",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hping3",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "hping3",
+          "alternative": "hping3",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "httprint",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "httprint [amd64 i386]",
+          "alternative": "httprint [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "httrack",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "httrack",
+          "alternative": "httrack",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hydra",
+      "declarations": [
+        {
+          "profile": "kali-tools-top10",
+          "field": "Depends",
+          "clause": "hydra",
+          "alternative": "hydra",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "hydra",
+          "alternative": "hydra",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "hydra",
+          "alternative": "hydra",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hydra-gtk",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "hydra-gtk",
+          "alternative": "hydra-gtk",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "hydra-gtk",
+          "alternative": "hydra-gtk",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "hyperion",
+      "declarations": [
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "hyperion",
+          "alternative": "hyperion",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "iaxflood",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "iaxflood",
+          "alternative": "iaxflood",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "iaxflood",
+          "alternative": "iaxflood",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ike-scan",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "ike-scan",
+          "alternative": "ike-scan",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "impacket-scripts",
+      "declarations": [
+        {
+          "profile": "kali-tools-respond",
+          "field": "Depends",
+          "clause": "impacket-scripts",
+          "alternative": "impacket-scripts",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "inetsim",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "inetsim",
+          "alternative": "inetsim",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "inspectrum",
+      "declarations": [
+        {
+          "profile": "kali-tools-sdr",
+          "field": "Depends",
+          "clause": "inspectrum [amd64 arm64]",
+          "alternative": "inspectrum [amd64 arm64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "intrace",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "intrace",
+          "alternative": "intrace",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "inviteflood",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "inviteflood",
+          "alternative": "inviteflood",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "inviteflood",
+          "alternative": "inviteflood",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "iodine",
+      "declarations": [
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "iodine",
+          "alternative": "iodine",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "iputils-arping",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "arping | iputils-arping",
+          "alternative": "iputils-arping",
+          "alternatives_in_clause": 2
+        }
+      ]
+    },
+    {
+      "name": "irpas",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "irpas",
+          "alternative": "irpas",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "isr-evilgrade",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "isr-evilgrade",
+          "alternative": "isr-evilgrade",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "iw",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "iw",
+          "alternative": "iw",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "jadx",
+      "declarations": [
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "jadx",
+          "alternative": "jadx",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "jadx",
+          "alternative": "jadx",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "javasnoop",
+      "declarations": [
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "javasnoop",
+          "alternative": "javasnoop",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "javasnoop",
+          "alternative": "javasnoop",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "jboss-autopwn",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "jboss-autopwn",
+          "alternative": "jboss-autopwn",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "jd-gui",
+      "declarations": [
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "jd-gui",
+          "alternative": "jd-gui",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "john",
+      "declarations": [
+        {
+          "profile": "kali-tools-top10",
+          "field": "Depends",
+          "clause": "john",
+          "alternative": "john",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "john",
+          "alternative": "john",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "johnny",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "johnny",
+          "alternative": "johnny",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "joomscan",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "joomscan",
+          "alternative": "joomscan",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "jsql-injection",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "jsql-injection",
+          "alternative": "jsql-injection",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-database",
+          "field": "Depends",
+          "clause": "jsql-injection",
+          "alternative": "jsql-injection",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "kali-autopilot",
+      "declarations": [
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "kali-autopilot",
+          "alternative": "kali-autopilot",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "kali-tools-802-11",
+      "declarations": [
+        {
+          "profile": "kali-tools-wireless",
+          "field": "Depends",
+          "clause": "kali-tools-802-11",
+          "alternative": "kali-tools-802-11",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "kali-tools-bluetooth",
+      "declarations": [
+        {
+          "profile": "kali-tools-wireless",
+          "field": "Depends",
+          "clause": "kali-tools-bluetooth",
+          "alternative": "kali-tools-bluetooth",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "kali-tools-forensics",
+      "declarations": [
+        {
+          "profile": "kali-tools-respond",
+          "field": "Depends",
+          "clause": "kali-tools-forensics",
+          "alternative": "kali-tools-forensics",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "kali-tools-gpu",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "kali-tools-gpu",
+          "alternative": "kali-tools-gpu",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "kali-tools-rfid",
+      "declarations": [
+        {
+          "profile": "kali-tools-wireless",
+          "field": "Depends",
+          "clause": "kali-tools-rfid",
+          "alternative": "kali-tools-rfid",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "kali-tools-sdr",
+      "declarations": [
+        {
+          "profile": "kali-tools-wireless",
+          "field": "Depends",
+          "clause": "kali-tools-sdr",
+          "alternative": "kali-tools-sdr",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "kalibrate-rtl",
+      "declarations": [
+        {
+          "profile": "kali-tools-sdr",
+          "field": "Depends",
+          "clause": "kalibrate-rtl",
+          "alternative": "kalibrate-rtl",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "kismet",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "kismet",
+          "alternative": "kismet",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "laudanum",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "laudanum",
+          "alternative": "laudanum",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "laudanum",
+          "alternative": "laudanum",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "lbd",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "lbd",
+          "alternative": "lbd",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "lbd",
+          "alternative": "lbd",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "legion",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "legion",
+          "alternative": "legion",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "legion",
+          "alternative": "legion",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "libfindrtp",
+      "declarations": [
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "libfindrtp [amd64 arm64 i386]",
+          "alternative": "libfindrtp [amd64 arm64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "libhivex-bin",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "libhivex-bin",
+          "alternative": "libhivex-bin",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "libsmali-java",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "libsmali-java",
+          "alternative": "libsmali-java",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "lime-forensics",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Recommends",
+          "clause": "lime-forensics",
+          "alternative": "lime-forensics",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "lvm2",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "lvm2",
+          "alternative": "lvm2",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "lynis",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "lynis",
+          "alternative": "lynis",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "lynis",
+          "alternative": "lynis",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "mac-robber",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "mac-robber",
+          "alternative": "mac-robber",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "macchanger",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "macchanger",
+          "alternative": "macchanger",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "macchanger",
+          "alternative": "macchanger",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "magicrescue",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "magicrescue",
+          "alternative": "magicrescue",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "maltego",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "maltego",
+          "alternative": "maltego",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "maltego",
+          "alternative": "maltego",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-social-engineering",
+          "field": "Depends",
+          "clause": "maltego",
+          "alternative": "maltego",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-reporting",
+          "field": "Depends",
+          "clause": "maltego",
+          "alternative": "maltego",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "maltego",
+          "alternative": "maltego",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "maryam",
+      "declarations": [
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "maryam [amd64 arm64]",
+          "alternative": "maryam [amd64 arm64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "maskprocessor",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "maskprocessor",
+          "alternative": "maskprocessor",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "masscan",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "masscan",
+          "alternative": "masscan",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "md5deep",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "md5deep",
+          "alternative": "md5deep",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "mdbtools",
+      "declarations": [
+        {
+          "profile": "kali-tools-database",
+          "field": "Depends",
+          "clause": "mdbtools",
+          "alternative": "mdbtools",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "mdbtools",
+          "alternative": "mdbtools",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "mdk3",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "mdk3",
+          "alternative": "mdk3",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "mdk4",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "mdk4",
+          "alternative": "mdk4",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "medusa",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "medusa",
+          "alternative": "medusa",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "medusa",
+          "alternative": "medusa",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "memdump",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "memdump",
+          "alternative": "memdump",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "metacam",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "metacam",
+          "alternative": "metacam",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "metagoofil",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "metagoofil",
+          "alternative": "metagoofil",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-reporting",
+          "field": "Depends",
+          "clause": "metagoofil",
+          "alternative": "metagoofil",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "metasploit-framework",
+      "declarations": [
+        {
+          "profile": "kali-tools-top10",
+          "field": "Depends",
+          "clause": "metasploit-framework",
+          "alternative": "metasploit-framework",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "metasploit-framework",
+          "alternative": "metasploit-framework",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-exploitation",
+          "field": "Depends",
+          "clause": "metasploit-framework",
+          "alternative": "metasploit-framework",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "mimikatz",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "mimikatz",
+          "alternative": "mimikatz",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "mimikatz",
+          "alternative": "mimikatz",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "mimikatz",
+          "alternative": "mimikatz",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "minicom",
+      "declarations": [
+        {
+          "profile": "kali-tools-hardware",
+          "field": "Depends",
+          "clause": "minicom",
+          "alternative": "minicom",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "miredo",
+      "declarations": [
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "miredo",
+          "alternative": "miredo",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "missidentify",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "missidentify",
+          "alternative": "missidentify",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "mitmproxy",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "mitmproxy [amd64 arm64]",
+          "alternative": "mitmproxy [amd64 arm64]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "mitmproxy [amd64 arm64]",
+          "alternative": "mitmproxy [amd64 arm64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "msfpc",
+      "declarations": [
+        {
+          "profile": "kali-tools-exploitation",
+          "field": "Depends",
+          "clause": "msfpc",
+          "alternative": "msfpc",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-social-engineering",
+          "field": "Depends",
+          "clause": "msfpc",
+          "alternative": "msfpc",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "multimon-ng",
+      "declarations": [
+        {
+          "profile": "kali-tools-sdr",
+          "field": "Depends",
+          "clause": "multimon-ng",
+          "alternative": "multimon-ng",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "myrescue",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "myrescue",
+          "alternative": "myrescue",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-recover",
+          "field": "Depends",
+          "clause": "myrescue",
+          "alternative": "myrescue",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "nasm",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "nasm",
+          "alternative": "nasm",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "nasty",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "nasty",
+          "alternative": "nasty",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "nbtscan",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "nbtscan",
+          "alternative": "nbtscan",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ncat",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "ncat",
+          "alternative": "ncat",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ncat-w32",
+      "declarations": [
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "ncat-w32",
+          "alternative": "ncat-w32",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ncrack",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "ncrack",
+          "alternative": "ncrack",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "ncrack",
+          "alternative": "ncrack",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "netdiscover",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "netdiscover",
+          "alternative": "netdiscover",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "netexec",
+      "declarations": [
+        {
+          "profile": "kali-tools-top10",
+          "field": "Depends",
+          "clause": "netexec",
+          "alternative": "netexec",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "netmask",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "netmask",
+          "alternative": "netmask",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "netsniff-ng",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "netsniff-ng",
+          "alternative": "netsniff-ng",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-respond",
+          "field": "Depends",
+          "clause": "netsniff-ng",
+          "alternative": "netsniff-ng",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "nikto",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "nikto",
+          "alternative": "nikto",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "nikto",
+          "alternative": "nikto",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "nipper-ng",
+      "declarations": [
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "nipper-ng",
+          "alternative": "nipper-ng",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "nishang",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "nishang",
+          "alternative": "nishang",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "nishang",
+          "alternative": "nishang",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "nmap",
+      "declarations": [
+        {
+          "profile": "kali-tools-top10",
+          "field": "Depends",
+          "clause": "nmap",
+          "alternative": "nmap",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "nmap",
+          "alternative": "nmap",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "nmap",
+          "alternative": "nmap",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "nmap",
+          "alternative": "nmap",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "nmap",
+          "alternative": "nmap",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "oclgausscrack",
+      "declarations": [
+        {
+          "profile": "kali-tools-gpu",
+          "field": "Depends",
+          "clause": "oclgausscrack [amd64 i386]",
+          "alternative": "oclgausscrack [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ohrwurm",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "ohrwurm",
+          "alternative": "ohrwurm",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "ohrwurm",
+          "alternative": "ohrwurm",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ollydbg",
+      "declarations": [
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "ollydbg [amd64 i386]",
+          "alternative": "ollydbg [amd64 i386]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "ollydbg [amd64 i386]",
+          "alternative": "ollydbg [amd64 i386]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "ollydbg [amd64 i386]",
+          "alternative": "ollydbg [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "onesixtyone",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "onesixtyone",
+          "alternative": "onesixtyone",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "onesixtyone",
+          "alternative": "onesixtyone",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "openocd",
+      "declarations": [
+        {
+          "profile": "kali-tools-hardware",
+          "field": "Depends",
+          "clause": "openocd",
+          "alternative": "openocd",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ophcrack",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "ophcrack",
+          "alternative": "ophcrack",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ophcrack-cli",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "ophcrack-cli",
+          "alternative": "ophcrack-cli",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "oscanner",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "oscanner",
+          "alternative": "oscanner",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-database",
+          "field": "Depends",
+          "clause": "oscanner",
+          "alternative": "oscanner",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "osrframework",
+      "declarations": [
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "osrframework",
+          "alternative": "osrframework",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "owasp-mantra-ff",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "owasp-mantra-ff [amd64 i386]",
+          "alternative": "owasp-mantra-ff [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "p0f",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "p0f",
+          "alternative": "p0f",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "pack",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "pack",
+          "alternative": "pack",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "pack2",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "pack2",
+          "alternative": "pack2",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "padbuster",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "padbuster",
+          "alternative": "padbuster",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "paros",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "paros",
+          "alternative": "paros",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "parted",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "parted",
+          "alternative": "parted",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "pasco",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "pasco",
+          "alternative": "pasco",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "passing-the-hash",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "passing-the-hash",
+          "alternative": "passing-the-hash",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "patator",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "patator",
+          "alternative": "patator",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "patator",
+          "alternative": "patator",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "pdf-parser",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "pdf-parser",
+          "alternative": "pdf-parser",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "pdfcrack",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "pdfcrack",
+          "alternative": "pdfcrack",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "pdfid",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "pdfid",
+          "alternative": "pdfid",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "peass",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "peass",
+          "alternative": "peass",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "php",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "php",
+          "alternative": "php",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "php-mysql",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "php-mysql",
+          "alternative": "php-mysql",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "pipal",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "pipal",
+          "alternative": "pipal",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-reporting",
+          "field": "Depends",
+          "clause": "pipal",
+          "alternative": "pipal",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "pixiewps",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "pixiewps",
+          "alternative": "pixiewps",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "plaso",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "plaso",
+          "alternative": "plaso",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "polenum",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "polenum",
+          "alternative": "polenum",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "polenum",
+          "alternative": "polenum",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "powercat",
+      "declarations": [
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "powercat",
+          "alternative": "powercat",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "powersploit",
+      "declarations": [
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "powersploit",
+          "alternative": "powersploit",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "protos-sip",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "protos-sip",
+          "alternative": "protos-sip",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "protos-sip",
+          "alternative": "protos-sip",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "proxmark3",
+      "declarations": [
+        {
+          "profile": "kali-tools-rfid",
+          "field": "Depends",
+          "clause": "proxmark3",
+          "alternative": "proxmark3",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "proxychains4",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "proxychains4",
+          "alternative": "proxychains4",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "proxychains4",
+          "alternative": "proxychains4",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "proxytunnel",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "proxytunnel",
+          "alternative": "proxytunnel",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "proxytunnel",
+          "alternative": "proxytunnel",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "pst-utils",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "pst-utils",
+          "alternative": "pst-utils",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ptunnel",
+      "declarations": [
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "ptunnel",
+          "alternative": "ptunnel",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "pwnat",
+      "declarations": [
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "pwnat",
+          "alternative": "pwnat",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "python3-capstone",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "python3-capstone",
+          "alternative": "python3-capstone",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "python3-dfdatetime",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "python3-dfdatetime",
+          "alternative": "python3-dfdatetime",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "python3-dfvfs",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "python3-dfvfs",
+          "alternative": "python3-dfvfs",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "python3-dfwinreg",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "python3-dfwinreg",
+          "alternative": "python3-dfwinreg",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "python3-distorm3",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "python3-distorm3",
+          "alternative": "python3-distorm3",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "qemu-system-x86",
+      "declarations": [
+        {
+          "profile": "kali-tools-hardware",
+          "field": "Depends",
+          "clause": "qemu-system-x86 [amd64 arm64]",
+          "alternative": "qemu-system-x86 [amd64 arm64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "qemu-user",
+      "declarations": [
+        {
+          "profile": "kali-tools-hardware",
+          "field": "Depends",
+          "clause": "qemu-user [amd64 arm64]",
+          "alternative": "qemu-user [amd64 arm64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "qsslcaudit",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "qsslcaudit",
+          "alternative": "qsslcaudit",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "qsslcaudit",
+          "alternative": "qsslcaudit",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "radare2",
+      "declarations": [
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "radare2",
+          "alternative": "radare2",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "radare2",
+          "alternative": "radare2",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-hardware",
+          "field": "Depends",
+          "clause": "radare2",
+          "alternative": "radare2",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rainbowcrack",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "rainbowcrack [amd64]",
+          "alternative": "rainbowcrack [amd64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rarcrack",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "rarcrack",
+          "alternative": "rarcrack",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rcracki-mt",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "rcracki-mt",
+          "alternative": "rcracki-mt",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "readpe",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "readpe",
+          "alternative": "readpe",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "reaver",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "reaver",
+          "alternative": "reaver",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rebind",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "rebind",
+          "alternative": "rebind",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "recon-ng",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "recon-ng",
+          "alternative": "recon-ng",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "recordmydesktop",
+      "declarations": [
+        {
+          "profile": "kali-tools-reporting",
+          "field": "Depends",
+          "clause": "recordmydesktop",
+          "alternative": "recordmydesktop",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "recoverdm",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "recoverdm",
+          "alternative": "recoverdm",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-recover",
+          "field": "Depends",
+          "clause": "recoverdm",
+          "alternative": "recoverdm",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "recoverjpeg",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "recoverjpeg",
+          "alternative": "recoverjpeg",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-recover",
+          "field": "Depends",
+          "clause": "recoverjpeg",
+          "alternative": "recoverjpeg",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "recstudio",
+      "declarations": [
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "recstudio [i386]",
+          "alternative": "recstudio [i386]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "recstudio [i386]",
+          "alternative": "recstudio [i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "redfang",
+      "declarations": [
+        {
+          "profile": "kali-tools-bluetooth",
+          "field": "Depends",
+          "clause": "redfang",
+          "alternative": "redfang",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "redsocks",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "redsocks",
+          "alternative": "redsocks",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "reglookup",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "reglookup",
+          "alternative": "reglookup",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "regripper",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "regripper [amd64 i386]",
+          "alternative": "regripper [amd64 i386]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "regripper [amd64 i386]",
+          "alternative": "regripper [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rephrase",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "rephrase",
+          "alternative": "rephrase",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "responder",
+      "declarations": [
+        {
+          "profile": "kali-tools-top10",
+          "field": "Depends",
+          "clause": "responder",
+          "alternative": "responder",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "responder",
+          "alternative": "responder",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rfcat",
+      "declarations": [
+        {
+          "profile": "kali-tools-wireless",
+          "field": "Depends",
+          "clause": "rfcat",
+          "alternative": "rfcat",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rfdump",
+      "declarations": [
+        {
+          "profile": "kali-tools-rfid",
+          "field": "Depends",
+          "clause": "rfdump",
+          "alternative": "rfdump",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rfkill",
+      "declarations": [
+        {
+          "profile": "kali-tools-wireless",
+          "field": "Depends",
+          "clause": "rfkill",
+          "alternative": "rfkill",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rifiuti",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "rifiuti",
+          "alternative": "rifiuti",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rifiuti2",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "rifiuti2",
+          "alternative": "rifiuti2",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rizin",
+      "declarations": [
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "rizin",
+          "alternative": "rizin",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rizin-cutter",
+      "declarations": [
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "rizin-cutter",
+          "alternative": "rizin-cutter",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "rizin-cutter",
+          "alternative": "rizin-cutter",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-hardware",
+          "field": "Depends",
+          "clause": "rizin-cutter",
+          "alternative": "rizin-cutter",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rkhunter",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "rkhunter",
+          "alternative": "rkhunter",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rsakeyfind",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "rsakeyfind",
+          "alternative": "rsakeyfind",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rsmangler",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "rsmangler",
+          "alternative": "rsmangler",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rtpbreak",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "rtpbreak",
+          "alternative": "rtpbreak",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "rtpbreak",
+          "alternative": "rtpbreak",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rtpflood",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "rtpflood",
+          "alternative": "rtpflood",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "rtpflood",
+          "alternative": "rtpflood",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rtpinsertsound",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "rtpinsertsound [amd64 arm64 i386]",
+          "alternative": "rtpinsertsound [amd64 arm64 i386]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "rtpinsertsound [amd64 arm64 i386]",
+          "alternative": "rtpinsertsound [amd64 arm64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rtpmixsound",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "rtpmixsound [amd64 arm64 i386]",
+          "alternative": "rtpmixsound [amd64 arm64 i386]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "rtpmixsound [amd64 arm64 i386]",
+          "alternative": "rtpmixsound [amd64 arm64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "rz-ghidra",
+      "declarations": [
+        {
+          "profile": "kali-tools-reverse-engineering",
+          "field": "Depends",
+          "clause": "rz-ghidra",
+          "alternative": "rz-ghidra",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "rz-ghidra",
+          "alternative": "rz-ghidra",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-hardware",
+          "field": "Depends",
+          "clause": "rz-ghidra",
+          "alternative": "rz-ghidra",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "safecopy",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "safecopy",
+          "alternative": "safecopy",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sakis3g",
+      "declarations": [
+        {
+          "profile": "kali-tools-wireless",
+          "field": "Depends",
+          "clause": "sakis3g",
+          "alternative": "sakis3g",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "samdump2",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "samdump2",
+          "alternative": "samdump2",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "samdump2",
+          "alternative": "samdump2",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sbd",
+      "declarations": [
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "sbd",
+          "alternative": "sbd",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "sbd",
+          "alternative": "sbd",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "scalpel",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "scalpel",
+          "alternative": "scalpel",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "scrounge-ntfs",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "scrounge-ntfs",
+          "alternative": "scrounge-ntfs",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-recover",
+          "field": "Depends",
+          "clause": "scrounge-ntfs",
+          "alternative": "scrounge-ntfs",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sctpscan",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "sctpscan [amd64 i386]",
+          "alternative": "sctpscan [amd64 i386]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "sctpscan [amd64 i386]",
+          "alternative": "sctpscan [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "seclists",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "seclists",
+          "alternative": "seclists",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "secure-socket-funneling-windows-binaries",
+      "declarations": [
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "secure-socket-funneling-windows-binaries",
+          "alternative": "secure-socket-funneling-windows-binaries",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sentrypeer",
+      "declarations": [
+        {
+          "profile": "kali-tools-detect",
+          "field": "Depends",
+          "clause": "sentrypeer [amd64 arm64]",
+          "alternative": "sentrypeer [amd64 arm64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "set",
+      "declarations": [
+        {
+          "profile": "kali-tools-exploitation",
+          "field": "Depends",
+          "clause": "set",
+          "alternative": "set",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-social-engineering",
+          "field": "Depends",
+          "clause": "set",
+          "alternative": "set",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sfuzz",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "sfuzz",
+          "alternative": "sfuzz",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-fuzzing",
+          "field": "Depends",
+          "clause": "sfuzz",
+          "alternative": "sfuzz",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "shellnoob",
+      "declarations": [
+        {
+          "profile": "kali-tools-exploitation",
+          "field": "Depends",
+          "clause": "shellnoob [!arm64]",
+          "alternative": "shellnoob [!arm64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "shellter",
+      "declarations": [
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "shellter [amd64 i386]",
+          "alternative": "shellter [amd64 i386]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "shellter [amd64 i386]",
+          "alternative": "shellter [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sidguesser",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "sidguesser",
+          "alternative": "sidguesser",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-database",
+          "field": "Depends",
+          "clause": "sidguesser",
+          "alternative": "sidguesser",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "siege",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "siege",
+          "alternative": "siege",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "siege",
+          "alternative": "siege",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "siparmyknife",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "siparmyknife",
+          "alternative": "siparmyknife",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "siparmyknife",
+          "alternative": "siparmyknife",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sipcrack",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "sipcrack",
+          "alternative": "sipcrack",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "sipcrack",
+          "alternative": "sipcrack",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sipp",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "sipp",
+          "alternative": "sipp",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "sipp",
+          "alternative": "sipp",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sipsak",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "sipsak",
+          "alternative": "sipsak",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sipvicious",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "sipvicious",
+          "alternative": "sipvicious",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "sipvicious",
+          "alternative": "sipvicious",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "sipvicious",
+          "alternative": "sipvicious",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "skipfish",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "skipfish",
+          "alternative": "skipfish",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sleuthkit",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "sleuthkit",
+          "alternative": "sleuthkit",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "slowhttptest",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "slowhttptest",
+          "alternative": "slowhttptest",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "slowhttptest",
+          "alternative": "slowhttptest",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "smbmap",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "smbmap",
+          "alternative": "smbmap",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "smbmap",
+          "alternative": "smbmap",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "smtp-user-enum",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "smtp-user-enum",
+          "alternative": "smtp-user-enum",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sniffjoke",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "sniffjoke",
+          "alternative": "sniffjoke",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "snmpcheck",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "snmpcheck",
+          "alternative": "snmpcheck",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "spiderfoot",
+      "declarations": [
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "spiderfoot",
+          "alternative": "spiderfoot",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "spike",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "spike",
+          "alternative": "spike",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-fuzzing",
+          "field": "Depends",
+          "clause": "spike",
+          "alternative": "spike",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "spooftooph",
+      "declarations": [
+        {
+          "profile": "kali-tools-bluetooth",
+          "field": "Depends",
+          "clause": "spooftooph",
+          "alternative": "spooftooph",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sqldict",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "sqldict [amd64 i386]",
+          "alternative": "sqldict [amd64 i386]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-database",
+          "field": "Depends",
+          "clause": "sqldict [amd64 i386]",
+          "alternative": "sqldict [amd64 i386]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "sqldict [amd64 i386]",
+          "alternative": "sqldict [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sqlitebrowser",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "sqlitebrowser",
+          "alternative": "sqlitebrowser",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-database",
+          "field": "Depends",
+          "clause": "sqlitebrowser",
+          "alternative": "sqlitebrowser",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "sqlitebrowser",
+          "alternative": "sqlitebrowser",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sqlmap",
+      "declarations": [
+        {
+          "profile": "kali-tools-top10",
+          "field": "Depends",
+          "clause": "sqlmap",
+          "alternative": "sqlmap",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "sqlmap",
+          "alternative": "sqlmap",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-database",
+          "field": "Depends",
+          "clause": "sqlmap",
+          "alternative": "sqlmap",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-exploitation",
+          "field": "Depends",
+          "clause": "sqlmap",
+          "alternative": "sqlmap",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sqlninja",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "sqlninja",
+          "alternative": "sqlninja",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-database",
+          "field": "Depends",
+          "clause": "sqlninja",
+          "alternative": "sqlninja",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sqlsus",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "sqlsus",
+          "alternative": "sqlsus",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-database",
+          "field": "Depends",
+          "clause": "sqlsus",
+          "alternative": "sqlsus",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ssdeep",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "ssdeep",
+          "alternative": "ssdeep",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ssldump",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "ssldump",
+          "alternative": "ssldump",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "ssldump",
+          "alternative": "ssldump",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sslh",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "sslh",
+          "alternative": "sslh",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "sslh",
+          "alternative": "sslh",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "sslh",
+          "alternative": "sslh",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sslscan",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "sslscan",
+          "alternative": "sslscan",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "sslscan",
+          "alternative": "sslscan",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sslsniff",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "sslsniff",
+          "alternative": "sslsniff",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "sslsniff",
+          "alternative": "sslsniff",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sslsplit",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "sslsplit",
+          "alternative": "sslsplit",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "sslsplit",
+          "alternative": "sslsplit",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sslyze",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "sslyze [amd64 arm64 i386]",
+          "alternative": "sslyze [amd64 arm64 i386]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "sslyze [amd64 arm64 i386]",
+          "alternative": "sslyze [amd64 arm64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "statsprocessor",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "statsprocessor",
+          "alternative": "statsprocessor",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "steghide",
+      "declarations": [
+        {
+          "profile": "kali-tools-crypto-stego",
+          "field": "Depends",
+          "clause": "steghide",
+          "alternative": "steghide",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "stegosuite",
+      "declarations": [
+        {
+          "profile": "kali-tools-crypto-stego",
+          "field": "Depends",
+          "clause": "stegosuite [amd64 arm64]",
+          "alternative": "stegosuite [amd64 arm64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "stegsnow",
+      "declarations": [
+        {
+          "profile": "kali-tools-crypto-stego",
+          "field": "Depends",
+          "clause": "stegsnow",
+          "alternative": "stegsnow",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "stunnel4",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "stunnel4",
+          "alternative": "stunnel4",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "stunnel4",
+          "alternative": "stunnel4",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "sucrack",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "sucrack",
+          "alternative": "sucrack",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "swaks",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "swaks",
+          "alternative": "swaks",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "t50",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "t50",
+          "alternative": "t50",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "tcpdump",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "tcpdump",
+          "alternative": "tcpdump",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "tcpflow",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "tcpflow",
+          "alternative": "tcpflow",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "tcpflow",
+          "alternative": "tcpflow",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "tcpick",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "tcpick",
+          "alternative": "tcpick",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "tcpreplay",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "tcpreplay",
+          "alternative": "tcpreplay",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "tcpreplay",
+          "alternative": "tcpreplay",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "termineter",
+      "declarations": [
+        {
+          "profile": "kali-tools-exploitation",
+          "field": "Depends",
+          "clause": "termineter",
+          "alternative": "termineter",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "tftpd32",
+      "declarations": [
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "tftpd32",
+          "alternative": "tftpd32",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "thc-ipv6",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "thc-ipv6",
+          "alternative": "thc-ipv6",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "thc-pptp-bruter",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "thc-pptp-bruter",
+          "alternative": "thc-pptp-bruter",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "thc-ssl-dos",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "thc-ssl-dos",
+          "alternative": "thc-ssl-dos",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "thc-ssl-dos",
+          "alternative": "thc-ssl-dos",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "theharvester",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "theharvester",
+          "alternative": "theharvester",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "tiger",
+      "declarations": [
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "tiger",
+          "alternative": "tiger",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "tlssled",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "tlssled",
+          "alternative": "tlssled",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "tlssled",
+          "alternative": "tlssled",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "tnscmd10g",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "tnscmd10g",
+          "alternative": "tnscmd10g",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-database",
+          "field": "Depends",
+          "clause": "tnscmd10g",
+          "alternative": "tnscmd10g",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "truecrack",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "truecrack",
+          "alternative": "truecrack",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "truecrack",
+          "alternative": "truecrack",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-gpu",
+          "field": "Depends",
+          "clause": "truecrack",
+          "alternative": "truecrack",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "twofi",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "twofi",
+          "alternative": "twofi",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "twofi",
+          "alternative": "twofi",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "ubertooth",
+      "declarations": [
+        {
+          "profile": "kali-tools-bluetooth",
+          "field": "Depends",
+          "clause": "ubertooth",
+          "alternative": "ubertooth",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "udptunnel",
+      "declarations": [
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "udptunnel",
+          "alternative": "udptunnel",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "uhd-host",
+      "declarations": [
+        {
+          "profile": "kali-tools-sdr",
+          "field": "Depends",
+          "clause": "uhd-host",
+          "alternative": "uhd-host",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "uhd-images",
+      "declarations": [
+        {
+          "profile": "kali-tools-sdr",
+          "field": "Depends",
+          "clause": "uhd-images",
+          "alternative": "uhd-images",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "unar",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "unrar | unar",
+          "alternative": "unar",
+          "alternatives_in_clause": 2
+        }
+      ]
+    },
+    {
+      "name": "undbx",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "undbx",
+          "alternative": "undbx",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-recover",
+          "field": "Depends",
+          "clause": "undbx",
+          "alternative": "undbx",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "unhide",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "unhide",
+          "alternative": "unhide",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "unicornscan",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "unicornscan",
+          "alternative": "unicornscan",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "uniscan",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "uniscan",
+          "alternative": "uniscan",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "unix-privesc-check",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "unix-privesc-check",
+          "alternative": "unix-privesc-check",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "unrar",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "unrar | unar",
+          "alternative": "unrar",
+          "alternatives_in_clause": 2
+        }
+      ]
+    },
+    {
+      "name": "upx-ucl",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "upx-ucl",
+          "alternative": "upx-ucl",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "urlcrazy",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "urlcrazy",
+          "alternative": "urlcrazy",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "veil",
+      "declarations": [
+        {
+          "profile": "kali-tools-social-engineering",
+          "field": "Depends",
+          "clause": "veil [amd64 i386]",
+          "alternative": "veil [amd64 i386]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "veil [amd64 i386]",
+          "alternative": "veil [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "vinetto",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "vinetto",
+          "alternative": "vinetto",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "voiphopper",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "voiphopper",
+          "alternative": "voiphopper",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "voiphopper",
+          "alternative": "voiphopper",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "wafw00f",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "wafw00f",
+          "alternative": "wafw00f",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "wafw00f",
+          "alternative": "wafw00f",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "wapiti",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "wapiti [amd64 arm64]",
+          "alternative": "wapiti [amd64 arm64]",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "wapiti [amd64 arm64]",
+          "alternative": "wapiti [amd64 arm64]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "watobo",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "watobo [amd64 i386]",
+          "alternative": "watobo [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "wce",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "wce",
+          "alternative": "wce",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "wce",
+          "alternative": "wce",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "webacoo",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "webacoo",
+          "alternative": "webacoo",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "webacoo",
+          "alternative": "webacoo",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "webscarab",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "webscarab",
+          "alternative": "webscarab",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "webshells",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "webshells",
+          "alternative": "webshells",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "weevely",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "weevely",
+          "alternative": "weevely",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-post-exploitation",
+          "field": "Depends",
+          "clause": "weevely",
+          "alternative": "weevely",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "wfuzz",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "wfuzz",
+          "alternative": "wfuzz",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-fuzzing",
+          "field": "Depends",
+          "clause": "wfuzz",
+          "alternative": "wfuzz",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "whatweb",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "whatweb",
+          "alternative": "whatweb",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "wifi-honey",
+      "declarations": [
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "wifi-honey",
+          "alternative": "wifi-honey",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "wifi-honey",
+          "alternative": "wifi-honey",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "wifite",
+      "declarations": [
+        {
+          "profile": "kali-tools-802-11",
+          "field": "Depends",
+          "clause": "wifite",
+          "alternative": "wifite",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "windows-binaries",
+      "declarations": [
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "windows-binaries",
+          "alternative": "windows-binaries",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "windows-privesc-check",
+      "declarations": [
+        {
+          "profile": "kali-tools-windows-resources",
+          "field": "Depends",
+          "clause": "windows-privesc-check",
+          "alternative": "windows-privesc-check",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "winregfs",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "winregfs",
+          "alternative": "winregfs",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "wireshark",
+      "declarations": [
+        {
+          "profile": "kali-tools-top10",
+          "field": "Depends",
+          "clause": "wireshark",
+          "alternative": "wireshark",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "wireshark",
+          "alternative": "wireshark",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-wireless",
+          "field": "Depends",
+          "clause": "wireshark",
+          "alternative": "wireshark",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-sniffing-spoofing",
+          "field": "Depends",
+          "clause": "wireshark",
+          "alternative": "wireshark",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "wireshark",
+          "alternative": "wireshark",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-voip",
+          "field": "Depends",
+          "clause": "wireshark",
+          "alternative": "wireshark",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "witnessme",
+      "declarations": [
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "witnessme",
+          "alternative": "witnessme",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "wordlists",
+      "declarations": [
+        {
+          "profile": "kali-tools-passwords",
+          "field": "Depends",
+          "clause": "wordlists",
+          "alternative": "wordlists",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "wpscan",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "wpscan",
+          "alternative": "wpscan",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "xmount",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "xmount",
+          "alternative": "xmount",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "xplico",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "xplico [amd64 i386]",
+          "alternative": "xplico [amd64 i386]",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "xsser",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "xsser",
+          "alternative": "xsser",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "yara",
+      "declarations": [
+        {
+          "profile": "kali-tools-forensics",
+          "field": "Depends",
+          "clause": "yara",
+          "alternative": "yara",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "yersinia",
+      "declarations": [
+        {
+          "profile": "kali-tools-vulnerability",
+          "field": "Depends",
+          "clause": "yersinia",
+          "alternative": "yersinia",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "zaproxy",
+      "declarations": [
+        {
+          "profile": "kali-tools-web",
+          "field": "Depends",
+          "clause": "zaproxy",
+          "alternative": "zaproxy",
+          "alternatives_in_clause": 1
+        },
+        {
+          "profile": "kali-tools-identify",
+          "field": "Depends",
+          "clause": "zaproxy",
+          "alternative": "zaproxy",
+          "alternatives_in_clause": 1
+        }
+      ]
+    },
+    {
+      "name": "zenmap",
+      "declarations": [
+        {
+          "profile": "kali-tools-information-gathering",
+          "field": "Depends",
+          "clause": "zenmap",
+          "alternative": "zenmap",
+          "alternatives_in_clause": 1
+        }
+      ]
+    }
+  ],
+  "unresolved_declarations": [
+    {
+      "profile": "kali-tools-top10",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-information-gathering",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-vulnerability",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-web",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-database",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-passwords",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-wireless",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-reverse-engineering",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-exploitation",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-social-engineering",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-sniffing-spoofing",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-post-exploitation",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-forensics",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-reporting",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-identify",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-protect",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-detect",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-respond",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-recover",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-802-11",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-bluetooth",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-crypto-stego",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-fuzzing",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-gpu",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-hardware",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-rfid",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-sdr",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-voip",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    },
+    {
+      "profile": "kali-tools-windows-resources",
+      "field": "Depends",
+      "clause": "${misc:Depends}",
+      "alternative": "${misc:Depends}",
+      "alternatives_in_clause": 1
+    }
+  ]
+}

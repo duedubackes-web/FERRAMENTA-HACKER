@@ -1,0 +1,539 @@
+{
+  "schema_version": 1,
+  "categories": [
+    {
+      "id": "platform",
+      "label": "Plataforma e composição"
+    },
+    {
+      "id": "reverse-engineering",
+      "label": "Inspeção e engenharia reversa"
+    },
+    {
+      "id": "network-discovery",
+      "label": "Descoberta de ativos"
+    },
+    {
+      "id": "web-testing",
+      "label": "Avaliação de aplicações web"
+    },
+    {
+      "id": "password-auditing",
+      "label": "Auditoria de senhas"
+    },
+    {
+      "id": "wireless",
+      "label": "Avaliação de redes sem fio"
+    },
+    {
+      "id": "traffic-analysis",
+      "label": "Análise de tráfego",
+      "aliases": [
+        "tráfego",
+        "pcap"
+      ]
+    },
+    {
+      "id": "network-monitoring",
+      "label": "Monitoramento de rede"
+    },
+    {
+      "id": "software-supply-chain",
+      "label": "Componentes e cadeia de software"
+    },
+    {
+      "id": "source-auditing",
+      "label": "Análise de código"
+    },
+    {
+      "id": "secrets-auditing",
+      "label": "Identificação de segredos"
+    },
+    {
+      "id": "endpoint-visibility",
+      "label": "Visibilidade de endpoints"
+    },
+    {
+      "id": "forensics",
+      "label": "Investigação e resposta"
+    },
+    {
+      "id": "reporting",
+      "label": "Gestão de resultados"
+    },
+    {
+      "id": "adversary-emulation",
+      "label": "Emulação de adversário",
+      "aliases": [
+        "Red Team",
+        "redteam",
+        "emulação"
+      ]
+    },
+    {
+      "id": "detection-validation",
+      "label": "Validação de detecções"
+    },
+    {
+      "id": "identity-assessment",
+      "label": "Análise de identidades e relações"
+    },
+    {
+      "id": "protocol-libraries",
+      "label": "Bibliotecas de protocolos"
+    },
+    {
+      "id": "exploit-frameworks",
+      "label": "Frameworks de testes de intrusão"
+    },
+    {
+      "id": "vulnerability-assessment",
+      "label": "Avaliação de vulnerabilidades"
+    },
+    {
+      "id": "ai-research",
+      "label": "Assistentes e interfaces de IA",
+      "aliases": [
+        "Google Gemini",
+        "IA",
+        "AI"
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "id": "kali",
+      "name": "Kali Linux",
+      "categories": [
+        "platform"
+      ],
+      "purpose": "Composição de perfis e distribuição de ferramentas.",
+      "repository": null,
+      "source_ids": [
+        "kali-meta",
+        "kali-live-build"
+      ]
+    },
+    {
+      "id": "craft-anything",
+      "name": "Craft Anything",
+      "categories": [
+        "reverse-engineering"
+      ],
+      "purpose": "Inspeção de artefatos e organização de reconstrução orientada por evidências.",
+      "repository": "storytold/craft-anything",
+      "source_ids": [
+        "craft-anything"
+      ]
+    },
+    {
+      "id": "rea",
+      "name": "REA",
+      "categories": [
+        "reverse-engineering"
+      ],
+      "purpose": "Inspeção estática de artefatos e evidências para investigações.",
+      "repository": "morluto/rea",
+      "source_ids": [
+        "rea"
+      ]
+    },
+    {
+      "id": "nmap",
+      "name": "Nmap",
+      "categories": [
+        "network-discovery"
+      ],
+      "purpose": "Inventário de ativos e serviços; esta base importa e compara XMLs locais.",
+      "repository": "nmap/nmap",
+      "source_ids": [
+        "nmap"
+      ]
+    },
+    {
+      "id": "wireshark",
+      "name": "Wireshark",
+      "categories": [
+        "traffic-analysis"
+      ],
+      "purpose": "Leitura e dissecação de capturas de tráfego.",
+      "repository": null,
+      "source_ids": [
+        "wireshark"
+      ]
+    },
+    {
+      "id": "hydra",
+      "name": "THC Hydra",
+      "categories": [
+        "password-auditing"
+      ],
+      "purpose": "Referência de arquitetura modular para auditoria de autenticação.",
+      "repository": "vanhauser-thc/thc-hydra",
+      "source_ids": [
+        "hydra"
+      ]
+    },
+    {
+      "id": "sqlmap",
+      "name": "sqlmap",
+      "categories": [
+        "web-testing"
+      ],
+      "purpose": "Avaliação de segurança relacionada a bancos de dados e aplicações web.",
+      "repository": "sqlmapproject/sqlmap",
+      "source_ids": [
+        "sqlmap"
+      ]
+    },
+    {
+      "id": "john",
+      "name": "John the Ripper",
+      "categories": [
+        "password-auditing"
+      ],
+      "purpose": "Auditoria offline de senhas; catálogo do fonte sem executar o motor.",
+      "repository": "openwall/john",
+      "source_ids": [
+        "john"
+      ]
+    },
+    {
+      "id": "zaproxy",
+      "name": "ZAP",
+      "categories": [
+        "web-testing"
+      ],
+      "purpose": "Proxy e plataforma extensível de avaliação de aplicações web.",
+      "repository": "zaproxy/zaproxy",
+      "source_ids": [
+        "zaproxy"
+      ]
+    },
+    {
+      "id": "nuclei",
+      "name": "Nuclei",
+      "categories": [
+        "vulnerability-assessment",
+        "web-testing"
+      ],
+      "purpose": "Motor de verificação orientado por templates; nenhum template foi executado.",
+      "repository": "projectdiscovery/nuclei",
+      "source_ids": [
+        "nuclei"
+      ]
+    },
+    {
+      "id": "httpx",
+      "name": "httpx",
+      "categories": [
+        "network-discovery",
+        "web-testing"
+      ],
+      "purpose": "Coleta de informações HTTP para inventário e avaliação.",
+      "repository": "projectdiscovery/httpx",
+      "source_ids": []
+    },
+    {
+      "id": "subfinder",
+      "name": "Subfinder",
+      "categories": [
+        "network-discovery"
+      ],
+      "purpose": "Descoberta passiva de subdomínios a partir de fontes disponíveis.",
+      "repository": "projectdiscovery/subfinder",
+      "source_ids": []
+    },
+    {
+      "id": "amass",
+      "name": "OWASP Amass",
+      "categories": [
+        "network-discovery"
+      ],
+      "purpose": "Mapeamento de infraestrutura e relações de ativos.",
+      "repository": "owasp-amass/amass",
+      "source_ids": []
+    },
+    {
+      "id": "nikto",
+      "name": "Nikto",
+      "categories": [
+        "web-testing"
+      ],
+      "purpose": "Avaliação de configuração e exposição de servidores web.",
+      "repository": "sullo/nikto",
+      "source_ids": []
+    },
+    {
+      "id": "ffuf",
+      "name": "ffuf",
+      "categories": [
+        "web-testing"
+      ],
+      "purpose": "Ferramenta de descoberta e testes de entradas web.",
+      "repository": "ffuf/ffuf",
+      "source_ids": []
+    },
+    {
+      "id": "gobuster",
+      "name": "Gobuster",
+      "categories": [
+        "web-testing",
+        "network-discovery"
+      ],
+      "purpose": "Descoberta de recursos e nomes em avaliações autorizadas.",
+      "repository": "OJ/gobuster",
+      "source_ids": []
+    },
+    {
+      "id": "rustscan",
+      "name": "RustScan",
+      "categories": [
+        "network-discovery"
+      ],
+      "purpose": "Descoberta de portas; desempenho e integração não foram testados aqui.",
+      "repository": "bee-san/RustScan",
+      "source_ids": [],
+      "aliases": [
+        "RustScan/RustScan",
+        "bee-san/RustScan"
+      ]
+    },
+    {
+      "id": "aircrack-ng",
+      "name": "Aircrack-ng",
+      "categories": [
+        "wireless"
+      ],
+      "purpose": "Conjunto de ferramentas para avaliação de redes sem fio.",
+      "repository": "aircrack-ng/aircrack-ng",
+      "source_ids": [
+        "aircrack-ng"
+      ]
+    },
+    {
+      "id": "bettercap",
+      "name": "bettercap",
+      "categories": [
+        "traffic-analysis",
+        "wireless"
+      ],
+      "purpose": "Framework de avaliação de redes e protocolos.",
+      "repository": "bettercap/bettercap",
+      "source_ids": []
+    },
+    {
+      "id": "mitmproxy",
+      "name": "mitmproxy",
+      "categories": [
+        "traffic-analysis",
+        "web-testing"
+      ],
+      "purpose": "Proxy extensível e representação de fluxos para investigação.",
+      "repository": "mitmproxy/mitmproxy",
+      "source_ids": [
+        "mitmproxy"
+      ]
+    },
+    {
+      "id": "zeek",
+      "name": "Zeek",
+      "categories": [
+        "network-monitoring",
+        "traffic-analysis"
+      ],
+      "purpose": "Análise de tráfego e geração de evidências de rede.",
+      "repository": "zeek/zeek",
+      "source_ids": [
+        "zeek"
+      ]
+    },
+    {
+      "id": "suricata",
+      "name": "Suricata",
+      "categories": [
+        "network-monitoring"
+      ],
+      "purpose": "Motor de inspeção e detecção de eventos de rede.",
+      "repository": "OISF/suricata",
+      "source_ids": []
+    },
+    {
+      "id": "trivy",
+      "name": "Trivy",
+      "categories": [
+        "software-supply-chain",
+        "vulnerability-assessment"
+      ],
+      "purpose": "Avaliação de componentes, configurações e artefatos de software.",
+      "repository": "aquasecurity/trivy",
+      "source_ids": [
+        "trivy"
+      ]
+    },
+    {
+      "id": "syft",
+      "name": "Syft",
+      "categories": [
+        "software-supply-chain"
+      ],
+      "purpose": "Geração de inventários de componentes e SBOM.",
+      "repository": "anchore/syft",
+      "source_ids": []
+    },
+    {
+      "id": "semgrep",
+      "name": "Semgrep",
+      "categories": [
+        "source-auditing"
+      ],
+      "purpose": "Análise estática de código baseada em regras.",
+      "repository": "semgrep/semgrep",
+      "source_ids": []
+    },
+    {
+      "id": "trufflehog",
+      "name": "TruffleHog",
+      "categories": [
+        "secrets-auditing"
+      ],
+      "purpose": "Identificação de possíveis segredos em fontes e artefatos.",
+      "repository": "trufflesecurity/trufflehog",
+      "source_ids": []
+    },
+    {
+      "id": "gitleaks",
+      "name": "Gitleaks",
+      "categories": [
+        "secrets-auditing"
+      ],
+      "purpose": "Identificação de possíveis segredos em repositórios e arquivos.",
+      "repository": "gitleaks/gitleaks",
+      "source_ids": []
+    },
+    {
+      "id": "osquery",
+      "name": "osquery",
+      "categories": [
+        "endpoint-visibility"
+      ],
+      "purpose": "Inventário e consulta estruturada de informações de endpoints.",
+      "repository": "osquery/osquery",
+      "source_ids": []
+    },
+    {
+      "id": "velociraptor",
+      "name": "Velociraptor",
+      "categories": [
+        "forensics",
+        "endpoint-visibility"
+      ],
+      "purpose": "Investigação e coleta de informações para resposta a incidentes.",
+      "repository": "Velocidex/velociraptor",
+      "source_ids": []
+    },
+    {
+      "id": "defectdojo",
+      "name": "DefectDojo",
+      "categories": [
+        "reporting"
+      ],
+      "purpose": "Importação, normalização e gestão de resultados de ferramentas.",
+      "repository": "DefectDojo/django-DefectDojo",
+      "source_ids": [
+        "defectdojo"
+      ]
+    },
+    {
+      "id": "caldera",
+      "name": "CALDERA",
+      "categories": [
+        "adversary-emulation"
+      ],
+      "purpose": "Plataforma de emulação de adversário; plugins não foram baixados recursivamente.",
+      "repository": "apache/caldera",
+      "source_ids": [
+        "caldera"
+      ],
+      "aliases": [
+        "mitre/caldera",
+        "apache/caldera"
+      ]
+    },
+    {
+      "id": "atomic-red-team",
+      "name": "Atomic Red Team",
+      "categories": [
+        "detection-validation",
+        "adversary-emulation"
+      ],
+      "purpose": "Coleção de testes para validação de detecções; nenhum teste foi executado.",
+      "repository": "redcanaryco/atomic-red-team",
+      "source_ids": []
+    },
+    {
+      "id": "bloodhound",
+      "name": "BloodHound CE",
+      "categories": [
+        "identity-assessment"
+      ],
+      "purpose": "Análise de relações e caminhos em ambientes de identidade.",
+      "repository": "SpecterOps/BloodHound",
+      "source_ids": []
+    },
+    {
+      "id": "impacket",
+      "name": "Impacket",
+      "categories": [
+        "protocol-libraries"
+      ],
+      "purpose": "Bibliotecas Python para protocolos de rede e avaliação de interoperabilidade.",
+      "repository": "fortra/impacket",
+      "source_ids": []
+    },
+    {
+      "id": "metasploit",
+      "name": "Metasploit Framework",
+      "categories": [
+        "exploit-frameworks"
+      ],
+      "purpose": "Framework modular de testes de intrusão, catalogado apenas como referência.",
+      "repository": "rapid7/metasploit-framework",
+      "source_ids": []
+    },
+    {
+      "id": "gemini-app",
+      "name": "Google Gemini (app)",
+      "categories": [
+        "ai-research"
+      ],
+      "purpose": "Serviço hospedado: investigação limitada à interface e aos ativos públicos, sem acesso ao backend.",
+      "repository": null,
+      "source_ids": []
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "categories": [
+        "ai-research"
+      ],
+      "purpose": "Agente aberto de terminal relacionado à família Gemini; não é o código do app web.",
+      "repository": "google-gemini/gemini-cli",
+      "source_ids": [
+        "gemini-cli"
+      ]
+    },
+    {
+      "id": "google-genai-js",
+      "name": "Google Gen AI SDK",
+      "categories": [
+        "ai-research"
+      ],
+      "purpose": "SDK JavaScript/TypeScript para integração com APIs documentadas, sem chamadas nesta pesquisa.",
+      "repository": "googleapis/js-genai",
+      "source_ids": [
+        "google-genai-js"
+      ]
+    }
+  ]
+}
