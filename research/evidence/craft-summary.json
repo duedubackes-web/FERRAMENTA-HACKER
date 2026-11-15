@@ -94,5 +94,53 @@
     ],
     "source_id": "wireshark",
     "archive_sha256": "5ceb6dad533e33ebcd01bca2850ad138141e5d999061adb779999a7c04fa2f1a"
+  },
+  {
+    "id": "ev_669efbe96fd1db49fe2725759c462276081f6696b84ce6872c6b2f6c2814a683",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 2631,
+      "status": "complete",
+      "total": 2631
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "nmap-68739db8e4ec.zip (zip) holds 2631 files in 2631 entries; 1 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "nmap",
+    "archive_sha256": "8d76c2b25ec474d742f013c707ead3173441dda6f5f18be7c33864a5657c34c5"
+  },
+  {
+    "id": "ev_db8d6fbda1d22eae3cf52dac73fe36554d09baed9bc2f8f685dcdb57d8524220",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 899,
+      "status": "complete",
+      "total": 899
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "sqlmap-8b78b676c137.zip (zip) holds 899 files in 899 entries; 3 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "sqlmap",
+    "archive_sha256": "e1d00c14315b6b42a02349f8d8a181db31d8fe620a4998ca556159cd6e74728f"
   }
 ]

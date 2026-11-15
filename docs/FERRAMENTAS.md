@@ -58,3 +58,13 @@ Nenhuma chave de provedor de IA foi exigida. O fluxo futuro de reconstrução de
 
 Para repetir esta pesquisa, recupere os snapshots fixados, instale as versões indicadas das ferramentas em um diretório de trabalho e consulte `--help` dessas versões.
 Guarde um novo resultado em arquivo distinto: horários e caminhos podem mudar; compare hashes de entrada, versão, parâmetros e conteúdo normalizado antes de afirmar equivalência.
+
+
+## Segunda rodada: Nmap e sqlmap
+
+Mesmas versões fixadas: REA 6.9.0 e Craft Anything 0.6.1. Foram reutilizadas as instalações locais, sem atualizar dependências ou registrar MCP.
+Os ZIPs dos dois novos commits foram lidos com `--deep core-archive-show --json PARAMETROS_JSON`.
+A chamada inicial usou profundidade 0 e reportou arquivos compactados não abertos; a chamada final usou `max_depth=1`, `max_entries=20000`, `max_total_bytes=1000000000` e `limit=20000`.
+Resultados completos e expandidos são preservados; IDs finais, cobertura e hashes estão em `research/evidence/craft-summary.json`.
+REA executou `analyze-javascript-application /workspace/work/web-next/nmap-scripts --format json` e o equivalente `sqlmap-scripts`.
+O alvo dessas chamadas é o JavaScript entregue pelos sites, não o código nativo/Python dos motores. Consulte `NMAP-SQLMAP.md` para resultados e limites de ambas as análises.

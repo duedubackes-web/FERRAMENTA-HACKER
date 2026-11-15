@@ -1,0 +1,23 @@
+{
+  "url": "https://nmap.org/",
+  "source_html": "nmap.html",
+  "extraction": "HTMLParser; inert inline text and public same-origin script files; no browser or target code execution",
+  "scripts": [
+    {
+      "script_index": 1,
+      "file": "script-001.js",
+      "origin": "same-origin-script",
+      "url": "https://nmap.org/shared/js/nst.js?v=2",
+      "status": "retained",
+      "bytes": 2235
+    },
+    {
+      "script_index": 2,
+      "file": "script-002.js",
+      "origin": "inline",
+      "url": null,
+      "status": "retained",
+      "bytes": 377
+    }
+  ]
+}

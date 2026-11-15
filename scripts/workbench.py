@@ -65,6 +65,9 @@ def main(argv=None) -> int:
     find = commands.add_parser('find', help='Search tracked paths in an offline inventory')
     find.add_argument('source')
     find.add_argument('query')
+    nmap = commands.add_parser('import-nmap', help='Import an existing local Nmap XML report without running Nmap')
+    nmap.add_argument('path', type=Path)
+    nmap.add_argument('--output', type=Path, help='Write a new JSON file; refuses to overwrite')
     args = parser.parse_args(argv)
     try:
         if args.command == 'verify':
@@ -82,6 +85,14 @@ def main(argv=None) -> int:
             for key, value in data.items():
                 print(f'{key}: {value["files"]} tracked entries, {value["bytes"]} inventoried bytes')
             print('Scope: pinned tracked trees only. Semantic review selective; no full Kali package closure or runtime audit.')
+        elif args.command == 'import-nmap':
+            from nmap_report import import_report, save_report
+            report = import_report(args.path)
+            if args.output:
+                save_report(report, args.output)
+                print(f'Imported {len(report["hosts"])} hosts into {args.output}')
+            else:
+                print(json.dumps(report, ensure_ascii=False, indent=2))
         else:
             count = 0
             for row in inventory(ROOT, args.source):

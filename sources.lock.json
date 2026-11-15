@@ -84,6 +84,32 @@
       "scope": "HEAD tracked tree; no history, no recursive submodules, no LFS hydration",
       "snapshot_method": "Git tracked working tree bytes; symlink target text preserved; gitlinks recorded but not included; no export-ignore or export-subst transformations",
       "unfetched_gitlinks": []
+    },
+    {
+      "id": "nmap",
+      "url": "https://github.com/nmap/nmap.git",
+      "commit": "68739db8e4ec139c3865a33073c76c6fd13fb96c",
+      "tracked_files": 2611,
+      "archive": "nmap-68739db8e4ec.zip",
+      "archive_sha256": "8d76c2b25ec474d742f013c707ead3173441dda6f5f18be7c33864a5657c34c5",
+      "archive_bytes": 18421899,
+      "collected_at": "2026-11-15T16:13:55.518039+00:00",
+      "scope": "HEAD tracked tree; no history, no recursive submodules, no LFS hydration",
+      "snapshot_method": "Git tracked working tree bytes; symlink text preserved; gitlinks omitted; no export transformations",
+      "unfetched_gitlinks": []
+    },
+    {
+      "id": "sqlmap",
+      "url": "https://github.com/sqlmapproject/sqlmap.git",
+      "commit": "8b78b676c1376ae28feccd957b03bbecea05eff1",
+      "tracked_files": 896,
+      "archive": "sqlmap-8b78b676c137.zip",
+      "archive_sha256": "e1d00c14315b6b42a02349f8d8a181db31d8fe620a4998ca556159cd6e74728f",
+      "archive_bytes": 8821531,
+      "collected_at": "2026-11-15T16:13:56.161893+00:00",
+      "scope": "HEAD tracked tree; no history, no recursive submodules, no LFS hydration",
+      "snapshot_method": "Git tracked working tree bytes; symlink text preserved; gitlinks omitted; no export transformations",
+      "unfetched_gitlinks": []
     }
   ]
 }

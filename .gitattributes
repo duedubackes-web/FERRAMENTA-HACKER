@@ -2,3 +2,4 @@
 * -text
 # Captured source is evidence; preserve its original whitespace.
 research/web/** -whitespace
+third_party/notices/** -whitespace

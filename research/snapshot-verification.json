@@ -40,5 +40,19 @@
     "unfetched_gitlinks": 0,
     "archive_sha256_verified": true,
     "per_entry_sha256_verified": true
+  },
+  {
+    "source": "nmap",
+    "checked_files": 2611,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "sqlmap",
+    "checked_files": 896,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
   }
 ]

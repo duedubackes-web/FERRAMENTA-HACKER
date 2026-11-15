@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<!-- Hand-authored documentation-only fixture; no network scan was performed. -->
+<nmaprun scanner="nmap" version="synthetic-fixture" xmloutputversion="1.05" start="0">
+  <scaninfo type="connect" protocol="tcp" numservices="3" services="22,443,8080"/>
+  <host>
+    <status state="up" reason="synthetic"/>
+    <address addr="192.0.2.10" addrtype="ipv4"/>
+    <address addr="2001:db8::10" addrtype="ipv6"/>
+    <hostnames><hostname name="example.test" type="user"/></hostnames>
+    <ports>
+      <port protocol="tcp" portid="22"><state state="closed" reason="synthetic"/></port>
+      <port protocol="tcp" portid="443"><state state="open" reason="synthetic"/><service name="https" method="table" conf="3"/></port>
+      <extraports state="filtered" count="1"><extrareasons reason="synthetic" count="1"/></extraports>
+    </ports>
+  </host>
+  <runstats><finished time="0" exit="success"/><hosts up="1" down="0" total="1"/></runstats>
+</nmaprun>

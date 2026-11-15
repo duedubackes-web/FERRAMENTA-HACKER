@@ -1,0 +1,16 @@
+{
+  "url": "https://nmap.org/",
+  "final_url": "https://nmap.org/",
+  "status": 200,
+  "headers": {
+    "date": "Sun, 15 Nov 2026 16:12:16 GMT",
+    "server": "envoy",
+    "strict-transport-security": "max-age=31536000; preload",
+    "vary": "Host",
+    "accept-ranges": "bytes",
+    "content-type": "text/html; charset=utf-8",
+    "x-envoy-upstream-service-time": "323",
+    "connection": "close",
+    "transfer-encoding": "chunked"
+  }
+}

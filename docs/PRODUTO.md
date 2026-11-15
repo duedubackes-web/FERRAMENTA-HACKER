@@ -31,3 +31,10 @@ Os diferenciais são hipóteses, não resultado de pesquisa de mercado nem alega
 Entrevistar cinco potenciais usuários; observar uma tarefa real com material sanitizado;
 comparar o fluxo com ferramentas existentes; medir tempo até encontrar a causa e qualidade da explicação.
 Só ampliar para composição de laboratório ou novos conectores após o primeiro fluxo ser validado.
+
+
+## Incremento disponível
+
+A importação offline de XML Nmap já adiciona inventário de ativos à base: hash, hosts, endereços, estados, serviços e cobertura.
+É o primeiro fluxo de ingestão de um resultado de ferramenta; ainda faltam comparação entre sessões, correlação com capturas e validação da hipótese comercial.
+O objetivo é permitir investigação reproduzível com artefatos existentes, sem exigir que o usuário execute um motor pela aplicação.

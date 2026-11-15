@@ -8,6 +8,8 @@
 | Hydra | AGPLv3 no README | LICENSE preservado; avaliar entrega e acesso em rede se houver derivação |
 | kali-meta | GPL-3.0+ em debian/copyright | Copyright e declaração preservados |
 | Kali live-build | LICENSE contém GPLv2 | Preservado; permissões específicas exigem revisão dos arquivos usados |
+| Nmap | NPSL 0.95, licença própria | LICENSE preservado; revisar redistribuição, incorporação e condições OEM |
+| sqlmap | GPLv2-ou-posterior com esclarecimentos e exceções próprios | LICENSE e avisos terceiros preservados; o texto trata execução e parsing de resultados |
 
 Kali como distribuição não tem uma única licença que cubra todos os seus pacotes.
 Metadados do GitHub não substituem textos de licença do commit ou declarações por arquivo.
@@ -22,3 +24,5 @@ Separar processos pode ajudar a arquitetura, mas não é uma garantia automátic
 O repositório fornecido pelo proprietário já contém LICENSE MIT, copyright 2026 duedubackes-web. Essa licença foi preservada e se aplica ao código original da base, não relicencia material de terceiros.
 Não aplicar uma licença permissiva global sobre arquivos de terceiros. Marcas, imagens e textos dos sites não são concedidos pela licença de ferramentas.
 O HTML do Wireshark é evidência de pesquisa, não uma licença para reutilizar sua interface ou identidade visual.
+
+O novo importador XML é código original, não inclui nem executa os motores. NPSL discute explicitamente a leitura de resultados fornecidos por usuários e usos que não requerem os direitos concedidos pela licença; isso não concede automaticamente direitos para redistribuir o motor. O relatório NMAP-SQLMAP cita as linhas relevantes dos dois projetos.

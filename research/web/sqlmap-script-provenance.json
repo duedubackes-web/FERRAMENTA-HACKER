@@ -1,0 +1,33 @@
+{
+  "url": "https://sqlmap.org/",
+  "source_html": "sqlmap.html",
+  "extraction": "HTMLParser; inert inline text and public same-origin script files; no browser or target code execution",
+  "scripts": [
+    {
+      "script_index": 0,
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-PK2GTNDFZ6",
+      "status": "external-origin-not-fetched"
+    },
+    {
+      "script_index": 1,
+      "file": "script-001.js",
+      "origin": "inline",
+      "url": null,
+      "status": "retained",
+      "bytes": 152
+    },
+    {
+      "script_index": 3,
+      "url": "https://asciinema.org/a/46601.js",
+      "status": "external-origin-not-fetched"
+    },
+    {
+      "script_index": 4,
+      "file": "script-004.js",
+      "origin": "inline",
+      "url": null,
+      "status": "retained",
+      "bytes": 3818
+    }
+  ]
+}

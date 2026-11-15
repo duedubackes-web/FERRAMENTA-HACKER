@@ -1,6 +1,6 @@
 # Roadmap e backlog
 
-## Entrega atual
+## Primeira entrega
 
 - [x] Coletar árvores públicas dos seis repositórios, fixar commits e preservar licenças.
 - [x] Inventariar arquivos rastreados e gerar hashes.
@@ -35,3 +35,17 @@
 - [ ] Definir política de atualização e verificar versões e avisos de segurança reais.
 
 Use `.github/ISSUE_TEMPLATE/work-item.yml` para converter cada item em uma tarefa com fonte, resultado esperado e validação.
+
+
+## Expansão Nmap e sqlmap — 15/11/2026
+
+- [x] Coletar as duas fontes oficiais e inventariar 3.507 entradas novas com hashes e licenças.
+- [x] Ampliar inventários Craft para os arquivos compactados internos identificados; preservar cobertura e evidências.
+- [x] Aplicar REA aos scripts públicos retidos dos dois sites, sem executar os motores.
+- [x] Criar importador offline original XML Nmap → JSON v1, com Artifact/AnalysisRun, proveniência e limites.
+- [x] Testar o fluxo CLI com XML sintético e comparar a compatibilidade de leitura com 19 fixtures públicas do upstream.
+- [ ] Completar P01: contratos formais dos demais adaptadores e Finding; o importador atual cobre apenas seu recorte.
+- [ ] Comparar dois relatórios importados, distinguindo mudança observada de ausência de cobertura.
+- [ ] Correlacionar inventário de ativos e capturas offline depois de implementar o adaptador TShark.
+- [ ] Avaliar suporte a codificações legadas e corpus de releases Nmap atuais.
+- [ ] Rever modelo de distribuição à luz de NPSL e dos termos próprios do sqlmap antes de incorporar motores.

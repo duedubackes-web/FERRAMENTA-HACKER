@@ -1,0 +1,30 @@
+{
+  "url": "https://sqlmap.org/",
+  "final_url": "https://sqlmap.org/",
+  "status": 200,
+  "headers": {
+    "server": "envoy",
+    "content-type": "text/html; charset=utf-8",
+    "last-modified": "Sat, 13 Jun 2026 23:12:35 GMT",
+    "access-control-allow-origin": "*",
+    "etag": "\"6a2de3e3-727d\"",
+    "expires": "Sun, 15 Nov 2026 16:22:16 GMT",
+    "cache-control": "max-age=600",
+    "x-proxy-cache": "MISS",
+    "x-github-request-id": "8B9E:6AE1F:31EAE3A:36C87CF:6AF9D9DD",
+    "x-github-edge-region": "iad",
+    "accept-ranges": "bytes",
+    "age": "0",
+    "date": "Sun, 15 Nov 2026 16:12:16 GMT",
+    "via": "1.1 varnish",
+    "x-served-by": "cache-chi-klot8100065-CHI",
+    "x-cache": "MISS",
+    "x-cache-hits": "0",
+    "x-timer": "S1794759137.624081,VS0,VE57",
+    "vary": "Accept-Encoding",
+    "x-fastly-request-id": "f741d7d568773ae7319749349efe5762e9ce0913",
+    "content-length": "29309",
+    "x-envoy-upstream-service-time": "181",
+    "connection": "close"
+  }
+}

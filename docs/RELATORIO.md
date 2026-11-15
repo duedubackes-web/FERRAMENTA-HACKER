@@ -1,4 +1,4 @@
-# Relatório de extração e análise
+# Relatório de extração e análise — primeira rodada
 
 Coleta UTC: 2026-11-15T13:42:57.910339+00:00; data local de referência: 15/11/2026, America/Sao_Paulo.
 
@@ -68,3 +68,5 @@ Craft Anything 0.6.1 executou `core-archive-show` em modo Deep nos quatro ZIPs d
 ## Limitações materiais
 
 Página Kali: HTTP 403, sem tentativa de contorno. Fontes oficiais Kali obtidas pelo GitLab. A clonagem é rasa: árvore do commit, sem histórico completo. Git LFS não foi hidratado e submódulos não foram baixados recursivamente. Não houve compilação dos alvos, decompilação de binários, análise de RAM, execução de Hydra, captura de tráfego, benchmark, revisão CVE ou prova de equivalência. Os resultados não estabelecem segurança, desempenho, ausência de falhas, compatibilidade ou conformidade jurídica do futuro produto.
+
+A continuação Nmap/sqlmap está em `NMAP-SQLMAP.md`. O lock e a síntese de corpus atuais já abrangem oito repositórios; a tabela acima registra a primeira rodada de seis.

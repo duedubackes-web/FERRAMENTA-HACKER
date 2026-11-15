@@ -8,3 +8,13 @@
 - Craft reportou cobertura completa do inventário de cada ZIP nos parâmetros registrados. Arquivos compactados internos não foram abertos.
 - REA analisou 11 scripts inline, com zero falhas de parse reportadas. Isso não comprova execução ou análise da aplicação nativa.
 - Nenhuma suíte dos projetos originais foi executada. A configuração de CI da base é entregue; seu estado no GitHub deve ser verificado após publicar o commit.
+
+
+## Continuação Nmap/sqlmap
+
+- Os dois ZIPs novos tiveram seus checksums e cada entrada conferidos contra os inventários; o registro passa a abranger oito fontes.
+- Doze testes da base, incluindo o fluxo CLI de importação e recusa de sobrescrita, foram executados localmente com sucesso.
+- Foram lidos 19 fixtures XML públicos do Nmap: 16 importados, dois rejeitados por ISO-8859-1 e um por XML malformado. O relatório por arquivo está em `research/nmap-fixture-validation.json`.
+- Craft declarou inventário completo após ampliar a profundidade: Nmap 2.631 entradas, sqlmap 899. As entradas extras são membros de arquivos internos.
+- REA analisou dois scripts públicos de cada site sem falhas de parse reportadas; nenhum motor foi executado.
+- Resultados históricos acima referem-se à primeira rodada; a CI do novo commit será verificada separadamente após publicação.

@@ -1,0 +1,64 @@
+{
+  "evidence_id": "ev_f25a631b6b8fa32cd477f0a05a5a18437e9acd8d08b3b1d199c865def072da2f",
+  "subject": {
+    "name": "nmap-scripts",
+    "digest": {
+      "sha256": "cf6aeab30161195cd7a35c8ad38e8fe857d6d02cc35ed35fbf9fc9591c512f1e"
+    },
+    "local_path": "/workspace/work/web-next/nmap-scripts",
+    "format": "directory",
+    "architecture": null
+  },
+  "provider": {
+    "id": "rea-javascript-application",
+    "name": "REA JavaScript application analyzer",
+    "version": "1"
+  },
+  "operation": "analyze_javascript_application",
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "limitations": [
+    "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+    "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+    "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+    "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+    "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+  ],
+  "statistics": {
+    "relevant_files": 2,
+    "nested_asar_containers": 0,
+    "text_bytes_read": 2612,
+    "invalid_utf8_files": 0,
+    "parsed_javascript_files": 2,
+    "skipped_javascript_files": 0,
+    "visited_ast_nodes": 515,
+    "findings": 0,
+    "modules": 0,
+    "parse_failures": 0
+  },
+  "summary": {
+    "browser_windows": 0,
+    "explicit_web_preferences": 0,
+    "preload_entrypoints": 0,
+    "context_bridge_apis": 0,
+    "exposed_api_members": 0,
+    "ipc": {
+      "operations": 0,
+      "literal_channels": 0,
+      "dynamic_channel_operations": 0,
+      "renderer_transmissions": 0,
+      "renderer_listeners": 0,
+      "main_handlers": 0,
+      "paired_renderer_transmissions": 0,
+      "ambiguous_renderer_transmissions": 0,
+      "unpaired_literal_renderer_transmissions": 0
+    },
+    "sender_validation_observations": 0,
+    "utility_processes": 0,
+    "resolved_utility_entrypoints": 0,
+    "native_addon_bindings": 0,
+    "resolved_native_addon_bindings": 0,
+    "protocol_registrations": 0,
+    "v8_cached_data_compilations": 0
+  }
+}

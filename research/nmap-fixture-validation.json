@@ -1,0 +1,176 @@
+{
+  "source_commit": "68739db8e4ec139c3865a33073c76c6fd13fb96c",
+  "method": "Read public upstream XML fixtures with our offline adapter; no upstream code, scanner or network request executed",
+  "records": [
+    {
+      "path": "zenmap/test/nmap-output-error.xml",
+      "sha256": "24d65fb6d8a169a64005550954cb3a8a3f4e7b24ac8a1b7099c11cc56ef68f33",
+      "status": "rejected",
+      "reason": "Malformed Nmap XML: not well-formed (invalid token): line 14, column 53"
+    },
+    {
+      "path": "zenmap/test/xml_test1.xml",
+      "sha256": "b84c12b2153b1fc14760ca178c014a3975ab1db8c7634b7f2c730a7abd30e9c4",
+      "status": "imported",
+      "hosts": 1,
+      "ports": 4,
+      "warnings": [
+        "The producer did not report a successful scan exit"
+      ]
+    },
+    {
+      "path": "zenmap/test/xml_test10.xml",
+      "sha256": "6784f6b5a9db13416d263ebfad3d7e117ddb380393200b681870ccb0a11bfcdf",
+      "status": "imported",
+      "hosts": 4,
+      "ports": 8,
+      "warnings": [
+        "The producer did not report a successful scan exit"
+      ]
+    },
+    {
+      "path": "zenmap/test/xml_test11.xml",
+      "sha256": "1e4cfa4e5b164de8fe5d8bed3fd00206cc875899c829c2b53449ebad9f31094f",
+      "status": "imported",
+      "hosts": 4,
+      "ports": 8,
+      "warnings": [
+        "The producer did not report a successful scan exit"
+      ]
+    },
+    {
+      "path": "zenmap/test/xml_test12.xml",
+      "sha256": "12e443b9e4ec1dea2b8313314c1164d68053e4afad7ec12a5a552c6d8f93bd28",
+      "status": "imported",
+      "hosts": 1,
+      "ports": 0,
+      "warnings": [
+        "The producer did not report a successful scan exit"
+      ]
+    },
+    {
+      "path": "zenmap/test/xml_test13.xml",
+      "sha256": "88b5ff6f43aa8ff9dfd52beae24a8e2d148e4c3e98b0c4d061292bb1f9001cd3",
+      "status": "imported",
+      "hosts": 1,
+      "ports": 3,
+      "warnings": []
+    },
+    {
+      "path": "zenmap/test/xml_test14.xml",
+      "sha256": "bf681eb4f62a6884e3b9a4f91cacbae8acd193f5093852db14112e2d7e21ffd9",
+      "status": "imported",
+      "hosts": 1,
+      "ports": 2,
+      "warnings": []
+    },
+    {
+      "path": "zenmap/test/xml_test15.xml",
+      "sha256": "a79b39259e632cf020351c615b9e4d97665e7d8d35a12e41ad14e7350598cd05",
+      "status": "imported",
+      "hosts": 1,
+      "ports": 0,
+      "warnings": []
+    },
+    {
+      "path": "zenmap/test/xml_test16.xml",
+      "sha256": "611650294eaf3b4ff0cea4ef6e22d3d5f564bf9e33542c8bfaee459b95a45018",
+      "status": "rejected",
+      "reason": "Nmap XML must declare UTF-8 or US-ASCII"
+    },
+    {
+      "path": "zenmap/test/xml_test17.xml",
+      "sha256": "18751c2e50db3b2467cb9e9a89e9a9e1aeff2b417d6197f220b8b9e7f71eb119",
+      "status": "rejected",
+      "reason": "Nmap XML must declare UTF-8 or US-ASCII"
+    },
+    {
+      "path": "zenmap/test/xml_test2.xml",
+      "sha256": "cc556d35a675f008370df967629ceecacb087a6547175420136cd4ace791571a",
+      "status": "imported",
+      "hosts": 1,
+      "ports": 4,
+      "warnings": [
+        "The producer did not report a successful scan exit"
+      ]
+    },
+    {
+      "path": "zenmap/test/xml_test3.xml",
+      "sha256": "606d1dce54516839e4157e3eee828796695cd50bef7c86cec70b8acb928af0bd",
+      "status": "imported",
+      "hosts": 1,
+      "ports": 2,
+      "warnings": [
+        "The producer did not report a successful scan exit"
+      ]
+    },
+    {
+      "path": "zenmap/test/xml_test4.xml",
+      "sha256": "32e2d21e3fec2ec072906e13674524640db148244d00a11f06413a02b98d5696",
+      "status": "imported",
+      "hosts": 4,
+      "ports": 8,
+      "warnings": [
+        "The producer did not report a successful scan exit"
+      ]
+    },
+    {
+      "path": "zenmap/test/xml_test5.xml",
+      "sha256": "4630a07beae2f7da002b9f91c030f9070963c0bc5e00684f40bd36b8deb6fe13",
+      "status": "imported",
+      "hosts": 4,
+      "ports": 8,
+      "warnings": [
+        "The producer did not report a successful scan exit"
+      ]
+    },
+    {
+      "path": "zenmap/test/xml_test6.xml",
+      "sha256": "0014295cdc629590abbb83209734dad65725dfc1e31879e92e4a2650100aac7a",
+      "status": "imported",
+      "hosts": 4,
+      "ports": 16,
+      "warnings": [
+        "The producer did not report a successful scan exit"
+      ]
+    },
+    {
+      "path": "zenmap/test/xml_test7.xml",
+      "sha256": "caee42e52e2c3b278fff61959508ae33b260e509194096885e7f54b86f96c4a1",
+      "status": "imported",
+      "hosts": 4,
+      "ports": 8,
+      "warnings": [
+        "The producer did not report a successful scan exit"
+      ]
+    },
+    {
+      "path": "zenmap/test/xml_test8.xml",
+      "sha256": "7d08e2dd64f6edae24052a1b9b1c799c2647fb6fefe82336853c3cbfd0ed8559",
+      "status": "imported",
+      "hosts": 4,
+      "ports": 8,
+      "warnings": [
+        "The producer did not report a successful scan exit"
+      ]
+    },
+    {
+      "path": "zenmap/test/xml_test9.xml",
+      "sha256": "3e908d72ad0447bc85676193efab2ee724eda8bb60ec19f2b8924e702b73e37c",
+      "status": "imported",
+      "hosts": 4,
+      "ports": 8,
+      "warnings": [
+        "The producer did not report a successful scan exit"
+      ]
+    },
+    {
+      "path": "zenmap/test/xml_test_osclasses.xml",
+      "sha256": "9709f1b3890cebb2a9fd16c94302b7f110e1f17ebb74332c7d1b93fc9f1cb8e1",
+      "status": "imported",
+      "hosts": 1,
+      "ports": 0,
+      "warnings": []
+    }
+  ]
+}
