@@ -1,0 +1,19 @@
+name: Tarefa de pesquisa ou implementação
+description: Trabalho com resultado verificável e fontes explícitas
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Problema e resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidências e fontes fixadas
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite e limites da verificação
+    validations:
+      required: true

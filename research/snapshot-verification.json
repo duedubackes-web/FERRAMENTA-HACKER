@@ -1,0 +1,44 @@
+[
+  {
+    "source": "craft-anything",
+    "checked_files": 1082,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "hydra",
+    "checked_files": 134,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "kali-live-build",
+    "checked_files": 56,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "kali-meta",
+    "checked_files": 13,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "rea",
+    "checked_files": 8609,
+    "unfetched_gitlinks": 5,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  },
+  {
+    "source": "wireshark",
+    "checked_files": 9461,
+    "unfetched_gitlinks": 0,
+    "archive_sha256_verified": true,
+    "per_entry_sha256_verified": true
+  }
+]

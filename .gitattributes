@@ -1,0 +1,4 @@
+# Preserve exact artifact bytes on every platform for SHA-256 verification.
+* -text
+# Captured source is evidence; preserve its original whitespace.
+research/web/** -whitespace

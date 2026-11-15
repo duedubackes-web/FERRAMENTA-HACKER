@@ -1,0 +1,533 @@
+{
+  "source_commit": "6af96b4cbc8d1741a8bf859886f1324639175cab",
+  "method": "Parse declared control fields only; no APT resolution or dependency closure",
+  "packages": [
+    {
+      "name": "kali-system-core",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-defaults,\ncurl,\nftp,\nlsof,\nnfs-common,\nopenssh-client,\nopenssh-client-ssh1,\nopenssh-server,\nopenssl-provider-legacy,\nparted,\nprocps,\npython-is-python3,\nsudo,\ntasksel,\ntmux,\ntree,\ntzdata-legacy,\nvim-tiny | vim | vim-nox,\nwget,\nzsh,\nzsh-autosuggestions,\nzsh-syntax-highlighting,",
+        "Recommends": "\ngit,\ncommand-not-found,\nkali-tweaks,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-system-cli",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-system-core,\nvim | vim-nox,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-system-gui",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-system-cli,\ncherrytree,\ngparted,\nrdesktop,\nrecordmydesktop,\ntightvncserver,\nxtightvncviewer,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-linux-core",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-system-core,\nnetcat-traditional,\ntcpdump,",
+        "Recommends": ""
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-linux-headless",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-linux-core,\nkali-system-cli,\naircrack-ng,\namass,\narp-scan,\narping | iputils-arping,\nbinwalk,\nbinwalk3 [amd64 arm64],\nbluez,\nbulk-extractor [amd64 arm64],\nbully,\ncadaver,\ncertipy-ad,\ncewl,\nchntpw,\ncommix,\ncreddump7,\ncrunch,\ncryptcat,\ndavtest,\ndbd,\ndirb,\ndmitry,\ndns2tcp,\ndnschef,\ndnsenum,\ndnsrecon,\nenum4linux,\nevil-winrm,\nexe2hexbat,\nexiv2,\nexploitdb,\nffuf,\nfierce,\nfping,\ngobuster,\ngpp-decrypt,\nhash-identifier,\nhashcat,\nhashcat-utils,\nhashid,\nhping3,\nhydra,\ni2c-tools,\nike-scan,\nimpacket-scripts,\ninetsim,\niodine,\njohn,\nkismet,\nlaudanum,\nlbd,\nmacchanger,\nmagicrescue,\nmaskprocessor,\nmasscan,\nmetasploit-framework,\nmimikatz,\nmitmproxy [amd64 arm64],\nmsfpc,\nnasm,\nnbtscan,\nncrack,\nncurses-hexedit,\nnetdiscover,\nnetexec,\nnetsed,\nnikto,\nnmap,\nonesixtyone,\npassing-the-hash,\npatator,\npdf-parser,\npdfid,\npeass,\npipal,\npixiewps,\npowershell-empire,\npowersploit,\nproxychains4,\nproxytunnel,\nptunnel,\npython3-impacket,\npython3-scapy,\nqsslcaudit,\nradare2,\nreaver,\nrebind,\nrecon-ng,\nredsocks,\nresponder,\nrsmangler,\nsamba-common-bin (>= 2:4.21.2+dfsg-3),\nsamdump2,\nsbd,\nscalpel,\nscrounge-ntfs,\nset,\nskipfish,\nsleuthkit,\nsmbmap,\nsnmpcheck,\nspiderfoot,\nspike,\nspooftooph,\nsqlmap,\nssldump,\nsslscan,\nsslsplit,\nsslyze [amd64 arm64 i386],\nstatsprocessor,\nthc-ipv6,\nthc-pptp-bruter,\ntheharvester,\nudptunnel,\nunix-privesc-check,\nvoiphopper,\nwafw00f,\nwce,\nwebshells,\nweevely,\nwfuzz,\nwhatweb,\nwifite,\nwindows-binaries,\nwordlists,\nwpscan,\npipx,\npython3-pip,\npython3-virtualenv,\napache2,\natftpd,\naxel,\nbind9-dnsutils,\ncifs-utils,\nclang,\ncryptsetup,\ncryptsetup-initramfs,\ncryptsetup-nuke-password,\ndefault-mysql-server,\ndos2unix,\nethtool,\nexpect,\ngdisk,\ngit,\nhashdeep,\nhotpatch [amd64 i386],\nifenslave,\niw,\nlibimage-exiftool-perl,\nminicom,\nmiredo,\nmultimac,\nnetmask,\nnetsniff-ng,\nngrep,\nopenvpn,\n7zip,\nphp,\nphp-mysql,\nplocate | mlocate,\npowershell [amd64],\npwnat,\nrake,\nrfkill,\nsakis3g,\nsamba,\nscreen,\nsendemail,\nsnmp,\nsnmpd,\nsocat,\nsslh,\nstunnel4,\nswaks,\ntcpick,\ntcpreplay,\ntelnet,\ntestdisk,\ntftp-hpa,\ntraceroute,\nunrar | unar,\nupx-ucl,\nvboot-kernel-utils,\nvboot-utils,\nxxd,\nvim | vim-nox,\nvlan,\nvpnc,\nwhois,",
+        "Recommends": "\npython3-requests,\npython2 [!armhf],\noffsec-awae-python2 [!armhf],\ngss-ntlmssp,\nnetbase,"
+      },
+      "selected_target_mentions": [
+        "hydra"
+      ]
+    },
+    {
+      "name": "kali-linux-default",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-system-gui,\nkali-linux-headless,\nkali-tools-top10,\nautopsy,\ncutycapt,\ndirbuster,\nfaraday,\nfern-wifi-cracker,\ngophish,\nguymager,\nhydra-gtk,\nlegion,\nophcrack,\nophcrack-cli,\nsqlitebrowser,\nstarkiller,\nzenmap,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-linux-large",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-linux-core,\nkali-linux-default,\n0trace,\nafflib-tools,\namap,\napache-users,\napktool,\narmitage [!armhf],\narpwatch,\nasleap,\nbed,\nbeef-xss,\nbluelog,\nblueranger,\nbluesnarfer,\nbraa,\nbtscanner,\nbytecode-viewer,\ncabextract,\ncaldera,\nchirp,\ncisco-auditing-tool,\ncisco-global-exploiter,\ncisco-ocs,\ncisco-torch,\ncloud-enum,\ncmospwd [amd64 i386],\ncode-oss [amd64 arm64] | code [amd64 arm64],\ncopy-router-config [amd64 i386],\ncowpatty,\ncymothoa [amd64 i386],\ndarkstat,\ndbeaver [amd64 arm64],\ndc3dd,\ndcfldd,\nddrescue [amd64 arm64],\ndex2jar,\ndhcpig,\ndnsmap,\ndnstracer,\ndnswalk,\ndoona,\ndotdotpwn,\ndradis [amd64],\ndriftnet,\ndsniff,\ndumpzilla,\neapmd5pass,\nenumiax,\nettercap-graphical | ettercap-text-only,\newf-tools,\nextundelete,\nfcrackzip,\nferret-sidejack,\nfiked,\nforemost,\nfragrouter,\nframework2,\nftester,\ngalleta,\nghidra [amd64],\nhackrf,\nhamster-sidejack,\nhexinject,\nhttrack,\niaxflood,\nintrace,\ninviteflood,\nirpas,\njadx,\njavasnoop,\njboss-autopwn,\njohnny,\njoomscan,\njsql-injection,\nkismet-logtools,\nlibfindrtp [amd64 arm64 i386],\nlibhivex-bin,\nlibsmali-java,\nlynis,\nmaltego,\nmdbtools,\nmdk3,\nmedusa,\nmemdump,\nmercurial,\nmissidentify,\nncat-w32,\nnetwag,\nnipper-ng,\nnishang,\nohrwurm,\nollydbg [amd64 i386],\noscanner,\np0f,\npack,\npack2,\npadbuster,\nparos,\npasco,\nperl-cisco-copyconfig [amd64 i386],\nphoton,\npolenum,\nprotos-sip,\npst-utils,\nrainbowcrack [amd64],\nrcracki-mt,\nreadpe,\nrecoverjpeg,\nrecstudio [i386],\nredfang,\nreglookup,\nregripper [amd64 i386],\nrifiuti,\nrifiuti2,\nrtpbreak,\nrtpflood,\nrtpinsertsound [amd64 arm64 i386],\nrtpmixsound [amd64 arm64 i386],\nsafecopy,\nsctpscan [amd64 i386],\nseclists,\nsfuzz,\nsidguesser,\nsiege,\nsiparmyknife,\nsipcrack,\nsipp,\nsipvicious,\nsmtp-user-enum,\nsniffjoke,\nsqldict [amd64 i386],\nsqlninja,\nsqlsus,\nsslsniff,\nsubversion,\nsucrack,\nt50,\ntermineter,\ntftpd32,\nthc-ssl-dos,\ntlssled,\ntnscmd10g,\ntruecrack,\ntwofi,\nunicornscan,\nuniscan,\nurlcrazy,\nvinetto,\nwapiti [amd64 arm64],\nwebacoo,\nwebscarab,\nwifi-honey,\nxspy,\nxsser,\nyersinia,\nzaproxy,\nzim,\ncgpt,\nchkrootkit,\nedb-debugger [amd64 i386],\ngdb,\nmc,\ntcpflow,\nvim-gtk3,\nzerofree,",
+        "Recommends": "\nchromium,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-linux-everything",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-linux-core,\nkali-linux-default,\nkali-linux-arm [arm64 armhf],\nkali-linux-wsl,\nkali-tools-top10,\nkali-linux-headless,\nkali-linux-large,\nkali-tools-information-gathering,\nkali-tools-vulnerability,\nkali-tools-web,\nkali-tools-database,\nkali-tools-passwords,\nkali-tools-wireless,\nkali-tools-reverse-engineering,\nkali-tools-exploitation,\nkali-tools-social-engineering,\nkali-tools-sniffing-spoofing,\nkali-tools-post-exploitation,\nkali-tools-forensics,\nkali-tools-reporting,\nkali-tools-identify,\nkali-tools-protect,\nkali-tools-detect,\nkali-tools-respond,\nkali-tools-recover,\nkali-tools-802-11,\nkali-tools-bluetooth,\nkali-tools-crypto-stego,\nkali-tools-fuzzing,\nkali-tools-gpu,\nkali-tools-hardware,\nkali-tools-rfid,\nkali-tools-sdr,\nkali-tools-voip,\nkali-tools-windows-resources,\nadaptixc2,\nairgeddon,\naltdns,\napple-bleee,\narsenal-ng,\narjun,\nassetfinder,\nautorecon,\nazurehound,\nb374k,\nberate-ap,\nbettercap-ui,\nbing-ip2hosts,\nbloodhound [amd64 arm64],\nbloodhound.py,\nbloodhound-ce-python,\nbloodyad [amd64 arm64],\nbopscrk,\nbpf-linker,\nbruteforce-luks,\nbruteforce-salted-openssl,\nbruteforce-wallet,\nbruteshark [amd64],\nbrutespray,\ncaido [amd64 arm64],\ncaido-cli [amd64 arm64],\ncalicoctl,\ncapstone-tool,\ncertgraph,\ncerti,\nchainsaw [amd64 arm64],\nchangeme,\nchaosreader,\nchisel,\nchisel-common-binaries,\ncilium-cli,\ncisco7crack,\ncloud-enum,\ncloudbrute,\ncmseek,\ncntlm,\ncoercer,\ncolly,\ncosign,\ncrack,\ncrackmapexec,\ncri-tools,\ncrlfuzz,\ncrowbar,\ncupid-hostapd,\ncupid-wpasupplicant,\ndalfox,\ndefectdojo [amd64 arm64 armhf],\ndetect-it-easy,\ndirsearch,\ndislocker,\ndnscat2,\ndnsgen,\ndnstwist,\ndnsx,\ndonut [amd64],\ndscan,\ndufflebag,\ndumpsterdiver,\ndwarf2json,\neaphammer,\neksctl [amd64 arm64 i386],\nemail2phonenumber,\nemailharvester,\nenum4linux-ng,\nevil-ssdp,\nevil-winrm-py,\nevilginx2,\nexiflooter,\nexploitdb-bin-sploits,\nexploitdb-papers,\nfaraday-agent-dispatcher,\nfaraday-cli,\nfatcat,\nferoxbuster,\nfinalrecon,\nfindomain,\nfluxion,\nfreeradius,\ngdb-peda,\ngef,\ngemini-cli,\ngetallurls,\ngetsploit,\ngitleaks,\ngitxray,\ngodoh,\ngolang-github-binject-go-donut,\ngoldeneye,\ngoofile,\ngoogle-nexus-tools,\ngoshs,\ngospider,\ngowitness,\ngraudit,\ngsocket,\ngtkhash,\nh8mail,\nhak5-wifi-coconut,\nhashrat,\nhavoc [amd64],\nhb-honeypot,\nhcxtools,\nhekatomb,\nhexstrike-ai [amd64 arm64],\nhexwalk,\nhoaxshell,\nhorst,\nhostapd-mana,\nhosthunter,\nhostsman,\nhtshells,\nhttprobe,\nhttpx-toolkit,\nhubble,\nhumble,\nhurl,\nibombshell [amd64],\nident-user-enum,\nimhex [amd64 arm64],\ninspy,\ninstaloader,\nipv6toolkit (>= 2.1+git20220930),\nismtp,\nivre,\njoplin [amd64],\njsp-file-browser,\nkatana,\nkerberoast,\nknocker,\nkoadic,\nkrbrelayx,\nkubernetes-helm,\nkustomize,\nlapsdumper,\nldeep,\nlegba [!armhf],\nligolo-mp [amd64 arm64],\nligolo-ng [amd64 arm64],\nligolo-ng-common-binaries,\nlinkedin2username,\nlinux-exploit-suggester,\nllm-tools-nmap,\nmaltego-teeth,\nmaryam [amd64 arm64],\nmassdns [amd64 arm64],\nmcp-kali-server,\nmerlin-agent,\nmerlin-server,\nmetasploitmcp,\nmitm6,\nmongo-tools,\nmssqlpwner,\nmultiforcer [amd64],\nmxcheck,\nnaabu [!armhf],\nname-that-hash,\nnbtscan-unixwiz,\nnetscanner,\nnextnet,\nnmapsi4,\nnuclei,\nobsidian [amd64 arm64],\nodat [amd64 i386],\noletools,\nopentaxii,\nosrframework,\nowl,\npacu,\nparsero,\npassdetective,\npatchleaks,\npayloadsallthethings,\npeirates,\npenelope,\nphishery,\nphoton,\nphpggc,\nphpsploit,\npnscan,\npocsuite3,\npompem,\nportspoof,\nposhc2,\nprinceprocessor [amd64 arm64],\nproxify,\nproximoth,\nproxmark3,\npskracker [amd64 arm64],\npspy [amd64 i386],\npwncat,\npyinstxtractor,\npython3-atomic-operator,\npython3-ciphey,\npython3-dploot,\npython3-ldapdomaindump,\npython3-pyinstaller,\npython3-wsgidav,\nqsreplace,\nquark-engine [amd64 arm64],\nraven,\nreconspider,\nredsnarf,\nrekono,\nrev-proxy-grapher,\nridenum,\nrling [amd64],\nrobotstxt,\nropper,\nrouterkeygenpc,\nroutersploit,\nrubeus,\nruby-pedump,\nrustscan,\ns3scanner,\nsara,\nsdrangel,\nsentrypeer [amd64 arm64],\nsharphound,\nsharpshooter,\nshed,\nshellfire,\nshell-gpt,\nsherlock,\nsickle-pdk,\nsigma-cli,\nsilenttrinity,\nsippts,\nslimtoolkit [!i386],\nsliver [amd64 arm64],\nsn0int,\nsnaffler-ng,\nsnmpenum,\nsnort,\nsnowdrop,\nsparrow-wifi,\nspire [amd64 arm64],\nsploitscan,\nspray,\nsprayhound,\nsprayingtoolkit [amd64 arm64],\nspraykatz,\nsqlmc,\nsshuttle,\nsslstrip,\nsstimap,\nstegcracker,\nsubfinder,\nsubjack,\nsublist3r,\nsyft,\ntailscale,\nteamsploit,\nterraform,\ntestssl.sh,\ntetragon [amd64 arm64],\ntinja [amd64 arm64 i386],\ntookie-osint,\ntrivy,\ntrufflehog [amd64 arm64],\ntundeep,\nunblob [amd64 arm64 i386],\nunhide.rb,\nunicorn-magic,\nuro,\nvillain,\nvopono,\nvwifi-tool,\nwaybackpy,\nweb-cache-vulnerability-scanner [amd64 arm64],\nwebsploit,\nwgetpaste,\nwhatmask,\nwifiphisher,\nwifipumpkin3,\nwig,\nwig-ng,\nwitnessme,\nwixl,\nwmi-client,\nwordlistraider,\nwotmate,\nwpa-sycophant,\nwpprobe,\nxclip,\nxsrfprobe,\nxsstrike,\nzonedb,\nandroid-sdk,\nkali-community-wallpapers,\nkali-wallpapers-all,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-linux-arm",
+      "architecture": "arm64 armhf",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-linux-core,\nbluez,\nbluez-firmware,\ndphys-swapfile,\nethtool,\nfake-hwclock,\ninitramfs-tools,\nnetwork-manager,\npciutils,\nrkflashtool,\nsunxi-tools,\ntriggerhappy,\nusbutils,",
+        "Recommends": "\nfirmware-ath9k-htc,\nfirmware-atheros,\nfirmware-libertas,\nfirmware-linux,\nfirmware-realtek,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-linux-wsl",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-system-cli,\nkali-linux-core,\ndnsutils,\nhost,\nlocales-all,\nnet-tools,",
+        "Recommends": "\nplocate | mlocate,\nwhois,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-linux-firmware",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nbluez-firmware,\nfirmware-ath9k-htc,\nfirmware-atheros,\nfirmware-brcm80211 [amd64 i386],\nfirmware-intel-misc [amd64 i386],\nfirmware-intel-sound [amd64 i386],\nfirmware-iwlwifi,\nfirmware-libertas,\nfirmware-linux-free,\nfirmware-mediatek,\nfirmware-misc-nonfree,\nfirmware-realtek,\nfirmware-sof-signed [amd64 i386],\nfirmware-zd1211,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-linux-firmware-graphics",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nfirmware-amd-graphics [amd64 i386],\nfirmware-intel-graphics [amd64 i386],\nfirmware-nvidia-graphics [amd64 i386],"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-linux-labs",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\ndvwa,\njuice-shop [amd64],"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-top10",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\naircrack-ng,\nburpsuite [amd64],\nhydra,\njohn,\nmetasploit-framework,\nnetexec,\nnmap,\nresponder,\nsqlmap,\nwireshark,"
+      },
+      "selected_target_mentions": [
+        "hydra",
+        "wireshark"
+      ]
+    },
+    {
+      "name": "kali-desktop-live",
+      "architecture": "all",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nalsa-tools,\nconsole-setup,\ncryptsetup-initramfs,\nlvm2,\nlocales-all,\nonboard,\nzerofree,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-information-gathering",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\n0trace,\narping | iputils-arping,\nbraa,\ndmitry,\ndnsenum,\ndnsmap,\ndnsrecon,\ndnstracer,\ndnswalk,\nenum4linux,\nfierce,\nfirewalk,\nfping,\nfragrouter,\nftester,\nhping3,\nike-scan,\nintrace,\nirpas,\nlbd,\nlegion,\nmaltego,\nmasscan,\nmetagoofil,\nnbtscan,\nncat,\nnetdiscover,\nnetmask,\nnmap,\nonesixtyone,\np0f,\nqsslcaudit,\nrecon-ng,\nsmbmap,\nsmtp-user-enum,\nsnmpcheck,\nssldump,\nsslh,\nsslscan,\nsslyze [amd64 arm64 i386],\nswaks,\nthc-ipv6,\ntheharvester,\ntlssled,\ntwofi,\nunicornscan,\nurlcrazy,\nwafw00f,\nzenmap,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-vulnerability",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nafl++,\nbed,\ncisco-auditing-tool,\ncisco-global-exploiter,\ncisco-ocs,\ncisco-torch,\ncopy-router-config [amd64 i386],\ndhcpig,\nenumiax,\ngvm [amd64 arm64 armhf],\niaxflood,\ninviteflood,\nlegion,\nlynis,\nnikto,\nnmap,\nohrwurm,\npeass,\nprotos-sip,\nrtpbreak,\nrtpflood,\nrtpinsertsound [amd64 arm64 i386],\nrtpmixsound [amd64 arm64 i386],\nsctpscan [amd64 i386],\nsfuzz,\nsiege,\nsiparmyknife,\nsipp,\nsipsak,\nsipvicious,\nslowhttptest,\nspike,\nt50,\nthc-ssl-dos,\nunix-privesc-check,\nvoiphopper,\nyersinia,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-web",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\napache-users,\napache2,\nbeef-xss,\nburpsuite [amd64],\ncadaver,\ncommix,\ncutycapt,\ndavtest,\ndefault-mysql-server,\ndirb,\ndirbuster,\ndotdotpwn,\neyewitness [amd64 arm64 i386],\nferret-sidejack,\nftester,\nhakrawler,\nhamster-sidejack,\nheartleech,\nhttprint [amd64 i386],\nhttrack,\nhydra,\nhydra-gtk,\njboss-autopwn,\njoomscan,\njsql-injection,\nlaudanum,\nlbd,\nmaltego,\nmedusa,\nmitmproxy [amd64 arm64],\nncrack,\nnikto,\nnishang,\nnmap,\noscanner,\nowasp-mantra-ff [amd64 i386],\npadbuster,\nparos,\npatator,\nphp,\nphp-mysql,\nproxychains4,\nproxytunnel,\nqsslcaudit,\nredsocks,\nsidguesser,\nsiege,\nskipfish,\nslowhttptest,\nsqldict [amd64 i386],\nsqlitebrowser,\nsqlmap,\nsqlninja,\nsqlsus,\nssldump,\nsslh,\nsslscan,\nsslsniff,\nsslsplit,\nsslyze [amd64 arm64 i386],\nstunnel4,\nthc-ssl-dos,\ntlssled,\ntnscmd10g,\nuniscan,\nwafw00f,\nwapiti [amd64 arm64],\nwatobo [amd64 i386],\nwebacoo,\nwebscarab,\nwebshells,\nweevely,\nwfuzz,\nwhatweb,\nwireshark,\nwpscan,\nxsser,\nzaproxy,"
+      },
+      "selected_target_mentions": [
+        "hydra",
+        "wireshark"
+      ]
+    },
+    {
+      "name": "kali-tools-database",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\njsql-injection,\nmdbtools,\noscanner,\nsidguesser,\nsqldict [amd64 i386],\nsqlitebrowser,\nsqlmap,\nsqlninja,\nsqlsus,\ntnscmd10g,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-passwords",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-tools-gpu,\ncewl,\nchntpw,\ncisco-auditing-tool,\ncmospwd [amd64 i386],\ncrackle,\ncreddump7,\ncrunch,\nfcrackzip,\nfreerdp-x11,\ngpp-decrypt,\nhash-identifier,\nhashcat,\nhashcat-utils,\nhashid,\nhydra,\nhydra-gtk,\njohn,\njohnny,\nmaskprocessor,\nmedusa,\nmimikatz,\nncrack,\nonesixtyone,\nophcrack,\nophcrack-cli,\npack,\npack2,\npassing-the-hash,\npatator,\npdfcrack,\npipal,\npolenum,\nrainbowcrack [amd64],\nrarcrack,\nrcracki-mt,\nrsmangler,\nsamdump2,\nseclists,\nsipcrack,\nsipvicious,\nsmbmap,\nsqldict [amd64 i386],\nstatsprocessor,\nsucrack,\nthc-pptp-bruter,\ntruecrack,\ntwofi,\nwordlists,"
+      },
+      "selected_target_mentions": [
+        "hydra"
+      ]
+    },
+    {
+      "name": "kali-tools-wireless",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-tools-802-11,\nkali-tools-bluetooth,\nkali-tools-rfid,\nkali-tools-sdr,\nrfcat,\nrfkill,\nsakis3g,\nwireshark,"
+      },
+      "selected_target_mentions": [
+        "wireshark"
+      ]
+    },
+    {
+      "name": "kali-tools-reverse-engineering",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\napktool,\nbytecode-viewer,\nclang,\ndex2jar,\nedb-debugger [amd64 i386],\njadx,\njavasnoop,\njd-gui,\nmetasploit-framework,\nollydbg [amd64 i386],\nradare2,\nrecstudio [i386],\nrizin,\nrizin-cutter,\nrz-ghidra,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-exploitation",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\narmitage [!armhf],\nbeef-xss,\nexploitdb,\nmetasploit-framework,\nmsfpc,\nset,\nshellnoob [!arm64],\nsqlmap,\ntermineter,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-social-engineering",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nbeef-xss,\nmaltego,\nmsfpc,\nset,\nveil [amd64 i386],"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-sniffing-spoofing",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nabove,\nbettercap,\ndarkstat,\ndnschef,\ndriftnet,\ndsniff,\nettercap-graphical | ettercap-text-only,\nferret-sidejack,\nfiked,\nhamster-sidejack,\nhexinject,\nisr-evilgrade,\nmacchanger,\nmitmproxy [amd64 arm64],\nnetsniff-ng,\nrebind,\nresponder,\nsniffjoke,\nsslsniff,\nsslsplit,\ntcpflow,\ntcpreplay,\nwifi-honey,\nwireshark,"
+      },
+      "selected_target_mentions": [
+        "wireshark"
+      ]
+    },
+    {
+      "name": "kali-tools-post-exploitation",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\ncymothoa [amd64 i386],\ndbd,\ndns2tcp,\nexe2hexbat,\niodine,\nlaudanum,\nmimikatz,\nmiredo,\nnishang,\npowersploit,\nproxychains4,\nproxytunnel,\nptunnel,\npwnat,\nsbd,\nshellter [amd64 i386],\nsslh,\nstunnel4,\nudptunnel,\nveil [amd64 i386],\nwebacoo,\nweevely,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-forensics",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\n7zip,\nafflib-tools,\napktool,\nautopsy,\nbinwalk,\nbinwalk3 [amd64 arm64],\nbulk-extractor [amd64 arm64],\nbytecode-viewer,\ncabextract,\nchkrootkit,\ncreddump7,\ndc3dd,\ndcfldd,\nddrescue [amd64 arm64],\ndumpzilla,\nedb-debugger [amd64 i386],\newf-tools,\nexifprobe,\nexiv2,\next3grep,\next4magic,\nextundelete,\nfcrackzip,\nfirmware-mod-kit [amd64 i386],\nforemost,\nforensic-artifacts,\nforensics-colorize,\ngalleta,\ngdb,\ngpart [amd64 i386],\ngparted,\ngrokevt,\nguymager,\nhashdeep,\ninetsim,\njadx,\njavasnoop,\nlibhivex-bin,\nlibsmali-java,\nlvm2,\nlynis,\nmac-robber,\nmagicrescue,\nmd5deep,\nmdbtools,\nmemdump,\nmetacam,\nmissidentify,\nmyrescue,\nnasm,\nnasty,\nollydbg [amd64 i386],\nparted,\npasco,\npdf-parser,\npdfid,\nplaso,\npolenum,\npst-utils,\npython3-capstone,\npython3-dfdatetime,\npython3-dfvfs,\npython3-dfwinreg,\npython3-distorm3,\nradare2,\nreadpe,\nrecoverdm,\nrecoverjpeg,\nrecstudio [i386],\nreglookup,\nregripper [amd64 i386],\nrephrase,\nrifiuti,\nrifiuti2,\nrizin-cutter,\nrkhunter,\nrsakeyfind,\nrz-ghidra,\nsafecopy,\nsamdump2,\nscalpel,\nscrounge-ntfs,\nsleuthkit,\nsqlitebrowser,\nssdeep,\ntcpdump,\ntcpflow,\ntcpick,\ntcpreplay,\ntruecrack,\nundbx,\nunhide,\nunrar | unar,\nupx-ucl,\nvinetto,\nwce,\nwinregfs,\nwireshark,\nxmount,\nxplico [amd64 i386],\nyara,",
+        "Recommends": "\nlime-forensics,"
+      },
+      "selected_target_mentions": [
+        "wireshark"
+      ]
+    },
+    {
+      "name": "kali-tools-reporting",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\ncutycapt,\ndradis [amd64],\neyewitness [amd64 arm64 i386],\nfaraday,\nmaltego,\nmetagoofil,\npipal,\nrecordmydesktop,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-identify",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\namass,\nassetfinder,\ncisco-auditing-tool,\ndefectdojo [amd64 arm64 armhf],\nexploitdb,\nhb-honeypot [amd64],\nkali-autopilot,\nmaltego,\nmaryam [amd64 arm64],\nnipper-ng,\nosrframework,\nspiderfoot,\ntiger,\nwapiti [amd64 arm64],\nwitnessme,\nzaproxy,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-protect",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nclamav,\ncryptsetup,\ncryptsetup-initramfs,\ncryptsetup-nuke-password,\nfwbuilder,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-detect",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\ngrokevt,\nsentrypeer [amd64 arm64],"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-respond",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-tools-forensics,\newf-tools,\nghidra [amd64],\nguymager,\nhashrat,\nimpacket-scripts,\nnetsniff-ng,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-recover",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nddrescue [amd64 arm64],\next3grep,\nextundelete,\nmyrescue,\nrecoverdm,\nrecoverjpeg,\nscrounge-ntfs,\nundbx,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-802-11",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\naircrack-ng,\nairgeddon,\nasleap,\nbully,\ncowpatty,\neapmd5pass,\nfern-wifi-cracker,\nfreeradius-wpe,\nhashcat,\nhostapd-wpe,\niw,\nkismet,\nmacchanger,\nmdk3,\nmdk4,\npixiewps,\nreaver,\nwifi-honey,\nwifite,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-bluetooth",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nblue-hydra,\nbluelog,\nblueranger,\nbluesnarfer,\nbluez,\nbtscanner,\ncrackle,\nredfang,\nspooftooph,\nubertooth,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-crypto-stego",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\naesfix,\naeskeyfind [amd64 i386],\nccrypt,\nsteghide,\nstegosuite [amd64 arm64],\nstegsnow,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-fuzzing",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nafl++,\nsfuzz,\nspike,\nwfuzz,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-gpu",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\noclgausscrack [amd64 i386],\ntruecrack,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-hardware",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nbinwalk,\nbinwalk3 [amd64 arm64],\ncutecom,\nflashrom,\nminicom,\nopenocd,\nqemu-system-x86 [amd64 arm64],\nqemu-user [amd64 arm64],\nradare2,\nrizin-cutter,\nrz-ghidra,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-rfid",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nproxmark3,\nrfdump,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-sdr",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nchirp,\nhackrf,\ninspectrum [amd64 arm64],\nkalibrate-rtl,\nmultimon-ng,\nuhd-host,\nuhd-images,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-tools-voip",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nenumiax,\niaxflood,\ninviteflood,\nlibfindrtp [amd64 arm64 i386],\nnmap,\nohrwurm,\nprotos-sip,\nrtpbreak,\nrtpflood,\nrtpinsertsound [amd64 arm64 i386],\nrtpmixsound [amd64 arm64 i386],\nsctpscan [amd64 i386],\nsiparmyknife,\nsipcrack,\nsipp,\nsipvicious,\nvoiphopper,\nwireshark,"
+      },
+      "selected_target_mentions": [
+        "wireshark"
+      ]
+    },
+    {
+      "name": "kali-tools-windows-resources",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\ndbd,\ndnschef,\nheartleech,\nhyperion,\nmimikatz,\nncat-w32,\nollydbg [amd64 i386],\npowercat,\nregripper [amd64 i386],\nsbd,\nsecure-socket-funneling-windows-binaries,\nshellter [amd64 i386],\ntftpd32,\nwce,\nwindows-binaries,\nwindows-privesc-check,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-desktop-core",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-archive-keyring,\nkali-defaults-desktop,\nkali-grant-root,\nkali-menu,\nkali-themes,\nhaveged,\nfirefox-esr | firefox-esr:armhf [arm64] | firefox,\nxclip,\nxdg-utils,\ndbus-user-session,\ndbus-x11,\nxserver-xorg-legacy,",
+        "Recommends": "\norca,",
+        "Suggests": "\nkali-root-login,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-desktop-e17",
+      "architecture": "all",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nterminology,\nkali-desktop-core,\nkali-desktop-base,\nenlightenment,\nlightdm,\nsuckless-tools,\nqt5ct,\nqt6ct,\nlibeet-bin,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-desktop-gnome",
+      "architecture": "all",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\ngnome-terminal,\nkali-desktop-core,\nadw-gtk3-kali,\ngdm3,\ngnome-menus,\ngnome-session,\ngnome-shell,\ngnome-shell-extension-appindicator,\ngnome-shell-extension-apps-menu,\ngnome-shell-extension-dashtodock,\ngnome-shell-extension-desktop-icons-ng,\ngnome-shell-extension-drive-menu,\ngnome-shell-extension-places-menu,\ngnome-shell-extension-prefs,\ngnome-shell-extension-system-monitor,\ngnome-shell-extension-tiling-assistant,\ngnome-shell-extension-user-theme,\ngnome-shell-extension-vpnip,\nnm-connection-editor,\nresources,\nqt5ct,\nqt6ct,\nnautilus,\nnautilus-extension-gnome-terminal,\nloupe,\nshowtime,\ngst-audio-thumbnailer,\ngst-video-thumbnailer,\nfile-roller,\ngnome-text-editor,\ngnome-calculator,\npapers,\ngnome-system-monitor,",
+        "Recommends": "\ngnome-disk-utility,\ngnome-sushi,\ngnome-tweaks,\ngvfs-fuse,",
+        "Conflicts": "\nxserver-xorg-input-synaptics,\ngnome-shell-extension-workspacestodock,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-desktop-i3",
+      "architecture": "all",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-desktop-core,\nkali-desktop-base,\ni3 (>= 4.22),\ni3-dotfiles (>= 20230801),\nalsa-utils,\narandr,\nbetterlockscreen,\nbrightnessctl,\nconky,\nfeh,\nflameshot,\nhtop,\nhyfetch,\nkali-wallpapers-legacy,\nkitty,\nlightdm,\nlxappearance,\nnetwork-manager,\nnetwork-manager-applet,\nnm-connection-editor,\nnumlockx,\npavucontrol,\npicom,\npolybar,\npulseaudio,\npython3-i3ipc,\nranger,\nrofi,\nsuckless-tools | dmenu,\nsxiv,\nthunar,\nxclip,\nxdotool,\nxfce4-power-manager,\nxorg,\nzathura,\nqt5ct,\nqt6ct,",
+        "Suggests": "\nconky-manager,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-desktop-i3-gaps",
+      "architecture": "all",
+      "dependency_fields_raw": {
+        "Depends": "kali-desktop-i3, ${misc:Depends},"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-desktop-kde",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkonsole,\nkali-desktop-core,\nplasma-desktop,\nkwin-style-kali,\nkwin-x11,\nplasma-nm,\nsddm-theme-breeze,\nsddm,\nqml6-module-org-kde-notifications,\nlm-sensors,\ndolphin,\ngwenview,\ndragonplayer,\nark,\nkate,\nkcalc,\nokular [!i386],\nplasma-systemmonitor,\nkde-spectacle,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-desktop-lxde",
+      "architecture": "all",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nlxterminal,\nkali-desktop-core,\nkali-desktop-base,\nlxde,\nqt5ct,\nqt6ct,",
+        "Recommends": ""
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-desktop-mate",
+      "architecture": "all",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nmate-terminal,\nkali-desktop-core,\nkali-desktop-base,\nmate-desktop-environment,\nlightdm,\nnetwork-manager-applet,\nnm-connection-editor,\nqt5ct,\nqt6ct,\neom,\nparole,\nengrampa,\npluma,\nmate-calc,\natril,\nmate-system-monitor,\nmate-utils,\ncaja-gtkhash,",
+        "Recommends": "\nlightdm-gtk-greeter-settings,\nblueman,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-desktop-xfce",
+      "architecture": "all",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nqterminal,\nkali-desktop-core,\nxfce4-notifyd,\nxfce4-screensaver,\nxfce4,\nlightdm,\npavucontrol,\nqt5ct,\nqt6ct,\nthunar,\nristretto,\nparole,\nengrampa,\nmousepad,\nmate-calc,\natril,\nxfce4-taskmanager,\nxfce4-screenshooter,\nthunar-archive-plugin,\nthunar-gtkhash,\nnetwork-manager-applet,\nnm-connection-editor,\nxcape,\nxfce4-cpugraph-plugin,\nxfce4-genmon-plugin,\nxfce4-power-manager-plugins,\nxfce4-screensaver,\nxfce4-whiskermenu-plugin,\nxdg-user-dirs-gtk,\nmate-polkit,\nlibspa-0.2-bluetooth,\npipewire-pulse,\nwireplumber,",
+        "Recommends": "\nblueman,\ncatfish,\ngvfs-backends,\ngvfs-fuse,\ngnome-disk-utility,\ngnome-system-tools,\nkali-hidpi-mode,\nkali-undercover,\nlightdm-gtk-greeter-settings,\nnetwork-manager-l2tp-gnome,\nnetwork-manager-openconnect-gnome,\nnetwork-manager-openvpn-gnome,\nnetwork-manager-pptp-gnome,\nnetwork-manager-vpnc-gnome,\nxfce4-panel-profiles,\nonboard,\nxautoresize,\nxfce4-battery-plugin,\nxfce4-clipman-plugin,\nxfce4-cpufreq-plugin,\nxfce4-datetime-plugin,\nxfce4-diskperf-plugin,\nxfce4-fsguard-plugin,\nxfce4-netload-plugin,\nxfce4-places-plugin,\nxfce4-sensors-plugin,\nxfce4-systemload-plugin,\nxfce4-timer-plugin,\nxfce4-verve-plugin,\nxfce4-wavelan-plugin,\nxfce4-xkb-plugin,",
+        "Conflicts": "\nlight-locker,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-sbc-allwinner",
+      "architecture": "arm64 armhf",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-linux-arm,\nu-boot-menu,\nu-boot-sunxi,\nu-boot-tools,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-sbc-amlogic",
+      "architecture": "arm64 armhf",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-linux-arm,\nu-boot-amlogic-binaries [arm64],\nu-boot-menu,\nu-boot-tools,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-sbc-qualcomm",
+      "architecture": "arm64 armhf",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-linux-arm,\ninitramfs-tools,\nprotection-domain-mapper,\nqrtr-tools,\nrmtfs,\ntqftpserv,",
+        "Recommends": "\nfirmware-qcom-soc,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-sbc-raspberrypi",
+      "architecture": "arm64 armhf",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-linux-arm,\nfake-hwclock,\nkalipi-config,\nkalipi-tft-config,\npi-bluetooth,\npigpio-tools,\npython3-rpi.gpio,\npython3-smbus,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-sbc-rockchip",
+      "architecture": "arm64 armhf",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-linux-arm,\nu-boot-menu,\nu-boot-rockchip,\nu-boot-tools,",
+        "Recommends": "\nfirmware-misc-nonfree,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-nethunter-core",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nabootimg,\nbinutils,\nca-certificates,\ncgpt,\nfake-hwclock,\ngit,\ninitramfs-tools,\nkali-archive-keyring,\nkali-defaults,\nless,\nlocales,\nnano,\nnethunter-utils,\nntpsec-ntpdate,\nopenssh-server,\npciutils,\npython2.7-minimal [!armhf],\nsudo,\nusbutils,\nvboot-kernel-utils,\nvboot-utils,\nvim,\nzsh,",
+        "Recommends": "\nconsole-common,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-nethunter-nano",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\naircrack-ng,\napache2,\nbluelog,\nblueranger,\nbluetooth,\nbluez,\nbluez-obexd,\nbluez-tools,\niw,\nkali-menu,\nlibbluetooth-dev,\nlibbluetooth3,\nnet-tools,\nnmap,\npixiewps,\npython3,\nredfang,\nsox,\nspooftooph,\nssh,\nu-boot-tools,\nwpasupplicant,"
+      },
+      "selected_target_mentions": []
+    },
+    {
+      "name": "kali-nethunter-full",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "${misc:Depends},\nkali-linux-core,\nkali-desktop-xfce,\naircrack-ng,\napache2,\narmitage [!armhf],\nautoconf,\nautossh,\nbeef-xss,\nbettercap,\nbind9-dnsutils,\nbinutils-arm-none-eabi,\nburpsuite [amd64],\ndbd,\ndevice-pharmer,\ndnsmasq,\ndsniff,\nettercap-text-only | ettercap-graphical,\nexe2hexbat,\nexploitdb,\ng++,\ngcc,\ngcc-arm-none-eabi,\ngpsd,\nhostapd,\nisc-dhcp-server,\niw,\nkismet,\nkismet-plugins,\nlibapache2-mod-php,\nlibbz2-dev,\nlibffi-dev,\nlibncurses-dev,\nlibreadline6-dev,\nlibssl-dev,\nlibtool,\nlibxml2-dev,\nmacchanger,\nmake,\nmdk3,\nmetasploit-framework,\nmitmproxy [amd64 arm64],\nmsfpc,\nnethunter-utils,\nnishang,\nnmap,\nonboard,\nopenssh-server,\nopenvpn,\np0f,\nphp,\npicolibc-arm-none-eabi,\npixiewps,\npostgresql,\nproxmark3,\nptunnel,\npython3-dnspython,\npython3-lxml,\npython3-mako,\npython3-netaddr,\npython3-pcapy,\npython3-pip,\npython3-setuptools,\npython3-twisted,\nrecon-ng,\nrfkill,\nsocat,\nsox,\nsqlmap,\nsslsplit,\ntcpdump,\ntigervnc-standalone-server,\ntinyproxy,\ntshark,\nwifite,\nwipe,\nwireshark,\nwpasupplicant,\nzip,\nzlib1g-dev,"
+      },
+      "selected_target_mentions": [
+        "wireshark"
+      ]
+    },
+    {
+      "name": "kali-linux-nethunter",
+      "architecture": "any",
+      "dependency_fields_raw": {
+        "Depends": "kali-nethunter-full, ${misc:Depends},"
+      },
+      "selected_target_mentions": []
+    }
+  ]
+}

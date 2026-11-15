@@ -1,0 +1,28 @@
+{
+  "url": "https://www.wireshark.org/",
+  "final_url": "https://www.wireshark.org/",
+  "status": 200,
+  "headers": {
+    "date": "Sun, 15 Nov 2026 13:35:15 GMT",
+    "content-type": "text/html; charset=utf-8",
+    "server": "envoy",
+    "x-frame-options": "SAMEORIGIN",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "x-slogan": "Be good. You never know who's running Wireshark nearby.",
+    "cf-cache-status": "EXPIRED",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=prY5z5XDSRB1Yne4nq%2FAMqqtZVh6%2F48enLbZ0mHpgpc5EGPkjaK%2Bbzju8QVBeF2%2FfqnXS9z3fZqV%2FAW0uwKh8kJIsEcDBEfL5OVLkx69TumMyb7nT512mSvZ4%2Fh6FepG314Q\"}]}",
+    "last-modified": "Wed, 11 Nov 2026 20:05:46 GMT",
+    "vary": "Accept-Encoding",
+    "cache-control": "max-age=14400",
+    "x-content-type-options": "nosniff",
+    "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://static.cloudflareinsights.com https://*.googletagmanager.com https://conference.wireshark.org https://ticketing.wireshark.org; connect-src 'self' https://cloudflareinsights.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://ticketing.wireshark.org; style-src 'self' 'unsafe-inline' https://ticketing.wireshark.org https://cdn.jsdelivr.net https://*.typekit.net; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com https://*.ytimg.com https://ipv6.google.com https://ipv4.google.com https://ticketing.wireshark.org; media-src data:; font-src 'self' https:; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://ticketing.wireshark.org; report-uri https://wiresharkfoundation.uriports.com/reports/report; report-to default",
+    "access-control-allow-origin": "*",
+    "accept-ch": "Sec-CH-UA-Arch, Sec-CH-UA-Platform, Sec-CH-UA-WoW64",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "cf-ray": "a5aea356584c5108-MSP",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "x-envoy-upstream-service-time": "253",
+    "connection": "close",
+    "transfer-encoding": "chunked"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "craft-anything",
+      "url": "https://github.com/storytold/craft-anything.git",
+      "commit": "88d1d9cac852aec1c7fd97886db451e005e49d2a",
+      "tracked_files": 1082,
+      "archive": "craft-anything-88d1d9cac852.zip",
+      "archive_sha256": "133f97900b1e464779b598e0b0c8b047a7788555c65173c0ad772a85950157ae",
+      "archive_bytes": 8746264,
+      "collected_at": "2026-11-15T13:37:32.324725+00:00",
+      "scope": "HEAD tracked tree; no history, no recursive submodules, no LFS hydration",
+      "snapshot_method": "Git tracked working tree bytes; symlink target text preserved; gitlinks recorded but not included; no export-ignore or export-subst transformations",
+      "unfetched_gitlinks": []
+    },
+    {
+      "id": "hydra",
+      "url": "https://github.com/vanhauser-thc/thc-hydra.git",
+      "commit": "707c822e88938c526279fcabc10a8a265bbc53c4",
+      "tracked_files": 134,
+      "archive": "hydra-707c822e8893.zip",
+      "archive_sha256": "1694a4b39289782dfab1174aeccb1a2bf34d1e4bd6d604c4e993b78ba1ecdf2d",
+      "archive_bytes": 884720,
+      "collected_at": "2026-11-15T13:37:32.405618+00:00",
+      "scope": "HEAD tracked tree; no history, no recursive submodules, no LFS hydration",
+      "snapshot_method": "Git tracked working tree bytes; symlink target text preserved; gitlinks recorded but not included; no export-ignore or export-subst transformations",
+      "unfetched_gitlinks": []
+    },
+    {
+      "id": "kali-live-build",
+      "url": "https://gitlab.com/kalilinux/build-scripts/live-build-config.git",
+      "commit": "adb2e38941662f105b57134e0155ec468da294ad",
+      "tracked_files": 56,
+      "archive": "kali-live-build-adb2e3894166.zip",
+      "archive_sha256": "5a4c08b19ba06d14455b9b0a24d78ce4ad5b677bc450eb765402def19955ae4c",
+      "archive_bytes": 3237961,
+      "collected_at": "2026-11-15T13:37:32.600901+00:00",
+      "scope": "HEAD tracked tree; no history, no recursive submodules, no LFS hydration",
+      "snapshot_method": "Git tracked working tree bytes; symlink target text preserved; gitlinks recorded but not included; no export-ignore or export-subst transformations",
+      "unfetched_gitlinks": []
+    },
+    {
+      "id": "kali-meta",
+      "url": "https://gitlab.com/kalilinux/packages/kali-meta.git",
+      "commit": "6af96b4cbc8d1741a8bf859886f1324639175cab",
+      "tracked_files": 13,
+      "archive": "kali-meta-6af96b4cbc8d.zip",
+      "archive_sha256": "3b478e92712c23bf2413a43dc5960f8cb304dcf7812b66b17cede8a909c51b53",
+      "archive_bytes": 43494,
+      "collected_at": "2026-11-15T13:37:32.615442+00:00",
+      "scope": "HEAD tracked tree; no history, no recursive submodules, no LFS hydration",
+      "snapshot_method": "Git tracked working tree bytes; symlink target text preserved; gitlinks recorded but not included; no export-ignore or export-subst transformations",
+      "unfetched_gitlinks": []
+    },
+    {
+      "id": "rea",
+      "url": "https://github.com/morluto/REA.git",
+      "commit": "1c90a0fcdb83a6d1178367b0ba2c361613955bd9",
+      "tracked_files": 8614,
+      "archive": "rea-1c90a0fcdb83.zip",
+      "archive_sha256": "b6630268cba2642f8b763ca24f66dff1a3bb1cbe35c412c88a12d8962994a86a",
+      "archive_bytes": 30570013,
+      "collected_at": "2026-11-15T13:37:35.677414+00:00",
+      "scope": "HEAD tracked tree; no history, no recursive submodules, no LFS hydration",
+      "snapshot_method": "Git tracked working tree bytes; symlink target text preserved; gitlinks recorded but not included; no export-ignore or export-subst transformations",
+      "unfetched_gitlinks": [
+        "third_party/binwalk",
+        "third_party/ghidra-nativeaot",
+        "third_party/jadx-headless-mcp",
+        "third_party/unblob",
+        "third_party/wakaru"
+      ]
+    },
+    {
+      "id": "wireshark",
+      "url": "https://gitlab.com/wireshark/wireshark.git",
+      "commit": "7f040529364d6d572134867bbb34fd9525306fbf",
+      "tracked_files": 9461,
+      "archive": "wireshark-7f040529364d.zip",
+      "archive_sha256": "5ceb6dad533e33ebcd01bca2850ad138141e5d999061adb779999a7c04fa2f1a",
+      "archive_bytes": 94657352,
+      "collected_at": "2026-11-15T13:37:43.184641+00:00",
+      "scope": "HEAD tracked tree; no history, no recursive submodules, no LFS hydration",
+      "snapshot_method": "Git tracked working tree bytes; symlink target text preserved; gitlinks recorded but not included; no export-ignore or export-subst transformations",
+      "unfetched_gitlinks": []
+    }
+  ]
+}

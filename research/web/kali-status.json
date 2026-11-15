@@ -1,0 +1,7 @@
+{
+  "url": "https://www.kali.org/",
+  "status": 403,
+  "result": "HTTP Error 403: Forbidden",
+  "attempt": "ordinary HTTPS GET; no bypass attempted",
+  "scope": "Homepage only; official Kali source repositories acquired separately."
+}

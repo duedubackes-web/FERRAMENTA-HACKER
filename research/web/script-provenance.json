@@ -1,0 +1,73 @@
+{
+  "source": "wireshark.html",
+  "extraction": "HTMLParser; inline script text only, never executed",
+  "scripts": [
+    {
+      "file": "inline-001.js",
+      "script_index": 1,
+      "attributes": {}
+    },
+    {
+      "file": "inline-002.js",
+      "script_index": 2,
+      "attributes": {}
+    },
+    {
+      "file": "inline-003.js",
+      "script_index": 3,
+      "attributes": {
+        "type": "module"
+      }
+    },
+    {
+      "file": "inline-004.js",
+      "script_index": 4,
+      "attributes": {}
+    },
+    {
+      "file": "inline-005.js",
+      "script_index": 5,
+      "attributes": {}
+    },
+    {
+      "file": "inline-006.js",
+      "script_index": 6,
+      "attributes": {}
+    },
+    {
+      "file": "inline-007.js",
+      "script_index": 7,
+      "attributes": {}
+    },
+    {
+      "file": "inline-008.js",
+      "script_index": 8,
+      "attributes": {
+        "type": "module"
+      }
+    },
+    {
+      "file": "inline-010.js",
+      "script_index": 10,
+      "attributes": {
+        "type": "module"
+      }
+    },
+    {
+      "file": "inline-011.js",
+      "script_index": 11,
+      "attributes": {
+        "type": "module"
+      }
+    },
+    {
+      "file": "inline-012.js",
+      "script_index": 12,
+      "attributes": {}
+    }
+  ],
+  "external_scripts_not_downloaded": [
+    "https://www.googletagmanager.com/gtag/js?id=G-YLHRKD6LH6",
+    "https://static.cloudflareinsights.com/beacon.min.js"
+  ]
+}

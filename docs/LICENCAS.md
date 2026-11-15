@@ -1,0 +1,24 @@
+# Licenças e proveniência
+
+| Fonte | Declaração observada | Ação de preparação |
+|---|---|---|
+| REA | MIT; avisos terceiros separados | LICENSE e THIRD_PARTY_NOTICES preservados |
+| Craft Anything | MIT OR Apache-2.0 em Cargo.toml | Textos disponíveis preservados; escolha e atribuições ao incorporar |
+| Wireshark | GPLv2; maioria GPLv2-or-later, exceções por arquivo | COPYING e README consultados; examinar cada componente usado |
+| Hydra | AGPLv3 no README | LICENSE preservado; avaliar entrega e acesso em rede se houver derivação |
+| kali-meta | GPL-3.0+ em debian/copyright | Copyright e declaração preservados |
+| Kali live-build | LICENSE contém GPLv2 | Preservado; permissões específicas exigem revisão dos arquivos usados |
+
+Kali como distribuição não tem uma única licença que cubra todos os seus pacotes.
+Metadados do GitHub não substituem textos de licença do commit ou declarações por arquivo.
+
+Os ZIPs entregues preservam as árvores e os avisos originais. Cópias locais completas das licenças disponíveis ficam em `third_party/notices/`.
+O corpus não é um SBOM transitivo de uma instalação; bibliotecas de sistema, dependências resolvidas e ferramentas opcionais não foram enumeradas integralmente.
+
+Esta base não incorpora implementações dos alvos no código da CLI. Preserva referências, inventários, evidências e excertos seletivos para pesquisa.
+Não se afirma um processo clean room independente: a análise leu código-fonte e Craft Anything foi executado em modo Deep.
+Separar processos pode ajudar a arquitetura, mas não é uma garantia automática sobre obrigações de licença.
+
+O repositório fornecido pelo proprietário já contém LICENSE MIT, copyright 2026 duedubackes-web. Essa licença foi preservada e se aplica ao código original da base, não relicencia material de terceiros.
+Não aplicar uma licença permissiva global sobre arquivos de terceiros. Marcas, imagens e textos dos sites não são concedidos pela licença de ferramentas.
+O HTML do Wireshark é evidência de pesquisa, não uma licença para reutilizar sua interface ou identidade visual.

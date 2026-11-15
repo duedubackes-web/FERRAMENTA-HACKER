@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ev_47d85b80d597eced56f765c0a130f62f0d41b3c3bcf0ecbac33b342ca8c6c55a",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 134,
+      "status": "complete",
+      "total": 134
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "hydra-707c822e8893.zip (zip) holds 134 files in 134 entries; 0 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "hydra",
+    "archive_sha256": "1694a4b39289782dfab1174aeccb1a2bf34d1e4bd6d604c4e993b78ba1ecdf2d"
+  },
+  {
+    "id": "ev_adb12879b80c63c80899d2a883e8078af5f3e01b2abcd40c68a29002acca8b89",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 56,
+      "status": "complete",
+      "total": 56
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "kali-live-build-adb2e3894166.zip (zip) holds 56 files in 56 entries; 0 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "kali-live-build",
+    "archive_sha256": "5a4c08b19ba06d14455b9b0a24d78ce4ad5b677bc450eb765402def19955ae4c"
+  },
+  {
+    "id": "ev_f0c68af450c46f4f5c66938fad8be4e59b5e985bcff20b5b491f4d65dbddc567",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 13,
+      "status": "complete",
+      "total": 13
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "kali-meta-6af96b4cbc8d.zip (zip) holds 13 files in 13 entries; 0 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "kali-meta",
+    "archive_sha256": "3b478e92712c23bf2413a43dc5960f8cb304dcf7812b66b17cede8a909c51b53"
+  },
+  {
+    "id": "ev_460145a8b51d482ea0a3aedb93e5978d2bc4ac9d77e773fdc1c5b114da8bb149",
+    "operation": "core_archive_show",
+    "coverage": {
+      "examined": 9461,
+      "status": "complete",
+      "total": 9461
+    },
+    "environment": {
+      "clean_room": false,
+      "engine": "builtin",
+      "engine_version": "0.6.1",
+      "host": "linux-x86_64"
+    },
+    "summary": "wireshark-7f040529364d.zip (zip) holds 9461 files in 9461 entries; 0 nested container(s).",
+    "limitations": [
+      {
+        "code": "no_disk_images",
+        "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+      }
+    ],
+    "source_id": "wireshark",
+    "archive_sha256": "5ceb6dad533e33ebcd01bca2850ad138141e5d999061adb779999a7c04fa2f1a"
+  }
+]
