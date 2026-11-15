@@ -77,3 +77,12 @@ Nenhum algoritmo do John, motor de processamento de senhas ou integração de ex
 A implementação preserva a diferença entre fonte coletada e capacidade observada, incluindo gitlinks ausentes e análises parciais.
 As fontes selecionadas fornecem referências de contratos de extensões, representação de fluxos, relatórios e importação; não houve incorporação de seus motores.
 A pesquisa Gemini diferencia a observação pública do app dos componentes abertos CLI/SDK. Uma futura camada conversacional deve consumir evidências e adaptadores documentados; não está implementada nesta etapa.
+
+
+## Fluxo de revisão implementado
+
+`review` reutiliza o importador/comparador Nmap e o novo importador `trivy_report`, que valida o contrato selecionado de JSON v2 e não exporta conteúdos de categorias fora do recorte.
+`review_rules.build_review` é uma função de regras determinísticas: fatos → justificativa + próxima verificação + referências. Não executa ações, não associa IPs a pacotes e não calcula risco do ambiente.
+As regras pertencem a uma tabela identificada por versão e SHA-256. A identidade da revisão inclui artefatos e versões; fatos distintos da mesma fonte têm itens distintos.
+`review_html` apresenta o resultado e sua cobertura, sem reinterpretar a severidade ou buscar recursos externos. O JSON e o HTML acompanham o mesmo resultado estruturado.
+A função JSON de gravação existente é reutilizada e os destinos são conferidos antes da escrita. Os dados reais do usuário não são adicionados ao repositório pelos comandos.

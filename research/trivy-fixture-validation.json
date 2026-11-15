@@ -1,0 +1,734 @@
+{
+  "source_commit": "239be7b2671a3c9706bbfec2ba4677210cbdcdec",
+  "selection": "Top-level integration/testdata/*.json.golden in the pinned upstream checkout",
+  "method": "Read retained public expected-output files with our offline adapter; no Trivy code or tests executed",
+  "records": [
+    {
+      "path": "integration/testdata/almalinux-8.json.golden",
+      "sha256": "96796b692c6ac18043830ac7ef01b2a065373802616903dc0a861fab5de8b8d9",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/alpine-310.json.golden",
+      "sha256": "e5a553576aa6178f888492dd21d81f5c5c5016700face561b8781f49a78046c1",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 4,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/alpine-39-high-critical.json.golden",
+      "sha256": "7178892d8903dbcfe99f216190e32a4f13a0415ff553f17fa6a4ebabc7a38893",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/alpine-39-ignore-cveids.json.golden",
+      "sha256": "9c5c47ec43159b366b41624d80bcfc25d43f88289811b180c74f6df094ec441b",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/alpine-39-skip.json.golden",
+      "sha256": "f801f381fb4a2e1efa2ffbb7188e6005a4c0711a4453189fc036011788b64ace",
+      "status": "imported",
+      "results": 0,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/alpine-39.json.golden",
+      "sha256": "f2fb971340a0a4e8c73e8a883281d4c10008b4a752f512753d6830e548e4a59e",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 6,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/alpine-distroless.json.golden",
+      "sha256": "5778d16260e9ad4cb5ce96a1fdc27348d923b3ecbdb7912d8cbde455d3d6cc74",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/amazon-1.json.golden",
+      "sha256": "4004e564de61d3e1cfac49629d3fbf7ce48122bfec51cfe5a2ff744f8f8a5de4",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/amazon-2.json.golden",
+      "sha256": "6eef0b9edc3cf4348bff00fa84c3a388efb3c179cafe2692b9fec6b97ba53d9f",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/amazonlinux2-gp2-x86-vm.json.golden",
+      "sha256": "e957892a65b2bee042da13c44d31c332f5a21cae6e12b3c4971546b92ddc9b6a",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/bun.json.golden",
+      "sha256": "0d90436c81bea86e043c2090e44d1733fa6c29b49d0e212b38373395d7d61dd7",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/busybox-with-lockfile.json.golden",
+      "sha256": "44cb081d1c43bfeae62a8c9bb984a68ef29dfdcb40ca604e170d2a4a9eba1589",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/cargo.lock.json.golden",
+      "sha256": "8c9eefc1000824ed2a7d255f876fd95776c0dfeacb9384a35afa7b4fed1c5097",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/centos-6.json.golden",
+      "sha256": "bca69cbfcc9637d884dae915e7220fac48f4f2654f4d96e197a0f9a4d83bf282",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/centos-7-ignore-unfixed.json.golden",
+      "sha256": "27246f9932b30b1a21d845eeb34e2d839e8499d931c9b773b520963aedbdab65",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/centos-7-medium.json.golden",
+      "sha256": "3305204463987305daf3842e89d2bc72e2952c3f3920956b3e902963e1d732a7",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/centos-7.json.golden",
+      "sha256": "802933ad429b8cd61a53bf8efd8394e46cd4e3d8964b957ac182ffc0af212e47",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 3,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/cocoapods.json.golden",
+      "sha256": "3af8e304da13143d71dbaa3941604f69ce3fc1e15e5d25b3ee3bd3dd5b5008ef",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/composer.lock.json.golden",
+      "sha256": "b8264b8cb5b74fa0ee18d356520a2dfd79dd744738b621ee1e89f1cda8dd555b",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/composer.vendor.json.golden",
+      "sha256": "b28657b454f71087935c1e7ae47f4cd85e5cd3c450fe72c350c7736300daa099",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/conan.json.golden",
+      "sha256": "5a1739d9537a4a129405c49d612732d30f96648adacb0a34207d130b97c94ebf",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/conda-cyclonedx.json.golden",
+      "sha256": "4d58145a4949e0664beebf357b40a0009de2ca2bdec9c9893007d5bb33934564",
+      "status": "rejected",
+      "reason": "Expected a Trivy JSON object with SchemaVersion 2",
+      "detected_other_format": "CycloneDX"
+    },
+    {
+      "path": "integration/testdata/conda-environment-cyclonedx.json.golden",
+      "sha256": "c0bcbf7e11634d2cc80d50fa778284eb34d65c19dd9a13b0c17c50b3717d0661",
+      "status": "rejected",
+      "reason": "Expected a Trivy JSON object with SchemaVersion 2",
+      "detected_other_format": "CycloneDX"
+    },
+    {
+      "path": "integration/testdata/conda-spdx.json.golden",
+      "sha256": "26f2ee4a0358fe33f8bf2fe78a787515be2fbf46818477874a3ad4a93776140e",
+      "status": "rejected",
+      "reason": "Expected a Trivy JSON object with SchemaVersion 2",
+      "detected_other_format": "SPDX"
+    },
+    {
+      "path": "integration/testdata/crypto.cdx.json.golden",
+      "sha256": "fc48cc6dfe62a81db6765bd7f9ed889ff12bca3fa495c89fd70cef0f698bb603",
+      "status": "rejected",
+      "reason": "Expected a Trivy JSON object with SchemaVersion 2",
+      "detected_other_format": "CycloneDX"
+    },
+    {
+      "path": "integration/testdata/crypto.json.golden",
+      "sha256": "272a6f7a159bf45fe99aa59ae467f410750970c4a6d95fe9bfbad677048c8ed9",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/debian-buster-ignore-unfixed.json.golden",
+      "sha256": "01c847eeac925b5ff13ed6a1197f790de93133d7e105756ec824c18452d91841",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/debian-buster.json.golden",
+      "sha256": "e750575c508c77e544d446753369a7dd0de9a8689c87f1be068cdac10b51f626",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/debian-stretch.json.golden",
+      "sha256": "a3ca4cbdb8783d47ead10ca6d46c7cd4014e01263e1fbeda7d02c1b918b44927",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 5,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/distroless-base.json.golden",
+      "sha256": "7cd51ae584d9bd21b438f82fc96bea5e4940a9cb072e3eca3a8d38bc012a56a3",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 4,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/distroless-python27.json.golden",
+      "sha256": "e747e6ecd5146d9f3d3ce40cd1362265907746cbc2648b2d32a0a00a21f2ead2",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 4,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/dockerfile-custom-policies.json.golden",
+      "sha256": "27ed4e8bc6451e8edc26a3f4a574aa87bddf88da6808d0212a7b77b22a9f7f89",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/dockerfile.json.golden",
+      "sha256": "79a31c100925406371717fc3841ee98670841b4ffb0de4471c11cc7bd508d62f",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/dockerfile_file_pattern.json.golden",
+      "sha256": "a32e7cf3a70589aee2e12b1fedb98969014c350dce822a17d961d040a9bc99b6",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/dotnet.json.golden",
+      "sha256": "a68a17931dfe5f23bef662b1d1d06d0a8f3a4726eefed60aa781292c97033d05",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/fluentd-gems.json.golden",
+      "sha256": "db5f9e1938f27b437f90c38db32db3a4322e40add3c7c01ba5fc9a78301a305a",
+      "status": "imported",
+      "results": 2,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/fluentd-multiple-lockfiles-short.cdx.json.golden",
+      "sha256": "8cbb2604f3479d3186d47edd4372fb5b1b081d098d4d498fae9a20ca2d59edff",
+      "status": "rejected",
+      "reason": "Expected a Trivy JSON object with SchemaVersion 2",
+      "detected_other_format": "CycloneDX"
+    },
+    {
+      "path": "integration/testdata/fluentd-multiple-lockfiles.cdx.json.golden",
+      "sha256": "7827b86f0791a4ddf552475ca5a2d8b8420308241722b6b3f8051ab0e887d398",
+      "status": "rejected",
+      "reason": "Expected a Trivy JSON object with SchemaVersion 2",
+      "detected_other_format": "CycloneDX"
+    },
+    {
+      "path": "integration/testdata/fluentd-multiple-lockfiles.json.golden",
+      "sha256": "3154f68262ab7f188cc56485a5b594d3da2a8203b7b3c99a33822f2b6f515ec8",
+      "status": "imported",
+      "results": 2,
+      "vulnerability_records": 3,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/gomod-skip.json.golden",
+      "sha256": "14f8a5baa80ceb6c1896cd32a761bbf0812cefb9817dacdd240b542e42699a26",
+      "status": "imported",
+      "results": 2,
+      "vulnerability_records": 4,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/gomod-vex.json.golden",
+      "sha256": "df6055c1b1cd54229a3095ead3a41455f0c48c7538f8fa8d6413abb2adaf7d06",
+      "status": "imported",
+      "results": 3,
+      "vulnerability_records": 4,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/gomod.json.golden",
+      "sha256": "aa8f087f41f079d6abec612b6eb2f93814d90fa7c38c97d67a3d782d8096aff4",
+      "status": "imported",
+      "results": 3,
+      "vulnerability_records": 5,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/gradle.json.golden",
+      "sha256": "58118134426bdfb078654a0957fe9b4e02a2bbb6303b9def30cda302143f34b6",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/helm.json.golden",
+      "sha256": "7376a7f0d07ef4a21ce12bc5c3b22a069170eac701f1659a236e3ac44eb0495b",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/helm_badname.json.golden",
+      "sha256": "3d0075cffb99b70e1534d2caf0fc2722a4e94d18f38299cbdaa3841ea2bc615b",
+      "status": "imported",
+      "results": 0,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/helm_testchart.json.golden",
+      "sha256": "5f463f6192194911518ddce310310cce9e5a8f11ee61047ee16d55f00040d42a",
+      "status": "imported",
+      "results": 3,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/helm_testchart.overridden.json.golden",
+      "sha256": "f385c4c48312de06c6a1b9ede3f28d552720d6dfdfc2dd61f1ab7ccbbce4cab6",
+      "status": "imported",
+      "results": 3,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/julia-spdx.json.golden",
+      "sha256": "10cc953a00a609df1dc53b98feee1f231294fdc621cff2311d726f8ae9bbc70d",
+      "status": "rejected",
+      "reason": "Expected a Trivy JSON object with SchemaVersion 2",
+      "detected_other_format": "SPDX"
+    },
+    {
+      "path": "integration/testdata/license-cyclonedx.json.golden",
+      "sha256": "62390e1d709fd0c22fdaca01c2cdcc19206bfd58b8adad869defee875f82b6f0",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/mariner-1.0.json.golden",
+      "sha256": "c35417c3b65d8dab5414c11d995c719221f14f2d96e519eb9d1f0e25f175cf89",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/minikube-kbom.json.golden",
+      "sha256": "cca2dde3b4ab4fba582aee4febd63a02ab229b076b1e2f8e7d64b3b6b06892ee",
+      "status": "imported",
+      "results": 2,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/mix.lock.json.golden",
+      "sha256": "f8897c2e57c438b749feaa0ba3c559b4b4a57840dd5d0cecce7063adfe8df0e9",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/npm-cyclonedx.json.golden",
+      "sha256": "4b7e8f3f896e1e5837083c5867169cfced5a3ee7f8f55d66f130d4d1917a5381",
+      "status": "rejected",
+      "reason": "Expected a Trivy JSON object with SchemaVersion 2",
+      "detected_other_format": "CycloneDX"
+    },
+    {
+      "path": "integration/testdata/npm-ubuntu-severity.json.golden",
+      "sha256": "8c12f282f7c379d582d14863e978d68afaa0fb7e78bfeb1530f534c94eff2f2e",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/npm-with-dev.json.golden",
+      "sha256": "ac1efd55642830c8a7f2bec1fb7bc49fc08dd49b3ff4f7d5025f7c9c31279d6b",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/npm.json.golden",
+      "sha256": "959319b1ae9c6f777191da40a18f1b3285ea43ba890846037db1b6efe1f0ab0a",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/nuget.json.golden",
+      "sha256": "260cf7495a370a0f36257f9e301ddbe4dd8733a6429c9a6e5228bd67f5950dd2",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/opensuse-leap-151.json.golden",
+      "sha256": "08c47a3672c83ff4a9a1193fb8b60139636829d2e8d69d14848a40c2dfdff25e",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/opensuse-tumbleweed.json.golden",
+      "sha256": "859c3644f154cd52f343c717befcb8d7adc1f234275c9ef71e8ed4bef00bc33a",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/oraclelinux-8.json.golden",
+      "sha256": "8d28e83f9e6cd47e4d2e9827ff646fc39101e5dd2dfa30501c12a593dfb278fc",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/packagesprops.json.golden",
+      "sha256": "6f6e5814c4d41628938cb1e16fea648daa7c7e457b5c1681534515387b3fbf9a",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/photon-30.json.golden",
+      "sha256": "00feeab043804e08cfc9ec609d208d03ce5344f334f1340dd50ead9bc6ad335d",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 3,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/pip.json.golden",
+      "sha256": "b5907b803c200625f9d501c31666c645b5790f39de9efa9d9a6311bf651f2a04",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/pipenv.json.golden",
+      "sha256": "a0d0a173b7ad7875bec95a4dfecc3b4c4a107373a72972780d92b6641bcf34ee",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/pnpm.json.golden",
+      "sha256": "aefe9805adb5bb3820051dd34ceec8983d81658f8a48dd78a1db24f4c070b3bd",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/poetry.json.golden",
+      "sha256": "8e0a6ce7b3b6b766e1d72cdbc86fd7148f6df9966cc9f14063e75d02e32290b1",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/pom-cyclonedx.json.golden",
+      "sha256": "b4b7668429aadb51d00e1477eee7cf21a8d4997e55350df9327f5f36f1ffb701",
+      "status": "rejected",
+      "reason": "Expected a Trivy JSON object with SchemaVersion 2",
+      "detected_other_format": "CycloneDX"
+    },
+    {
+      "path": "integration/testdata/pom.json.golden",
+      "sha256": "8cde9ee963d8d0435f4db073db55fab14c4ffeca262938bf6eae1ed1964109d9",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/pubspec.lock.json.golden",
+      "sha256": "8822d212df29cd0ca382a793067b3d1a0bd076d73c90684f5803bf093530efa0",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/pylock.json.golden",
+      "sha256": "0938e923fc939eaae716d41fc0ea88874709ea50e33ee2e4aa384749829a7731",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/rapidfort-ubuntu-2204.json.golden",
+      "sha256": "bc090e5632a87682a78f7d79bac565ae148487ffc0c2c3b1e6867a7f5f02e580",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/rockylinux-8.json.golden",
+      "sha256": "f7212a1c657fe24fbba2372554fdc3d6cf65b08758a39bcacc0d980f0fd94cf2",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/sbt.json.golden",
+      "sha256": "067b447f64163bea686aa4cd8c18980c5e74a58277802bf7a5fa1bc9f5432edc",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/secrets.json.golden",
+      "sha256": "cc6c0caeaecf0b7f91b1aae3980f663239c652c3a001ad7e47004963222f8655",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/sl-micro-rancher5.4.json.golden",
+      "sha256": "9a8a24080c9b4f3eea3c137d59b72ddc35ed8a6da896f96c1b221426898c27a4",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/spring4shell-jre11.json.golden",
+      "sha256": "8c18eb86dfd31ef9f59c7b4998f3f04bd19d19f1b53228abc5f3c0a30fcdc89d",
+      "status": "imported",
+      "results": 3,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/spring4shell-jre8.json.golden",
+      "sha256": "e9fe69bc3442e18ffac7da584761768d481393fcff813ead3866cdbba6064eb1",
+      "status": "imported",
+      "results": 3,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/swift.json.golden",
+      "sha256": "c3fc47b427067c1a1d7f5267bf15aef3e64ba7d763f9f73b4e81ba8ea63d2f4f",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/terraform-exclude-misconfs-remote-module.json.golden",
+      "sha256": "1d2105b8f6574f540963cd6a9409b0c92b9604e45420e8e40b610ef75c14aa83",
+      "status": "imported",
+      "results": 2,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/terraform-opentofu-registry.json.golden",
+      "sha256": "9ff430ea4b82efda61f4787f466b28ef361c93907e6e4704b6f6e8c1fa909ab3",
+      "status": "imported",
+      "results": 2,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/terraform-remote-module-in-child.json.golden",
+      "sha256": "215b6b19f5a413c517e4dfadd568a5755a695f07b155b69a23a8d8f4118b7132",
+      "status": "imported",
+      "results": 2,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/terraform-remote-module.json.golden",
+      "sha256": "502a92279e9f2f7e95a0a42c931d4de9a86d76a6ac76e742147a555f509db190",
+      "status": "imported",
+      "results": 2,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/terraform-remote-submodule.json.golden",
+      "sha256": "c059d1c7fd37b8d4bd96e3c6ef3a276a48457f9cadb43e88b1f6939ced704876",
+      "status": "imported",
+      "results": 2,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/terraform-terraform-registry.json.golden",
+      "sha256": "9ff430ea4b82efda61f4787f466b28ef361c93907e6e4704b6f6e8c1fa909ab3",
+      "status": "imported",
+      "results": 2,
+      "vulnerability_records": 0,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/test-repo.json.golden",
+      "sha256": "48830981121ef12ef3c2ae2c45be5226f6753e71f9f3b7693b7eb1ffa441b4e4",
+      "status": "imported",
+      "results": 2,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/ubi-7-comprehensive.json.golden",
+      "sha256": "24208455ab01175bd77f5d9695e2cd8ff6c2577fa2ad2b0692dda9118d3c99f6",
+      "status": "imported",
+      "results": 2,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/ubi-7.json.golden",
+      "sha256": "1a5ce68825ac18ebf7977c5988d20b89c1d562d5f204ade2b725727b6f3e4711",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/ubuntu-1804-ignore-unfixed.json.golden",
+      "sha256": "6d14d07f4631243898df279e2396ecaa3e9d82ffb7f2ae05f9d7a63b8208dd64",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 4,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/ubuntu-1804.json.golden",
+      "sha256": "5a41c51910a7bb158919e138bfa769af85274d2e2364082911fe40d699d3482e",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 5,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/ubuntu-gp2-x86-vm.json.golden",
+      "sha256": "7edba46b268b1ef4e40a01ca8d517615e6a3c6581c1c5ebaaa83525b4f82ed0d",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/uv.json.golden",
+      "sha256": "58a74ef73e096535628e43a6450df85922447a86b2dc70de9bad8faf19eac78c",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 2,
+      "warnings": 0
+    },
+    {
+      "path": "integration/testdata/yarn.json.golden",
+      "sha256": "6bfc0b08a934b8ab2b2ebad47637d50f95f24447a55e0650be3166a9f60610e2",
+      "status": "imported",
+      "results": 1,
+      "vulnerability_records": 1,
+      "warnings": 0
+    }
+  ]
+}

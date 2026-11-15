@@ -6,8 +6,19 @@ Repositório: https://github.com/duedubackes-web/FERRAMENTA-HACKER
 
 Base preparada a partir de fontes públicas para estudar composição de ferramentas,
 análise de tráfego e arquitetura de módulos, e projetar um produto próprio com evidências rastreáveis.
-Este repositório contém pesquisa, inventário reproduzível e uma CLI offline para consultar, importar e comparar relatórios Nmap, com exportação JSON e HTML.
+Este repositório contém pesquisa, inventários verificáveis e uma ferramenta offline para importar relatórios Nmap/Trivy, comparar observações e gerar uma fila de revisão explicável em JSON e HTML.
 Não contém uma distribuição nova, um substituto do Wireshark ou uma implementação nova do Hydra.
+
+## Usar a ferramenta de revisão
+
+```sh
+mkdir -p work
+python scripts/workbench.py review --before tests/fixtures/nmap-synthetic.xml --after tests/fixtures/nmap-synthetic-after.xml --trivy tests/fixtures/trivy-synthetic.json --output work/review.json --html work/review.html
+```
+
+Abra o HTML gerado para ver prioridades de revisão, motivos, próximas verificações e fontes. O exemplo usa somente dados sintéticos; para relatórios próprios, substitua os caminhos.
+A inteligência desta versão usa regras versionadas e explicáveis. A prioridade de revisão é distinta da severidade declarada pelo produtor; não há associação automática entre IP e pacote nem execução de sugestões.
+Detalhes em `docs/REVISAO-INTELIGENTE.md` e demonstração pronta em `examples/review-plan.html`.
 
 ## Começar
 
@@ -45,6 +56,7 @@ O material foi indexado integralmente nesse recorte; a revisão semântica foi s
 - `docs/RELATORIO.md`: primeira rodada, evidências e limites.
 - `docs/NMAP-SQLMAP.md`: expansão Nmap/sqlmap, resultados e decisões.
 - `docs/IMPORTAR-NMAP.md`: usar a importação offline e entender seu contrato.
+- `docs/REVISAO-INTELIGENTE.md`: novo fluxo Nmap/Trivy, regras explicáveis, contrato e limites.
 - `docs/CATALOGO-FERRAMENTAS.md`: 38 projetos, categorias, estados de evidência e 409 candidatos de pacotes Kali.
 - `docs/GEMINI.md`: observação pública do app e fontes abertas relacionadas, com limites explícitos.
 - `docs/JOHN-THE-RIPPER.md`: coleta, arquitetura, catálogo estático e corroboração de inventários.
@@ -69,8 +81,8 @@ Instalações de ferramentas e comandos executados nesta pesquisa estão documen
 
 ## Estado
 
-Pesquisa estática ampliada, importação e comparação offline de XML Nmap e relatórios JSON/HTML disponíveis. O corpus atual tem 59.740 entradas rastreadas em dezenove repositórios. Engenharia reversa dinâmica,
-decompilação nativa, revisão completa dos pacotes Kali, testes dos produtos originais e novo produto são trabalho futuro.
+Pesquisa estática ampliada, importação Nmap XML/Trivy JSON, comparação e fila de revisão explicável em JSON/HTML disponíveis. O corpus atual tem 59.740 entradas rastreadas em dezenove repositórios. Engenharia reversa dinâmica,
+decompilação nativa, revisão completa dos pacotes Kali, testes dos produtos originais e evolução do produto final são trabalho futuro.
 Nenhum teste de intrusão, tentativa de autenticação ou captura de rede de terceiros foi realizado.
 
 Código original desta base: MIT, conforme `LICENSE` já escolhido pelo proprietário. Material de terceiros mantém suas próprias licenças; consulte `docs/LICENCAS.md`.

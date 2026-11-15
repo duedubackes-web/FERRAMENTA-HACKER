@@ -80,6 +80,15 @@ def main(argv=None) -> int:
     packages = commands.add_parser('packages', help='Search direct package candidates declared in Kali tools profiles')
     packages.add_argument('--query', default='')
     packages.add_argument('--profile')
+    trivy = commands.add_parser('import-trivy', help='Import selected fields of an existing Trivy JSON v2 report')
+    trivy.add_argument('path', type=Path)
+    trivy.add_argument('--output', type=Path)
+    review = commands.add_parser('review', help='Build an explainable review queue from local reports; never executes suggestions')
+    review.add_argument('--before', type=Path, help='Baseline Nmap XML, requires --after')
+    review.add_argument('--after', type=Path, help='Current Nmap XML, requires --before')
+    review.add_argument('--trivy', type=Path, help='Trivy JSON v2 input')
+    review.add_argument('--output', type=Path, help='Create review JSON')
+    review.add_argument('--html', type=Path, help='Create offline review HTML')
     args = parser.parse_args(argv)
     try:
         if args.command == 'verify':
@@ -127,6 +136,37 @@ def main(argv=None) -> int:
             from research_catalog import filter_packages
             data = json.loads((ROOT/'research/kali-tool-package-index.json').read_text())
             print(json.dumps(filter_packages(data, args.query, args.profile), ensure_ascii=False, indent=2))
+        elif args.command == 'import-trivy':
+            from trivy_report import import_report
+            from nmap_report import save_report
+            report = import_report(args.path)
+            if args.output:
+                save_report(report, args.output)
+                print(f'Imported {len(report["findings"])} producer records into {args.output}')
+            else:
+                print(json.dumps(report, ensure_ascii=False, indent=2))
+        elif args.command == 'review':
+            from nmap_report import import_report as import_nmap, save_report
+            from nmap_compare import compare_reports, validate_destinations
+            from trivy_report import import_report as import_trivy
+            from review_rules import build_review
+            from review_html import render_html
+            if bool(args.before) != bool(args.after):
+                raise ValueError('Use --before e --after juntos')
+            if not args.before and not args.trivy:
+                raise ValueError('Forneça um par Nmap e/ou --trivy')
+            validate_destinations([p for p in (args.output, args.html) if p is not None])
+            comparison = compare_reports(import_nmap(args.before), import_nmap(args.after)) if args.before else None
+            report = build_review(comparison, import_trivy(args.trivy) if args.trivy else None)
+            if args.output:
+                save_report(report, args.output)
+            else:
+                print(json.dumps(report, ensure_ascii=False, indent=2))
+            if args.html:
+                with args.html.open('x', encoding='utf-8') as stream:
+                    stream.write(render_html(report))
+            if args.output:
+                print(f'Created {len(report["items"])} explained review items')
         else:
             count = 0
             for row in inventory(ROOT, args.source):

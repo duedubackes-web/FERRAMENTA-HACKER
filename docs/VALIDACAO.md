@@ -46,3 +46,12 @@
 - Craft/REA corroboraram caminhos raiz e todos os hashes disponíveis das oito novas árvores de segurança. Trivy manteve cobertura parcial de conteúdo aninhado; entradas sem hash no REA não foram tratadas como verificadas.
 - No Gemini público: HTTP 200 sem autenticação, dois scripts iniciais inventariados e analisados como texto; alias expansion e grafo estático com lacunas explícitas.
 - Os testes são da base própria. Nenhum teste dos novos motores de pentest, agente Gemini, chamada de modelo ou operação de intrusão foi executado.
+
+
+## Importação Trivy e revisão explicável
+
+- 54 testes da base passaram, incluindo 15 novos casos do importador e da fila de revisão.
+- Foram exercitados formatos inválidos, chaves duplicadas, orçamento de entrada, severidade desconhecida, omissão de conteúdo de Secrets, referências, IDs e execução ponta a ponta do CLI.
+- A leitura de 92 saídas públicas esperadas Trivy importou 83 JSONs nativos e recusou nove formatos fora do contrato: sete CycloneDX e dois SPDX. Não houve execução do Trivy.
+- O HTML sintético foi conferido em Chromium em 1.365×980 e 375×812: detalhes, navegação de fontes, ausência de transbordamento e zero requisições de rede. QA por setContent, sujeito à restrição de file: já registrada no ambiente.
+- O exemplo contém seis sugestões de revisão derivadas de dados sintéticos. Não é uma medição de risco ou comprovação de eficácia em sistemas reais.

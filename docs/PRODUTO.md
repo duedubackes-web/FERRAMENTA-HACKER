@@ -46,3 +46,10 @@ Agora é possível comparar dois XMLs existentes e gerar um relatório navegáve
 O avanço prático é explicar quando uma diferença está acompanhada de mudança de cobertura e quando os registros não permitem um pareamento confiável.
 Isso busca reduzir interpretações incorretas de inventário, como chamar uma porta não observada de fechada. A utilidade em tarefas reais ainda precisa ser medida.
 A aplicação não atribui pontuações de risco nem declara vulnerabilidades a partir desses registros.
+
+
+## Incremento: da observação à revisão
+
+O fluxo Nmap/Trivy já produz uma fila de verificações sugeridas. A diferença prática é tornar explícito por que um item pede atenção e quais fatos sustentam esse pedido.
+Esta inteligência é baseada em regras versionadas, não em respostas de um modelo. A fila dá visibilidade às lacunas de evidência antes das interpretações da mesma prioridade.
+A prioridade não substitui risco de negócio ou revisão de aplicabilidade. A utilidade dessa ordem ainda precisa ser medida em tarefas reais com analistas.

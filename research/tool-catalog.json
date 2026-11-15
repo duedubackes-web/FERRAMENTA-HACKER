@@ -910,8 +910,16 @@
         "software-supply-chain",
         "vulnerability-assessment"
       ],
-      "purpose": "Avaliação de componentes, configurações e artefatos de software.",
+      "purpose": "Avaliação de componentes e configurações. A base importa JSON v2 e produz uma fila de revisão de campos selecionados.",
       "repository": "aquasecurity/trivy",
+      "project_integration": {
+        "status": "offline-report-adapter",
+        "commands": [
+          "import-trivy",
+          "review"
+        ],
+        "engine_executed": false
+      },
       "source_status": "source-indexed",
       "source_snapshots": [
         {

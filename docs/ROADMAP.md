@@ -26,6 +26,7 @@
 - [x] P04 (Nmap v1): exportar JSON e relatório HTML com proveniência navegável.
 - [ ] P05: verificar corpus sintético ponta a ponta e medir tarefas completas.
 - [ ] P06: conduzir entrevistas e decidir continuidade pelo resultado observado.
+- [x] P07 (Nmap/Trivy v1): importar JSON Trivy local e produzir uma fila de revisão explicável, combinando evidências com a comparação Nmap, sem inferir correspondência entre IP e artefato.
 
 ## Antes de distribuir um produto
 
@@ -86,6 +87,19 @@ Use `.github/ISSUE_TEMPLATE/work-item.yml` para converter cada item em uma taref
 - [x] Adicionar busca offline por categoria/aliases e consultas ao índice de pacotes, com testes.
 - [x] Separar Gemini web, CLI e SDK; publicar observações e hashes sem republicar bundles proprietários ou bootstrap de sessão.
 - [ ] Revisar componentes e dependências dos projetos selecionados antes de qualquer incorporação ou distribuição de motores.
-- [ ] Priorizar os próximos adaptadores de importação de relatórios, usando formatos documentados de Trivy, ZAP e outros produtores.
+- [x] Implementar primeiro adaptador de vulnerabilidades Trivy JSON v2, mantendo campos selecionados e cobertura explícita.
+- [ ] Priorizar formatos adicionais de ZAP e outros produtores e ampliar o contrato de achados.
 - [ ] Validar com usuários o valor de busca fundamentada e comparação de evidências; uma interface conversacional permanece proposta, sem integração de modelos.
 - [ ] Definir corpus de tarefas e critérios antes de avaliar funcionalidades interativas de assistentes de IA.
+
+
+## Revisão explicável — 15/11/2026
+
+- [x] Importar Trivy JSON v2 com identidade do artefato, campos do produtor e desconhecidos preservados.
+- [x] Criar regras versionadas e fingerprint para ordenar uma fila de verificações, separada da severidade do produtor.
+- [x] Integrar comparação Nmap e Trivy sem inferir correlação IP/pacote; preservar ambiguidades e lacunas.
+- [x] Exportar JSON e HTML offline com motivo, sugestão e referências por item.
+- [x] Testar o fluxo CLI, proteção de saídas, texto inerte, exemplos públicos e layout responsivo.
+- [ ] Avaliar com analistas tarefas completas e a utilidade da ordem de revisão sugerida.
+- [ ] Definir mapeamento explícito e verificável de ativos antes de qualquer correlação entre diferentes produtores.
+- [ ] Ampliar formatos/categorias selecionados mantendo as limitações e minimização de dados necessárias.

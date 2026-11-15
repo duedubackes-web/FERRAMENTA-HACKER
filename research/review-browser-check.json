@@ -1,0 +1,13 @@
+{
+  "method": "Playwright setContent in existing Chromium; local file scheme is restricted by environment policy",
+  "browser": "156.0.8078.79",
+  "viewports": [
+    "1365x980",
+    "375x812"
+  ],
+  "pageOverflow": false,
+  "evidenceDisclosure": "passed",
+  "sourceNavigation": "passed",
+  "networkRequests": 0,
+  "html_sha256": "507079c883e8ac5b75acdfbba5dca069981c938b21de95d1b158a7b30f576e7e"
+}

@@ -1,0 +1,320 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>FERRAMENTA-HACKER · plano de revisão</title><style>
+:root{color-scheme:dark;--bg:#10141e;--panel:#1b2333;--line:#3b4c63;--text:#f1f5fc;--muted:#c1cbdc;--accent:#8adfd2}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,sans-serif}main{max-width:1100px;padding:36px 24px;margin:auto}header{border-bottom:1px solid var(--line);padding-bottom:24px}.eyebrow{font-size:.8rem;letter-spacing:.1em;color:var(--accent)}h1{font-size:clamp(1.9rem,5vw,3.4rem);line-height:1.15;margin:.6em 0}h2{margin-top:2em}h3{line-height:1.35;font-size:1.3rem}h4{margin-bottom:.4em}p,li{max-width:90ch}nav{display:flex;gap:24px;flex-wrap:wrap;margin-top:24px}a{color:var(--accent)}a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.muted,.rule{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin:28px 0}.stat,article,details,.notice{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}.stat strong{display:block;font-size:2.2rem;color:var(--accent)}.stat span{color:var(--muted)}article{margin:18px 0}.item-head{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}.badge{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.85rem}.review-first{color:#ffddb1;border-color:#b28a55}.review-next{color:#a9dfec}.context{color:var(--muted)}details{margin:12px 0;min-width:0;padding:14px}summary{cursor:pointer;font-weight:600}pre{font-size:.8rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:32rem;overflow:auto;color:var(--muted)}.scope{padding:14px 18px;border-left:4px solid var(--accent);background:var(--panel)}footer{margin-top:36px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.8rem;overflow-wrap:anywhere}@media print{body{background:white;color:black}main{padding:0}article,details,.notice,.stat,.scope{background:white}.muted,.rule,pre,footer,.stat span{color:#333}a{color:#005c50}.badge{color:black}pre{max-height:none}}
+</style></head><body><main><header><div class="eyebrow">FERRAMENTA-HACKER / REVISÃO COM EVIDÊNCIAS</div><h1>Do registro à próxima verificação.</h1>
+<p class="muted">Uma fila explicável para revisar diferenças de rede e declarações de vulnerabilidades, com origem e limites visíveis.</p><p class="notice">Demonstração com relatórios sintéticos. Nenhuma coleta ou verificação de rede foi realizada.</p><nav aria-label="Seções"><a href="#queue">Fila de revisão</a><a href="#sources">Fontes</a><a href="#limits">Como interpretar</a></nav></header><section aria-label="Resumo"><div class="stats"><div class="stat"><strong>3</strong><span>Revisar primeiro</span></div><div class="stat"><strong>3</strong><span>Revisar depois</span></div><div class="stat"><strong>0</strong><span>Contexto</span></div></div><p class="scope">A prioridade organiza a revisão humana. Ela não confirma risco, explorabilidade ou correspondência entre um IP e um pacote.</p></section><section id="queue"><h2>Fila de revisão</h2><article id="review-item-07e2f5ec64ec67798c4264690bfefdedb547cb45b9c09551b5f54968acdb2588"><div class="item-head"><span class="badge review-first">Revisar primeiro</span><span class="rule">EVIDENCE-SCOPE</span></div><h3>Conferir a comparabilidade das coletas</h3><p>Os escopos ou métodos declarados diferem ou são desconhecidos.</p><h4>Próxima verificação sugerida</h4><ol><li>Conferir protocolo, método, intervalos, ponto de observação e conclusão dos relatórios antes de interpretar ausências.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
+  &quot;facts&quot;: {
+    &quot;scope_relation&quot;: &quot;different_declared&quot;,
+    &quot;identity_rule&quot;: &quot;Unique one-to-one shared canonical IP address; no hostname/MAC matching&quot;
+  },
+  &quot;references&quot;: [
+    {
+      &quot;role&quot;: &quot;nmap-before&quot;,
+      &quot;artifact_sha256&quot;: &quot;283d81546f428d10dd026f2aa9910e42043e1f169e2867c790dba0d45a7ebc68&quot;
+    },
+    {
+      &quot;role&quot;: &quot;nmap-after&quot;,
+      &quot;artifact_sha256&quot;: &quot;8fb22d4a260aef3012acd78fa6d5b8fceb7be9032e5b293c2813a780346421cd&quot;
+    }
+  ]
+}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-a328eeee3dd681608d2a7fed94dfe6400cdcc52ba94ab57492cac3a27804c39e"><div class="item-head"><span class="badge review-first">Revisar primeiro</span><span class="rule">NMAP-OPEN-STATE</span></div><h3>Conferir a mudança para estado aberto</h3><p>A mesma porta foi explicitamente registrada com outro estado conhecido antes e com estado open depois.</p><h4>Próxima verificação sugerida</h4><ol><li>Confirmar se a mudança era esperada e qual serviço deveria estar exposto. Verificar configuração e contexto com o responsável pelo ativo.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
+  &quot;facts&quot;: {
+    &quot;id&quot;: &quot;change-1&quot;,
+    &quot;kind&quot;: &quot;state_changed&quot;,
+    &quot;host&quot;: [
+      &quot;192.0.2.10&quot;,
+      &quot;2001:db8::10&quot;
+    ],
+    &quot;before&quot;: &quot;closed&quot;,
+    &quot;after&quot;: &quot;open&quot;,
+    &quot;endpoint&quot;: {
+      &quot;protocol&quot;: &quot;tcp&quot;,
+      &quot;number&quot;: 22
+    }
+  },
+  &quot;references&quot;: [
+    {
+      &quot;source&quot;: &quot;before&quot;,
+      &quot;artifact_sha256&quot;: &quot;283d81546f428d10dd026f2aa9910e42043e1f169e2867c790dba0d45a7ebc68&quot;,
+      &quot;host_index&quot;: 0,
+      &quot;port_index&quot;: 0,
+      &quot;role&quot;: &quot;nmap-before&quot;
+    },
+    {
+      &quot;source&quot;: &quot;after&quot;,
+      &quot;artifact_sha256&quot;: &quot;8fb22d4a260aef3012acd78fa6d5b8fceb7be9032e5b293c2813a780346421cd&quot;,
+      &quot;host_index&quot;: 0,
+      &quot;port_index&quot;: 0,
+      &quot;role&quot;: &quot;nmap-after&quot;
+    }
+  ]
+}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-49dd2e34bd786a597128fc5c8e90fbeb4437b6ec311f4042a7842a93f915e2f8"><div class="item-head"><span class="badge review-first">Revisar primeiro</span><span class="rule">TRIVY-HIGH</span></div><h3>Validar um registro de alta severidade do produtor</h3><p>O relatório declara severidade HIGH ou CRITICAL; a fila não comprova explorabilidade ou risco do ambiente.</p><h4>Próxima verificação sugerida</h4><ol><li>Confirmar pacote, versão, aplicabilidade e aviso do produtor. Revisar atualização ou mitigação com o responsável, sem aplicar mudanças automaticamente.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
+  &quot;facts&quot;: {
+    &quot;result_index&quot;: 0,
+    &quot;vulnerability_index&quot;: 0,
+    &quot;json_pointer&quot;: &quot;/Results/0/Vulnerabilities/0&quot;,
+    &quot;target&quot;: &quot;synthetic-packages.lock&quot;,
+    &quot;class&quot;: &quot;lang-pkgs&quot;,
+    &quot;type&quot;: &quot;synthetic&quot;,
+    &quot;producer_fields&quot;: {
+      &quot;VulnerabilityID&quot;: &quot;DEMO-NOT-A-REAL-CVE-001&quot;,
+      &quot;PkgID&quot;: null,
+      &quot;PkgName&quot;: &quot;example-component&quot;,
+      &quot;PkgPath&quot;: null,
+      &quot;InstalledVersion&quot;: &quot;1.0&quot;,
+      &quot;FixedVersion&quot;: &quot;1.1&quot;,
+      &quot;Status&quot;: null,
+      &quot;Severity&quot;: &quot;HIGH&quot;,
+      &quot;SeveritySource&quot;: &quot;synthetic-fixture&quot;,
+      &quot;Title&quot;: &quot;Registro sintético para demonstrar a fila&quot;,
+      &quot;PrimaryURL&quot;: null
+    },
+    &quot;severity_normalized&quot;: &quot;HIGH&quot;
+  },
+  &quot;references&quot;: [
+    {
+      &quot;role&quot;: &quot;trivy&quot;,
+      &quot;artifact_sha256&quot;: &quot;ee6e571ae78669eb0a795adad03d70a3d12b1922e7a1ad93f7c028b22399a6c7&quot;,
+      &quot;json_pointer&quot;: &quot;/Results/0/Vulnerabilities/0&quot;
+    }
+  ]
+}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-131e63099b1c0bd4045c1f7616c194e56f762dcf132271477adb92eb93f8cc61"><div class="item-head"><span class="badge review-next">Revisar depois</span><span class="rule">NMAP-OBSERVATION</span></div><h3>Revisar uma diferença de observação</h3><p>Há mudança no registro de host, porta ou detecção de serviço, sem conclusão automática sobre risco.</p><h4>Próxima verificação sugerida</h4><ol><li>Conferir as duas evidências e a cobertura. Diferenciar mudança no sistema de mudança na detecção ou na coleta.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
+  &quot;facts&quot;: {
+    &quot;id&quot;: &quot;change-3&quot;,
+    &quot;kind&quot;: &quot;first_observed_endpoint&quot;,
+    &quot;host&quot;: [
+      &quot;192.0.2.10&quot;,
+      &quot;2001:db8::10&quot;
+    ],
+    &quot;before&quot;: null,
+    &quot;after&quot;: {
+      &quot;protocol&quot;: &quot;tcp&quot;,
+      &quot;port&quot;: 8443,
+      &quot;state&quot;: {
+        &quot;state&quot;: &quot;open&quot;,
+        &quot;reason&quot;: &quot;synthetic&quot;
+      },
+      &quot;service&quot;: null
+    },
+    &quot;endpoint&quot;: {
+      &quot;protocol&quot;: &quot;tcp&quot;,
+      &quot;number&quot;: 8443
+    },
+    &quot;other_declared_scope&quot;: &quot;not_declared&quot;
+  },
+  &quot;references&quot;: [
+    {
+      &quot;source&quot;: &quot;after&quot;,
+      &quot;artifact_sha256&quot;: &quot;8fb22d4a260aef3012acd78fa6d5b8fceb7be9032e5b293c2813a780346421cd&quot;,
+      &quot;host_index&quot;: 0,
+      &quot;port_index&quot;: 2,
+      &quot;role&quot;: &quot;nmap-after&quot;
+    }
+  ]
+}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-194781e5f369322ace0fd2046ca05cc700d8cb3cecdbe343c889bbbb505d3f9b"><div class="item-head"><span class="badge review-next">Revisar depois</span><span class="rule">NMAP-OBSERVATION</span></div><h3>Revisar uma diferença de observação</h3><p>Há mudança no registro de host, porta ou detecção de serviço, sem conclusão automática sobre risco.</p><h4>Próxima verificação sugerida</h4><ol><li>Conferir as duas evidências e a cobertura. Diferenciar mudança no sistema de mudança na detecção ou na coleta.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
+  &quot;facts&quot;: {
+    &quot;id&quot;: &quot;change-2&quot;,
+    &quot;kind&quot;: &quot;service_evidence_changed&quot;,
+    &quot;host&quot;: [
+      &quot;192.0.2.10&quot;,
+      &quot;2001:db8::10&quot;
+    ],
+    &quot;before&quot;: {
+      &quot;name&quot;: &quot;https&quot;,
+      &quot;method&quot;: &quot;table&quot;,
+      &quot;conf&quot;: &quot;3&quot;
+    },
+    &quot;after&quot;: {
+      &quot;name&quot;: &quot;https&quot;,
+      &quot;method&quot;: &quot;probed&quot;,
+      &quot;conf&quot;: &quot;10&quot;,
+      &quot;product&quot;: &quot;Synthetic demo service&quot;
+    },
+    &quot;endpoint&quot;: {
+      &quot;protocol&quot;: &quot;tcp&quot;,
+      &quot;number&quot;: 443
+    }
+  },
+  &quot;references&quot;: [
+    {
+      &quot;source&quot;: &quot;before&quot;,
+      &quot;artifact_sha256&quot;: &quot;283d81546f428d10dd026f2aa9910e42043e1f169e2867c790dba0d45a7ebc68&quot;,
+      &quot;host_index&quot;: 0,
+      &quot;port_index&quot;: 1,
+      &quot;role&quot;: &quot;nmap-before&quot;
+    },
+    {
+      &quot;source&quot;: &quot;after&quot;,
+      &quot;artifact_sha256&quot;: &quot;8fb22d4a260aef3012acd78fa6d5b8fceb7be9032e5b293c2813a780346421cd&quot;,
+      &quot;host_index&quot;: 0,
+      &quot;port_index&quot;: 1,
+      &quot;role&quot;: &quot;nmap-after&quot;
+    }
+  ]
+}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-6e6470270f5cc7c328850f198800d779ae1369a08fb7522dafb3a8c8878438e8"><div class="item-head"><span class="badge review-next">Revisar depois</span><span class="rule">TRIVY-OTHER</span></div><h3>Revisar um registro do produtor</h3><p>O registro está no relatório e requer contexto; severidade baixa, desconhecida ou ausente não demonstra ausência de impacto.</p><h4>Próxima verificação sugerida</h4><ol><li>Conferir a classificação e a aplicabilidade no contexto do artefato. Preservar como desconhecido o que o relatório não informa.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
+  &quot;facts&quot;: {
+    &quot;result_index&quot;: 0,
+    &quot;vulnerability_index&quot;: 1,
+    &quot;json_pointer&quot;: &quot;/Results/0/Vulnerabilities/1&quot;,
+    &quot;target&quot;: &quot;synthetic-packages.lock&quot;,
+    &quot;class&quot;: &quot;lang-pkgs&quot;,
+    &quot;type&quot;: &quot;synthetic&quot;,
+    &quot;producer_fields&quot;: {
+      &quot;VulnerabilityID&quot;: &quot;DEMO-NOT-A-REAL-CVE-002&quot;,
+      &quot;PkgID&quot;: null,
+      &quot;PkgName&quot;: &quot;another-example-component&quot;,
+      &quot;PkgPath&quot;: null,
+      &quot;InstalledVersion&quot;: &quot;2.0&quot;,
+      &quot;FixedVersion&quot;: null,
+      &quot;Status&quot;: null,
+      &quot;Severity&quot;: &quot;UNKNOWN&quot;,
+      &quot;SeveritySource&quot;: null,
+      &quot;Title&quot;: &quot;Classificação pendente no exemplo&quot;,
+      &quot;PrimaryURL&quot;: null
+    },
+    &quot;severity_normalized&quot;: &quot;UNKNOWN&quot;
+  },
+  &quot;references&quot;: [
+    {
+      &quot;role&quot;: &quot;trivy&quot;,
+      &quot;artifact_sha256&quot;: &quot;ee6e571ae78669eb0a795adad03d70a3d12b1922e7a1ad93f7c028b22399a6c7&quot;,
+      &quot;json_pointer&quot;: &quot;/Results/0/Vulnerabilities/1&quot;
+    }
+  ]
+}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article></section><section id="sources"><h2>Fontes e cobertura</h2><details><summary>nmap-before</summary><pre>{
+  &quot;artifact&quot;: {
+    &quot;sha256&quot;: &quot;283d81546f428d10dd026f2aa9910e42043e1f169e2867c790dba0d45a7ebc68&quot;,
+    &quot;bytes&quot;: 1000,
+    &quot;format&quot;: &quot;nmap-xml&quot;,
+    &quot;path&quot;: &quot;tests/fixtures/nmap-synthetic.xml&quot;
+  },
+  &quot;analysis_run&quot;: {
+    &quot;id&quot;: &quot;nmap-xml-v1-283d81546f428d10dd026f2aa9910e42043e1f169e2867c790dba0d45a7ebc68&quot;,
+    &quot;adapter&quot;: &quot;offline-nmap-xml&quot;,
+    &quot;adapter_version&quot;: &quot;1&quot;,
+    &quot;mode&quot;: &quot;offline-import&quot;,
+    &quot;target_executed&quot;: false
+  },
+  &quot;producer&quot;: {
+    &quot;scanner&quot;: &quot;nmap&quot;,
+    &quot;version&quot;: &quot;synthetic-fixture&quot;,
+    &quot;start&quot;: &quot;0&quot;,
+    &quot;xmloutputversion&quot;: &quot;1.05&quot;,
+    &quot;finished&quot;: {
+      &quot;time&quot;: &quot;0&quot;,
+      &quot;exit&quot;: &quot;success&quot;
+    }
+  },
+  &quot;coverage&quot;: {
+    &quot;status&quot;: &quot;selected-fields&quot;,
+    &quot;scaninfo&quot;: [
+      {
+        &quot;type&quot;: &quot;connect&quot;,
+        &quot;protocol&quot;: &quot;tcp&quot;,
+        &quot;numservices&quot;: &quot;3&quot;,
+        &quot;services&quot;: &quot;22,443,8080&quot;
+      }
+    ],
+    &quot;reported_hosts&quot;: {
+      &quot;up&quot;: &quot;1&quot;,
+      &quot;down&quot;: &quot;0&quot;,
+      &quot;total&quot;: &quot;1&quot;
+    },
+    &quot;imported_hosts&quot;: 1,
+    &quot;omitted_script_results&quot;: 0
+  }
+}</pre></details><details><summary>nmap-after</summary><pre>{
+  &quot;artifact&quot;: {
+    &quot;sha256&quot;: &quot;8fb22d4a260aef3012acd78fa6d5b8fceb7be9032e5b293c2813a780346421cd&quot;,
+    &quot;bytes&quot;: 1011,
+    &quot;format&quot;: &quot;nmap-xml&quot;,
+    &quot;path&quot;: &quot;tests/fixtures/nmap-synthetic-after.xml&quot;
+  },
+  &quot;analysis_run&quot;: {
+    &quot;id&quot;: &quot;nmap-xml-v1-8fb22d4a260aef3012acd78fa6d5b8fceb7be9032e5b293c2813a780346421cd&quot;,
+    &quot;adapter&quot;: &quot;offline-nmap-xml&quot;,
+    &quot;adapter_version&quot;: &quot;1&quot;,
+    &quot;mode&quot;: &quot;offline-import&quot;,
+    &quot;target_executed&quot;: false
+  },
+  &quot;producer&quot;: {
+    &quot;scanner&quot;: &quot;nmap&quot;,
+    &quot;version&quot;: &quot;synthetic-fixture&quot;,
+    &quot;start&quot;: &quot;1&quot;,
+    &quot;xmloutputversion&quot;: &quot;1.05&quot;,
+    &quot;finished&quot;: {
+      &quot;time&quot;: &quot;1&quot;,
+      &quot;exit&quot;: &quot;success&quot;
+    }
+  },
+  &quot;coverage&quot;: {
+    &quot;status&quot;: &quot;selected-fields&quot;,
+    &quot;scaninfo&quot;: [
+      {
+        &quot;type&quot;: &quot;connect&quot;,
+        &quot;protocol&quot;: &quot;tcp&quot;,
+        &quot;numservices&quot;: &quot;3&quot;,
+        &quot;services&quot;: &quot;22,443,8443&quot;
+      }
+    ],
+    &quot;reported_hosts&quot;: {
+      &quot;up&quot;: &quot;1&quot;,
+      &quot;down&quot;: &quot;0&quot;,
+      &quot;total&quot;: &quot;1&quot;
+    },
+    &quot;imported_hosts&quot;: 1,
+    &quot;omitted_script_results&quot;: 0
+  }
+}</pre></details><details><summary>trivy</summary><pre>{
+  &quot;artifact&quot;: {
+    &quot;sha256&quot;: &quot;ee6e571ae78669eb0a795adad03d70a3d12b1922e7a1ad93f7c028b22399a6c7&quot;,
+    &quot;bytes&quot;: 759,
+    &quot;format&quot;: &quot;trivy-json-v2&quot;,
+    &quot;path&quot;: &quot;tests/fixtures/trivy-synthetic.json&quot;
+  },
+  &quot;analysis_run&quot;: {
+    &quot;id&quot;: &quot;trivy-json-v1-ee6e571ae78669eb0a795adad03d70a3d12b1922e7a1ad93f7c028b22399a6c7&quot;,
+    &quot;adapter&quot;: &quot;offline-trivy-json&quot;,
+    &quot;adapter_version&quot;: &quot;1&quot;,
+    &quot;target_executed&quot;: false
+  },
+  &quot;producer&quot;: {
+    &quot;version&quot;: &quot;synthetic-fixture&quot;,
+    &quot;created_at&quot;: null,
+    &quot;artifact_name&quot;: &quot;synthetic-project.example&quot;,
+    &quot;artifact_type&quot;: &quot;filesystem&quot;
+  },
+  &quot;coverage&quot;: {
+    &quot;status&quot;: &quot;selected-vulnerability-fields&quot;,
+    &quot;results_state&quot;: &quot;array&quot;,
+    &quot;results&quot;: [
+      {
+        &quot;result_index&quot;: 0,
+        &quot;target&quot;: &quot;synthetic-packages.lock&quot;,
+        &quot;class&quot;: &quot;lang-pkgs&quot;,
+        &quot;type&quot;: &quot;synthetic&quot;,
+        &quot;vulnerabilities_state&quot;: &quot;array&quot;,
+        &quot;vulnerability_records&quot;: 2,
+        &quot;uninterpreted_categories&quot;: {}
+      }
+    ],
+    &quot;imported_records&quot;: 2,
+    &quot;scan_completion&quot;: &quot;not-established&quot;
+  }
+}</pre></details><details><summary>Avisos dos importadores</summary><pre>[
+  {
+    &quot;origin&quot;: &quot;nmap&quot;,
+    &quot;source&quot;: &quot;comparison&quot;,
+    &quot;message&quot;: &quot;Declared scan coverage/method differs or is unknown; missing observations must not be treated as closure.&quot;
+  }
+]</pre></details></section><section id="limits"><h2>Como interpretar</h2><ul><li>Prioridade de revisão não é uma pontuação de risco, urgência operacional ou validação de vulnerabilidade.</li><li>A severidade Trivy e suas versões/status continuam declarações do produtor; correção ausente significa informação não declarada, não inexistência de correção.</li><li>Não há associação entre IPs Nmap e artefatos/pacotes Trivy. As evidências coexistem na fila sem correlação automática.</li><li>A fila inclui diferenças e campos selecionados, não uma auditoria integral ou garantia de segurança.</li><li>Sugestões não são executadas. Não houve consulta externa de CVEs, uso de modelo de IA ou alteração dos sistemas.</li></ul><details><summary>Regras e identidade da revisão</summary><pre>{
+  &quot;review_id&quot;: &quot;review-v1-2c0e1a3253caf0f8829c411330ba16f94771d52281780a8f2289dfbf45e9c3be&quot;,
+  &quot;ruleset&quot;: {
+    &quot;id&quot;: &quot;evidence-review&quot;,
+    &quot;version&quot;: &quot;1&quot;,
+    &quot;sha256&quot;: &quot;f791014206fc32eb84bea40a898d6b7210ce672138cb1fa870aac7616cfbe6de&quot;,
+    &quot;mechanism&quot;: &quot;deterministic-rules&quot;,
+    &quot;model_calls&quot;: 0
+  }
+}</pre></details></section><footer>Relatório offline. Nenhuma sugestão é executada automaticamente. review-v1-2c0e1a3253caf0f8829c411330ba16f94771d52281780a8f2289dfbf45e9c3be</footer></main></body></html>
