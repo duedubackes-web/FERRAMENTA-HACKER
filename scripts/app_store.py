@@ -141,3 +141,21 @@ class Store:
         with self.connect() as db:
             db.execute('INSERT INTO studio VALUES (?,?,?,?,?)', (result['id'], project, kind, json.dumps(document, ensure_ascii=False), result['created']))
         return result
+
+    def reviews(self, project):
+        self.project(project)
+        with self.connect() as db:
+            rows = db.execute('SELECT id,created,source_ids,document FROM reviews WHERE project=? ORDER BY created DESC,id DESC', (project,)).fetchall()
+        return [{'id': row['id'], 'created': row['created'], 'source_ids': json.loads(row['source_ids']),
+                 'summary': json.loads(row['document'])['summary']} for row in rows]
+
+    def review_by_id(self, project, review_id):
+        self.project(project)
+        with self.connect() as db:
+            row = db.execute('SELECT * FROM reviews WHERE project=? AND id=?', (project, review_id)).fetchone()
+        if not row:
+            raise ValueError('Revisão não encontrada neste projeto')
+        result = dict(row)
+        for key in ('document', 'source_ids'):
+            result[key] = json.loads(result[key])
+        return result

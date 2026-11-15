@@ -15,13 +15,14 @@ Não contém uma distribuição nova, um substituto do Wireshark ou uma implemen
 python scripts/app_server.py
 ```
 
-Versão **0.1.1**. Use o botão **✓ Verificar workspace** ou `python scripts/app_server.py --check` para conferir arquivos, banco e modelo opcional.
+Versão **0.2.0**. Use o botão **✓ Verificar workspace** ou `python scripts/app_server.py --check` para conferir arquivos, banco e modelo opcional.
 
 Abra **http://127.0.0.1:8765** e selecione **Explorar demonstração**. Requer Python 3.11+; o aplicativo local padrão não precisa de chave de API ou instalação de ferramentas externas.
 
 - Projetos persistentes em SQLite, importação Nmap/Trivy/ZAP e revisão com referências.
 - Chat local sobre evidências, tecnologias e planos; IA generativa opcional via Ollama local.
 - Decisões com justificativa e histórico, conferência de reprodução e exportação ZIP.
+- Comparação entre revisões salvas, com alterações de campos, ausências e ambiguidades explícitas. Pergunte “O que mudou?” no chat.
 - Estúdio de código-fonte ZIP: mapa estático, plano de produto, backlog e protótipo próprio com quadro de tarefas e chat local.
 
 [Guia do aplicativo](docs/APLICATIVO-ATLAS.md): instalação, uso, configuração do modelo, backup, exportação e limites. Esta é a versão **local para um usuário**. REA/Craft/Kali estão documentados como pesquisa; os adaptadores funcionais não embutem seus motores. O protótipo é gerado por template próprio, e a novidade comercial permanece hipótese a validar.
@@ -143,3 +144,5 @@ Os contratos foram estudados em referências oficiais fixadas por commit e valid
 ### Conferir uma revisão recebida
 
 O novo `replay-review` reconstrói a fila a partir de fontes locais explícitas e detecta diferenças nas fontes ou no conteúdo da revisão. Permite mover os arquivos sem confiar nos caminhos embutidos. Veja [reprodução verificável](docs/REPRODUZIR-REVISAO.md), incluindo estados, códigos de saída e limites de confiança.
+
+[Comparar revisões ao longo do tempo](docs/EVOLUCAO-REVISOES.md): interface, chat, CLI, chaves declaradas e limites de interpretação.

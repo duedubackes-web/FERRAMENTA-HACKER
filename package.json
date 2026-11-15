@@ -1,6 +1,6 @@
 {
   "name": "atlas-evidence-studio",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": true,
   "description": "Optional DOM integration tests; the application runtime needs only Python.",
   "scripts": {

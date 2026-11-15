@@ -8,6 +8,7 @@ import tempfile
 import zipfile
 
 from app_chat import answer
+from review_evolution import compare_reviews, LABELS
 from app_version import VERSION
 from app_store import Store
 from app_studio import inspect_archive, blueprint, MAX_ARCHIVE
@@ -71,7 +72,7 @@ class Application:
         active = {s['role']: s['id'] for s in sources}
         return {'project': info, 'sources': sources, 'review': latest,
                 'review_stale': bool(latest and latest['source_ids'] != active),
-                'decisions': self.store.decisions(project), 'messages': self.store.messages(project), 'studio': self.store.studio(project)}
+                'reviews': self.store.reviews(project), 'decisions': self.store.decisions(project), 'messages': self.store.messages(project), 'studio': self.store.studio(project)}
 
     def decision(self, project, payload):
         latest = self.store.latest_review(project)
@@ -116,6 +117,15 @@ class Application:
                 else:
                     response['text'] = doc['name']+'\nBrief declarado: '+doc['brief']+'\n\n'+ '\n'.join(t['priority']+' · '+t['task'] for t in doc['backlog'])+'\n\nPlano baseado em template; requer validação.'
                 response['citations'] = [{'kind': 'studio', 'record_id': record['id'], 'method': doc['method']}]
+        if query & {'evolucao', 'mudou', 'comparar', 'comparacao'}:
+            history = self.store.reviews(project)
+            if len(history) >= 2:
+                evolution = self.compare(project, history[1]['id'], history[0]['id'])
+                response['text'] = ('Comparação das duas revisões mais recentes:\n'+'\n'.join(LABELS[k]+': '+str(v) for k, v in evolution['comparison']['summary'].items())+'\nNão observado depois não significa corrigido.') if evolution['comparison']['status'] == 'compared' else 'A comparação está bloqueada por mudança de regras ou adaptadores.'
+                response['citations'] = [{'kind': 'review-comparison', 'before_record_id': history[1]['id'], 'after_record_id': history[0]['id']}]
+            else:
+                response['text'] = 'Gere ao menos duas revisões neste projeto para comparar sua evolução.'
+                response['citations'] = []
         if type(use_model) is not bool:
             raise ValueError('use_model deve ser booleano')
         if use_model:
@@ -145,12 +155,20 @@ class Application:
         latest = state['review']
         if not latest:
             raise ValueError('Gere uma revisão antes de exportar')
+        history = state['reviews']
+        index = next(i for i, row in enumerate(history) if row['id'] == latest['id'])
+        baseline = self.store.review_by_id(project, history[index+1]['id']) if index+1 < len(history) else None
+        evolution = self.compare(project, baseline['id'], latest['id']) if baseline else None
         result = io.BytesIO()
         def encoded(value):
             return json.dumps(value, ensure_ascii=False, indent=2).encode('utf-8')
         with zipfile.ZipFile(result, 'w', zipfile.ZIP_DEFLATED) as archive:
             archive.writestr('review.json', encoded(latest['document']))
             archive.writestr('review.html', render_html(latest['document']))
+            archive.writestr('review-history.json', encoded(state['reviews']))
+            if baseline:
+                archive.writestr('review-baseline.json', encoded(baseline['document']))
+                archive.writestr('review-evolution.json', encoded(evolution))
             archive.writestr('project.json', encoded(state['project']))
             archive.writestr('decisions.json', encoded(state['decisions']))
             archive.writestr('chat.json', encoded(state['messages']))
@@ -161,6 +179,9 @@ class Application:
                 source_rows = {s['id']: s for s in self.store.sources(project, contents=True)}
                 for role, source_id in latest['source_ids'].items():
                     archive.writestr('originals/'+role+('.xml' if role.startswith('nmap-') else '.json'), source_rows[source_id]['content'])
+                if baseline:
+                    for role, source_id in baseline['source_ids'].items():
+                        archive.writestr('baseline-originals/'+role+('.xml' if role.startswith('nmap-') else '.json'), source_rows[source_id]['content'])
             archive.writestr('README.txt', 'Exportação local Atlas / FERRAMENTA-HACKER. Decisões são declarações do usuário, sem autenticação de identidade.\nFontes originais: '+('incluídas; podem conter dados sensíveis.' if include_sources else 'não incluídas; preserve-as separadamente para reprodução.')+'\nReprodução confirma consistência, não autenticidade. Fontes e derivados podem conter dados sensíveis.\n')
         return result.getvalue()
 
@@ -226,3 +247,11 @@ class Application:
                 'target_executed': False,
                 'limitations': ['A integridade não estabelece autenticidade. quick_check não substitui backup e teste de restauração.',
                                 'A lista de modelos não testa geração, qualidade de respostas ou capacidade do equipamento.']}
+
+    def compare(self, project, before_id, after_id):
+        if not isinstance(before_id, str) or not isinstance(after_id, str) or before_id == after_id:
+            raise ValueError('Selecione duas revisões distintas')
+        before = self.store.review_by_id(project, before_id)
+        after = self.store.review_by_id(project, after_id)
+        return {'before_record_id': before['id'], 'after_record_id': after['id'],
+                'comparison': compare_reviews(before['document'], after['document'])}

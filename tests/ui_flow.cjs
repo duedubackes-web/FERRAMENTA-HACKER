@@ -138,6 +138,39 @@ async function until(test, label) {
   $('#view-review [data-action="review"]').click();
   await until(() => $("#stale").hidden === true, "new review");
   assert.equal($("#stat-decisions").textContent, "0");
+  $("#compare-reviews").click();
+  assert.equal($("#modal select").options.length, 2);
+  $("#modal form").dispatchEvent(
+    new w.Event("submit", { bubbles: true, cancelable: true }),
+  );
+  await until(
+    () => $("#modal-title").textContent === "Evolução das revisões",
+    "review evolution",
+  );
+  assert.ok(
+    $("#modal-body").textContent.includes(
+      "Não observado depois não significa corrigido",
+    ),
+  );
+  assert.ok(
+    $("#modal-body").textContent.includes("Mesmos campos selecionados: 4"),
+  );
+  $("#modal-close").click();
+  $('[data-view="chat"]').click();
+  $("#question").value = "O que mudou entre as revisões?";
+  $("#chat-form").dispatchEvent(
+    new w.Event("submit", { bubbles: true, cancelable: true }),
+  );
+  await until(() => $$(".message.assistant").length === 2, "evolution chat");
+  $$(".message.assistant").at(-1).querySelector(".citations button").click();
+  await until(
+    () =>
+      $("#modal-title").textContent === "Evolução das revisões" &&
+      $("#modal").open,
+    "evolution chat citation",
+  );
+  $("#modal-close").click();
+
   $('[data-view="studio"]').click();
   const zipResult = require("node:child_process").spawnSync(
     process.env.PYTHON || "python",
@@ -181,7 +214,7 @@ async function until(test, label) {
     await w.fetch("/api/projects/" + projects[0].id)
   ).json();
   assert.equal(snapshot.decisions.length, 1);
-  assert.equal(snapshot.messages.length, 1);
+  assert.equal(snapshot.messages.length, 2);
   assert.equal(snapshot.studio.length, 2);
   // Delay an old workspace response until a newer selection has loaded.
   const originalProject = projects[0].id;
@@ -247,7 +280,7 @@ async function until(test, label) {
   const diagnostic = JSON.parse($("#modal-body pre").textContent);
   assert.equal(diagnostic.database.status, "ok");
   assert.equal(diagnostic.chat.optional_model.status, "not-configured");
-  assert.equal(diagnostic.version, "0.1.1");
+  assert.equal(diagnostic.version, "0.2.0");
   assert.deepEqual(errors, []);
   process.stdout.write(
     JSON.stringify(
@@ -267,6 +300,8 @@ async function until(test, label) {
           "persistent-state",
           "project-deletion",
           "delayed-workspace-response",
+          "review-evolution",
+          "evolution-chat-reference",
           "workspace-diagnostics",
         ],
         javascriptErrors: errors.length,

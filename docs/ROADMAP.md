@@ -144,3 +144,12 @@ Use `.github/ISSUE_TEMPLATE/work-item.yml` para converter cada item em uma taref
 - [x] Fixar revisão de exportação e reprodução ao mesmo registro.
 - [x] Adicionar diagnóstico explícito de arquivos, SQLite e modelo local, sem reparos automáticos.
 - [x] Consultar versões e avisos de dependências, documentar atualização e preservar esquema/dados existentes.
+
+## Evolução temporal — v0.2.0
+
+- [x] Recuperar revisões históricas por projeto sem alterar o esquema SQLite.
+- [x] Comparar chaves declaradas Trivy/ZAP, separando campos alterados, ausências, duplicatas e itens sem chave.
+- [x] Bloquear pareamento entre versões incompatíveis e explicitar mudanças de cobertura.
+- [x] Expor comparação na interface, no chat, na CLI e no pacote de exportação.
+- [x] Preservar as decisões humanas em seus registros originais, sem transferência automática.
+- [ ] Validar comparabilidade com analistas e ampliar contratos antes de parear novas categorias.

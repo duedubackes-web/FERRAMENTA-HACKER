@@ -56,7 +56,7 @@
         <span class="status-dot"></span> Workspace local<span
           class="version"
           id="app-version"
-          >v0.1.1</span
+          >v0.2.0</span
         >
         <p>Seus arquivos. Suas evidências.<br />Suas decisões.</p>
         <button id="delete-project" class="subtle danger">
@@ -235,6 +235,13 @@
               A fila organiza a revisão humana; não confirma vulnerabilidades,
               risco de negócio ou cobertura completa.
             </p>
+            <div class="section-heading">
+              <h2>Evolução das revisões</h2>
+              <button id="compare-reviews" class="secondary">
+                ⇄ Comparar revisões salvas
+              </button>
+            </div>
+            <p id="review-history-note" class="muted"></p>
             <div id="review-list"></div>
           </section>
           <section class="view" id="view-sources" hidden>

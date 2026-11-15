@@ -1,4 +1,4 @@
-# Atlas — aplicativo local v0.1.1
+# Atlas — aplicativo local v0.2.0
 
 Atlas transforma a base FERRAMENTA-HACKER em um aplicativo web local com projetos, evidências, decisões, chat e estúdio de produto. O código do aplicativo é próprio; as fontes de pesquisa continuam com suas licenças e proveniência.
 
@@ -130,3 +130,7 @@ Nenhum checksum é regravado pelo diagnóstico e nenhum modelo é baixado. A con
 Para atualizar uma instalação: encerre o servidor, preserve uma cópia do arquivo SQLite e de exportações necessárias, execute `git pull --ff-only`, confira `python scripts/workbench.py verify` e reinicie com o mesmo `--database`. O banco permanece no esquema 1 nesta atualização, sem migração de dados. Diretórios `work/` e bancos/journals são ignorados pelo Git.
 
 Correções da v0.1.1: respostas atrasadas não substituem a seleção atual de projeto; perguntas do chat preservam regras e recorte por produtor; fichas de tecnologia não substituem referências a fontes/limites por coincidência de nome; exportações conferem a mesma revisão incluída no ZIP, mesmo quando outra revisão é gerada durante a operação.
+
+## Evolução das revisões — v0.2.0
+
+A fila agora lista quantas revisões estão salvas e permite compará-las. O chat consulta as duas mais recentes ao perguntar “O que mudou?”. A exportação inclui a baseline e a comparação quando disponíveis, com originais opcionais de ambos os lados. Consulte [o contrato da comparação](EVOLUCAO-REVISOES.md). O esquema SQLite continua 1.

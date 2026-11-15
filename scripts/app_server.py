@@ -131,6 +131,8 @@ class Handler(BaseHTTPRequestHandler):
                     return self.respond(201, app.plan(project, payload))
                 if method == 'GET' and action == 'export-studio':
                     return self.respond(200, app.export_studio(project), 'application/zip', {'Content-Disposition': 'attachment; filename="atlas-product-plan.zip"'})
+                if method == 'POST' and action == 'compare-reviews':
+                    return self.respond(200, app.compare(project, payload.get('before_id'), payload.get('after_id')))
                 if method == 'POST' and action == 'replay':
                     return self.respond(200, app.replay(project))
                 if method == 'GET' and action == 'export':

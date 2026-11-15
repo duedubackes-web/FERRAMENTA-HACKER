@@ -97,6 +97,10 @@ def main(argv=None) -> int:
     replay.add_argument('path', type=Path, help='Saved review JSON')
     replay.add_argument('--source', action='append', default=[], metavar='ROLE=PATH')
     replay.add_argument('--output', type=Path, help='Create replay result JSON; refuses overwrite')
+    evolution = commands.add_parser('compare-reviews', help='Compare declared observations from two saved review JSON documents')
+    evolution.add_argument('before', type=Path)
+    evolution.add_argument('after', type=Path)
+    evolution.add_argument('--output', type=Path)
     args = parser.parse_args(argv)
     try:
         if args.command == 'verify':
@@ -162,6 +166,18 @@ def main(argv=None) -> int:
                 print(f'Imported {len(report["findings"])} producer alerts into {args.output}')
             else:
                 print(json.dumps(report, ensure_ascii=False, indent=2))
+        elif args.command == 'compare-reviews':
+            from review_replay import read_review
+            from review_evolution import compare_reviews
+            from nmap_report import save_report
+            from nmap_compare import validate_destinations
+            validate_destinations([args.output] if args.output else [])
+            result = compare_reviews(read_review(args.before), read_review(args.after))
+            if args.output:
+                save_report(result, args.output)
+            else:
+                print(json.dumps(result, ensure_ascii=False, indent=2))
+            return 0 if result['status'] == 'compared' else 1
         elif args.command == 'replay-review':
             from review_replay import read_review, source_arguments, replay_review
             from nmap_report import save_report

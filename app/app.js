@@ -196,6 +196,10 @@ function render() {
     : 0;
   $("#stale").hidden = !snapshot?.review_stale;
   $("#delete-project").disabled = !snapshot;
+  $("#compare-reviews").disabled = (snapshot?.reviews.length || 0) < 2;
+  $("#review-history-note").textContent =
+    (snapshot?.reviews.length || 0) +
+    " revisões salvas. Comparações não transferem decisões nem confirmam correções.";
   renderQueue();
   renderSources();
   renderMessages();
@@ -542,7 +546,7 @@ function renderMessages() {
       assistant.append(el("p", "warning-text", reply.generation_notice));
     const citations = el("div", "citations");
     reply.citations.forEach((citation, index) => {
-      const action = () => {
+      const action = async () => {
         if (citation.kind === "review-item") {
           if (reply.review_record_id === state.snapshot?.review?.id)
             openItem(citation.item_id);
@@ -556,6 +560,17 @@ function renderMessages() {
           showView("catalog");
           $("#catalog-search").value = citation.tool_id;
           renderCatalog();
+        } else if (citation.kind === "review-comparison") {
+          try {
+            showEvolution(
+              await api(projectPath("compare-reviews"), "POST", {
+                before_id: citation.before_record_id,
+                after_id: citation.after_record_id,
+              }),
+            );
+          } catch (error) {
+            toast(error.message, true);
+          }
         } else if (citation.kind === "studio") {
           const record = state.snapshot?.studio.find(
             (r) => r.id === citation.record_id,
@@ -754,7 +769,7 @@ function exportModal() {
     el(
       "span",
       "",
-      "Incluir os relatórios originais da revisão (podem conter dados sensíveis)",
+      "Incluir os relatórios originais das revisões exportadas (podem conter dados sensíveis)",
     ),
   );
   wrapper.append(
@@ -971,4 +986,120 @@ $("#diagnostics").addEventListener("click", (event) => {
     );
     modal("Diagnóstico do workspace", content);
   });
+});
+
+const evolutionLabels = {
+  introduced: "Observado apenas depois",
+  "not-observed": "Não observado depois",
+  unchanged: "Mesmos campos selecionados",
+  changed: "Campos selecionados alterados",
+  ambiguous: "Chave declarada duplicada",
+  unmatched: "Sem chave comparável",
+};
+function showEvolution(result) {
+  const content = el("div");
+  const report = result.comparison;
+  content.append(
+    el(
+      "p",
+      "notice",
+      report.status === "blocked"
+        ? "Comparação bloqueada: versões de regras ou adaptadores diferem."
+        : "A comparação usa chaves declaradas. Não observado depois não significa corrigido.",
+    ),
+  );
+  const summary = el("div", "studio-result");
+  for (const [code, label] of Object.entries(evolutionLabels))
+    summary.append(el("p", "", label + ": " + report.summary[code]));
+  content.append(summary);
+  for (const observation of report.observations) {
+    const details = el("details", "item-details");
+    const title =
+      observation.after[0]?.title ||
+      observation.before[0]?.title ||
+      "Observação";
+    details.append(
+      el("summary", "", evolutionLabels[observation.status] + " · " + title),
+      pre(observation),
+    );
+    content.append(details);
+  }
+  const metadata = el("details", "item-details");
+  metadata.append(
+    el("summary", "", "Comparabilidade, origem e limites"),
+    pre({ ...result, comparison: { ...report, observations: undefined } }),
+  );
+  content.append(
+    metadata,
+    btn(
+      "↓ Baixar comparação JSON",
+      () => {
+        const url = URL.createObjectURL(
+          new Blob([JSON.stringify(result, null, 2)], {
+            type: "application/json",
+          }),
+        );
+        const link = el("a");
+        link.href = url;
+        link.download = "atlas-review-evolution.json";
+        document.body.append(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 3000);
+      },
+      "secondary",
+    ),
+  );
+  modal("Evolução das revisões", content);
+}
+$("#compare-reviews").addEventListener("click", () => {
+  if (!state.snapshot || state.snapshot.reviews.length < 2) return;
+  const project = state.project;
+  const form = el("form", "modal-form");
+  const selects = [];
+  for (const [index, label] of [
+    "Revisão anterior",
+    "Revisão posterior",
+  ].entries()) {
+    const field = el("label", "", label),
+      select = el("select");
+    for (const review of state.snapshot.reviews) {
+      const option = el(
+        "option",
+        "",
+        date(review.created) +
+          " · " +
+          review.summary.items +
+          " itens · " +
+          review.id.slice(0, 8),
+      );
+      option.value = review.id;
+      select.append(option);
+    }
+    select.value = state.snapshot.reviews[index === 0 ? 1 : 0].id;
+    field.append(select);
+    form.append(field);
+    selects.push(select);
+  }
+  const submit = el("button", "primary", "Comparar observações"),
+    error = el("p", "modal-error");
+  submit.type = "submit";
+  form.append(submit, error);
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    submit.disabled = true;
+    try {
+      const result = await api(
+        "/api/projects/" + project + "/compare-reviews",
+        "POST",
+        { before_id: selects[0].value, after_id: selects[1].value },
+      );
+      if (project === state.project) showEvolution(result);
+    } catch (e) {
+      error.textContent = e.message;
+    } finally {
+      submit.disabled = false;
+    }
+  });
+  modal("Escolha duas revisões", form);
 });
