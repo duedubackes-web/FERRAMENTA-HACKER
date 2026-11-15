@@ -8,3 +8,10 @@ work/
 source-snapshots/
 *.cany/
 .DS_Store
+
+# Runtime databases and journals may contain private reports.
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*

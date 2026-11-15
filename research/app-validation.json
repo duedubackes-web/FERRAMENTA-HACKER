@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "application_version": "0.1.0",
+  "date": "2026-11-15",
+  "python": "3.12.14",
+  "node": "v24.22.1",
+  "python_tests": {
+    "command": "python -m unittest discover -s tests",
+    "passed": 98,
+    "application_tests": 20
+  },
+  "ui_tests": {
+    "command": "npm run test:ui",
+    "method": "jsdom DOM plus ephemeral local HTTP server; not real browser QA",
+    "application_scenarios": 12,
+    "prototype_scenarios": 7,
+    "javascript_errors": 0,
+    "downloads": 2
+  },
+  "runtime_execution": {
+    "nmap": false,
+    "trivy": false,
+    "zap": false,
+    "rea": false,
+    "craft_anything": false,
+    "collected_source": false,
+    "real_ollama_model": false
+  },
+  "model_adapter_test": "fixed-loopback transport response and error mocked; no live inference or quality evaluation",
+  "visual_browser_check": "unavailable: no browser-control tool in this session; not bypassed",
+  "file_sha256": {
+    "app/index.html": "f01b142ad8e46aac3ff5c7c227c8578cacc43327454fd9f96b6a5ba96d3440ef",
+    "app/app.css": "30c27d37aa841089d4b01895b756b59b4b198780be70d04ee6f585baf01b8637",
+    "app/app.js": "8c4b707d330ff90b9d73965f87569950aa34396fd990082f1954ecafe42e8289",
+    "scripts/app_server.py": "46107564cff69321e29b11215e482f12f937c30202f6e15403f398f39eeb9cb2",
+    "scripts/app_service.py": "574808f1e47468edf7a6fc236dd4237bd38141e9925e5c36ba65feb564f574f0",
+    "scripts/app_store.py": "4018fc5285472d6f10f826e34b1d7a6fe11455a16d36ff710187e11cff213ffc",
+    "scripts/app_chat.py": "aa1a14dfa998ef59e88e215662c77d5c65eaeaad51879aea10206616bf0e420c",
+    "scripts/app_ai.py": "93aa16f32ba41548a726acdaeebd285767299dc0229487687ea1f17861b98cc9",
+    "scripts/app_studio.py": "2bc733029a0d41c74a97866369d10b32d4be0c27eda6759e3dee749d5b4dc797",
+    "scripts/app_scaffold.py": "e54998aa71ad3a51d48437edf3a83c9899c0afcaf2256105b3f51ee7bec04c58",
+    "tests/test_application.py": "8a45cdc873d77d1293c0c93b4f02cc0697315a71b4f58e235a99fa4a713643bb",
+    "tests/ui_flow.cjs": "8c5ef20ab4407050b2774db8f6f3850361f9a098fdef7052fca1fc2a77ed8704",
+    "tests/prototype_flow.cjs": "558686e3c99291c096e2e2d5b681cb8d1ae381a731e9d3f88c40ac89565ba190",
+    "package-lock.json": "1cd43068e8d242964f54b2c88f6519a50ec47422d9092deb94874e7908638f8e"
+  },
+  "limits": [
+    "Local single-user product version, not a production multi-tenant SaaS.",
+    "Novelty and market differentiation not established.",
+    "REA/Craft/Kali research references do not imply embedded runtimes."
+  ]
+}

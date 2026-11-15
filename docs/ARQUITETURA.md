@@ -94,3 +94,11 @@ A função JSON de gravação existente é reutilizada e os destinos são confer
 `json_reports` centraliza limite de bytes, decodificação UTF-8, rejeição de chaves duplicadas e validação textual compartilhada com Trivy. As regras específicas de cada formato ficam nos respectivos adaptadores.
 A fila consome os fatos normalizados sem analisar riskdesc para decidir classificações. Regras v2 mantêm as evidências ZAP independentes de Nmap/Trivy e registram cobertura/diagnósticos sem executar ou republicar mensagens.
 A API `build_review` aceita o novo produtor opcional; o esquema de saída permanece 1 e as versões/fingerprints distinguem as novas revisões.
+
+## Aplicativo web local
+
+`app/index.html`, `app/app.css` e `app/app.js` compõem a interface sem dependências de runtime no frontend. `scripts/app_server.py` fornece rotas HTTP limitadas a loopback, sessão local e CSRF. `app_service.py` coordena os adaptadores e a reprodução existentes; `app_store.py` persiste projetos, fontes, revisões, decisões, chat e estúdio com SQLite e consultas parametrizadas.
+
+`app_chat.py` usa intenções e recuperação lexical; referências são dados estruturados clicáveis. `app_ai.py` acrescenta geração opcional por um Ollama local fixo, sem ferramentas, redirecionamentos ou execução de comandos. Texto recebido de fontes e modelos nunca é interpolado como HTML na interface.
+
+`app_studio.py` mapeia arquivos ZIP em memória com orçamentos e hashes. `app_scaffold.py` gera um protótipo original por template, separando código fixo do texto do brief. O ZIP original não é retido, e nenhum conteúdo coletado é executado. O protótipo mantém dados no navegador; o aplicativo Atlas usa SQLite. Os limites de segurança e distribuição desta arquitetura são de uma aplicação local para um usuário, não um serviço multiusuário.

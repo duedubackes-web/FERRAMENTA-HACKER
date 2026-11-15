@@ -60,3 +60,8 @@ A prioridade não substitui risco de negócio ou revisão de aplicabilidade. A u
 A ferramenta passa a reunir três produtores na mesma fila: rede (Nmap), componentes (Trivy) e alertas web (ZAP), com contratos distintos e sem inventar correspondências entre ativos.
 O avanço prático é mostrar risco e confiança separadamente, manter falsos positivos visíveis e reduzir a propagação de mensagens/payloads em relatórios derivados.
 A classificação ainda é do produtor e a prioridade apenas organiza revisão humana. A validade dessas decisões em tarefas reais continua sendo objeto de avaliação.
+
+## Versão local do produto: Atlas v0.1
+
+O aplicativo web local reúne projetos persistentes, fontes versionadas, fila de revisão, histórico de decisões e chatbot. A busca padrão é determinística com referências; um modelo Ollama local pode ser configurado para gerar texto explicitamente marcado. O estúdio mapeia ZIPs de fonte e exporta plano, backlog e um protótipo próprio de quadro de tarefas com chat local.
+Essa entrega implementa um fluxo completo local. Não estabelece equivalência com Lovable, Vercel ou v0, nem originalidade de mercado. A integração com REA/Craft/Kali continua no nível de pesquisa documentada; execução de motores não foi adicionada por implicação. Autenticação multiusuário, operação pública, cobrança e validação comercial permanecem trabalho futuro. Consulte `APLICATIVO-ATLAS.md` para o contrato efetivo.

@@ -68,3 +68,13 @@
 ## Reprodução determinística
 
 A suíte agora reúne 78 testes, incluindo oito testes da reprodução verificável. Foram verificadas alterações de prioridade, fatos, referências, resumo, identificador e campos adicionais; também fontes modificadas, caminhos movidos, regras indisponíveis e preservação de saídas existentes. O mecanismo verifica consistência com fontes explícitas e regras instaladas; não estabelece autenticidade.
+
+## Atlas: aplicativo local e estúdio
+
+A suíte Python reúne **98 testes**, incluindo 20 testes do aplicativo, armazenamento, HTTP, arquivo-fonte ZIP, geração de protótipo e transporte opcional de IA. Foram verificados persistência após reinício, isolamento por projeto, fontes anteriores, revisão desatualizada, decisões vinculadas à revisão, exportação de todo o histórico, exclusão por cascata e reprodução dos três produtores.
+
+`npm run test:ui` acrescenta dois fluxos DOM/HTTP. O aplicativo foi exercitado em 12 cenários: bootstrap, demonstração, filtro, decisão, chat/referência, importação, atualização, análise de fonte, plano/protótipo, exportação, persistência e exclusão. Não houve erro JavaScript capturado; dois downloads foram recebidos. O protótipo gerado passou por sete verificações: renderização, concluir, criar tarefa, texto inerte, chat local, restauração de armazenamento e reset.
+
+A API foi testada contra sessão ausente, host/origem indevidos, CSRF incorreto, corpo excessivo, tipo de conteúdo incompatível e acesso a caminhos fora da lista de assets. Os ZIPs de fonte foram testados com caminhos inseguros, symlinks, entrada inválida e orçamento de descompressão. Esses testes não constituem auditoria de segurança completa.
+
+IA generativa: transporte para Ollama verificado com respostas/falhas simuladas, sem modelo real instalado. A presença da configuração não foi tratada como disponibilidade. Nenhum teste de qualidade de modelo foi realizado. Interface: testes de DOM simulado, sem navegador visual disponível; layout real desktop/celular e revisão visual permanecem pendentes. Os registros estão em `research/app-validation.json` e os testes são executáveis na CI.

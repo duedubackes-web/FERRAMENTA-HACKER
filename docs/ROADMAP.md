@@ -124,3 +124,15 @@ Use `.github/ISSUE_TEMPLATE/work-item.yml` para converter cada item em uma taref
 - [x] Detectar fontes divergentes e revisões inconsistentes sem executar conteúdo coletado.
 - [x] Testar reprodução conjunta Nmap/Trivy/ZAP e códigos de saída para automação.
 - [ ] Avaliar assinatura independente e empacotamento de evidências antes de afirmar autenticidade.
+
+## Aplicativo e estúdio local — 15/11/2026
+
+- [x] Entregar interface web própria com projetos, dashboard, fontes, revisão, chat, catálogo e histórico.
+- [x] Persistir dados em SQLite e preservar versões de fontes/revisões e decisões declaradas.
+- [x] Implementar busca conversacional com referências e integração opcional de IA local sem ferramentas executáveis.
+- [x] Mapear ZIPs de código-fonte sem execução nem extração e vincular o mapa a planos de produto.
+- [x] Exportar plano, backlog e protótipo original funcional por template explícito.
+- [x] Verificar operações por HTTP/DOM, persistência, conteúdo inerte e reprodução; incluir os testes na CI.
+- [ ] Validar interface em navegador real desktop/celular e qualidade de respostas com modelo real instalado.
+- [ ] Entrevistar usuários e medir utilidade antes de afirmar diferenciação inédita ou prontidão comercial.
+- [ ] Projetar autenticação multiusuário, isolamento, publicação, custos e operação se o produto migrar para SaaS.

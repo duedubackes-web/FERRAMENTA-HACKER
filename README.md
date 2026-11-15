@@ -1,4 +1,4 @@
-# FERRAMENTA-HACKER — base de pesquisa e desenvolvimento
+# Atlas — Evidence & Build Studio / FERRAMENTA-HACKER
 
 Projeto de duedubackes-web, sem vínculo com Kali, Wireshark, THC, REA ou Craft Anything.
 
@@ -8,6 +8,21 @@ Base preparada a partir de fontes públicas para estudar composição de ferrame
 análise de tráfego e arquitetura de módulos, e projetar um produto próprio com evidências rastreáveis.
 Este repositório contém pesquisa, inventários verificáveis e uma ferramenta offline para importar relatórios Nmap/Trivy/ZAP, comparar observações e gerar uma fila de revisão explicável em JSON e HTML.
 Não contém uma distribuição nova, um substituto do Wireshark ou uma implementação nova do Hydra.
+
+## Abrir o aplicativo com chatbot
+
+```sh
+python scripts/app_server.py
+```
+
+Abra **http://127.0.0.1:8765** e selecione **Explorar demonstração**. Requer Python 3.11+; o aplicativo local padrão não precisa de chave de API ou instalação de ferramentas externas.
+
+- Projetos persistentes em SQLite, importação Nmap/Trivy/ZAP e revisão com referências.
+- Chat local sobre evidências, tecnologias e planos; IA generativa opcional via Ollama local.
+- Decisões com justificativa e histórico, conferência de reprodução e exportação ZIP.
+- Estúdio de código-fonte ZIP: mapa estático, plano de produto, backlog e protótipo próprio com quadro de tarefas e chat local.
+
+[Guia do aplicativo](docs/APLICATIVO-ATLAS.md): instalação, uso, configuração do modelo, backup, exportação e limites. Esta é a versão **local para um usuário**. REA/Craft/Kali estão documentados como pesquisa; os adaptadores funcionais não embutem seus motores. O protótipo é gerado por template próprio, e a novidade comercial permanece hipótese a validar.
 
 ## Usar a ferramenta de revisão
 

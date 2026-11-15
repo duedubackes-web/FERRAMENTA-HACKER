@@ -1,0 +1,16 @@
+{
+  "name": "atlas-evidence-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Optional DOM integration tests; the application runtime needs only Python.",
+  "scripts": {
+    "test:ui": "node tests/ui_flow.cjs && node tests/prototype_flow.cjs",
+    "check:ui": "node --check app/app.js"
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "devDependencies": {
+    "jsdom": "31.0.1"
+  }
+}

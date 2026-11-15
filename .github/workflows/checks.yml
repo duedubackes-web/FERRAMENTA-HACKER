@@ -12,3 +12,10 @@ jobs:
           python-version: '3.12'
       - run: python scripts/workbench.py verify
       - run: python -m unittest discover -s tests -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run check:ui
+      - run: npm run test:ui

@@ -13,7 +13,7 @@ def main():
         relative = file.relative_to(ROOT)
         if not file.is_file() or any(part in EXCLUDED_PARTS for part in relative.parts):
             continue
-        if file.name == 'ARTIFACTS.sha256' or file.name == '.env' or file.name.startswith('.env.') or file.suffix == '.pyc':
+        if file.name == 'ARTIFACTS.sha256' or file.name == '.env' or file.name.startswith('.env.') or file.suffix in {'.pyc', '.sqlite', '.sqlite3', '.db'} or any(token in file.name for token in ('.sqlite3-', '.db-')):
             continue
         with file.open('rb') as stream:
             digest = hashlib.file_digest(stream, 'sha256').hexdigest()

@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Atlas: um espaço local para investigar evidências, conversar com fontes e construir produtos próprios."
+    />
+    <title>Atlas — Evidence & Build Studio</title>
+    <link rel="stylesheet" href="/app.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Pular para o conteúdo</a>
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="Atlas, início"
+        ><span class="brand-symbol">A<span>↗</span></span
+        ><span
+          >atlas<span class="brand-sub">EVIDENCE & BUILD STUDIO</span></span
+        ></a
+      >
+      <div class="workspace-label">SEU ESPAÇO DE TRABALHO</div>
+      <label class="sr-only" for="project-select">Projeto atual</label
+      ><select id="project-select">
+        <option value="">Selecione um projeto</option>
+      </select>
+      <button class="new-project subtle" id="new-project">
+        ＋ Novo projeto
+      </button>
+      <nav aria-label="Navegação principal">
+        <button class="nav active" data-view="overview">
+          <span>◈</span> Visão geral
+        </button>
+        <button class="nav" data-view="review">
+          <span>☷</span> Fila de revisão
+          <span id="nav-count" class="nav-count">0</span>
+        </button>
+        <button class="nav" data-view="sources">
+          <span>▧</span> Evidências
+        </button>
+        <button class="nav" data-view="studio">
+          <span>⌘</span> Estúdio de produto <span class="new-tag">NOVO</span>
+        </button>
+        <button class="nav" data-view="catalog">
+          <span>⬡</span> Tecnologias
+        </button>
+        <button class="nav" data-view="activity">
+          <span>↺</span> Histórico
+        </button>
+        <button class="nav" data-view="chat">
+          <span>✳</span> Assistente Atlas
+        </button>
+      </nav>
+      <div class="sidebar-bottom">
+        <span class="status-dot"></span> Workspace local<span class="version"
+          >v0.1</span
+        >
+        <p>Seus arquivos. Suas evidências.<br />Suas decisões.</p>
+        <button id="delete-project" class="subtle danger">
+          Excluir projeto atual
+        </button>
+      </div>
+    </aside>
+    <div class="shell">
+      <header class="topbar">
+        <div>
+          <span class="breadcrumb">Workspace / </span
+          ><strong id="project-title">Comece uma investigação</strong>
+        </div>
+        <div class="top-actions">
+          <span class="local-badge"><i></i> LOCAL</span
+          ><button
+            class="icon-button"
+            id="chat-toggle"
+            aria-label="Abrir assistente"
+          >
+            ✳
+          </button>
+        </div>
+      </header>
+      <div class="workarea">
+        <main id="main" tabindex="-1">
+          <section class="view" id="view-overview">
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">CLAREZA ANTES DA AÇÃO</p>
+                <h1>Entenda. Questione. Construa.</h1>
+                <p class="subtitle">
+                  Transforme relatórios em uma investigação que você consegue
+                  explicar.
+                </p>
+              </div>
+              <button class="primary" data-action="import">
+                ＋ Importar relatório
+              </button>
+            </div>
+            <div class="hero">
+              <div>
+                <span class="hero-label">INTELIGÊNCIA COM ORIGEM</span>
+                <h2>Uma boa resposta<br />começa com uma evidência.</h2>
+                <p>
+                  Reúna rede, componentes e alertas web. Descubra o que revisar
+                  e converse com as fontes — sem perder o contexto.
+                </p>
+                <div class="hero-actions">
+                  <button id="demo" class="lime">
+                    Explorar demonstração <span>↗</span></button
+                  ><button class="hero-link" data-go="sources">
+                    Ver evidências →
+                  </button>
+                </div>
+              </div>
+              <div class="orbit" aria-hidden="true">
+                <div class="orbit-ring one"></div>
+                <div class="orbit-ring two"></div>
+                <div class="orbit-core">a<span>↗</span></div>
+                <span class="orbit-node node-one">NMAP</span
+                ><span class="orbit-node node-two">TRIVY</span
+                ><span class="orbit-node node-three">ZAP</span
+                ><span class="orbit-caption"
+                  >CONECTE O CONTEXTO.<br />PRESERVE A ORIGEM.</span
+                >
+              </div>
+            </div>
+            <div id="stale" class="notice" hidden>
+              Novas fontes foram importadas. Gere uma nova revisão para
+              incluí-las; a revisão e o chat atuais preservam o recorte
+              anterior.
+            </div>
+            <div class="stats">
+              <article>
+                <span class="stat-label"
+                  >RELATÓRIOS IMPORTADOS <span>↗</span></span
+                ><strong id="stat-sources">0</strong
+                ><small>Arquivos com SHA-256 preservado</small>
+              </article>
+              <article>
+                <span class="stat-label"
+                  >REVISAR PRIMEIRO <span class="amber">●</span></span
+                ><strong id="stat-first">0</strong
+                ><small>Prioridade de revisão, não risco</small>
+              </article>
+              <article>
+                <span class="stat-label">ITENS NA FILA <span>☷</span></span
+                ><strong id="stat-items">0</strong
+                ><small>Motivos e referências por item</small>
+              </article>
+              <article>
+                <span class="stat-label"
+                  >DECISÕES REGISTRADAS <span>✓</span></span
+                ><strong id="stat-decisions">0</strong
+                ><small>Histórico declarado pelo usuário</small>
+              </article>
+            </div>
+            <div class="section-heading">
+              <h2>Seu próximo passo</h2>
+              <span class="muted">UM FLUXO, TRÊS PERSPECTIVAS</span>
+            </div>
+            <div class="steps">
+              <button data-action="import">
+                <span class="step-number">01</span>
+                <h3>Reúna as fontes <span>↗</span></h3>
+                <p>
+                  Importe XML Nmap ou JSON Trivy e ZAP, com limites de cobertura
+                  explícitos.
+                </p></button
+              ><button data-action="review">
+                <span class="step-number">02</span>
+                <h3>Gere uma revisão <span>↗</span></h3>
+                <p>
+                  Prioridades explicáveis, sem inferir relações entre IPs,
+                  pacotes e sites.
+                </p></button
+              ><button data-go="chat">
+                <span class="step-number">03</span>
+                <h3>Converse com o contexto <span>↗</span></h3>
+                <p>
+                  Pergunte sobre a fila, consulte tecnologias e volte à origem
+                  de cada resposta.
+                </p>
+              </button>
+            </div>
+            <div class="section-heading">
+              <h2>Na sua fila</h2>
+              <button class="text-button" data-go="review">
+                Ver toda a revisão →
+              </button>
+            </div>
+            <div id="overview-queue"></div>
+          </section>
+          <section class="view" id="view-review" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">DA OBSERVAÇÃO À DECISÃO</p>
+                <h1>Fila de revisão</h1>
+                <p class="subtitle">
+                  Cada prioridade tem um motivo. Cada fato tem uma origem.
+                </p>
+              </div>
+              <button class="primary" data-action="review">
+                ↻ Gerar revisão
+              </button>
+            </div>
+            <div class="toolbar">
+              <label
+                >Prioridade
+                <select id="priority-filter">
+                  <option value="">Todas</option>
+                  <option value="review-first">Revisar primeiro</option>
+                  <option value="review-next">Revisar depois</option>
+                  <option value="context">Contexto</option>
+                </select></label
+              ><label
+                >Buscar
+                <input
+                  id="review-search"
+                  type="search"
+                  placeholder="Regra, pacote ou alerta…" /></label
+              ><button class="secondary" id="replay">
+                ✓ Conferir reprodução</button
+              ><button class="secondary" id="export">↓ Exportar</button>
+            </div>
+            <p class="notice compact">
+              A fila organiza a revisão humana; não confirma vulnerabilidades,
+              risco de negócio ou cobertura completa.
+            </p>
+            <div id="review-list"></div>
+          </section>
+          <section class="view" id="view-sources" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">NADA SEM ORIGEM</p>
+                <h1>Evidências</h1>
+                <p class="subtitle">
+                  Arquivos locais, identidade preservada e cobertura visível.
+                </p>
+              </div>
+              <button class="primary" data-action="import">
+                ＋ Importar relatório
+              </button>
+            </div>
+            <div class="source-types">
+              <span>Nmap <small>XML</small></span
+              ><span>Trivy <small>JSON v2</small></span
+              ><span>ZAP <small>Traditional JSON / Plus</small></span>
+            </div>
+            <div id="source-list"></div>
+          </section>
+          <section class="view" id="view-studio" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">ENGENHARIA PARA UM PRODUTO PRÓPRIO</p>
+                <h1>Estúdio de produto</h1>
+                <p class="subtitle">
+                  Mapeie um projeto local e transforme sua ideia em um plano
+                  exportável.
+                </p>
+              </div>
+            </div>
+            <div class="studio-grid">
+              <article class="panel">
+                <span class="pill">ANÁLISE ESTÁTICA</span>
+                <h2>Conheça a estrutura</h2>
+                <p class="muted">
+                  Envie um ZIP de código-fonte. Mapeamos linguagens, manifestos,
+                  licenças declaradas e pontos de entrada, sem executar o
+                  projeto.
+                </p>
+                <label class="file-zone" for="source-zip"
+                  ><strong>＋ Selecionar código-fonte .zip</strong
+                  ><small>Até 16 MiB · sem extração em disco</small
+                  ><input id="source-zip" type="file" accept=".zip"
+                /></label>
+                <div id="source-analysis"></div>
+              </article>
+              <article class="panel">
+                <span class="pill">DO BRIEF AO BACKLOG</span>
+                <h2>Desenhe o próximo produto</h2>
+                <form id="blueprint-form">
+                  <label
+                    >Nome do produto<input
+                      name="name"
+                      required
+                      maxlength="100"
+                      placeholder="Ex.: Atlas Cloud" /></label
+                  ><label
+                    >Problema e público<textarea
+                      name="brief"
+                      required
+                      maxlength="4000"
+                      rows="5"
+                      placeholder="Quem usará o produto e qual problema ele resolverá?"
+                    ></textarea></label
+                  ><button class="primary" type="submit">
+                    Criar plano e protótipo ↗
+                  </button>
+                </form>
+                <div id="blueprint-output"></div>
+              </article>
+            </div>
+            <p class="notice">
+              O estúdio produz observações estáticas e um plano baseado em um
+              modelo explícito. Não copia serviços proprietários nem afirma
+              equivalência funcional com Lovable, Vercel ou v0.
+            </p>
+          </section>
+          <section class="view" id="view-catalog" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">CONHECIMENTO, COM RECORTE</p>
+                <h1>Tecnologias</h1>
+                <p class="subtitle">
+                  Diferencie integração funcional, fonte indexada e referência
+                  de pesquisa.
+                </p>
+              </div>
+            </div>
+            <div id="capabilities" class="capability-grid"></div>
+            <div class="section-heading">
+              <h2>Catálogo de pesquisa</h2>
+              <label class="sr-only" for="catalog-search"
+                >Buscar tecnologia</label
+              ><input
+                id="catalog-search"
+                type="search"
+                placeholder="Buscar nas 38 tecnologias…"
+              />
+            </div>
+            <div id="catalog-list" class="catalog-grid"></div>
+          </section>
+          <section class="view" id="view-activity" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">CONTEXTO QUE PERMANECE</p>
+                <h1>Histórico de decisões</h1>
+                <p class="subtitle">
+                  Registro das decisões declaradas. Identidades não são
+                  autenticadas nesta versão local.
+                </p>
+              </div>
+            </div>
+            <div id="activity-list"></div>
+          </section>
+          <section class="view" id="view-chat" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">PERGUNTE MELHOR. INVESTIGUE MAIS.</p>
+                <h1>Assistente Atlas</h1>
+                <p class="subtitle">
+                  Um chat para explorar evidências e capacidades do seu
+                  workspace.
+                </p>
+              </div>
+            </div>
+            <div id="chat-destination"></div>
+          </section>
+          <footer class="main-footer">
+            <span>ATLAS <span class="muted">/ FERRAMENTA-HACKER</span></span
+            ><span>Observação → contexto → decisão</span>
+          </footer>
+        </main>
+        <aside id="chat-panel" class="chat-panel" aria-label="Assistente Atlas">
+          <div class="chat-heading">
+            <span class="assistant-icon">✳</span>
+            <div>
+              <strong>Assistente Atlas</strong
+              ><small id="chat-mode-label">Busca local com referências</small>
+            </div>
+            <button
+              class="icon-button"
+              id="chat-close"
+              aria-label="Fechar assistente"
+            >
+              ×
+            </button>
+          </div>
+          <div class="chat-intro">
+            <span class="pill">CONTEXTO DO PROJETO</span>
+            <h2>O que vamos<br />entender hoje?</h2>
+            <p>
+              Eu ajudo a encontrar fatos na revisão e no catálogo. As
+              referências acompanham a resposta.
+            </p>
+          </div>
+          <div class="suggestions">
+            <button data-question="O que revisar primeiro?">
+              O que revisar primeiro? ↗</button
+            ><button data-question="Quais fontes foram importadas?">
+              Conferir as fontes ↗</button
+            ><button
+              data-question="Como REA e Craft Anything estão integrados?"
+            >
+              Explorar REA + Craft ↗
+            </button>
+          </div>
+          <div
+            id="messages"
+            class="messages"
+            aria-live="polite"
+            aria-label="Conversa"
+          ></div>
+          <div class="chat-compose">
+            <label class="model-choice"
+              ><input id="use-model" type="checkbox" /> Usar IA local
+              <span id="model-status">não configurada</span></label
+            >
+            <form id="chat-form">
+              <label class="sr-only" for="question">Sua pergunta</label
+              ><textarea
+                id="question"
+                rows="2"
+                maxlength="2000"
+                required
+                placeholder="Pergunte sobre este projeto…"
+              ></textarea
+              ><button
+                class="primary"
+                type="submit"
+                aria-label="Enviar pergunta"
+              >
+                ↑
+              </button>
+            </form>
+            <small
+              >Busca local não é IA generativa. IA local exige um modelo
+              configurado. Nenhuma sugestão é executada.</small
+            >
+          </div>
+        </aside>
+      </div>
+    </div>
+    <dialog id="modal">
+      <div class="modal-head">
+        <h2 id="modal-title"></h2>
+        <button class="icon-button" id="modal-close" aria-label="Fechar janela">
+          ×
+        </button>
+      </div>
+      <div id="modal-body"></div>
+    </dialog>
+    <div id="toast" class="toast" role="status" hidden></div>
+  </body>
+</html>
