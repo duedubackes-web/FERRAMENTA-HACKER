@@ -12,6 +12,7 @@ from urllib.parse import urlsplit, parse_qs
 
 from app_service import Application, ROOT
 from app_ai import model_name
+from app_version import VERSION
 from json_reports import decode_object
 
 MAX_REQUEST = 44 * 1024 * 1024
@@ -74,7 +75,7 @@ class Handler(BaseHTTPRequestHandler):
             name, mime = STATIC[path]
             return self.respond(200, (ROOT/'app'/name).read_bytes(), mime)
         if method == 'GET' and path == '/api/bootstrap':
-            return self.respond(200, {'csrf': self.server.csrf, 'mode': 'local-single-user', 'chat_mode': 'local-evidence-retrieval', 'version': '0.1.0', 'model_configured': bool(model_name()), 'model': model_name()}, extra={'Set-Cookie': 'atlas_session='+self.server.session+'; HttpOnly; SameSite=Strict; Path=/'})
+            return self.respond(200, {'csrf': self.server.csrf, 'mode': 'local-single-user', 'chat_mode': 'local-evidence-retrieval', 'version': VERSION, 'model_configured': bool(model_name()), 'model': model_name()}, extra={'Set-Cookie': 'atlas_session='+self.server.session+'; HttpOnly; SameSite=Strict; Path=/'})
         if not self.session_valid():
             return self.respond(401, {'error': 'Abra o aplicativo para iniciar a sessão local'})
         payload = {}
@@ -96,6 +97,8 @@ class Handler(BaseHTTPRequestHandler):
                 return self.respond(200, app.store.projects())
             if method == 'POST':
                 return self.respond(201, app.create_project(payload.get('name')))
+        if path == '/api/diagnostics' and method == 'POST':
+            return self.respond(200, app.diagnostics())
         if path == '/api/demo' and method == 'POST':
             return self.respond(201, app.demo())
         if path == '/api/capabilities' and method == 'GET':
@@ -157,11 +160,17 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--port', type=int, default=8765)
     parser.add_argument('--database', type=Path, default=ROOT/'work/atlas.sqlite3')
+    parser.add_argument('--check', action='store_true', help='Check integrity, SQLite and optional local model; exit without serving')
     args = parser.parse_args()
     if not 1 <= args.port <= 65535:
         parser.error('Port must be between 1 and 65535')
     try:
-        server = LocalServer(('127.0.0.1', args.port), Application(args.database))
+        application = Application(args.database)
+        if args.check:
+            result = application.diagnostics()
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+            return 0 if result['status'] == 'ok' else 1
+        server = LocalServer(('127.0.0.1', args.port), application)
     except (OSError, sqlite3.Error, ValueError) as error:
         print(f'Cannot start Atlas: {error}', file=sys.stderr)
         return 2

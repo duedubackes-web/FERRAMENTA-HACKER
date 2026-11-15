@@ -1,4 +1,4 @@
-# Atlas — aplicativo local v0.1
+# Atlas — aplicativo local v0.1.1
 
 Atlas transforma a base FERRAMENTA-HACKER em um aplicativo web local com projetos, evidências, decisões, chat e estúdio de produto. O código do aplicativo é próprio; as fontes de pesquisa continuam com suas licenças e proveniência.
 
@@ -115,3 +115,18 @@ npm run test:ui
 ```
 
 O fluxo usa DOM simulado e servidor HTTP real em porta efêmera. Verifica operações, persistência, chat, referências e downloads; não mede layout, acessibilidade visual ou comportamento de um navegador real. A sessão de desenvolvimento não tinha controle de navegador disponível, portanto essa validação visual permanece pendente.
+
+## Manutenção e diagnóstico — v0.1.1
+
+O botão **✓ Verificar workspace**, no cabeçalho, confere o manifesto dos arquivos, executa `quick_check`/`foreign_key_check` no SQLite e consulta a disponibilidade do modelo opcional. Também é possível verificar pelo terminal, sem iniciar o servidor:
+
+```sh
+python scripts/app_server.py --check --database work/atlas.sqlite3
+```
+
+Código de saída 0: verificações concluídas sem pendências; 1: resultado com atenção; 2: erro ao iniciar/acessar os recursos. A opção inicializa um banco novo quando o caminho ainda não existe, assim como a inicialização normal do aplicativo.
+Nenhum checksum é regravado pelo diagnóstico e nenhum modelo é baixado. A consulta de modelos usa apenas `/api/tags` no Ollama loopback, com timeout de três segundos. Sem modelo configurado, a busca local continua disponível e nenhuma conexão é feita com Ollama. `ready` informa presença na lista; não testa inferência ou qualidade.
+
+Para atualizar uma instalação: encerre o servidor, preserve uma cópia do arquivo SQLite e de exportações necessárias, execute `git pull --ff-only`, confira `python scripts/workbench.py verify` e reinicie com o mesmo `--database`. O banco permanece no esquema 1 nesta atualização, sem migração de dados. Diretórios `work/` e bancos/journals são ignorados pelo Git.
+
+Correções da v0.1.1: respostas atrasadas não substituem a seleção atual de projeto; perguntas do chat preservam regras e recorte por produtor; fichas de tecnologia não substituem referências a fontes/limites por coincidência de nome; exportações conferem a mesma revisão incluída no ZIP, mesmo quando outra revisão é gerada durante a operação.

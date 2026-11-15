@@ -13,6 +13,8 @@ def tokens(text):
 
 def answer(question, review, sources, catalog):
     query = tokens(question)
+    roles = set().union(*[roles for name, roles in {'nmap': {'nmap-before', 'nmap-after'}, 'trivy': {'trivy'}, 'zap': {'zap'}, 'zaproxy': {'zap'}}.items() if name in query])
+    sources = [s for s in sources if not roles or s['role'] in roles]
     response = {'mode': 'local-evidence-retrieval', 'model_calls': 0, 'target_executed': False,
                 'text': '', 'citations': [], 'suggestions': ['O que revisar primeiro?', 'Quais são as limitações?', 'Quais fontes foram importadas?']}
     if not query:
@@ -28,9 +30,11 @@ def answer(question, review, sources, catalog):
         response['citations'] = [{'kind': 'source', 'source_id': s['id'], 'role': s['role'], 'artifact_sha256': s['sha256']} for s in sources]
     else:
         items = review['items'] if review else []
+        items = [item for item in items if not roles or any(ref['role'] in roles for ref in item['references'])]
+        exact = [item for item in items if item['rule_id'].casefold() in query]
         summary = bool(query & {'primeiro', 'prioridade', 'prioridades', 'resumo', 'resumir', 'revisar', 'fila'})
         ranked = sorted(enumerate(items), key=lambda pair: (-len(query & tokens(json.dumps(pair[1], ensure_ascii=False))), pair[0]))
-        selected = items[:3] if summary else [item for _, item in ranked if query & tokens(json.dumps(item, ensure_ascii=False))][:3]
+        selected = exact[:3] if exact else items[:3] if summary else [item for _, item in ranked if query & tokens(json.dumps(item, ensure_ascii=False))][:3]
         if selected:
             parts = []
             for index, item in enumerate(selected, 1):

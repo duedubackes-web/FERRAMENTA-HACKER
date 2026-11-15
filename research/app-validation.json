@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "application_version": "0.1.0",
+  "application_version": "0.1.1",
   "date": "2026-11-15",
   "python": "3.12.14",
   "node": "v24.22.1",
   "python_tests": {
     "command": "python -m unittest discover -s tests",
-    "passed": 98,
-    "application_tests": 20
+    "passed": 105,
+    "application_tests": 27
   },
   "ui_tests": {
     "command": "npm run test:ui",
     "method": "jsdom DOM plus ephemeral local HTTP server; not real browser QA",
-    "application_scenarios": 12,
+    "application_scenarios": 14,
     "prototype_scenarios": 7,
     "javascript_errors": 0,
     "downloads": 2
@@ -29,24 +29,44 @@
   "model_adapter_test": "fixed-loopback transport response and error mocked; no live inference or quality evaluation",
   "visual_browser_check": "unavailable: no browser-control tool in this session; not bypassed",
   "file_sha256": {
-    "app/index.html": "f01b142ad8e46aac3ff5c7c227c8578cacc43327454fd9f96b6a5ba96d3440ef",
+    "app/index.html": "014ed5c220d71f4dd2ce0701bff7a6e1a2ebdd4e342ec7830e39fd31885b9d0d",
     "app/app.css": "30c27d37aa841089d4b01895b756b59b4b198780be70d04ee6f585baf01b8637",
-    "app/app.js": "8c4b707d330ff90b9d73965f87569950aa34396fd990082f1954ecafe42e8289",
-    "scripts/app_server.py": "46107564cff69321e29b11215e482f12f937c30202f6e15403f398f39eeb9cb2",
-    "scripts/app_service.py": "574808f1e47468edf7a6fc236dd4237bd38141e9925e5c36ba65feb564f574f0",
+    "app/app.js": "4578a207707955ab6815398835230f33f25fbc79d22eed76db590f6aca5ad16b",
+    "scripts/app_server.py": "784fa1363678617d3aeb28aa2a88218be906dce2cbb7ce8e4fd73d0a72f4b246",
+    "scripts/app_service.py": "d82c8cf05450685a01419f79ec1135f0fc07c4b126ef36dc65fc5c877f3835c2",
     "scripts/app_store.py": "4018fc5285472d6f10f826e34b1d7a6fe11455a16d36ff710187e11cff213ffc",
-    "scripts/app_chat.py": "aa1a14dfa998ef59e88e215662c77d5c65eaeaad51879aea10206616bf0e420c",
-    "scripts/app_ai.py": "93aa16f32ba41548a726acdaeebd285767299dc0229487687ea1f17861b98cc9",
+    "scripts/app_chat.py": "7f3b2fd69509c01e12f342a99de6814949b3f90ee201a2337ee6eb457a3c5c16",
+    "scripts/app_ai.py": "84bf589042478bcf8a284ed51980110e70097029bd4fc6be355f4eafde10d343",
     "scripts/app_studio.py": "2bc733029a0d41c74a97866369d10b32d4be0c27eda6759e3dee749d5b4dc797",
     "scripts/app_scaffold.py": "e54998aa71ad3a51d48437edf3a83c9899c0afcaf2256105b3f51ee7bec04c58",
-    "tests/test_application.py": "8a45cdc873d77d1293c0c93b4f02cc0697315a71b4f58e235a99fa4a713643bb",
-    "tests/ui_flow.cjs": "8c5ef20ab4407050b2774db8f6f3850361f9a098fdef7052fca1fc2a77ed8704",
+    "tests/test_application.py": "993092410d727e8e4fd85a42e49de7575309845bf4496f0779276635060ad564",
+    "tests/ui_flow.cjs": "b4a5f40ac13661f409cef963ddddcf41bb5242c0b28d812a92024601f31ec4b0",
     "tests/prototype_flow.cjs": "558686e3c99291c096e2e2d5b681cb8d1ae381a731e9d3f88c40ac89565ba190",
-    "package-lock.json": "1cd43068e8d242964f54b2c88f6519a50ec47422d9092deb94874e7908638f8e"
+    "package-lock.json": "ae12edad69edb427a192d413a1acbbe3ed8fc7599ba4facbaafbb1b41c1dd453",
+    "scripts/app_version.py": "44dd389a1e520f3fe18d592622d16e32890d7e10e9b6da2dba1baa7c581f999c"
   },
   "limits": [
     "Local single-user product version, not a production multi-tenant SaaS.",
     "Novelty and market differentiation not established.",
     "REA/Craft/Kali research references do not imply embedded runtimes."
-  ]
+  ],
+  "maintenance": {
+    "dependency_audit": {
+      "command": "npm audit --json",
+      "known_vulnerabilities": 0,
+      "development_dependencies": 28
+    },
+    "direct_dependency_updates": {
+      "command": "npm outdated --json",
+      "pending": 0
+    },
+    "regressions": [
+      "producer-scoped chat and evidence precedence",
+      "late workspace responses",
+      "export/replay pinned to one review"
+    ],
+    "database_schema_changed": false,
+    "diagnostics": "Explicit integrity/SQLite/local-model checks, no automatic repairs or inference",
+    "late_response_test": "Also run without sequence guard: expected assertion failure; guard restored"
+  }
 }

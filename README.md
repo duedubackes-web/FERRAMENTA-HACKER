@@ -15,6 +15,8 @@ Não contém uma distribuição nova, um substituto do Wireshark ou uma implemen
 python scripts/app_server.py
 ```
 
+Versão **0.1.1**. Use o botão **✓ Verificar workspace** ou `python scripts/app_server.py --check` para conferir arquivos, banco e modelo opcional.
+
 Abra **http://127.0.0.1:8765** e selecione **Explorar demonstração**. Requer Python 3.11+; o aplicativo local padrão não precisa de chave de API ou instalação de ferramentas externas.
 
 - Projetos persistentes em SQLite, importação Nmap/Trivy/ZAP e revisão com referências.

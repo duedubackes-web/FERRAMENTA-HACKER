@@ -53,8 +53,10 @@
         </button>
       </nav>
       <div class="sidebar-bottom">
-        <span class="status-dot"></span> Workspace local<span class="version"
-          >v0.1</span
+        <span class="status-dot"></span> Workspace local<span
+          class="version"
+          id="app-version"
+          >v0.1.1</span
         >
         <p>Seus arquivos. Suas evidências.<br />Suas decisões.</p>
         <button id="delete-project" class="subtle danger">
@@ -69,6 +71,14 @@
           ><strong id="project-title">Comece uma investigação</strong>
         </div>
         <div class="top-actions">
+          <button
+            id="diagnostics"
+            class="icon-button"
+            aria-label="Verificar workspace"
+            title="Verificar workspace"
+          >
+            ✓
+          </button>
           <span class="local-badge"><i></i> LOCAL</span
           ><button
             class="icon-button"

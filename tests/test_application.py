@@ -53,6 +53,56 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual(snapshot['review']['document']['summary']['items'], 8)
         self.assertEqual(self.app.replay(project)['status'], 'matched')
 
+    def test_chat_rule_question_returns_the_requested_evidence(self):
+        project = self.app.demo()['id']
+        reply = self.app.chat(project, 'Explique a regra ZAP-HIGH do ZAP')
+        self.assertEqual([c.get('rule_id') for c in reply['citations']], ['ZAP-HIGH'])
+        self.assertIn('riskcode 3', reply['text'])
+        raw = json.loads((ROOT/'tests/fixtures/zap-synthetic.json').read_bytes())
+        raw['site'][0]['alerts'] = [copy.deepcopy(raw['site'][0]['alerts'][0]) for _ in range(5)]
+        self.app.import_source(project, {'role':'zap','name':'five-alerts.json','content_base64':base64.b64encode(json.dumps(raw).encode()).decode()})
+        self.app.review(project)
+        self.assertEqual(len(self.app.chat(project, 'Explique a regra ZAP-HIGH do ZAP')['citations']), 3)
+
+
+    def test_chat_producer_priority_does_not_include_other_producers(self):
+        project = self.app.demo()['id']
+        reply = self.app.chat(project, 'O que revisar primeiro no ZAP?')
+        self.assertTrue(reply['citations'])
+        for citation in reply['citations']:
+            self.assertEqual(citation['kind'], 'review-item')
+            self.assertTrue(all(r['role'] == 'zap' for r in citation['references']))
+
+    def test_chat_technology_name_does_not_hide_coverage_or_sources(self):
+        project = self.app.demo()['id']
+        for question, kind in [('Quais as limitações do ZAP?', 'review'), ('Quais fontes Trivy foram importadas?', 'source')]:
+            with self.subTest(question=question):
+                reply = self.app.chat(project, question)
+                self.assertTrue(all(c['kind'] == kind for c in reply['citations']))
+
+    def test_export_pins_replay_to_the_exported_review(self):
+        self.app.import_source(self.project, payload())
+        old = self.app.review(self.project)
+        original_snapshot = self.app.snapshot
+        def racing_snapshot(project):
+            snapshot = original_snapshot(project)
+            report = json.loads((ROOT/'tests/fixtures/trivy-synthetic.json').read_bytes())
+            report['ArtifactName'] = 'new version during export'
+            changed = payload()
+            changed['content_base64'] = base64.b64encode(json.dumps(report).encode()).decode()
+            self.app.import_source(project, changed)
+            self.app.review(project)
+            return snapshot
+        with patch.object(self.app, 'snapshot', side_effect=racing_snapshot):
+            data = self.app.export(self.project, True)
+        with zipfile.ZipFile(io.BytesIO(data)) as z:
+            exported = json.loads(z.read('review.json'))
+            replay = json.loads(z.read('replay.json'))
+            old_sha = old['document']['inputs']['trivy']['artifact']['sha256']
+            self.assertEqual(exported['review_id'], old['document']['review_id'])
+            self.assertEqual(replay['sources']['trivy']['expected_sha256'], old_sha)
+            self.assertEqual(hashlib.sha256(z.read('originals/trivy.json')).hexdigest(), old_sha)
+
     def test_persists_sources_reviews_decisions_and_chat_after_restart(self):
         self.app.import_source(self.project, payload())
         review = self.app.review(self.project)
@@ -224,6 +274,27 @@ class ScaffoldTests(unittest.TestCase):
 
 
 class ModelTests(unittest.TestCase):
+    def test_diagnostics_without_model_does_not_connect(self):
+        with patch.dict(os.environ, {'ATLAS_OLLAMA_MODEL': ''}), patch('app_ai.urllib.request.build_opener') as build:
+            self.assertEqual(app_ai.check_model()['status'], 'not-configured')
+        build.assert_not_called()
+
+    def test_diagnostics_distinguishes_ready_missing_and_unavailable_models(self):
+        class Response:
+            def __enter__(self): return self
+            def __exit__(self, *_): return False
+            def read(self, maximum): return b'{"models":[{"name":"installed:latest"}]}'
+        for model, expected in [('installed', 'ready'), ('installed:latest', 'ready'), ('missing', 'model-missing')]:
+            with patch.dict(os.environ, {'ATLAS_OLLAMA_MODEL': model}), patch('app_ai.urllib.request.build_opener') as build:
+                build.return_value.open.return_value = Response()
+                result = app_ai.check_model()
+                self.assertEqual(result['status'], expected)
+                self.assertFalse(result['generation_tested'])
+                build.return_value.open.assert_called_once_with('http://127.0.0.1:11434/api/tags', timeout=3)
+        with patch.dict(os.environ, {'ATLAS_OLLAMA_MODEL': 'installed'}), patch('app_ai.urllib.request.build_opener') as build:
+            build.return_value.open.side_effect = OSError('offline')
+            self.assertEqual(app_ai.check_model()['status'], 'unavailable')
+
     def test_ollama_request_is_fixed_local_bounded_and_has_no_tools(self):
         class Response:
             def __enter__(self): return self
@@ -289,6 +360,18 @@ class HttpTests(unittest.TestCase):
         status, headers, data = self.request('GET', '/api/bootstrap')
         self.assertEqual(status, 200)
         self.headers = {'Cookie': headers['Set-Cookie'].split(';')[0], 'X-CSRF-Token': json.loads(data)['csrf']}
+
+    def test_diagnostics_requires_session_and_reports_integrity_without_repair(self):
+        self.assertEqual(self.request('POST', '/api/diagnostics', {})[0], 401)
+        self.login()
+        with patch('workbench.verify', return_value=['checksum mismatch: example']), patch('app_ai.check_model', return_value={'status':'not-configured','generation_tested':False}):
+            status, _, data = self.request('POST', '/api/diagnostics', {})
+        result = json.loads(data)
+        self.assertEqual(status, 200)
+        self.assertEqual(result['status'], 'attention')
+        self.assertEqual(result['integrity']['status'], 'failed')
+        self.assertEqual(result['database']['status'], 'ok')
+        self.assertFalse(result['target_executed'])
 
     def test_http_full_flow_project_demo_chat_decision_replay_export_delete(self):
         self.login()

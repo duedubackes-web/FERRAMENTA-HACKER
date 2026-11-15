@@ -8,6 +8,7 @@ import tempfile
 import zipfile
 
 from app_chat import answer
+from app_version import VERSION
 from app_store import Store
 from app_studio import inspect_archive, blueprint, MAX_ARCHIVE
 from app_scaffold import scaffold
@@ -97,7 +98,9 @@ class Application:
         from app_chat import tokens
         query = tokens(question)
         matched = [c for c in self.capabilities['capabilities'] if query & tokens(c['name']+' '+c['id'])]
-        if matched and not (query & {'primeiro', 'prioridade', 'fila'}):
+        evidence_reply = any(c['kind'] in {'review-item', 'review', 'source'} for c in response['citations'])
+        integration_question = bool(query & {'integrado', 'integrados', 'integrada', 'integradas', 'integracao', 'embutido', 'embutidas', 'runtime'})
+        if matched and (integration_question or not evidence_reply):
             response['text'] = '\n\n'.join(c['name']+' · '+c['status']+'\n'+c['description'] for c in matched)
             response['citations'] = [{'kind': 'capability', 'tool_id': c['id'], 'source': c['source']} for c in matched]
         if not matched:
@@ -122,7 +125,9 @@ class Application:
         return response
 
     def replay(self, project):
-        latest = self.store.latest_review(project)
+        return self._replay_review(project, self.store.latest_review(project))
+
+    def _replay_review(self, project, latest):
         if not latest:
             raise ValueError('Gere uma revisão antes de conferir a reprodução')
         sources = {s['id']: s for s in self.store.sources(project, contents=True)}
@@ -151,7 +156,7 @@ class Application:
             archive.writestr('chat.json', encoded(state['messages']))
             archive.writestr('studio.json', encoded(state['studio']))
             archive.writestr('sources.json', encoded(state['sources']))
-            archive.writestr('replay.json', encoded(self.replay(project)))
+            archive.writestr('replay.json', encoded(self._replay_review(project, latest)))
             if include_sources:
                 source_rows = {s['id']: s for s in self.store.sources(project, contents=True)}
                 for role, source_id in latest['source_ids'].items():
@@ -204,3 +209,20 @@ class Application:
             archive.writestr('README.md', '# '+plan['name']+'\n\n'+plan['brief']+'\n\nPlano original em rascunho. Não é código de um produto implementado.\n')
             archive.writestr('BACKLOG.md', '# Backlog de validação e construção\n\n'+'\n'.join('- [ ] '+t['priority']+' — '+t['task']+': '+t['done_when'] for t in plan['backlog']))
         return result.getvalue()
+
+    def diagnostics(self):
+        from workbench import verify
+        errors = verify(ROOT)
+        with self.store.connect() as db:
+            database_ok = [row[0] for row in db.execute('PRAGMA quick_check')] == ['ok']
+            foreign_keys_ok = db.execute('PRAGMA foreign_key_check').fetchone() is None
+        model = app_ai.check_model()
+        local_ok = not errors and database_ok and foreign_keys_ok
+        return {'schema_version': 1, 'version': VERSION,
+                'status': 'ok' if local_ok and model['status'] in {'ready', 'not-configured'} else 'attention',
+                'integrity': {'status': 'ok' if not errors else 'failed', 'errors': errors},
+                'database': {'status': 'ok' if database_ok and foreign_keys_ok else 'failed', 'schema_version': 1},
+                'chat': {'local_retrieval': 'available', 'optional_model': model},
+                'target_executed': False,
+                'limitations': ['A integridade não estabelece autenticidade. quick_check não substitui backup e teste de restauração.',
+                                'A lista de modelos não testa geração, qualidade de respostas ou capacidade do equipamento.']}

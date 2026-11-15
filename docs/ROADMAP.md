@@ -136,3 +136,11 @@ Use `.github/ISSUE_TEMPLATE/work-item.yml` para converter cada item em uma taref
 - [ ] Validar interface em navegador real desktop/celular e qualidade de respostas com modelo real instalado.
 - [ ] Entrevistar usuários e medir utilidade antes de afirmar diferenciação inédita ou prontidão comercial.
 - [ ] Projetar autenticação multiusuário, isolamento, publicação, custos e operação se o produto migrar para SaaS.
+
+## Manutenção v0.1.1 — 15/11/2026
+
+- [x] Corrigir intenção e recorte do chat para regras, produtores, fontes e cobertura.
+- [x] Reproduzir e impedir substituição do projeto atual por resposta atrasada.
+- [x] Fixar revisão de exportação e reprodução ao mesmo registro.
+- [x] Adicionar diagnóstico explícito de arquivos, SQLite e modelo local, sem reparos automáticos.
+- [x] Consultar versões e avisos de dependências, documentar atualização e preservar esquema/dados existentes.

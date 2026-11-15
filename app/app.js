@@ -158,9 +158,15 @@ async function loadProjects(selected = state.project) {
   select.value = state.project;
   await refresh();
 }
+let refreshSequence = 0;
 async function refresh() {
-  state.snapshot = state.project ? await api(projectPath()) : null;
+  const sequence = ++refreshSequence;
+  const project = state.project;
+  const snapshot = project ? await api("/api/projects/" + project) : null;
+  if (sequence !== refreshSequence || project !== state.project) return false;
+  state.snapshot = snapshot;
   render();
+  return true;
 }
 function latestDocument() {
   return state.snapshot?.review?.document || null;
@@ -768,6 +774,9 @@ $("#modal-close").addEventListener("click", closeModal);
 $("#new-project").addEventListener("click", newProject);
 $("#project-select").addEventListener("change", async (event) => {
   state.project = event.target.value;
+  closeModal();
+  state.snapshot = null;
+  render();
   try {
     await refresh();
   } catch (e) {
@@ -922,6 +931,7 @@ async function init() {
   try {
     const boot = await api("/api/bootstrap");
     state.csrf = boot.csrf;
+    $("#app-version").textContent = "v" + boot.version;
     $("#model-status").textContent = boot.model_configured
       ? boot.model + " · configuração detectada"
       : "não configurada";
@@ -944,3 +954,21 @@ async function init() {
   }
 }
 init();
+
+$("#diagnostics").addEventListener("click", (event) => {
+  task(event.currentTarget, async () => {
+    const result = await api("/api/diagnostics", "POST", {});
+    const content = el("div");
+    content.append(
+      el(
+        "p",
+        "notice",
+        result.status === "ok"
+          ? "Conferência concluída: arquivos e banco íntegros nas verificações realizadas."
+          : "A conferência encontrou pontos que precisam de atenção.",
+      ),
+      pre(result),
+    );
+    modal("Diagnóstico do workspace", content);
+  });
+});

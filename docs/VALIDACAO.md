@@ -78,3 +78,9 @@ A suíte Python reúne **98 testes**, incluindo 20 testes do aplicativo, armazen
 A API foi testada contra sessão ausente, host/origem indevidos, CSRF incorreto, corpo excessivo, tipo de conteúdo incompatível e acesso a caminhos fora da lista de assets. Os ZIPs de fonte foram testados com caminhos inseguros, symlinks, entrada inválida e orçamento de descompressão. Esses testes não constituem auditoria de segurança completa.
 
 IA generativa: transporte para Ollama verificado com respostas/falhas simuladas, sem modelo real instalado. A presença da configuração não foi tratada como disponibilidade. Nenhum teste de qualidade de modelo foi realizado. Interface: testes de DOM simulado, sem navegador visual disponível; layout real desktop/celular e revisão visual permanecem pendentes. Os registros estão em `research/app-validation.json` e os testes são executáveis na CI.
+
+## Manutenção v0.1.1
+
+A suíte atual tem **105 testes Python**, dos quais 27 cobrem o aplicativo. Foram reproduzidas divergências no chat e na exportação concorrente antes das correções. O fluxo DOM agora contém 14 cenários, incluindo uma resposta de projeto deliberadamente atrasada e o diagnóstico do workspace. O cenário atrasado também foi executado sem a proteção de sequência e detectou a regressão; a proteção foi restaurada.
+
+O diagnóstico verifica integridade sem reparar os arquivos, estrutura SQLite e disponibilidade opcional de modelo. Testes controlados distinguem modelo presente, modelo ausente e transporte indisponível, sem executar geração. A consulta `npm outdated --json` não indicou atualização direta pendente e `npm audit --json` retornou zero vulnerabilidades conhecidas nas 28 dependências de desenvolvimento instaladas; isso não estabelece ausência de falhas desconhecidas ou auditoria integral do produto.

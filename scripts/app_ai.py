@@ -41,3 +41,25 @@ def generate(question, grounded, history=None):
         raise ValueError('O modelo não retornou texto válido')
     return {**grounded, 'mode': 'local-ollama-generation', 'model_calls': 1, 'model': model,
             'text': message['content'][:20000], 'generation_notice': 'Texto gerado por IA; confira as afirmações. As referências indicam contexto fornecido, não comprovação de cada frase.'}
+
+
+def check_model():
+    """Check local model availability; never generate text or download a model."""
+    model = model_name()
+    if not model:
+        return {'status': 'not-configured', 'model': None, 'generation_tested': False}
+    if len(model) > 150:
+        return {'status': 'invalid-configuration', 'model': model, 'generation_tested': False}
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())
+    try:
+        with opener.open('http://127.0.0.1:11434/api/tags', timeout=3) as response:
+            document = decode_object(response.read(MAX_REPLY+1), 'Ollama models', MAX_REPLY)
+        models = document.get('models')
+        if not isinstance(models, list):
+            raise ValueError('Invalid model list')
+        names = {entry.get('name') for entry in models if isinstance(entry, dict) and isinstance(entry.get('name'), str)}
+        candidate = model if ':' in model.rsplit('/', 1)[-1] else model+':latest'
+        status = 'ready' if model in names or candidate in names else 'model-missing'
+    except (OSError, ValueError):
+        status = 'unavailable'
+    return {'status': status, 'model': model, 'generation_tested': False}

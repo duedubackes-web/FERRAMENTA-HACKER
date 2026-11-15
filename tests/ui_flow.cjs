@@ -183,12 +183,71 @@ async function until(test, label) {
   assert.equal(snapshot.decisions.length, 1);
   assert.equal(snapshot.messages.length, 1);
   assert.equal(snapshot.studio.length, 2);
+  // Delay an old workspace response until a newer selection has loaded.
+  const originalProject = projects[0].id;
+  $("#new-project").click();
+  $('#modal input[name="name"]').value = "Projeto de concorrência";
+  $("#modal form").dispatchEvent(
+    new w.Event("submit", { bubbles: true, cancelable: true }),
+  );
+  await until(
+    () => $("#project-title").textContent === "Projeto de concorrência",
+    "second workspace",
+  );
+  const newerProject = $("#project-select").value;
+  const baseFetch = w.fetch;
+  let releaseOld,
+    blocked = false;
+  w.fetch = async (url, options = {}) => {
+    const response = await baseFetch(url, options);
+    if (
+      url === "/api/projects/" + originalProject &&
+      (!options.method || options.method === "GET")
+    ) {
+      blocked = true;
+      await new Promise((resolve) => (releaseOld = resolve));
+    }
+    return response;
+  };
+  $("#project-select").value = originalProject;
+  $("#project-select").dispatchEvent(new w.Event("change"));
+  await until(() => blocked, "delayed old response");
+  $("#project-select").value = newerProject;
+  $("#project-select").dispatchEvent(new w.Event("change"));
+  await until(
+    () => $("#project-title").textContent === "Projeto de concorrência",
+    "newer workspace response",
+  );
+  releaseOld();
+  await new Promise((resolve) => setTimeout(resolve, 75));
+  assert.equal($("#project-title").textContent, "Projeto de concorrência");
+  assert.equal($("#project-select").value, newerProject);
+  assert.equal($("#stat-items").textContent, "0");
+  w.fetch = baseFetch;
+  $("#delete-project").click();
+  $("#modal input").value = "EXCLUIR";
+  $("#modal form").dispatchEvent(
+    new w.Event("submit", { bubbles: true, cancelable: true }),
+  );
+  await until(
+    () => $("#project-title").textContent === snapshot.project.name,
+    "remaining original workspace",
+  );
   $("#delete-project").click();
   $("#modal input").value = "EXCLUIR";
   $("#modal form").dispatchEvent(
     new w.Event("submit", { bubbles: true, cancelable: true }),
   );
   await until(() => $("#stat-items").textContent === "0", "project delete");
+  $("#diagnostics").click();
+  await until(
+    () => $("#modal-title").textContent === "Diagnóstico do workspace",
+    "workspace diagnostics",
+  );
+  const diagnostic = JSON.parse($("#modal-body pre").textContent);
+  assert.equal(diagnostic.database.status, "ok");
+  assert.equal(diagnostic.chat.optional_model.status, "not-configured");
+  assert.equal(diagnostic.version, "0.1.1");
   assert.deepEqual(errors, []);
   process.stdout.write(
     JSON.stringify(
@@ -207,6 +266,8 @@ async function until(test, label) {
           "project-export",
           "persistent-state",
           "project-deletion",
+          "delayed-workspace-response",
+          "workspace-diagnostics",
         ],
         javascriptErrors: errors.length,
         downloads: downloads.length,
