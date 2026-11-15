@@ -3,9 +3,27 @@ from collections import Counter
 import hashlib
 import json
 
-VERSION = '1'
+VERSION = '2'
 PRIORITIES = {'review-first': 'Revisar primeiro', 'review-next': 'Revisar depois', 'context': 'Contexto'}
 RULES = {
+    'ZAP-HIGH': {'priority': 'review-first', 'category': 'producer-web-alert', 'title': 'Validar um alerta web de risco alto do produtor',
+        'reason': 'ZAP declara riskcode 3 com confiança conhecida, sem marcação False Positive. Isso não é confirmação independente.',
+        'next_steps': ['Conferir o escopo, a evidência original e a aplicabilidade com o responsável pela aplicação antes de planejar correções.']},
+    'ZAP-REVIEW': {'priority': 'review-next', 'category': 'producer-web-alert', 'title': 'Revisar um alerta web do produtor',
+        'reason': 'O relatório declara um alerta e sua classificação precisa ser interpretada no contexto da aplicação.',
+        'next_steps': ['Conferir risco, confiança e instâncias no relatório original. Registrar a decisão de revisão com o responsável pela aplicação.']},
+    'ZAP-FALSE-POSITIVE': {'priority': 'context', 'category': 'producer-web-alert', 'title': 'Conferir uma marcação de falso positivo',
+        'reason': 'O produtor declarou confidence 0 (False Positive); o registro permanece visível e isso não comprova segurança.',
+        'next_steps': ['Verificar a justificativa dessa classificação e manter ou revisar a decisão com evidências, sem descartar automaticamente o alerta.']},
+    'ZAP-INFORMATION': {'priority': 'context', 'category': 'producer-web-alert', 'title': 'Preservar um alerta informativo',
+        'reason': 'O produtor declarou riskcode 0; a informação não equivale a um atestado de ausência de impacto.',
+        'next_steps': ['Consultar o alerta no contexto da aplicação e registrar se exige acompanhamento.']},
+    'ZAP-CLASSIFICATION': {'priority': 'review-next', 'category': 'evidence-quality', 'title': 'Conferir a classificação de um alerta web',
+        'reason': 'Risco ou confiança estão ausentes ou não são reconhecidos pelo adaptador.',
+        'next_steps': ['Consultar os códigos e a versão do produtor; manter como desconhecido o que não foi estabelecido.']},
+    'ZAP-COVERAGE': {'priority': 'review-first', 'category': 'evidence-quality', 'title': 'Conferir o recorte do relatório web',
+        'reason': 'Há registros/contagens incompletos ou sinais de diagnóstico não interpretados que exigem revisão de cobertura.',
+        'next_steps': ['Conferir a geração do relatório, as instâncias e os diagnósticos na origem. Não concluir cobertura completa ou ausência de alertas com base em campos ausentes.']},
     'EVIDENCE-COMPLETION': {'priority': 'review-first', 'category': 'evidence-quality', 'title': 'Conferir a conclusão da coleta',
         'reason': 'Um relatório Nmap não declara conclusão bem-sucedida.',
         'next_steps': ['Conferir se o arquivo está completo e como a coleta terminou antes de interpretar seus resultados.']},
@@ -36,9 +54,9 @@ RULES = {
 }
 
 
-def build_review(comparison: dict | None = None, trivy: dict | None = None) -> dict:
-    if comparison is None and trivy is None:
-        raise ValueError('Forneça uma comparação Nmap e/ou um relatório Trivy')
+def build_review(comparison: dict | None = None, trivy: dict | None = None, zap: dict | None = None) -> dict:
+    if comparison is None and trivy is None and zap is None:
+        raise ValueError('Forneça uma comparação Nmap e/ou um relatório Trivy/ZAP')
     inputs, context, items, warnings = {}, {}, [], []
 
     def add(rule_id, facts, references):
@@ -75,10 +93,26 @@ def build_review(comparison: dict | None = None, trivy: dict | None = None) -> d
         sha = trivy['artifact']['sha256']
         incomplete = [r['result_index'] for r in trivy['coverage']['results'] if r['vulnerabilities_state'] != 'array']
         if not trivy['coverage']['results'] or incomplete:
-            add('TRIVY-COVERAGE', {'results_state': trivy['coverage']['results_state'], 'results_without_explicit_vulnerability_array': incomplete}, [{'role': 'trivy', 'artifact_sha256': sha, 'json_pointer': '/Results'}])
+            add('TRIVY-COVERAGE', {'results_state': trivy['coverage']['results_state'], 'results_without_explicit_vulnerability_array': incomplete}, [{'role': 'trivy', 'artifact_sha256': sha, 'json_pointer': ''}])
         for finding in trivy['findings']:
             rule = 'TRIVY-HIGH' if finding['severity_normalized'] in ('HIGH', 'CRITICAL') else 'TRIVY-OTHER'
             add(rule, finding, [{'role': 'trivy', 'artifact_sha256': sha, 'json_pointer': finding['json_pointer']}])
+    if zap is not None:
+        inputs['zap'] = {k: zap[k] for k in ('artifact', 'analysis_run', 'producer', 'coverage')}
+        warnings.extend({'origin': 'zap', **warning} for warning in zap['warnings'])
+        context['zap'] = {'imported_alerts': len(zap['findings']), 'scan_completion': zap['coverage']['scan_completion']}
+        sha = zap['artifact']['sha256']
+        incomplete_sites = [s['site_index'] for s in zap['coverage']['sites'] if s['alerts_state'] != 'array']
+        incomplete_alerts = [a['json_pointer'] for a in zap['findings'] if a['instances_state'] != 'array' or a['instance_count_matches'] is False]
+        extra = zap['coverage']['uninterpreted_sections']
+        diagnostic_flags = {key: value for key, value in extra.items() if (key == 'stoppingInsight' and value['state'] == 'present') or (key == 'afPlanErrors' and (value['count'] or 0) > 0)}
+        if not zap['coverage']['sites'] or incomplete_sites or incomplete_alerts or diagnostic_flags:
+            add('ZAP-COVERAGE', {'sites_state': zap['coverage']['sites_state'], 'sites_without_alert_array': incomplete_sites, 'incomplete_alert_records': incomplete_alerts, 'uninterpreted_diagnostics': diagnostic_flags}, [{'role': 'zap', 'artifact_sha256': sha, 'json_pointer': ''}])
+        for finding in zap['findings']:
+            risk, confidence = finding['risk_normalized'], finding['confidence_normalized']
+            rule = ('ZAP-FALSE-POSITIVE' if confidence == 0 else 'ZAP-CLASSIFICATION' if risk is None or confidence is None else
+                    'ZAP-HIGH' if risk == 3 else 'ZAP-INFORMATION' if risk == 0 else 'ZAP-REVIEW')
+            add(rule, finding, [{'role': 'zap', 'artifact_sha256': sha, 'json_pointer': finding['json_pointer']}])
     priority_order = {key: i for i, key in enumerate(PRIORITIES)}
     items.sort(key=lambda i: (priority_order[i['priority']], i['category'] != 'evidence-quality', i['rule_id'], i['id']))
     rule_digest = hashlib.sha256(json.dumps(RULES, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
@@ -91,5 +125,6 @@ def build_review(comparison: dict | None = None, trivy: dict | None = None) -> d
             'limitations': ['Prioridade de revisão não é uma pontuação de risco, urgência operacional ou validação de vulnerabilidade.',
                             'A severidade Trivy e suas versões/status continuam declarações do produtor; correção ausente significa informação não declarada, não inexistência de correção.',
                             'Não há associação entre IPs Nmap e artefatos/pacotes Trivy. As evidências coexistem na fila sem correlação automática.',
+                            'Risco e confiança ZAP permanecem declarações separadas do produtor. Os sites ZAP não são associados automaticamente a IPs ou pacotes.',
                             'A fila inclui diferenças e campos selecionados, não uma auditoria integral ou garantia de segurança.',
                             'Sugestões não são executadas. Não houve consulta externa de CVEs, uso de modelo de IA ou alteração dos sistemas.']}

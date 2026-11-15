@@ -6,14 +6,14 @@ Repositório: https://github.com/duedubackes-web/FERRAMENTA-HACKER
 
 Base preparada a partir de fontes públicas para estudar composição de ferramentas,
 análise de tráfego e arquitetura de módulos, e projetar um produto próprio com evidências rastreáveis.
-Este repositório contém pesquisa, inventários verificáveis e uma ferramenta offline para importar relatórios Nmap/Trivy, comparar observações e gerar uma fila de revisão explicável em JSON e HTML.
+Este repositório contém pesquisa, inventários verificáveis e uma ferramenta offline para importar relatórios Nmap/Trivy/ZAP, comparar observações e gerar uma fila de revisão explicável em JSON e HTML.
 Não contém uma distribuição nova, um substituto do Wireshark ou uma implementação nova do Hydra.
 
 ## Usar a ferramenta de revisão
 
 ```sh
 mkdir -p work
-python scripts/workbench.py review --before tests/fixtures/nmap-synthetic.xml --after tests/fixtures/nmap-synthetic-after.xml --trivy tests/fixtures/trivy-synthetic.json --output work/review.json --html work/review.html
+python scripts/workbench.py review --before tests/fixtures/nmap-synthetic.xml --after tests/fixtures/nmap-synthetic-after.xml --trivy tests/fixtures/trivy-synthetic.json --zap tests/fixtures/zap-synthetic.json --output work/review.json --html work/review.html
 ```
 
 Abra o HTML gerado para ver prioridades de revisão, motivos, próximas verificações e fontes. O exemplo usa somente dados sintéticos; para relatórios próprios, substitua os caminhos.
@@ -56,6 +56,7 @@ O material foi indexado integralmente nesse recorte; a revisão semântica foi s
 - `docs/RELATORIO.md`: primeira rodada, evidências e limites.
 - `docs/NMAP-SQLMAP.md`: expansão Nmap/sqlmap, resultados e decisões.
 - `docs/IMPORTAR-NMAP.md`: usar a importação offline e entender seu contrato.
+- `docs/IMPORTAR-ZAP.md`: importação web, confiança/risco, omissão de mensagens e regras v2.
 - `docs/REVISAO-INTELIGENTE.md`: novo fluxo Nmap/Trivy, regras explicáveis, contrato e limites.
 - `docs/CATALOGO-FERRAMENTAS.md`: 38 projetos, categorias, estados de evidência e 409 candidatos de pacotes Kali.
 - `docs/GEMINI.md`: observação pública do app e fontes abertas relacionadas, com limites explícitos.
@@ -81,7 +82,7 @@ Instalações de ferramentas e comandos executados nesta pesquisa estão documen
 
 ## Estado
 
-Pesquisa estática ampliada, importação Nmap XML/Trivy JSON, comparação e fila de revisão explicável em JSON/HTML disponíveis. O corpus atual tem 59.740 entradas rastreadas em dezenove repositórios. Engenharia reversa dinâmica,
+Pesquisa estática ampliada, importação Nmap XML/Trivy JSON/ZAP Traditional JSON, comparação e fila de revisão explicável em JSON/HTML disponíveis. O corpus atual tem 59.740 entradas rastreadas em dezenove repositórios. Engenharia reversa dinâmica,
 decompilação nativa, revisão completa dos pacotes Kali, testes dos produtos originais e evolução do produto final são trabalho futuro.
 Nenhum teste de intrusão, tentativa de autenticação ou captura de rede de terceiros foi realizado.
 
@@ -114,3 +115,10 @@ Os bundles proprietários e o HTML bruto do app não são republicados no Git; a
 Os dois projetos abertos relacionados têm snapshots e licenças próprios, sem implicar direitos sobre o serviço web.
 
 Os catálogos derivados podem ser regenerados offline com `python scripts/build_tool_catalog.py`. Isso não atualiza metadados pela internet nem executa ferramentas.
+
+
+## Alertas web integrados
+
+`import-zap` lê campos selecionados de Traditional JSON/JSON Plus e `review --zap` incorpora esses alertas à fila. Risco e confiança do produtor ficam separados; falsos positivos permanecem visíveis em contexto.
+Mensagens HTTP, payloads e conteúdo de diagnósticos não são exportados. URIs selecionadas omitem userinfo, query e fragmento; isso não é anonimização completa.
+Os contratos foram estudados em referências oficiais fixadas por commit e validados com saídas esperadas, sem executar ZAP. Veja `research/zap-format-validation.json`.

@@ -55,3 +55,12 @@
 - A leitura de 92 saídas públicas esperadas Trivy importou 83 JSONs nativos e recusou nove formatos fora do contrato: sete CycloneDX e dois SPDX. Não houve execução do Trivy.
 - O HTML sintético foi conferido em Chromium em 1.365×980 e 375×812: detalhes, navegação de fontes, ausência de transbordamento e zero requisições de rede. QA por setContent, sujeito à restrição de file: já registrada no ambiente.
 - O exemplo contém seis sugestões de revisão derivadas de dados sintéticos. Não é uma medição de risco ou comprovação de eficácia em sistemas reais.
+
+
+## ZAP e regras v2
+
+- 70 testes da base passaram: 16 novos casos cobrem códigos, URI, dados omitidos, desconhecidos, contagens, diagnóstico, falsos positivos e os três produtores no CLI.
+- Os dois arquivos esperados oficiais Traditional JSON/JSON Plus foram importados, cada um com um alerta e duas instâncias. Template e fixtures tiveram bytes conferidos contra seus objetos Git; a proveniência está em `research/zap-format-validation.json`.
+- Nenhum payload ou site das fixtures foi executado/acessado. A leitura de arquivos não é uma execução do scanner ou da suíte ZAP.
+- O exemplo HTML de oito itens foi renderizado em desktop/celular, com detalhes e navegação de fontes funcionando, sem transbordamento ou requisições de rede; o hash do exemplo foi registrado no QA.
+- O compartilhamento da decodificação JSON preservou o comportamento dos testes existentes de Trivy. O conjunto de regras passou a v2; o esquema de saída continua 1.

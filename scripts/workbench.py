@@ -83,10 +83,14 @@ def main(argv=None) -> int:
     trivy = commands.add_parser('import-trivy', help='Import selected fields of an existing Trivy JSON v2 report')
     trivy.add_argument('path', type=Path)
     trivy.add_argument('--output', type=Path)
+    zap = commands.add_parser('import-zap', help='Import selected alert fields from an existing ZAP Traditional JSON report')
+    zap.add_argument('path', type=Path)
+    zap.add_argument('--output', type=Path)
     review = commands.add_parser('review', help='Build an explainable review queue from local reports; never executes suggestions')
     review.add_argument('--before', type=Path, help='Baseline Nmap XML, requires --after')
     review.add_argument('--after', type=Path, help='Current Nmap XML, requires --before')
     review.add_argument('--trivy', type=Path, help='Trivy JSON v2 input')
+    review.add_argument('--zap', type=Path, help='ZAP Traditional JSON / JSON Plus input')
     review.add_argument('--output', type=Path, help='Create review JSON')
     review.add_argument('--html', type=Path, help='Create offline review HTML')
     args = parser.parse_args(argv)
@@ -145,19 +149,29 @@ def main(argv=None) -> int:
                 print(f'Imported {len(report["findings"])} producer records into {args.output}')
             else:
                 print(json.dumps(report, ensure_ascii=False, indent=2))
+        elif args.command == 'import-zap':
+            from zap_report import import_report
+            from nmap_report import save_report
+            report = import_report(args.path)
+            if args.output:
+                save_report(report, args.output)
+                print(f'Imported {len(report["findings"])} producer alerts into {args.output}')
+            else:
+                print(json.dumps(report, ensure_ascii=False, indent=2))
         elif args.command == 'review':
             from nmap_report import import_report as import_nmap, save_report
             from nmap_compare import compare_reports, validate_destinations
             from trivy_report import import_report as import_trivy
+            from zap_report import import_report as import_zap
             from review_rules import build_review
             from review_html import render_html
             if bool(args.before) != bool(args.after):
                 raise ValueError('Use --before e --after juntos')
-            if not args.before and not args.trivy:
-                raise ValueError('Forneça um par Nmap e/ou --trivy')
+            if not args.before and not args.trivy and not args.zap:
+                raise ValueError('Forneça um par Nmap e/ou --trivy/--zap')
             validate_destinations([p for p in (args.output, args.html) if p is not None])
             comparison = compare_reports(import_nmap(args.before), import_nmap(args.after)) if args.before else None
-            report = build_review(comparison, import_trivy(args.trivy) if args.trivy else None)
+            report = build_review(comparison, import_trivy(args.trivy) if args.trivy else None, import_zap(args.zap) if args.zap else None)
             if args.output:
                 save_report(report, args.output)
             else:

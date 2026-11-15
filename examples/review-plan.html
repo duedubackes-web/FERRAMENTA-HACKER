@@ -3,7 +3,7 @@
 <title>FERRAMENTA-HACKER · plano de revisão</title><style>
 :root{color-scheme:dark;--bg:#10141e;--panel:#1b2333;--line:#3b4c63;--text:#f1f5fc;--muted:#c1cbdc;--accent:#8adfd2}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,sans-serif}main{max-width:1100px;padding:36px 24px;margin:auto}header{border-bottom:1px solid var(--line);padding-bottom:24px}.eyebrow{font-size:.8rem;letter-spacing:.1em;color:var(--accent)}h1{font-size:clamp(1.9rem,5vw,3.4rem);line-height:1.15;margin:.6em 0}h2{margin-top:2em}h3{line-height:1.35;font-size:1.3rem}h4{margin-bottom:.4em}p,li{max-width:90ch}nav{display:flex;gap:24px;flex-wrap:wrap;margin-top:24px}a{color:var(--accent)}a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.muted,.rule{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin:28px 0}.stat,article,details,.notice{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}.stat strong{display:block;font-size:2.2rem;color:var(--accent)}.stat span{color:var(--muted)}article{margin:18px 0}.item-head{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}.badge{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.85rem}.review-first{color:#ffddb1;border-color:#b28a55}.review-next{color:#a9dfec}.context{color:var(--muted)}details{margin:12px 0;min-width:0;padding:14px}summary{cursor:pointer;font-weight:600}pre{font-size:.8rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:32rem;overflow:auto;color:var(--muted)}.scope{padding:14px 18px;border-left:4px solid var(--accent);background:var(--panel)}footer{margin-top:36px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:.8rem;overflow-wrap:anywhere}@media print{body{background:white;color:black}main{padding:0}article,details,.notice,.stat,.scope{background:white}.muted,.rule,pre,footer,.stat span{color:#333}a{color:#005c50}.badge{color:black}pre{max-height:none}}
 </style></head><body><main><header><div class="eyebrow">FERRAMENTA-HACKER / REVISÃO COM EVIDÊNCIAS</div><h1>Do registro à próxima verificação.</h1>
-<p class="muted">Uma fila explicável para revisar diferenças de rede e declarações de vulnerabilidades, com origem e limites visíveis.</p><p class="notice">Demonstração com relatórios sintéticos. Nenhuma coleta ou verificação de rede foi realizada.</p><nav aria-label="Seções"><a href="#queue">Fila de revisão</a><a href="#sources">Fontes</a><a href="#limits">Como interpretar</a></nav></header><section aria-label="Resumo"><div class="stats"><div class="stat"><strong>3</strong><span>Revisar primeiro</span></div><div class="stat"><strong>3</strong><span>Revisar depois</span></div><div class="stat"><strong>0</strong><span>Contexto</span></div></div><p class="scope">A prioridade organiza a revisão humana. Ela não confirma risco, explorabilidade ou correspondência entre um IP e um pacote.</p></section><section id="queue"><h2>Fila de revisão</h2><article id="review-item-07e2f5ec64ec67798c4264690bfefdedb547cb45b9c09551b5f54968acdb2588"><div class="item-head"><span class="badge review-first">Revisar primeiro</span><span class="rule">EVIDENCE-SCOPE</span></div><h3>Conferir a comparabilidade das coletas</h3><p>Os escopos ou métodos declarados diferem ou são desconhecidos.</p><h4>Próxima verificação sugerida</h4><ol><li>Conferir protocolo, método, intervalos, ponto de observação e conclusão dos relatórios antes de interpretar ausências.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
+<p class="muted">Uma fila explicável para revisar diferenças de rede, componentes e alertas web, com origem e limites visíveis.</p><p class="notice">Demonstração com relatórios sintéticos. Nenhuma coleta ou verificação de rede foi realizada.</p><nav aria-label="Seções"><a href="#queue">Fila de revisão</a><a href="#sources">Fontes</a><a href="#limits">Como interpretar</a></nav></header><section aria-label="Resumo"><div class="stats"><div class="stat"><strong>4</strong><span>Revisar primeiro</span></div><div class="stat"><strong>3</strong><span>Revisar depois</span></div><div class="stat"><strong>1</strong><span>Contexto</span></div></div><p class="scope">A prioridade organiza a revisão humana. Ela não confirma risco, explorabilidade ou correspondência entre IPs, pacotes e sites.</p></section><section id="queue"><h2>Fila de revisão</h2><article id="review-item-ef99b3ce0f4ce89792ea89884732383c3d6ddb33e991b3bce8d00e146ec80016"><div class="item-head"><span class="badge review-first">Revisar primeiro</span><span class="rule">EVIDENCE-SCOPE</span></div><h3>Conferir a comparabilidade das coletas</h3><p>Os escopos ou métodos declarados diferem ou são desconhecidos.</p><h4>Próxima verificação sugerida</h4><ol><li>Conferir protocolo, método, intervalos, ponto de observação e conclusão dos relatórios antes de interpretar ausências.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
   &quot;facts&quot;: {
     &quot;scope_relation&quot;: &quot;different_declared&quot;,
     &quot;identity_rule&quot;: &quot;Unique one-to-one shared canonical IP address; no hostname/MAC matching&quot;
@@ -18,7 +18,7 @@
       &quot;artifact_sha256&quot;: &quot;8fb22d4a260aef3012acd78fa6d5b8fceb7be9032e5b293c2813a780346421cd&quot;
     }
   ]
-}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-a328eeee3dd681608d2a7fed94dfe6400cdcc52ba94ab57492cac3a27804c39e"><div class="item-head"><span class="badge review-first">Revisar primeiro</span><span class="rule">NMAP-OPEN-STATE</span></div><h3>Conferir a mudança para estado aberto</h3><p>A mesma porta foi explicitamente registrada com outro estado conhecido antes e com estado open depois.</p><h4>Próxima verificação sugerida</h4><ol><li>Confirmar se a mudança era esperada e qual serviço deveria estar exposto. Verificar configuração e contexto com o responsável pelo ativo.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
+}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-50bec66d77348d30c762e24af454629d443e562f4455a47169d1bc40f674879c"><div class="item-head"><span class="badge review-first">Revisar primeiro</span><span class="rule">NMAP-OPEN-STATE</span></div><h3>Conferir a mudança para estado aberto</h3><p>A mesma porta foi explicitamente registrada com outro estado conhecido antes e com estado open depois.</p><h4>Próxima verificação sugerida</h4><ol><li>Confirmar se a mudança era esperada e qual serviço deveria estar exposto. Verificar configuração e contexto com o responsável pelo ativo.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
   &quot;facts&quot;: {
     &quot;id&quot;: &quot;change-1&quot;,
     &quot;kind&quot;: &quot;state_changed&quot;,
@@ -49,7 +49,7 @@
       &quot;role&quot;: &quot;nmap-after&quot;
     }
   ]
-}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-49dd2e34bd786a597128fc5c8e90fbeb4437b6ec311f4042a7842a93f915e2f8"><div class="item-head"><span class="badge review-first">Revisar primeiro</span><span class="rule">TRIVY-HIGH</span></div><h3>Validar um registro de alta severidade do produtor</h3><p>O relatório declara severidade HIGH ou CRITICAL; a fila não comprova explorabilidade ou risco do ambiente.</p><h4>Próxima verificação sugerida</h4><ol><li>Confirmar pacote, versão, aplicabilidade e aviso do produtor. Revisar atualização ou mitigação com o responsável, sem aplicar mudanças automaticamente.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
+}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-eac7b486849387189f177e5bacf573d27ebd2fc20f7ede2b8fcafdc66a8d29c8"><div class="item-head"><span class="badge review-first">Revisar primeiro</span><span class="rule">TRIVY-HIGH</span></div><h3>Validar um registro de alta severidade do produtor</h3><p>O relatório declara severidade HIGH ou CRITICAL; a fila não comprova explorabilidade ou risco do ambiente.</p><h4>Próxima verificação sugerida</h4><ol><li>Confirmar pacote, versão, aplicabilidade e aviso do produtor. Revisar atualização ou mitigação com o responsável, sem aplicar mudanças automaticamente.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
   &quot;facts&quot;: {
     &quot;result_index&quot;: 0,
     &quot;vulnerability_index&quot;: 0,
@@ -79,7 +79,56 @@
       &quot;json_pointer&quot;: &quot;/Results/0/Vulnerabilities/0&quot;
     }
   ]
-}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-131e63099b1c0bd4045c1f7616c194e56f762dcf132271477adb92eb93f8cc61"><div class="item-head"><span class="badge review-next">Revisar depois</span><span class="rule">NMAP-OBSERVATION</span></div><h3>Revisar uma diferença de observação</h3><p>Há mudança no registro de host, porta ou detecção de serviço, sem conclusão automática sobre risco.</p><h4>Próxima verificação sugerida</h4><ol><li>Conferir as duas evidências e a cobertura. Diferenciar mudança no sistema de mudança na detecção ou na coleta.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
+}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-a0b666a15ebb73dbadab0db30f59ab410230e02fbccfe8dfb49748ab5d0d9917"><div class="item-head"><span class="badge review-first">Revisar primeiro</span><span class="rule">ZAP-HIGH</span></div><h3>Validar um alerta web de risco alto do produtor</h3><p>ZAP declara riskcode 3 com confiança conhecida, sem marcação False Positive. Isso não é confirmação independente.</p><h4>Próxima verificação sugerida</h4><ol><li>Conferir o escopo, a evidência original e a aplicabilidade com o responsável pela aplicação antes de planejar correções.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
+  &quot;facts&quot;: {
+    &quot;site_index&quot;: 0,
+    &quot;alert_index&quot;: 0,
+    &quot;json_pointer&quot;: &quot;/site/0/alerts/0&quot;,
+    &quot;site_display&quot;: {
+      &quot;uri&quot;: &quot;https://example.test&quot;,
+      &quot;status&quot;: &quot;no-omitted-components&quot;
+    },
+    &quot;producer_fields&quot;: {
+      &quot;alert&quot;: null,
+      &quot;name&quot;: &quot;Alerta sintético de risco alto declarado&quot;,
+      &quot;riskdesc&quot;: &quot;High (Medium)&quot;,
+      &quot;pluginid&quot;: &quot;DEMO-NOT-A-REAL-ALERT-001&quot;,
+      &quot;alertRef&quot;: null,
+      &quot;riskcode&quot;: &quot;3&quot;,
+      &quot;confidence&quot;: &quot;2&quot;,
+      &quot;count&quot;: &quot;1&quot;,
+      &quot;cweid&quot;: null,
+      &quot;wascid&quot;: null,
+      &quot;sourceid&quot;: null
+    },
+    &quot;risk_normalized&quot;: 3,
+    &quot;risk_label&quot;: &quot;High&quot;,
+    &quot;confidence_normalized&quot;: 2,
+    &quot;confidence_label&quot;: &quot;Medium&quot;,
+    &quot;instances_state&quot;: &quot;array&quot;,
+    &quot;declared_count_normalized&quot;: 1,
+    &quot;instance_count_matches&quot;: true,
+    &quot;imported_instances&quot;: 1,
+    &quot;instances&quot;: [
+      {
+        &quot;instance_index&quot;: 0,
+        &quot;json_pointer&quot;: &quot;/site/0/alerts/0/instances/0&quot;,
+        &quot;method&quot;: &quot;GET&quot;,
+        &quot;uri_display&quot;: {
+          &quot;uri&quot;: &quot;https://example.test/demo&quot;,
+          &quot;status&quot;: &quot;no-omitted-components&quot;
+        }
+      }
+    ]
+  },
+  &quot;references&quot;: [
+    {
+      &quot;role&quot;: &quot;zap&quot;,
+      &quot;artifact_sha256&quot;: &quot;929d19a8acb7091bd257e9aa632cba68e1bd51e4431858abe388fbbc5e84c7c2&quot;,
+      &quot;json_pointer&quot;: &quot;/site/0/alerts/0&quot;
+    }
+  ]
+}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-0481a1ddeb297ebc3fa2614c206b407d9d83777ab8215d2206da3edb481ebba0"><div class="item-head"><span class="badge review-next">Revisar depois</span><span class="rule">NMAP-OBSERVATION</span></div><h3>Revisar uma diferença de observação</h3><p>Há mudança no registro de host, porta ou detecção de serviço, sem conclusão automática sobre risco.</p><h4>Próxima verificação sugerida</h4><ol><li>Conferir as duas evidências e a cobertura. Diferenciar mudança no sistema de mudança na detecção ou na coleta.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
   &quot;facts&quot;: {
     &quot;id&quot;: &quot;change-3&quot;,
     &quot;kind&quot;: &quot;first_observed_endpoint&quot;,
@@ -112,7 +161,7 @@
       &quot;role&quot;: &quot;nmap-after&quot;
     }
   ]
-}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-194781e5f369322ace0fd2046ca05cc700d8cb3cecdbe343c889bbbb505d3f9b"><div class="item-head"><span class="badge review-next">Revisar depois</span><span class="rule">NMAP-OBSERVATION</span></div><h3>Revisar uma diferença de observação</h3><p>Há mudança no registro de host, porta ou detecção de serviço, sem conclusão automática sobre risco.</p><h4>Próxima verificação sugerida</h4><ol><li>Conferir as duas evidências e a cobertura. Diferenciar mudança no sistema de mudança na detecção ou na coleta.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
+}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-ba5783a4ab9f86d6a7394567d5d846bd1ad93c4e7ac51a021d795ec46b1610bd"><div class="item-head"><span class="badge review-next">Revisar depois</span><span class="rule">NMAP-OBSERVATION</span></div><h3>Revisar uma diferença de observação</h3><p>Há mudança no registro de host, porta ou detecção de serviço, sem conclusão automática sobre risco.</p><h4>Próxima verificação sugerida</h4><ol><li>Conferir as duas evidências e a cobertura. Diferenciar mudança no sistema de mudança na detecção ou na coleta.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
   &quot;facts&quot;: {
     &quot;id&quot;: &quot;change-2&quot;,
     &quot;kind&quot;: &quot;service_evidence_changed&quot;,
@@ -152,7 +201,7 @@
       &quot;role&quot;: &quot;nmap-after&quot;
     }
   ]
-}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-6e6470270f5cc7c328850f198800d779ae1369a08fb7522dafb3a8c8878438e8"><div class="item-head"><span class="badge review-next">Revisar depois</span><span class="rule">TRIVY-OTHER</span></div><h3>Revisar um registro do produtor</h3><p>O registro está no relatório e requer contexto; severidade baixa, desconhecida ou ausente não demonstra ausência de impacto.</p><h4>Próxima verificação sugerida</h4><ol><li>Conferir a classificação e a aplicabilidade no contexto do artefato. Preservar como desconhecido o que o relatório não informa.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
+}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-1e8eb52ad4a442840c2039a2e639eca941d0e05e1a0cbf0ed30df97862e1a07a"><div class="item-head"><span class="badge review-next">Revisar depois</span><span class="rule">TRIVY-OTHER</span></div><h3>Revisar um registro do produtor</h3><p>O registro está no relatório e requer contexto; severidade baixa, desconhecida ou ausente não demonstra ausência de impacto.</p><h4>Próxima verificação sugerida</h4><ol><li>Conferir a classificação e a aplicabilidade no contexto do artefato. Preservar como desconhecido o que o relatório não informa.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
   &quot;facts&quot;: {
     &quot;result_index&quot;: 0,
     &quot;vulnerability_index&quot;: 1,
@@ -180,6 +229,55 @@
       &quot;role&quot;: &quot;trivy&quot;,
       &quot;artifact_sha256&quot;: &quot;ee6e571ae78669eb0a795adad03d70a3d12b1922e7a1ad93f7c028b22399a6c7&quot;,
       &quot;json_pointer&quot;: &quot;/Results/0/Vulnerabilities/1&quot;
+    }
+  ]
+}</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article><article id="review-item-ff45b0629141575ba7f1f1e1fa3c3ea30b7893ae26ba485d62fa2131bb2ee83f"><div class="item-head"><span class="badge context">Contexto</span><span class="rule">ZAP-FALSE-POSITIVE</span></div><h3>Conferir uma marcação de falso positivo</h3><p>O produtor declarou confidence 0 (False Positive); o registro permanece visível e isso não comprova segurança.</p><h4>Próxima verificação sugerida</h4><ol><li>Verificar a justificativa dessa classificação e manter ou revisar a decisão com evidências, sem descartar automaticamente o alerta.</li></ol><details><summary>Conferir fatos e origem</summary><pre>{
+  &quot;facts&quot;: {
+    &quot;site_index&quot;: 0,
+    &quot;alert_index&quot;: 1,
+    &quot;json_pointer&quot;: &quot;/site/0/alerts/1&quot;,
+    &quot;site_display&quot;: {
+      &quot;uri&quot;: &quot;https://example.test&quot;,
+      &quot;status&quot;: &quot;no-omitted-components&quot;
+    },
+    &quot;producer_fields&quot;: {
+      &quot;alert&quot;: null,
+      &quot;name&quot;: &quot;Marcação sintética de falso positivo&quot;,
+      &quot;riskdesc&quot;: &quot;Medium (False Positive)&quot;,
+      &quot;pluginid&quot;: &quot;DEMO-NOT-A-REAL-ALERT-002&quot;,
+      &quot;alertRef&quot;: null,
+      &quot;riskcode&quot;: &quot;2&quot;,
+      &quot;confidence&quot;: &quot;0&quot;,
+      &quot;count&quot;: &quot;1&quot;,
+      &quot;cweid&quot;: null,
+      &quot;wascid&quot;: null,
+      &quot;sourceid&quot;: null
+    },
+    &quot;risk_normalized&quot;: 2,
+    &quot;risk_label&quot;: &quot;Medium&quot;,
+    &quot;confidence_normalized&quot;: 0,
+    &quot;confidence_label&quot;: &quot;False Positive&quot;,
+    &quot;instances_state&quot;: &quot;array&quot;,
+    &quot;declared_count_normalized&quot;: 1,
+    &quot;instance_count_matches&quot;: true,
+    &quot;imported_instances&quot;: 1,
+    &quot;instances&quot;: [
+      {
+        &quot;instance_index&quot;: 0,
+        &quot;json_pointer&quot;: &quot;/site/0/alerts/1/instances/0&quot;,
+        &quot;method&quot;: &quot;GET&quot;,
+        &quot;uri_display&quot;: {
+          &quot;uri&quot;: &quot;https://example.test/example&quot;,
+          &quot;status&quot;: &quot;no-omitted-components&quot;
+        }
+      }
+    ]
+  },
+  &quot;references&quot;: [
+    {
+      &quot;role&quot;: &quot;zap&quot;,
+      &quot;artifact_sha256&quot;: &quot;929d19a8acb7091bd257e9aa632cba68e1bd51e4431858abe388fbbc5e84c7c2&quot;,
+      &quot;json_pointer&quot;: &quot;/site/0/alerts/1&quot;
     }
   ]
 }</pre><a href="#sources">Ver arquivos, hashes e cobertura</a></details></article></section><section id="sources"><h2>Fontes e cobertura</h2><details><summary>nmap-before</summary><pre>{
@@ -302,19 +400,56 @@
     &quot;imported_records&quot;: 2,
     &quot;scan_completion&quot;: &quot;not-established&quot;
   }
+}</pre></details><details><summary>zap</summary><pre>{
+  &quot;artifact&quot;: {
+    &quot;sha256&quot;: &quot;929d19a8acb7091bd257e9aa632cba68e1bd51e4431858abe388fbbc5e84c7c2&quot;,
+    &quot;bytes&quot;: 795,
+    &quot;format&quot;: &quot;zap-traditional-json&quot;,
+    &quot;path&quot;: &quot;tests/fixtures/zap-synthetic.json&quot;
+  },
+  &quot;analysis_run&quot;: {
+    &quot;id&quot;: &quot;zap-json-v1-929d19a8acb7091bd257e9aa632cba68e1bd51e4431858abe388fbbc5e84c7c2&quot;,
+    &quot;adapter&quot;: &quot;offline-zap-json&quot;,
+    &quot;adapter_version&quot;: &quot;1&quot;,
+    &quot;target_executed&quot;: false
+  },
+  &quot;producer&quot;: {
+    &quot;@programName&quot;: &quot;ZAP&quot;,
+    &quot;@version&quot;: &quot;synthetic-fixture&quot;,
+    &quot;@generated&quot;: &quot;Hand-authored example; no scanner executed&quot;,
+    &quot;created&quot;: null
+  },
+  &quot;coverage&quot;: {
+    &quot;status&quot;: &quot;selected-alert-fields&quot;,
+    &quot;sites_state&quot;: &quot;array&quot;,
+    &quot;sites&quot;: [
+      {
+        &quot;site_index&quot;: 0,
+        &quot;site_display&quot;: {
+          &quot;uri&quot;: &quot;https://example.test&quot;,
+          &quot;status&quot;: &quot;no-omitted-components&quot;
+        },
+        &quot;alerts_state&quot;: &quot;array&quot;,
+        &quot;alert_records&quot;: 2
+      }
+    ],
+    &quot;imported_alerts&quot;: 2,
+    &quot;scan_completion&quot;: &quot;not-established&quot;,
+    &quot;uninterpreted_sections&quot;: {}
+  }
 }</pre></details><details><summary>Avisos dos importadores</summary><pre>[
   {
     &quot;origin&quot;: &quot;nmap&quot;,
     &quot;source&quot;: &quot;comparison&quot;,
     &quot;message&quot;: &quot;Declared scan coverage/method differs or is unknown; missing observations must not be treated as closure.&quot;
   }
-]</pre></details></section><section id="limits"><h2>Como interpretar</h2><ul><li>Prioridade de revisão não é uma pontuação de risco, urgência operacional ou validação de vulnerabilidade.</li><li>A severidade Trivy e suas versões/status continuam declarações do produtor; correção ausente significa informação não declarada, não inexistência de correção.</li><li>Não há associação entre IPs Nmap e artefatos/pacotes Trivy. As evidências coexistem na fila sem correlação automática.</li><li>A fila inclui diferenças e campos selecionados, não uma auditoria integral ou garantia de segurança.</li><li>Sugestões não são executadas. Não houve consulta externa de CVEs, uso de modelo de IA ou alteração dos sistemas.</li></ul><details><summary>Regras e identidade da revisão</summary><pre>{
-  &quot;review_id&quot;: &quot;review-v1-2c0e1a3253caf0f8829c411330ba16f94771d52281780a8f2289dfbf45e9c3be&quot;,
+]</pre></details></section><section id="limits"><h2>Como interpretar</h2><ul><li>Prioridade de revisão não é uma pontuação de risco, urgência operacional ou validação de vulnerabilidade.</li><li>A severidade Trivy e suas versões/status continuam declarações do produtor; correção ausente significa informação não declarada, não inexistência de correção.</li><li>Não há associação entre IPs Nmap e artefatos/pacotes Trivy. As evidências coexistem na fila sem correlação automática.</li><li>Risco e confiança ZAP permanecem declarações separadas do produtor. Os sites ZAP não são associados automaticamente a IPs ou pacotes.</li><li>A fila inclui diferenças e campos selecionados, não uma auditoria integral ou garantia de segurança.</li><li>Sugestões não são executadas. Não houve consulta externa de CVEs, uso de modelo de IA ou alteração dos sistemas.</li></ul><details><summary>Regras e identidade da revisão</summary><pre>{
+  &quot;review_id&quot;: &quot;review-v1-de53daf7b4287d600d83f858b7109c14a3ec98e72283c37031e6cbedda4e5b0d&quot;,
   &quot;ruleset&quot;: {
     &quot;id&quot;: &quot;evidence-review&quot;,
-    &quot;version&quot;: &quot;1&quot;,
-    &quot;sha256&quot;: &quot;f791014206fc32eb84bea40a898d6b7210ce672138cb1fa870aac7616cfbe6de&quot;,
+    &quot;version&quot;: &quot;2&quot;,
+    &quot;sha256&quot;: &quot;2ec0bd3da7b71ff7b7324d698f63eb2cd39570db73e8ab6d84698f3faf79341f&quot;,
     &quot;mechanism&quot;: &quot;deterministic-rules&quot;,
     &quot;model_calls&quot;: 0
   }
-}</pre></details></section><footer>Relatório offline. Nenhuma sugestão é executada automaticamente. review-v1-2c0e1a3253caf0f8829c411330ba16f94771d52281780a8f2289dfbf45e9c3be</footer></main></body></html>
+}</pre></details></section><footer>Relatório offline. Nenhuma sugestão é executada automaticamente. review-v1-de53daf7b4287d600d83f858b7109c14a3ec98e72283c37031e6cbedda4e5b0d</footer></main></body></html>

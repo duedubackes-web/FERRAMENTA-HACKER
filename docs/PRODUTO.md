@@ -53,3 +53,10 @@ A aplicação não atribui pontuações de risco nem declara vulnerabilidades a 
 O fluxo Nmap/Trivy já produz uma fila de verificações sugeridas. A diferença prática é tornar explícito por que um item pede atenção e quais fatos sustentam esse pedido.
 Esta inteligência é baseada em regras versionadas, não em respostas de um modelo. A fila dá visibilidade às lacunas de evidência antes das interpretações da mesma prioridade.
 A prioridade não substitui risco de negócio ou revisão de aplicabilidade. A utilidade dessa ordem ainda precisa ser medida em tarefas reais com analistas.
+
+
+## Alertas web e revisão contextual
+
+A ferramenta passa a reunir três produtores na mesma fila: rede (Nmap), componentes (Trivy) e alertas web (ZAP), com contratos distintos e sem inventar correspondências entre ativos.
+O avanço prático é mostrar risco e confiança separadamente, manter falsos positivos visíveis e reduzir a propagação de mensagens/payloads em relatórios derivados.
+A classificação ainda é do produtor e a prioridade apenas organiza revisão humana. A validade dessas decisões em tarefas reais continua sendo objeto de avaliação.

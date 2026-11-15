@@ -1,0 +1,22 @@
+{
+  "@programName": "ZAP",
+  "@version": "synthetic-fixture",
+  "@generated": "Hand-authored example; no scanner executed",
+  "site": [{
+    "@name": "https://example.test",
+    "alerts": [
+      {
+        "pluginid": "DEMO-NOT-A-REAL-ALERT-001",
+        "name": "Alerta sintético de risco alto declarado",
+        "riskcode": "3", "confidence": "2", "riskdesc": "High (Medium)", "count": "1",
+        "instances": [{"uri": "https://example.test/demo", "method": "GET"}]
+      },
+      {
+        "pluginid": "DEMO-NOT-A-REAL-ALERT-002",
+        "name": "Marcação sintética de falso positivo",
+        "riskcode": "2", "confidence": "0", "riskdesc": "Medium (False Positive)", "count": "1",
+        "instances": [{"uri": "https://example.test/example", "method": "GET"}]
+      }
+    ]
+  }]
+}

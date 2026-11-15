@@ -6,13 +6,13 @@ O comando `review` transforma relatórios locais em uma fila de verificações s
 
 ```sh
 mkdir -p work
-python scripts/workbench.py review --before tests/fixtures/nmap-synthetic.xml --after tests/fixtures/nmap-synthetic-after.xml --trivy tests/fixtures/trivy-synthetic.json --output work/review.json --html work/review.html
+python scripts/workbench.py review --before tests/fixtures/nmap-synthetic.xml --after tests/fixtures/nmap-synthetic-after.xml --trivy tests/fixtures/trivy-synthetic.json --zap tests/fixtures/zap-synthetic.json --output work/review.json --html work/review.html
 ```
 
 Abra o HTML gerado. O exemplo pronto `examples/review-plan.html` contém os mesmos dados sintéticos e declara que não houve coleta de rede.
-O exemplo tem seis itens: três em “Revisar primeiro” e três em “Revisar depois”. As duas entradas Trivy têm identificadores DEMO, que não correspondem a CVEs reais.
+O exemplo tem oito itens: quatro em “Revisar primeiro”, três em “Revisar depois” e um em “Contexto”. As duas entradas Trivy têm identificadores DEMO, que não correspondem a CVEs reais.
 
-Para trabalhar com relatórios próprios, substitua os caminhos. É possível fornecer apenas `--trivy` ou somente o par `--before`/`--after`; um par Nmap incompleto é recusado.
+Para trabalhar com relatórios próprios, substitua os caminhos. É possível fornecer `--trivy`, `--zap` e/ou o par `--before`/`--after`; um par Nmap incompleto é recusado.
 Sem `--output`, o JSON é escrito na saída padrão. Os diretórios de destino precisam existir, os destinos JSON/HTML devem ser distintos e nenhum arquivo existente é sobrescrito.
 
 ## O que cada item explica
@@ -25,7 +25,7 @@ Sem `--output`, o JSON é escrito na saída padrão. Os diretórios de destino p
 “Revisar primeiro”, “Revisar depois” e “Contexto” organizam o trabalho humano. Não são severidades, escores de risco, SLAs ou confirmação de vulnerabilidade.
 A severidade Trivy permanece um campo separado, atribuído ao produtor. Valores desconhecidos continuam desconhecidos.
 
-## Regras v1
+## Regras Nmap/Trivy no conjunto v2
 
 | Regra | Condição | Prioridade |
 |---|---|---|
@@ -58,8 +58,8 @@ Valores de `Secrets`, configurações, licenças e outras categorias não são e
 ## Proveniência e limites
 
 Os hashes identificam os bytes recebidos, não autenticam o produtor nem atestam a veracidade de um relatório. Os JSONs originais devem ser preservados para conferência.
-O ID da revisão considera hashes de entrada, versões dos importadores/comparador e a versão e fingerprint das regras. Os IDs dos itens também distinguem fatos diferentes sobre a mesma porta.
-Nenhuma associação é feita entre IPs Nmap e artefatos/pacotes Trivy. A ferramenta não transforma coocorrência de relatórios em correlação entre ativos.
+O ID da revisão considera hashes de entrada, versões dos importadores/comparador e a versão e fingerprint das regras. Os IDs dos itens também distinguem fatos diferentes sobre a mesma porta. A versão atual do conjunto é 2, incluindo regras ZAP; por isso as identidades diferem das revisões históricas v1 mesmo com os mesmos relatórios anteriores.
+Nenhuma associação é feita entre IPs Nmap, artefatos/pacotes Trivy e sites ZAP. A ferramenta não transforma coocorrência de relatórios em correlação entre ativos.
 
 O HTML usa dados escapados, navegação interna e nenhum recurso remoto. As sugestões são texto e não são executadas. Os resultados podem conter nomes, caminhos e dados selecionados dos arquivos fornecidos; escolha onde salvá-los e compartilhá-los.
 Uma fila vazia não comprova segurança. Esta é uma revisão de campos selecionados, não uma auditoria integral ou uma determinação de explorabilidade.
@@ -72,3 +72,7 @@ O HTML sintético foi renderizado em Chromium a 1.365×980 e 375×812, com detal
 O QA usou `setContent`, pois o ambiente restringe a navegação por URL file:. Isso não comprova abertura por arquivo em todas as políticas de navegador.
 
 A utilidade da ordem sugerida em ambientes reais e sua comparação com o julgamento de analistas ainda precisam ser avaliadas com usuários.
+
+## Expansão ZAP
+
+As seis regras adicionais, o contrato de alertas e a minimização de mensagens/URIs estão documentados em `IMPORTAR-ZAP.md`. O motor continua determinístico, sem modelo de linguagem e sem executar sugestões.

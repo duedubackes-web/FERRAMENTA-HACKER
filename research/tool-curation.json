@@ -204,11 +204,19 @@
       "categories": [
         "web-testing"
       ],
-      "purpose": "Proxy e plataforma extensível de avaliação de aplicações web.",
+      "purpose": "Proxy e plataforma extensível de avaliação web. A base importa campos de Traditional JSON/JSON Plus para revisão offline.",
       "repository": "zaproxy/zaproxy",
       "source_ids": [
         "zaproxy"
-      ]
+      ],
+      "project_integration": {
+        "status": "offline-report-adapter",
+        "commands": [
+          "import-zap",
+          "review --zap"
+        ],
+        "engine_executed": false
+      }
     },
     {
       "id": "nuclei",

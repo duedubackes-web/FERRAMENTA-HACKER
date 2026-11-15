@@ -86,3 +86,11 @@ A pesquisa Gemini diferencia a observação pública do app dos componentes aber
 As regras pertencem a uma tabela identificada por versão e SHA-256. A identidade da revisão inclui artefatos e versões; fatos distintos da mesma fonte têm itens distintos.
 `review_html` apresenta o resultado e sua cobertura, sem reinterpretar a severidade ou buscar recursos externos. O JSON e o HTML acompanham o mesmo resultado estruturado.
 A função JSON de gravação existente é reutilizada e os destinos são conferidos antes da escrita. Os dados reais do usuário não são adicionados ao repositório pelos comandos.
+
+
+## Terceiro produtor e validação comum
+
+`zap_report` é o dono da interpretação dos códigos de risco/confiança, do tratamento estrutural de URIs e das contagens de instâncias selecionadas.
+`json_reports` centraliza limite de bytes, decodificação UTF-8, rejeição de chaves duplicadas e validação textual compartilhada com Trivy. As regras específicas de cada formato ficam nos respectivos adaptadores.
+A fila consome os fatos normalizados sem analisar riskdesc para decidir classificações. Regras v2 mantêm as evidências ZAP independentes de Nmap/Trivy e registram cobertura/diagnósticos sem executar ou republicar mensagens.
+A API `build_review` aceita o novo produtor opcional; o esquema de saída permanece 1 e as versões/fingerprints distinguem as novas revisões.

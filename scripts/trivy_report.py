@@ -1,7 +1,8 @@
 """Original offline reader for the selected vulnerability fields of Trivy JSON v2."""
 import hashlib
-import json
 from pathlib import Path
+
+from json_reports import decode_object, optional_text as _text
 
 VERSION = '1'
 MAX_BYTES = 32 * 1024 * 1024
@@ -9,33 +10,8 @@ KNOWN_SEVERITIES = {'UNKNOWN', 'LOW', 'MEDIUM', 'HIGH', 'CRITICAL'}
 FIELDS = ('VulnerabilityID', 'PkgID', 'PkgName', 'PkgPath', 'InstalledVersion', 'FixedVersion', 'Status', 'Severity', 'SeveritySource', 'Title', 'PrimaryURL')
 
 
-def _object(pairs):
-    result = {}
-    for key, value in pairs:
-        if key in result:
-            raise ValueError(f'Duplicate JSON key: {key}')
-        result[key] = value
-    return result
-
-
-def _text(record, key, context):
-    value = record.get(key)
-    if value is not None and not isinstance(value, str):
-        raise ValueError(f'{context}.{key} must be a string or null')
-    return value
-
-
-def _invalid_number(value):
-    raise ValueError(f'Invalid JSON number: {value}')
-
-
 def parse_json(data: bytes, path: str) -> dict:
-    if len(data) > MAX_BYTES:
-        raise ValueError('Trivy JSON exceeds the 32 MiB input limit')
-    try:
-        raw = json.loads(data.decode('utf-8-sig'), object_pairs_hook=_object, parse_constant=_invalid_number)
-    except (UnicodeDecodeError, json.JSONDecodeError, RecursionError) as error:
-        raise ValueError(f'Invalid UTF-8 Trivy JSON: {error}') from error
+    raw = decode_object(data, 'Trivy JSON', MAX_BYTES)
     if not isinstance(raw, dict) or type(raw.get('SchemaVersion')) is not int or raw['SchemaVersion'] != 2:
         raise ValueError('Expected a Trivy JSON object with SchemaVersion 2')
     producer = raw.get('Trivy')

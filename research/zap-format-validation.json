@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "repository": "zaproxy/zap-extensions",
+  "commit": "ae4990c06cc5ac7d03ce05716a399755b7065e29",
+  "subtree": "ba1c6a92ddfd15c3aeb597ad6d81fc895dcbd185",
+  "documentation_url": "https://www.zaproxy.org/docs/desktop/addons/report-generation/report-traditional-json/",
+  "documentation_direct_get": "HTTP 403; first-party help and templates consulted through GitHub",
+  "core_risk_confidence_reference": "https://github.com/zaproxy/zaproxy/blob/17c25b45ad0f79631ae8d611a6fa647275aa131b/zap/src/main/java/org/parosproxy/paros/core/scanner/Alert.java#L175",
+  "records": [
+    {
+      "path": "addOns/reports/src/main/zapHomeFiles/reports/traditional-json/report.json",
+      "blob_sha": "bce9bef92c01f76bb9013b1d24cb613f603348a3",
+      "local": "report-template.json",
+      "url": "https://github.com/zaproxy/zap-extensions/blob/ae4990c06cc5ac7d03ce05716a399755b7065e29/addOns/reports/src/main/zapHomeFiles/reports/traditional-json/report.json",
+      "sha256": "453576efa1a2f2186f32cf6b8b3acd2fc58c0d45b4eb831dcb989388b557a6b4",
+      "bytes": 5739,
+      "git_blob_verified": true,
+      "status": "template-read-as-inert-format-reference"
+    },
+    {
+      "path": "addOns/reports/src/test/resources/org/zaproxy/addon/reports/resources/basic-traditional-json-plus.json",
+      "blob_sha": "b5f1ec815de53d706fca5b84fada43218d43f151",
+      "local": "basic-traditional-json-plus.json",
+      "url": "https://github.com/zaproxy/zap-extensions/blob/ae4990c06cc5ac7d03ce05716a399755b7065e29/addOns/reports/src/test/resources/org/zaproxy/addon/reports/resources/basic-traditional-json-plus.json",
+      "sha256": "f67f59302ea808919530aded2f08ccc5b0ecbbb1ecb39c1ee6e4f4f2fb6d56c6",
+      "bytes": 3366,
+      "git_blob_verified": true,
+      "status": "imported",
+      "alerts": 1,
+      "instances": 2,
+      "warnings": 1,
+      "method": "Read official expected-output fixture with our adapter; no ZAP code or sample URI executed"
+    },
+    {
+      "path": "addOns/reports/src/test/resources/org/zaproxy/addon/reports/resources/basic-traditional-json.json",
+      "blob_sha": "26aa6b3385fa92b1d15db3ad537abad5d913ba97",
+      "local": "basic-traditional-json.json",
+      "url": "https://github.com/zaproxy/zap-extensions/blob/ae4990c06cc5ac7d03ce05716a399755b7065e29/addOns/reports/src/test/resources/org/zaproxy/addon/reports/resources/basic-traditional-json.json",
+      "sha256": "d05d5e466cebdb791ad0c25d58dde92d6e79ed5a1b27d44bf889ec0b8172b995",
+      "bytes": 1389,
+      "git_blob_verified": true,
+      "status": "imported",
+      "alerts": 1,
+      "instances": 2,
+      "warnings": 0,
+      "method": "Read official expected-output fixture with our adapter; no ZAP code or sample URI executed"
+    }
+  ],
+  "scope": "Selected reference files, not an additional full indexed source tree or ZAP runtime test"
+}

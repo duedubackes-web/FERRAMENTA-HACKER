@@ -27,6 +27,7 @@
 - [ ] P05: verificar corpus sintético ponta a ponta e medir tarefas completas.
 - [ ] P06: conduzir entrevistas e decidir continuidade pelo resultado observado.
 - [x] P07 (Nmap/Trivy v1): importar JSON Trivy local e produzir uma fila de revisão explicável, combinando evidências com a comparação Nmap, sem inferir correspondência entre IP e artefato.
+- [x] P08 (campos selecionados v1): importar ZAP Traditional JSON/JSON Plus local, preservar risco/confiança do produtor e omitir mensagens HTTP, payloads e componentes sensíveis de URI na exportação.
 
 ## Antes de distribuir um produto
 
@@ -103,3 +104,15 @@ Use `.github/ISSUE_TEMPLATE/work-item.yml` para converter cada item em uma taref
 - [ ] Avaliar com analistas tarefas completas e a utilidade da ordem de revisão sugerida.
 - [ ] Definir mapeamento explícito e verificável de ativos antes de qualquer correlação entre diferentes produtores.
 - [ ] Ampliar formatos/categorias selecionados mantendo as limitações e minimização de dados necessárias.
+
+
+## Alertas web e contratos de entrada — 15/11/2026
+
+- [x] Consultar template/fixtures oficiais ZAP, fixando commit e hashes sem clonar todo o add-on.
+- [x] Importar Traditional JSON/JSON Plus com risco e confiança independentes, desconhecidos e contagens preservados.
+- [x] Omitir mensagens HTTP/payloads e componentes estruturais de URI sem prometer anonimização completa.
+- [x] Integrar ZAP à fila, preservando falsos positivos em contexto e lacunas como questões de evidência.
+- [x] Centralizar a decodificação JSON comum a Trivy/ZAP, mantendo validação por adaptador.
+- [x] Versionar regras v2, regenerar a demonstração de três produtores e testar CLI/HTML.
+- [ ] Ampliar corpus de relatórios de versões/configurações ZAP e validar decisões de revisão com analistas.
+- [ ] Avaliar persistência de decisões humanas e comparação entre revisões sem perder referências de origem.
