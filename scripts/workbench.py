@@ -93,6 +93,10 @@ def main(argv=None) -> int:
     review.add_argument('--zap', type=Path, help='ZAP Traditional JSON / JSON Plus input')
     review.add_argument('--output', type=Path, help='Create review JSON')
     review.add_argument('--html', type=Path, help='Create offline review HTML')
+    replay = commands.add_parser('replay-review', help='Rebuild a review from explicit local sources and detect changes')
+    replay.add_argument('path', type=Path, help='Saved review JSON')
+    replay.add_argument('--source', action='append', default=[], metavar='ROLE=PATH')
+    replay.add_argument('--output', type=Path, help='Create replay result JSON; refuses overwrite')
     args = parser.parse_args(argv)
     try:
         if args.command == 'verify':
@@ -158,6 +162,17 @@ def main(argv=None) -> int:
                 print(f'Imported {len(report["findings"])} producer alerts into {args.output}')
             else:
                 print(json.dumps(report, ensure_ascii=False, indent=2))
+        elif args.command == 'replay-review':
+            from review_replay import read_review, source_arguments, replay_review
+            from nmap_report import save_report
+            from nmap_compare import validate_destinations
+            validate_destinations([args.output] if args.output else [])
+            result = replay_review(read_review(args.path), source_arguments(args.source))
+            if args.output:
+                save_report(result, args.output)
+            else:
+                print(json.dumps(result, ensure_ascii=False, indent=2))
+            return 0 if result['status'] == 'matched' else 1
         elif args.command == 'review':
             from nmap_report import import_report as import_nmap, save_report
             from nmap_compare import compare_reports, validate_destinations

@@ -64,3 +64,7 @@
 - Nenhum payload ou site das fixtures foi executado/acessado. A leitura de arquivos não é uma execução do scanner ou da suíte ZAP.
 - O exemplo HTML de oito itens foi renderizado em desktop/celular, com detalhes e navegação de fontes funcionando, sem transbordamento ou requisições de rede; o hash do exemplo foi registrado no QA.
 - O compartilhamento da decodificação JSON preservou o comportamento dos testes existentes de Trivy. O conjunto de regras passou a v2; o esquema de saída continua 1.
+
+## Reprodução determinística
+
+A suíte agora reúne 78 testes, incluindo oito testes da reprodução verificável. Foram verificadas alterações de prioridade, fatos, referências, resumo, identificador e campos adicionais; também fontes modificadas, caminhos movidos, regras indisponíveis e preservação de saídas existentes. O mecanismo verifica consistência com fontes explícitas e regras instaladas; não estabelece autenticidade.

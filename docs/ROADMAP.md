@@ -116,3 +116,11 @@ Use `.github/ISSUE_TEMPLATE/work-item.yml` para converter cada item em uma taref
 - [x] Versionar regras v2, regenerar a demonstração de três produtores e testar CLI/HTML.
 - [ ] Ampliar corpus de relatórios de versões/configurações ZAP e validar decisões de revisão com analistas.
 - [ ] Avaliar persistência de decisões humanas e comparação entre revisões sem perder referências de origem.
+
+## Reprodução de evidências — 15/11/2026
+
+- [x] Reconstruir revisões com papéis de origem explícitos, hash por fonte e regras exatas.
+- [x] Comparar conteúdo completo, permitindo apenas mudança de localização das fontes.
+- [x] Detectar fontes divergentes e revisões inconsistentes sem executar conteúdo coletado.
+- [x] Testar reprodução conjunta Nmap/Trivy/ZAP e códigos de saída para automação.
+- [ ] Avaliar assinatura independente e empacotamento de evidências antes de afirmar autenticidade.

@@ -122,3 +122,7 @@ Os catálogos derivados podem ser regenerados offline com `python scripts/build_
 `import-zap` lê campos selecionados de Traditional JSON/JSON Plus e `review --zap` incorpora esses alertas à fila. Risco e confiança do produtor ficam separados; falsos positivos permanecem visíveis em contexto.
 Mensagens HTTP, payloads e conteúdo de diagnósticos não são exportados. URIs selecionadas omitem userinfo, query e fragmento; isso não é anonimização completa.
 Os contratos foram estudados em referências oficiais fixadas por commit e validados com saídas esperadas, sem executar ZAP. Veja `research/zap-format-validation.json`.
+
+### Conferir uma revisão recebida
+
+O novo `replay-review` reconstrói a fila a partir de fontes locais explícitas e detecta diferenças nas fontes ou no conteúdo da revisão. Permite mover os arquivos sem confiar nos caminhos embutidos. Veja [reprodução verificável](docs/REPRODUZIR-REVISAO.md), incluindo estados, códigos de saída e limites de confiança.
