@@ -68,6 +68,11 @@ def main(argv=None) -> int:
     nmap = commands.add_parser('import-nmap', help='Import an existing local Nmap XML report without running Nmap')
     nmap.add_argument('path', type=Path)
     nmap.add_argument('--output', type=Path, help='Write a new JSON file; refuses to overwrite')
+    compare = commands.add_parser('compare-nmap', help='Compare two local XML reports; preserve missing/ambiguous evidence')
+    compare.add_argument('before', type=Path)
+    compare.add_argument('after', type=Path)
+    compare.add_argument('--output', type=Path, help='Create a comparison JSON file')
+    compare.add_argument('--html', type=Path, help='Create an offline HTML report')
     args = parser.parse_args(argv)
     try:
         if args.command == 'verify':
@@ -93,6 +98,20 @@ def main(argv=None) -> int:
                 print(f'Imported {len(report["hosts"])} hosts into {args.output}')
             else:
                 print(json.dumps(report, ensure_ascii=False, indent=2))
+        elif args.command == 'compare-nmap':
+            from nmap_report import import_report, save_report
+            from nmap_compare import compare_reports, render_html, validate_destinations
+            validate_destinations([p for p in [args.output, args.html] if p is not None])
+            report = compare_reports(import_report(args.before), import_report(args.after))
+            if args.output:
+                save_report(report, args.output)
+            else:
+                print(json.dumps(report, ensure_ascii=False, indent=2))
+            if args.html:
+                with args.html.open('x', encoding='utf-8') as stream:
+                    stream.write(render_html(report))
+            if args.output:
+                print(f'Compared {report["summary"]["matched_hosts"]} host pairs; {report["summary"]["changes"]} recorded differences')
         else:
             count = 0
             for row in inventory(ROOT, args.source):

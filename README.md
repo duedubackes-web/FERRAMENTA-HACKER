@@ -6,7 +6,7 @@ Repositório: https://github.com/duedubackes-web/FERRAMENTA-HACKER
 
 Base preparada a partir de fontes públicas para estudar composição de ferramentas,
 análise de tráfego e arquitetura de módulos, e projetar um produto próprio com evidências rastreáveis.
-Este repositório contém pesquisa, inventário reproduzível e uma CLI offline de consulta e importação de relatórios Nmap.
+Este repositório contém pesquisa, inventário reproduzível e uma CLI offline para consultar, importar e comparar relatórios Nmap, com exportação JSON e HTML.
 Não contém uma distribuição nova, um substituto do Wireshark ou uma implementação nova do Hydra.
 
 ## Começar
@@ -19,6 +19,7 @@ python scripts/workbench.py summary
 python scripts/workbench.py sources
 python scripts/workbench.py find wireshark epan/epan.c
 python scripts/workbench.py import-nmap tests/fixtures/nmap-synthetic.xml
+python scripts/workbench.py compare-nmap tests/fixtures/nmap-synthetic.xml tests/fixtures/nmap-synthetic-after.xml
 python -m unittest discover -s tests -v
 ```
 
@@ -40,7 +41,9 @@ O material foi indexado integralmente nesse recorte; a revisão semântica foi s
 
 - `docs/RELATORIO.md`: primeira rodada, evidências e limites.
 - `docs/NMAP-SQLMAP.md`: expansão Nmap/sqlmap, resultados e decisões.
-- `docs/IMPORTAR-NMAP.md`: usar a nova importação offline e entender seu contrato.
+- `docs/IMPORTAR-NMAP.md`: usar a importação offline e entender seu contrato.
+- `docs/COMPARAR-NMAP.md`: comparar observações, entender lacunas e gerar relatórios HTML.
+- `examples/nmap-comparison.html`: demonstração pronta com dados sintéticos.
 - `docs/ARQUITETURA.md`: composição atual e proposta de produto.
 - `docs/PRODUTO.md`: hipótese, MVP, critérios e diferenciação a validar.
 - `docs/FERRAMENTAS.md`: aplicação efetiva de REA e Craft Anything.
@@ -60,7 +63,7 @@ Instalações de ferramentas e comandos executados nesta pesquisa estão documen
 
 ## Estado
 
-Pesquisa estática ampliada, importador offline XML Nmap e base de desenvolvimento disponíveis. O corpus atual tem 22.867 entradas rastreadas em oito repositórios. Engenharia reversa dinâmica,
+Pesquisa estática ampliada, importação e comparação offline de XML Nmap e relatórios JSON/HTML disponíveis. O corpus atual tem 22.867 entradas rastreadas em oito repositórios. Engenharia reversa dinâmica,
 decompilação nativa, revisão completa dos pacotes Kali, testes dos produtos originais e novo produto são trabalho futuro.
 Nenhum teste de intrusão, tentativa de autenticação ou captura de rede de terceiros foi realizado.
 

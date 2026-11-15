@@ -1,0 +1,12 @@
+{
+  "method": "Playwright setContent; file-scheme navigation blocked by browser policy",
+  "browser": "156.0.8078.79",
+  "viewports": [
+    "1365x980",
+    "375x812"
+  ],
+  "pageOverflow": false,
+  "evidenceDetails": "passed",
+  "provenanceNavigation": "passed",
+  "networkRequests": 0
+}

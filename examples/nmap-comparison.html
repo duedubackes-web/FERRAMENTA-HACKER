@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>FERRAMENTA-HACKER · comparação de evidências</title>
+<style>
+:root{color-scheme:dark;--bg:#0c1422;--panel:#152238;--line:#34465f;--text:#edf4ff;--muted:#b6c8df;--accent:#72e2cf}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,sans-serif}main{max-width:1200px;margin:auto;padding:36px 24px}header{border-bottom:1px solid var(--line);padding-bottom:24px}.eyebrow{color:var(--accent);letter-spacing:.12em;font-size:.8rem}h1{font-size:clamp(1.8rem,5vw,3rem);line-height:1.15;margin:.6em 0}h2{margin-top:2em}p,li{max-width:90ch}.muted{color:var(--muted)}nav{display:flex;gap:20px;flex-wrap:wrap;margin-top:24px}a{color:var(--accent)}a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:28px 0}article,details,.notice{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px}article strong{display:block;font-size:2.2rem;color:var(--accent)}article span{color:var(--muted)}details{margin:12px 0;min-width:0}summary{cursor:pointer;font-weight:600}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.8rem;color:var(--muted);max-height:32rem;overflow:auto}table{border-collapse:collapse;width:100%;min-width:620px}caption{text-align:left;padding:12px 0;font-weight:600}th,td{text-align:left;vertical-align:top;padding:14px;border-bottom:1px solid var(--line);overflow-wrap:anywhere}td:first-child{min-width:160px}th{color:var(--muted)}td details{margin:0;max-width:540px}.table-wrap{overflow-x:auto}.scope{border-left:4px solid var(--accent);padding:12px 18px;background:var(--panel)}footer{overflow-wrap:anywhere;margin-top:40px;border-top:1px solid var(--line);padding-top:18px;font-size:.85rem;color:var(--muted)}@media print{body{background:white;color:black}main{padding:0}details,article,.scope{background:white}pre,.muted,article span,footer,th{color:#333}a{color:#005c50}.table-wrap{overflow:visible}table{min-width:0}pre{max-height:none}}
+</style></head><body><main>
+<header><div class="eyebrow">FERRAMENTA-HACKER / EVIDÊNCIAS OFFLINE</div><h1>O que mudou nos registros?</h1>
+<p class="muted">Compare o que foi observado, confira a cobertura e siga cada diferença até seus arquivos de origem.</p><p class="notice">Demonstração com XMLs sintéticos do repositório. Nenhuma coleta de rede foi realizada.</p>
+<nav aria-label="Seções do relatório"><a href="#overview">Visão geral</a><a href="#changes">Diferenças</a><a href="#questions">Questões abertas</a><a href="#sources">Proveniência</a></nav></header>
+<section id="overview"><h2>Visão geral</h2><div class="cards"><article><strong>1</strong><span>Hosts pareados por IP</span></article><article><strong>3</strong><span>Diferenças registradas</span></article><article><strong>0</strong><span>Questões de evidência</span></article></div><p class="scope">Comparação da cobertura: <strong>escopos declarados diferentes</strong>. Ausência de registro não significa porta fechada ou ativo removido.</p><ul><li>Comparação: Cobertura ou método declarados diferem ou são desconhecidos. A ausência de observações não indica fechamento.</li></ul></section>
+<section id="changes"><h2>Diferenças observadas</h2><div class="table-wrap"><table><caption>Diferenças entre observações</caption><thead><tr><th scope="col">Ativo / porta</th><th scope="col">Diferença</th><th scope="col">Evidência</th></tr></thead><tbody><tr id="change-1"><td>192.0.2.10, 2001:db8::10 · tcp/22</td><td>Estado registrado mudou</td><td><details><summary>Ver antes, depois e origem</summary><pre>{
+  &quot;before&quot;: &quot;closed&quot;,
+  &quot;after&quot;: &quot;open&quot;,
+  &quot;references&quot;: [
+    {
+      &quot;source&quot;: &quot;before&quot;,
+      &quot;artifact_sha256&quot;: &quot;283d81546f428d10dd026f2aa9910e42043e1f169e2867c790dba0d45a7ebc68&quot;,
+      &quot;host_index&quot;: 0,
+      &quot;port_index&quot;: 0
+    },
+    {
+      &quot;source&quot;: &quot;after&quot;,
+      &quot;artifact_sha256&quot;: &quot;8fb22d4a260aef3012acd78fa6d5b8fceb7be9032e5b293c2813a780346421cd&quot;,
+      &quot;host_index&quot;: 0,
+      &quot;port_index&quot;: 0
+    }
+  ]
+}</pre><a href="#sources">Conferir arquivos e hashes</a></details></td></tr><tr id="change-2"><td>192.0.2.10, 2001:db8::10 · tcp/443</td><td>Detecção de serviço mudou</td><td><details><summary>Ver antes, depois e origem</summary><pre>{
+  &quot;before&quot;: {
+    &quot;name&quot;: &quot;https&quot;,
+    &quot;method&quot;: &quot;table&quot;,
+    &quot;conf&quot;: &quot;3&quot;
+  },
+  &quot;after&quot;: {
+    &quot;name&quot;: &quot;https&quot;,
+    &quot;method&quot;: &quot;probed&quot;,
+    &quot;conf&quot;: &quot;10&quot;,
+    &quot;product&quot;: &quot;Synthetic demo service&quot;
+  },
+  &quot;references&quot;: [
+    {
+      &quot;source&quot;: &quot;before&quot;,
+      &quot;artifact_sha256&quot;: &quot;283d81546f428d10dd026f2aa9910e42043e1f169e2867c790dba0d45a7ebc68&quot;,
+      &quot;host_index&quot;: 0,
+      &quot;port_index&quot;: 1
+    },
+    {
+      &quot;source&quot;: &quot;after&quot;,
+      &quot;artifact_sha256&quot;: &quot;8fb22d4a260aef3012acd78fa6d5b8fceb7be9032e5b293c2813a780346421cd&quot;,
+      &quot;host_index&quot;: 0,
+      &quot;port_index&quot;: 1
+    }
+  ]
+}</pre><a href="#sources">Conferir arquivos e hashes</a></details></td></tr><tr id="change-3"><td>192.0.2.10, 2001:db8::10 · tcp/8443</td><td>Porta registrada apenas no relatório atual</td><td><details><summary>Ver antes, depois e origem</summary><pre>{
+  &quot;before&quot;: null,
+  &quot;after&quot;: {
+    &quot;protocol&quot;: &quot;tcp&quot;,
+    &quot;port&quot;: 8443,
+    &quot;state&quot;: {
+      &quot;state&quot;: &quot;open&quot;,
+      &quot;reason&quot;: &quot;synthetic&quot;
+    },
+    &quot;service&quot;: null
+  },
+  &quot;references&quot;: [
+    {
+      &quot;source&quot;: &quot;after&quot;,
+      &quot;artifact_sha256&quot;: &quot;8fb22d4a260aef3012acd78fa6d5b8fceb7be9032e5b293c2813a780346421cd&quot;,
+      &quot;host_index&quot;: 0,
+      &quot;port_index&quot;: 2
+    }
+  ],
+  &quot;other_declared_scope&quot;: &quot;not_declared&quot;
+}</pre><a href="#sources">Conferir arquivos e hashes</a></details></td></tr></tbody></table></div></section>
+<section id="questions"><h2>Questões de evidência</h2><p>Nenhuma ambiguidade de pareamento ou timeout foi identificada nos campos examinados.</p></section>
+<section id="sources"><h2>Proveniência e cobertura</h2><p>Os índices de referência começam em zero e apontam para os registros das importações normalizadas. Os hashes identificam os XMLs originais.</p><details open><summary>Relatório anterior</summary><pre>{
+  &quot;artifact&quot;: {
+    &quot;sha256&quot;: &quot;283d81546f428d10dd026f2aa9910e42043e1f169e2867c790dba0d45a7ebc68&quot;,
+    &quot;bytes&quot;: 1000,
+    &quot;format&quot;: &quot;nmap-xml&quot;,
+    &quot;path&quot;: &quot;tests/fixtures/nmap-synthetic.xml&quot;
+  },
+  &quot;analysis_run&quot;: {
+    &quot;id&quot;: &quot;nmap-xml-v1-283d81546f428d10dd026f2aa9910e42043e1f169e2867c790dba0d45a7ebc68&quot;,
+    &quot;adapter&quot;: &quot;offline-nmap-xml&quot;,
+    &quot;adapter_version&quot;: &quot;1&quot;,
+    &quot;mode&quot;: &quot;offline-import&quot;,
+    &quot;target_executed&quot;: false
+  },
+  &quot;producer&quot;: {
+    &quot;scanner&quot;: &quot;nmap&quot;,
+    &quot;version&quot;: &quot;synthetic-fixture&quot;,
+    &quot;start&quot;: &quot;0&quot;,
+    &quot;xmloutputversion&quot;: &quot;1.05&quot;,
+    &quot;finished&quot;: {
+      &quot;time&quot;: &quot;0&quot;,
+      &quot;exit&quot;: &quot;success&quot;
+    }
+  },
+  &quot;coverage&quot;: {
+    &quot;status&quot;: &quot;selected-fields&quot;,
+    &quot;scaninfo&quot;: [
+      {
+        &quot;type&quot;: &quot;connect&quot;,
+        &quot;protocol&quot;: &quot;tcp&quot;,
+        &quot;numservices&quot;: &quot;3&quot;,
+        &quot;services&quot;: &quot;22,443,8080&quot;
+      }
+    ],
+    &quot;reported_hosts&quot;: {
+      &quot;up&quot;: &quot;1&quot;,
+      &quot;down&quot;: &quot;0&quot;,
+      &quot;total&quot;: &quot;1&quot;
+    },
+    &quot;imported_hosts&quot;: 1,
+    &quot;omitted_script_results&quot;: 0
+  }
+}</pre></details><details open><summary>Relatório atual</summary><pre>{
+  &quot;artifact&quot;: {
+    &quot;sha256&quot;: &quot;8fb22d4a260aef3012acd78fa6d5b8fceb7be9032e5b293c2813a780346421cd&quot;,
+    &quot;bytes&quot;: 1011,
+    &quot;format&quot;: &quot;nmap-xml&quot;,
+    &quot;path&quot;: &quot;tests/fixtures/nmap-synthetic-after.xml&quot;
+  },
+  &quot;analysis_run&quot;: {
+    &quot;id&quot;: &quot;nmap-xml-v1-8fb22d4a260aef3012acd78fa6d5b8fceb7be9032e5b293c2813a780346421cd&quot;,
+    &quot;adapter&quot;: &quot;offline-nmap-xml&quot;,
+    &quot;adapter_version&quot;: &quot;1&quot;,
+    &quot;mode&quot;: &quot;offline-import&quot;,
+    &quot;target_executed&quot;: false
+  },
+  &quot;producer&quot;: {
+    &quot;scanner&quot;: &quot;nmap&quot;,
+    &quot;version&quot;: &quot;synthetic-fixture&quot;,
+    &quot;start&quot;: &quot;1&quot;,
+    &quot;xmloutputversion&quot;: &quot;1.05&quot;,
+    &quot;finished&quot;: {
+      &quot;time&quot;: &quot;1&quot;,
+      &quot;exit&quot;: &quot;success&quot;
+    }
+  },
+  &quot;coverage&quot;: {
+    &quot;status&quot;: &quot;selected-fields&quot;,
+    &quot;scaninfo&quot;: [
+      {
+        &quot;type&quot;: &quot;connect&quot;,
+        &quot;protocol&quot;: &quot;tcp&quot;,
+        &quot;numservices&quot;: &quot;3&quot;,
+        &quot;services&quot;: &quot;22,443,8443&quot;
+      }
+    ],
+    &quot;reported_hosts&quot;: {
+      &quot;up&quot;: &quot;1&quot;,
+      &quot;down&quot;: &quot;0&quot;,
+      &quot;total&quot;: &quot;1&quot;
+    },
+    &quot;imported_hosts&quot;: 1,
+    &quot;omitted_script_results&quot;: 0
+  }
+}</pre></details><h2>Limites da interpretação</h2><ul><li>As diferenças descrevem registros históricos, não o estado atual da rede ou vulnerabilidades confirmadas.</li><li>Hosts e portas ausentes ficam como não observados; não se infere fechamento, remoção ou correção.</li><li>Um IP em comum não comprova identidade permanente do equipamento: DHCP, NAT e reutilização de endereços afetam a interpretação.</li><li>Escopos declarados iguais não comprovam igualdade de privilégios, opções, ponto de coleta ou completude.</li><li>Os índices de referência começam em zero e apontam para as importações normalizadas; os hashes identificam os XMLs originais.</li></ul></section><footer>Relatório local, sem requisições externas ou execução de scanner. Comparação nmap-diff-v1-6f86cf4bf00552ed81ebde6f7415b572b1b9fc5d56ec1f9260361877c9aa0005</footer></main></body></html>

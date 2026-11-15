@@ -24,7 +24,7 @@ flowchart LR
   G --> H[CLI e futura interface]
 ```
 
-O diagrama é uma proposta; consulta dos inventários, verificação dos artefatos e importação offline Nmap XML estão implementadas nesta etapa.
+O diagrama é uma proposta; consulta dos inventários, verificação dos artefatos, importação/comparação offline Nmap XML e exportação JSON/HTML estão implementadas nesta etapa.
 
 ## Contratos propostos
 
@@ -51,3 +51,13 @@ O adaptador lê até 32 MiB, recusa construções XML não suportadas, calcula S
 A identidade da análise depende do hash e da versão do adaptador; não representa uma nova execução do Nmap.
 Nmap e sqlmap continuam como referências externas; nenhum motor é empacotado ou chamado pelo adaptador.
 Os detalhes observados das novas fontes e as escolhas de projeto estão separados em `NMAP-SQLMAP.md`.
+
+
+## Comparação e relatório implementados
+
+`compare-nmap` importa os dois XMLs com `nmap_report`, passa os registros à função pura `nmap_compare.compare_reports` e grava JSON e/ou a projeção `render_html`.
+A lógica de pareamento e cobertura pertence ao comparador; o HTML apenas apresenta seu resultado e suas referências.
+As correspondências usam IPs canônicos em relação única. Ambiguidades, versões, conclusão e cobertura acompanham as diferenças.
+A ausência de um registro não vira um estado inferido; alterações em detecção de serviço não viram confirmação de atualização ou vulnerabilidade.
+O identificador considera os hashes e versões de importação/comparação. Caminhos locais não participam da identidade por conteúdo.
+A geração HTML não depende de JavaScript ou recursos externos; dados do XML são escapados e os links são internos ao relatório.

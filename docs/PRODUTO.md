@@ -38,3 +38,11 @@ Só ampliar para composição de laboratório ou novos conectores após o primei
 A importação offline de XML Nmap já adiciona inventário de ativos à base: hash, hosts, endereços, estados, serviços e cobertura.
 É o primeiro fluxo de ingestão de um resultado de ferramenta; ainda faltam comparação entre sessões, correlação com capturas e validação da hipótese comercial.
 O objetivo é permitir investigação reproduzível com artefatos existentes, sem exigir que o usuário execute um motor pela aplicação.
+
+
+## Comparação disponível
+
+Agora é possível comparar dois XMLs existentes e gerar um relatório navegável com diferenças, lacunas e fontes.
+O avanço prático é explicar quando uma diferença está acompanhada de mudança de cobertura e quando os registros não permitem um pareamento confiável.
+Isso busca reduzir interpretações incorretas de inventário, como chamar uma porta não observada de fechada. A utilidade em tarefas reais ainda precisa ser medida.
+A aplicação não atribui pontuações de risco nem declara vulnerabilidades a partir desses registros.

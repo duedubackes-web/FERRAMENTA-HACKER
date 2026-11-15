@@ -22,8 +22,8 @@
 
 - [ ] P01: contrato Artifact/AnalysisRun/Finding com validação de entrada e versões.
 - [ ] P02: adaptador offline TShark, prazo máximo, saída limitada e erro de dependência ausente.
-- [ ] P03: normalizar e comparar relatórios; preservar campos desconhecidos e cobertura.
-- [ ] P04: exportar JSON e relatório HTML com proveniência navegável.
+- [x] P03 (Nmap v1): normalizar e comparar relatórios; preservar campos desconhecidos e cobertura.
+- [x] P04 (Nmap v1): exportar JSON e relatório HTML com proveniência navegável.
 - [ ] P05: verificar corpus sintético ponta a ponta e medir tarefas completas.
 - [ ] P06: conduzir entrevistas e decidir continuidade pelo resultado observado.
 
@@ -45,7 +45,18 @@ Use `.github/ISSUE_TEMPLATE/work-item.yml` para converter cada item em uma taref
 - [x] Criar importador offline original XML Nmap → JSON v1, com Artifact/AnalysisRun, proveniência e limites.
 - [x] Testar o fluxo CLI com XML sintético e comparar a compatibilidade de leitura com 19 fixtures públicas do upstream.
 - [ ] Completar P01: contratos formais dos demais adaptadores e Finding; o importador atual cobre apenas seu recorte.
-- [ ] Comparar dois relatórios importados, distinguindo mudança observada de ausência de cobertura.
+- [x] Comparar dois relatórios importados, distinguindo mudança observada de ausência de cobertura.
 - [ ] Correlacionar inventário de ativos e capturas offline depois de implementar o adaptador TShark.
 - [ ] Avaliar suporte a codificações legadas e corpus de releases Nmap atuais.
 - [ ] Rever modelo de distribuição à luz de NPSL e dos termos próprios do sqlmap antes de incorporar motores.
+
+
+## Comparação de evidências — 15/11/2026
+
+- [x] Parear hosts por IP canônico em correspondência única, sem forçar identidades ambíguas.
+- [x] Comparar estados explícitos e detecção de serviços; preservar desconhecidos e ausências.
+- [x] Considerar protocolo, método e intervalos declarados ao explicar diferenças de cobertura.
+- [x] Exportar comparação JSON v1 e relatório HTML offline com referências a hashes e índices dos registros.
+- [x] Verificar CLI, escapes HTML, recusas de sobrescrita e comportamento responsivo do exemplo sintético.
+- [ ] Validar tarefas de investigação com usuários e artefatos sanitizados reais.
+- [ ] Implementar conector TShark offline e correlação entre inventário e tráfego, preservando proveniência e limites de identidade.

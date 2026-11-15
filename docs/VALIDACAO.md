@@ -18,3 +18,12 @@
 - Craft declarou inventário completo após ampliar a profundidade: Nmap 2.631 entradas, sqlmap 899. As entradas extras são membros de arquivos internos.
 - REA analisou dois scripts públicos de cada site sem falhas de parse reportadas; nenhum motor foi executado.
 - Resultados históricos acima referem-se à primeira rodada; a CI do novo commit será verificada separadamente após publicação.
+
+
+## Comparação de observações e relatório
+
+- 27 testes da base passaram, incluindo comparação por IP, duplicidade, IPv6, cobertura, ausência de estado, versões de adaptadores, escapes de dados e o fluxo CLI com dois arquivos de saída.
+- O HTML sintético foi renderizado em Chromium a 1.365×980 e 375×812, sem transbordamento da página; detalhes e links de proveniência funcionaram, com zero requisições de rede.
+- A navegação por URL file: foi bloqueada pela política do navegador do ambiente. O QA de conteúdo/layout usou Playwright setContent, sem alterar políticas do navegador; não é uma comprovação de abertura por arquivo em todos os ambientes.
+- O registro desta verificação está em research/comparison-browser-check.json. O exemplo pronto está em examples/nmap-comparison.html e usa somente dados sintéticos.
+- Não houve execução de scanner, novos testes dos motores originais ou coleta de rede nesta etapa.
