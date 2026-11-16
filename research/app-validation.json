@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "application_version": "0.2.0",
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "python": "3.12.14",
   "node": "v24.22.1",
   "python_tests": {
@@ -33,14 +33,14 @@
     "app/app.css": "30c27d37aa841089d4b01895b756b59b4b198780be70d04ee6f585baf01b8637",
     "app/app.js": "cd889e3fdb6829071a6ac2cc31a9f732fa46ffe0e333013f57d551783124ad4f",
     "scripts/app_server.py": "6719447004f6ff28a856e33bfd1a00cb1d2054ea59b5884bbe6d85f610d2c3c5",
-    "scripts/app_service.py": "ec7b0f821ed059e90fa116fccd3da35e48289544becdf8b7c7c96167381b6c50",
+    "scripts/app_service.py": "7f9266d0520cb32fcc83723018a8b2583cc1818398af16c4f591e45931fd9905",
     "scripts/app_store.py": "4cd46b835f679c067ad652a6277382a81fa3ed8fc21e2d352deb15f9220d00e8",
     "scripts/app_chat.py": "7f3b2fd69509c01e12f342a99de6814949b3f90ee201a2337ee6eb457a3c5c16",
     "scripts/app_ai.py": "84bf589042478bcf8a284ed51980110e70097029bd4fc6be355f4eafde10d343",
     "scripts/app_studio.py": "2bc733029a0d41c74a97866369d10b32d4be0c27eda6759e3dee749d5b4dc797",
     "scripts/app_scaffold.py": "e54998aa71ad3a51d48437edf3a83c9899c0afcaf2256105b3f51ee7bec04c58",
-    "tests/test_application.py": "e1ab3fff9c18c3fff592b561308bddf4832aebea7e534350fc4231190f8663df",
-    "tests/ui_flow.cjs": "620a4f867e4718ccde6a29ecee6f753e8747c8d9636d00251273228c641c0a13",
+    "tests/test_application.py": "568e9b75cf4c94e497614b972c40340848aff355008b0877ff483a6b3071371c",
+    "tests/ui_flow.cjs": "e7de5f5ff7dbc9062ab33f40643a2b1b264af026a6bcd097cf182aaf139d900c",
     "tests/prototype_flow.cjs": "558686e3c99291c096e2e2d5b681cb8d1ae381a731e9d3f88c40ac89565ba190",
     "package-lock.json": "48abd5dafd3c3037ccd65dccbd2c9c80511ab6cc0954c8f7661d55e18d4a3667",
     "scripts/app_version.py": "5eda6c1c207adbfee46a920c6d833fd6d0279b51b24d1642e60936ded0544b9f",
@@ -93,5 +93,16 @@
       "project export"
     ],
     "limits": "Declared-key correspondence is not verified asset identity, equivalence of coverage or confirmed remediation."
+  },
+  "metasploit_reference": {
+    "capability_cards": 7,
+    "aliases_tested": [
+      "Metasploit Framework",
+      "MSF",
+      "msfconsole"
+    ],
+    "reference": "research/metasploit-reference.json",
+    "runtime_executed": false,
+    "report_adapter_implemented": false
   }
 }

@@ -153,3 +153,10 @@ Use `.github/ISSUE_TEMPLATE/work-item.yml` para converter cada item em uma taref
 - [x] Expor comparação na interface, no chat, na CLI e no pacote de exportação.
 - [x] Preservar as decisões humanas em seus registros originais, sem transferência automática.
 - [ ] Validar comparabilidade com analistas e ampliar contratos antes de parear novas categorias.
+
+## Referência Metasploit — 16/11/2026
+
+- [x] Verificar README/LICENSE públicos por commit e hashes Git.
+- [x] Expor ficha documental no chat e na tela Tecnologias, com aliases MSF/msfconsole.
+- [x] Preservar catálogo, pesquisa selecionada e runtime como estados distintos.
+- [ ] Definir contrato de relatório e minimização de dados antes de adicionar um adaptador Metasploit.

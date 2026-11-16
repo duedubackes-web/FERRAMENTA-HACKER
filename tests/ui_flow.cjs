@@ -85,7 +85,7 @@ async function until(test, label) {
     $ = (s) => d.querySelector(s),
     $$ = (s) => [...d.querySelectorAll(s)];
   await until(
-    () => $("#capabilities").children.length === 6,
+    () => $("#capabilities").children.length === 7,
     "bootstrap and capabilities",
   );
   $("#demo").click();

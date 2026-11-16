@@ -186,12 +186,17 @@ class ApplicationTests(unittest.TestCase):
         reply = self.app.chat(self.project, 'Como REA e Craft Anything estão integrados?')
         self.assertEqual(len(reply['citations']), 2)
         self.assertEqual(reply['model_calls'], 0)
+        for alias in ('Metasploit Framework', 'MSF', 'msfconsole'):
+            with self.subTest(alias=alias):
+                cited = self.app.chat(self.project, 'Como '+alias+' está integrado?')
+                self.assertEqual(cited['citations'][0]['tool_id'], 'metasploit')
+                self.assertIn('sem runtime', cited['text'])
         self.assertIn('não está embutido', reply['text'])
         self.assertIn('Não encontrei', self.app.chat(self.project, 'xyzzy-unknown-question')['text'])
         with patch.dict(os.environ, {'ATLAS_OLLAMA_MODEL': ''}):
             with self.assertRaises(ValueError):
                 self.app.chat(self.project, 'resumo', True)
-        self.assertEqual(len(self.app.store.messages(self.project)), 2)
+        self.assertEqual(len(self.app.store.messages(self.project)), 5)
 
     def test_export_preserves_entire_chat_history_beyond_ui_window(self):
         self.app.import_source(self.project, payload())

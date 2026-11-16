@@ -1,12 +1,59 @@
 {
   "schema_version": 1,
   "capabilities": [
-    {"id":"kali","name":"Kali Linux","status":"Referência indexada","description":"Catálogo e perfis de pacotes pesquisáveis; não inclui distribuição, instalação ou execução de ferramentas.","source":"sources.lock.json"},
-    {"id":"rea","name":"REA","status":"Pesquisa documentada","description":"Método e evidências já coletadas para análise de artefatos. O aplicativo não embute nem executa o runtime REA.","source":"sources.lock.json"},
-    {"id":"craft-anything","name":"Craft Anything","status":"Pesquisa documentada","description":"Fontes e observações preservadas para orientar produção própria. O runtime Craft não está embutido no aplicativo.","source":"sources.lock.json"},
-    {"id":"nmap","name":"Nmap","status":"Adaptador funcional","description":"Importa XML anterior/atual e compara observações offline. O scanner não é executado.","source":"docs/COMPARAR-NMAP.md"},
-    {"id":"trivy","name":"Trivy","status":"Adaptador funcional","description":"Importa campos selecionados de JSON v2, preserva severidade declarada e alimenta revisão.","source":"docs/REVISAO-INTELIGENTE.md"},
-    {"id":"zaproxy","name":"ZAP","status":"Adaptador funcional","description":"Importa Traditional JSON/Plus e separa risco e confiança. O scanner não é executado.","source":"docs/IMPORTAR-ZAP.md"}
+    {
+      "id": "kali",
+      "name": "Kali Linux",
+      "status": "Referência indexada",
+      "description": "Catálogo e perfis de pacotes pesquisáveis; não inclui distribuição, instalação ou execução de ferramentas.",
+      "source": "sources.lock.json"
+    },
+    {
+      "id": "rea",
+      "name": "REA",
+      "status": "Pesquisa documentada",
+      "description": "Método e evidências já coletadas para análise de artefatos. O aplicativo não embute nem executa o runtime REA.",
+      "source": "sources.lock.json"
+    },
+    {
+      "id": "craft-anything",
+      "name": "Craft Anything",
+      "status": "Pesquisa documentada",
+      "description": "Fontes e observações preservadas para orientar produção própria. O runtime Craft não está embutido no aplicativo.",
+      "source": "sources.lock.json"
+    },
+    {
+      "id": "nmap",
+      "name": "Nmap",
+      "status": "Adaptador funcional",
+      "description": "Importa XML anterior/atual e compara observações offline. O scanner não é executado.",
+      "source": "docs/COMPARAR-NMAP.md"
+    },
+    {
+      "id": "trivy",
+      "name": "Trivy",
+      "status": "Adaptador funcional",
+      "description": "Importa campos selecionados de JSON v2, preserva severidade declarada e alimenta revisão.",
+      "source": "docs/REVISAO-INTELIGENTE.md"
+    },
+    {
+      "id": "zaproxy",
+      "name": "ZAP",
+      "status": "Adaptador funcional",
+      "description": "Importa Traditional JSON/Plus e separa risco e confiança. O scanner não é executado.",
+      "source": "docs/IMPORTAR-ZAP.md"
+    },
+    {
+      "id": "metasploit",
+      "name": "Metasploit Framework",
+      "aliases": [
+        "msf",
+        "msfconsole"
+      ],
+      "status": "Referência documentada",
+      "description": "Framework de testes de segurança com msfconsole como interface principal. Disponível no chat como referência com proveniência; sem runtime, módulos, payloads, sessões ou execução de exploração integrados.",
+      "source": "research/metasploit-reference.json"
+    }
   ],
-  "limits":"Integração de formato não equivale a incorporar o motor. Referência de pesquisa não é funcionalidade de execução."
+  "limits": "Integração de formato não equivale a incorporar o motor. Referência de pesquisa não é funcionalidade de execução."
 }

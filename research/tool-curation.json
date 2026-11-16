@@ -515,7 +515,16 @@
       ],
       "purpose": "Framework modular de testes de intrusão, catalogado apenas como referência.",
       "repository": "rapid7/metasploit-framework",
-      "source_ids": []
+      "source_ids": [],
+      "aliases": [
+        "msf",
+        "msfconsole"
+      ],
+      "project_integration": {
+        "status": "documented-chat-reference",
+        "reference": "research/metasploit-reference.json",
+        "engine_executed": false
+      }
     },
     {
       "id": "gemini-app",

@@ -1395,6 +1395,15 @@
       ],
       "purpose": "Framework modular de testes de intrusão, catalogado apenas como referência.",
       "repository": "rapid7/metasploit-framework",
+      "aliases": [
+        "msf",
+        "msfconsole"
+      ],
+      "project_integration": {
+        "status": "documented-chat-reference",
+        "reference": "research/metasploit-reference.json",
+        "engine_executed": false
+      },
       "source_status": "cataloged-only",
       "source_snapshots": [],
       "runtime_evidence": "tool-not-executed",

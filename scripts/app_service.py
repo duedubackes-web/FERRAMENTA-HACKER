@@ -98,7 +98,7 @@ class Application:
         response = answer(question, latest['document'] if latest else None, sources, self.catalog)
         from app_chat import tokens
         query = tokens(question)
-        matched = [c for c in self.capabilities['capabilities'] if query & tokens(c['name']+' '+c['id'])]
+        matched = [c for c in self.capabilities['capabilities'] if query & tokens(c['name']+' '+c['id']+' '+ ' '.join(c.get('aliases', [])))]
         evidence_reply = any(c['kind'] in {'review-item', 'review', 'source'} for c in response['citations'])
         integration_question = bool(query & {'integrado', 'integrados', 'integrada', 'integradas', 'integracao', 'embutido', 'embutidas', 'runtime'})
         if matched and (integration_question or not evidence_reply):

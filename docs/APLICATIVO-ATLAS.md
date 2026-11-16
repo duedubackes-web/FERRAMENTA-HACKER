@@ -65,6 +65,7 @@ A integração foi verificada com resposta e falha simuladas do transporte; não
 | Nmap | Importação e comparação XML offline; scanner não executado |
 | Trivy | Importação de campos selecionados JSON v2 |
 | ZAP | Importação de campos selecionados Traditional JSON/Plus |
+| Metasploit Framework | Referência documental no chat; aliases MSF/msfconsole; sem runtime ou RPC |
 
 As fichas da interface e do chat usam `research/app-capabilities.json`. O catálogo de 38 tecnologias mantém as fontes e os limites de cada registro. “Embutir uma tecnologia” não é usado como sinônimo de simplesmente mencionar seu nome.
 

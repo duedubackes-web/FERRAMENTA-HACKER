@@ -146,3 +146,5 @@ Os contratos foram estudados em referências oficiais fixadas por commit e valid
 O novo `replay-review` reconstrói a fila a partir de fontes locais explícitas e detecta diferenças nas fontes ou no conteúdo da revisão. Permite mover os arquivos sem confiar nos caminhos embutidos. Veja [reprodução verificável](docs/REPRODUZIR-REVISAO.md), incluindo estados, códigos de saída e limites de confiança.
 
 [Comparar revisões ao longo do tempo](docs/EVOLUCAO-REVISOES.md): interface, chat, CLI, chaves declaradas e limites de interpretação.
+
+[Metasploit Framework no chat](docs/METASPLOIT.md): ficha documental, aliases MSF/msfconsole e limites da integração.
