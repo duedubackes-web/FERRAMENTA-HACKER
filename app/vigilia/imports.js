@@ -125,7 +125,34 @@ function analyzeAndroidManifest(input) {
   };
 }
 
+function reviewPhpSource(input) {
+  if (!/<\?(?:php\b|=)/i.test(input)) throw new Error('Selecione um arquivo PHP com tag de abertura.');
+  const rules = [
+    { pattern: /\b(?:exec|shell_exec|system|passthru|proc_open|popen|eval)\s*\(/i,
+      category: 'Execução de comandos ou código',
+      action: 'Revise a origem dos argumentos e substitua a execução dinâmica por APIs específicas quando possível.' },
+    { pattern: /\bmove_uploaded_file\s*\(/i,
+      category: 'Armazenamento de arquivos enviados',
+      action: 'Confira limites, validação no servidor e armazenamento em um diretório sem execução de scripts.' }
+  ];
+  const findings = [];
+  const lines = input.split(/\r\n|\n|\r/);
+  for (const [index, line] of lines.entries()) {
+    for (const rule of rules) {
+      if (rule.pattern.test(line)) {
+        findings.push({ linha: index + 1, categoria: rule.category, revisar: rule.action });
+      }
+    }
+  }
+  return {
+    linhas: lines.length,
+    pontos_de_revisao: findings,
+    alcance: 'Triagem textual por linha. Comentários e strings podem gerar falsos positivos. A análise pode omitir chamadas indiretas ou divididas entre linhas e não confirma vulnerabilidades.'
+  };
+}
+
 const reportAnalyzers = {
+  "Revisão PHP": { accept: ".php,.phtml,.inc", label: "Arquivo de código PHP", run: reviewPhpSource },
   "Auditoria Android": { accept: ".xml", label: "AndroidManifest.xml em texto", run: analyzeAndroidManifest },
   Nmap: { accept: '.xml', label: 'XML exportado pelo Nmap', run: analyzeNmap },
   Trivy: { accept: '.json', label: 'JSON exportado pelo Trivy', run: analyzeTrivy },

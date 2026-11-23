@@ -1,4 +1,5 @@
 const catalog = [
+  ['Revisão PHP', 'Segurança de aplicações', 'Localize pontos de revisão em código PHP próprio.', 'Abra um arquivo PHP para localizar chamadas de execução dinâmica e armazenamento de arquivos enviados. Confirme o contexto de cada indicação no código.'],
   ['Auditoria Android', 'Segurança móvel', 'Revise permissões e configurações declaradas no manifesto de um app Android.', 'Importe o AndroidManifest.xml em texto. Confira se as permissões são necessárias para o aplicativo e revise configurações explícitas de depuração, backup e tráfego.'],
   ['Kali Linux', 'Ambiente', 'Distribuição para análise e auditoria.', 'Registre a versão do ambiente, a origem dos arquivos e o responsável pela coleta.', ['kali']],
   ['REA', 'Engenharia reversa', 'Registro de observações sobre software próprio ou autorizado.', 'Anote a versão, a evidência observada, sua interpretação e o grau de confiança.'],
