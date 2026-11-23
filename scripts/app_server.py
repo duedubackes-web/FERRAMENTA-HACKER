@@ -27,7 +27,9 @@ STATIC.update({
         'orchestrator.js': 'text/javascript; charset=utf-8',
         'hub.js': 'text/javascript; charset=utf-8',
         'labs.js': 'text/javascript; charset=utf-8',
-        'vigilia.jpg': 'image/jpeg',
+        'lionmask-hero.webp': 'image/webp',
+        'lionmask-hero-small.webp': 'image/webp',
+        'lionmask-icon.webp': 'image/webp',
     }.items()
 })
 STATIC['/vigilia/'] = ('vigilia/index.html', 'text/html; charset=utf-8')

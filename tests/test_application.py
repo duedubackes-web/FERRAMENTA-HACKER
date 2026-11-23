@@ -445,7 +445,9 @@ class HttpTests(unittest.TestCase):
             ('orchestrator.js', 'text/javascript'),
             ('hub.js', 'text/javascript'),
             ('labs.js', 'text/javascript'),
-            ('vigilia.jpg', 'image/jpeg'),
+            ('lionmask-hero.webp', 'image/webp'),
+            ('lionmask-hero-small.webp', 'image/webp'),
+            ('lionmask-icon.webp', 'image/webp'),
         ]:
             with self.subTest(asset=asset):
                 status, headers, data = self.request('GET', '/vigilia/' + asset)

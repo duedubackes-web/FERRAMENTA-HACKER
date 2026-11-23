@@ -1415,7 +1415,7 @@ dialog::backdrop {
   align-items: center;
   min-height: 305px;
   background-color: #1d1215;
-  background-image: linear-gradient(90deg, #190f12 8%, #190f12f5 38%, #190f1250 72%, #190f1210), url("/vigilia/vigilia.jpg");
+  background-image: linear-gradient(90deg, #190f12 8%, #190f12f5 38%, #190f1250 72%, #190f1210), url("/vigilia/lionmask-hero.webp");
   background-repeat: no-repeat;
   background-position: center, right 40%;
   background-size: cover, min(62%, 680px) auto;
@@ -1445,7 +1445,10 @@ dialog::backdrop {
 .command-shortcut span { color: #66574f; line-height: 1.45; }
 .command-card > .command-shortcut { margin-top: 14px; padding: 8px 12px; }
 @media (max-width: 760px) {
-  .command-hero { background-size: cover, auto 100%; }
+  .command-hero {
+    background-image: linear-gradient(90deg, #190f12f5 8%, #190f12b8 60%, #190f1220), url("/vigilia/lionmask-hero-small.webp");
+    background-size: cover, auto 100%;
+  }
   .command-hero p { max-width: 17rem; }
 }
 @media (max-width: 460px) {
