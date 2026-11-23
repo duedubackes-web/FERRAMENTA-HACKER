@@ -91,7 +91,42 @@ function analyzeWireshark(input) {
   return { pacotes: rows.length, bytes, por_protocolo: Object.fromEntries(counts) };
 }
 
+function analyzeAndroidManifest(input) {
+  if (/<!DOCTYPE|<!ENTITY/i.test(input)) throw new Error('O manifesto não deve declarar um DTD.');
+  const xml = new DOMParser().parseFromString(input, 'application/xml');
+  const manifest = xml.documentElement;
+  if (manifest.localName !== 'manifest' || xml.querySelector('parsererror')) {
+    throw new Error('Selecione um AndroidManifest.xml em texto, extraído do projeto Android.');
+  }
+  const android = 'http://schemas.android.com/apk/res/android';
+  const attr = (node, field) => node?.getAttributeNS(android, field) ?? null;
+  const children = [...manifest.children];
+  const app = children.find(node => node.localName === 'application');
+  const permissions = children.filter(node => ['uses-permission', 'uses-permission-sdk-23'].includes(node.localName))
+    .map(node => ({ nome: attr(node, 'name'), max_sdk: attr(node, 'maxSdkVersion') })).filter(item => item.nome);
+  const sensitive = new Set(['CAMERA', 'RECORD_AUDIO', 'READ_CONTACTS', 'ACCESS_FINE_LOCATION',
+    'ACCESS_COARSE_LOCATION', 'ACCESS_BACKGROUND_LOCATION', 'READ_SMS', 'RECEIVE_SMS', 'SEND_SMS']);
+  const components = [...(app?.children ?? [])]
+    .filter(node => ['activity', 'activity-alias', 'receiver', 'service', 'provider'].includes(node.localName))
+    .filter(node => attr(node, 'exported') === 'true')
+    .map(node => ({ tipo: node.localName, nome: attr(node, 'name'), permissao: attr(node, 'permission') }));
+  return {
+    pacote: manifest.getAttribute('package'),
+    permissoes_declaradas: permissions,
+    permissoes_para_revisar: permissions.filter(item =>
+      item.nome.startsWith('android.permission.') && sensitive.has(item.nome.slice('android.permission.'.length))),
+    componentes_com_exportacao_explicita: components,
+    configuracao_declarada: {
+      depuracao: attr(app, 'debuggable'),
+      backup: attr(app, 'allowBackup'),
+      trafego_em_texto_claro: attr(app, 'usesCleartextTraffic')
+    },
+    alcance: 'Auditoria estática do XML. Valores ausentes dependem da compilação e da versão Android. A análise não identifica malware nem verifica permissões concedidas.'
+  };
+}
+
 const reportAnalyzers = {
+  "Auditoria Android": { accept: ".xml", label: "AndroidManifest.xml em texto", run: analyzeAndroidManifest },
   Nmap: { accept: '.xml', label: 'XML exportado pelo Nmap', run: analyzeNmap },
   Trivy: { accept: '.json', label: 'JSON exportado pelo Trivy', run: analyzeTrivy },
   Wireshark: { accept: '.csv', label: 'CSV da lista de pacotes do Wireshark', run: analyzeWireshark }
