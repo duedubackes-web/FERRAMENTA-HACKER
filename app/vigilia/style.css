@@ -14,3 +14,5 @@
 @media(max-width:700px){.hero{min-height:0;padding-top:0}.hero-copy{padding-top:clamp(220px,58vw,350px)}.hero .portrait{height:clamp(275px,72vw,410px)}.hero h1.graffiti-title{font-size:clamp(2.1rem,9vw,4.3rem)}}
 
 #tool-import[hidden]{display:none}#tool-import-result{margin-top:0;max-height:280px}
+
+#antifraude{margin-block:32px}.fraud-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px}.fraud-grid h3{margin-bottom:4px}.fraud-grid pre:empty{display:none}#contact-text{width:100%;background:#0e0c0b;color:var(--paper);border:1px solid #695143;border-radius:5px;padding:10px}

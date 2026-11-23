@@ -12,9 +12,10 @@
 <script src="imports.js" defer></script>
 <script src="hub.js" defer></script>
 <script src="labs.js" defer></script>
+<script src="fraud.js" defer></script>
 </head>
 <body>
-<header><a class="brand" href="/" aria-label="Voltar ao LionMaskSec"><img src="lionmask-icon.webp" alt="" width="42" height="42">LIONMASKSEC</a><nav aria-label="Navegação principal"><a href="#ferramentas">Ferramentas</a><a href="#central">Central</a><a href="#orquestrador">Orquestrador</a><a href="#laboratorios">Laboratórios</a></nav><a class="outline" href="#bancada">Abrir bancada</a></header>
+<header><a class="brand" href="/" aria-label="Voltar ao LionMaskSec"><img src="lionmask-icon.webp" alt="" width="42" height="42">LIONMASKSEC</a><nav aria-label="Navegação principal"><a href="#ferramentas">Ferramentas</a><a href="#central">Central</a><a href="#antifraude">Antifraude</a><a href="#orquestrador">Orquestrador</a><a href="#laboratorios">Laboratórios</a></nav><a class="outline" href="#bancada">Abrir bancada</a></header>
 <main>
 <section class="hero">
 <div class="portrait" aria-hidden="true">
@@ -44,6 +45,25 @@
 </form>
 <pre id="result" role="status" aria-live="polite">O resultado da análise aparece aqui.</pre>
 </section>
+<section class="section bench" id="antifraude">
+<p class="eyebrow">TRIAGEM LOCAL</p><h2>Mensagens e contatos</h2>
+<div class="fraud-grid">
+<article><h3>Scanner de golpes</h3>
+<p class="muted">Analise uma mensagem suspeita. Os links são examinados como texto.</p>
+<form id="fraud-form"><div><label for="fraud-text">Texto da mensagem</label><textarea id="fraud-text" rows="5" maxlength="20000" required></textarea>
+<button class="minor" type="button" id="fraud-example">Carregar exemplo fictício</button></div>
+<div><button class="button">Verificar sinais</button></div></form>
+<pre id="fraud-result" role="status"></pre>
+</article>
+<article><h3>Verificador de contatos</h3>
+<p class="muted">Valide o formato de um contato informado. O resultado é gerado no navegador.</p>
+<form id="contact-form"><div><label for="contact-type">Tipo de contato</label>
+<select id="contact-type"><option value="email">E-mail</option><option value="phone">Telefone</option></select></div>
+<div><label for="contact-text">E-mail ou telefone</label><input id="contact-text" type="text" maxlength="254" required autocomplete="off" spellcheck="false"></div>
+<div><button class="button">Verificar contato</button></div></form>
+<pre id="contact-result" role="status"></pre>
+</article>
+</div></section>
 <section class="section" id="central">
 <p class="eyebrow">EVIDÊNCIAS E RELATÓRIOS</p><h2>Central de ferramentas</h2>
 <p class="muted">Consulte os guias e documente resultados de ferramentas externas.</p>

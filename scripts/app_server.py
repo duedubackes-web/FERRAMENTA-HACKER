@@ -27,6 +27,7 @@ STATIC.update({
         'orchestrator.js': 'text/javascript; charset=utf-8',
         'imports.js': 'text/javascript; charset=utf-8',
         'hub.js': 'text/javascript; charset=utf-8',
+        'fraud.js': 'text/javascript; charset=utf-8',
         'labs.js': 'text/javascript; charset=utf-8',
         'lionmask-hero.webp': 'image/webp',
         'lionmask-hero-small.webp': 'image/webp',
