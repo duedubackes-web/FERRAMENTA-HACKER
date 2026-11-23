@@ -431,6 +431,28 @@ class HttpTests(unittest.TestCase):
         self.assertEqual(self.request('GET', '/../../sources.lock.json')[0], 404)
         self.assertEqual(self.request('GET', '/scripts/app_server.py')[0], 404)
 
+    def test_vigilia_assets_and_atlas_navigation(self):
+        self.assertIn(b'href="/vigilia/"', self.request('GET', '/')[2])
+        status, headers, html = self.request('GET', '/vigilia/')
+        self.assertEqual(status, 200)
+        self.assertIn("script-src 'self'", headers['Content-Security-Policy'])
+        self.assertIn(b'href="/"', html)
+        for asset, mime in [
+            ('style.css', 'text/css'),
+            ('app.js', 'text/javascript'),
+            ('orchestrator.js', 'text/javascript'),
+            ('hub.js', 'text/javascript'),
+            ('labs.js', 'text/javascript'),
+            ('vigilia.jpg', 'image/jpeg'),
+        ]:
+            with self.subTest(asset=asset):
+                status, headers, data = self.request('GET', '/vigilia/' + asset)
+                self.assertEqual(status, 200)
+                self.assertTrue(headers['Content-Type'].startswith(mime))
+                self.assertTrue(data)
+        self.login()
+        self.assertEqual(self.request('GET', '/vigilia/../index.html')[0], 404)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Ferramentas locais para examinar evidências digitais.">
+<title>Vigília | Investigação digital</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+<script src="orchestrator.js" defer></script>
+<script src="hub.js" defer></script>
+<script src="labs.js" defer></script>
+</head>
+<body>
+<header><a class="brand" href="/" aria-label="Voltar ao Atlas"><img src="vigilia.jpg" alt="">VIGÍLIA</a><nav aria-label="Navegação principal"><a href="#ferramentas">Ferramentas</a><a href="#central">Central</a><a href="#orquestrador">Orquestrador</a><a href="#laboratorios">Laboratórios</a></nav><a class="outline" href="#bancada">Abrir bancada</a></header>
+<main>
+<section class="hero">
+<div class="portrait" aria-hidden="true"><div class="eye left"></div><div class="eye right"></div></div>
+<div class="hero-copy"><p class="eyebrow"><span></span> INVESTIGAÇÃO DIGITAL DEFENSIVA</p><h1>O olhar<br>da <em>Vigília.</em></h1><p>Examine evidências digitais, extraia indicadores e documente achados em uma bancada que processa seus dados no navegador.</p><a class="button" href="#ferramentas">Explorar ferramentas</a></div>
+<div class="hero-foot"><span>VIGÍLIA / BANCADA FORENSE</span><span>PROCESSAMENTO LOCAL</span></div>
+</section>
+<section id="ferramentas" class="section">
+<p class="eyebrow">ANÁLISE DE EVIDÊNCIAS</p><h2>Ferramentas de investigação</h2>
+<p class="muted">Escolha uma ferramenta para abrir a bancada.</p>
+<div class="cards">
+<button class="card" data-tool="hash"><span class="icon" aria-hidden="true">#</span><strong>Hash de arquivo</strong><span>Calcule SHA-256 para registrar a integridade de uma evidência.</span></button>
+<button class="card" data-tool="ioc"><span class="icon" aria-hidden="true">⌖</span><strong>Extração de indicadores</strong><span>Identifique URLs, endereços IPv4 e hashes em texto ou logs.</span></button>
+<button class="card" data-tool="headers"><span class="icon" aria-hidden="true">▤</span><strong>Cabeçalhos HTTP</strong><span>Revise cabeçalhos de segurança a partir de uma resposta salva.</span></button>
+</div>
+</section>
+<section class="section bench" id="bancada">
+<p class="eyebrow">BANCADA FORENSE</p><h2>Examinar evidência</h2>
+<form id="analysis">
+<label for="tool">Ferramenta</label><select id="tool"><option value="hash">Hash de arquivo</option><option value="ioc">Extração de indicadores</option><option value="headers">Cabeçalhos HTTP</option></select>
+<div id="file-area"><label for="file">Arquivo local</label><input id="file" type="file"></div>
+<div id="text-area" hidden><label for="evidence" id="text-label">Texto da evidência</label><textarea id="evidence" rows="6" maxlength="500000"></textarea><button type="button" class="minor" id="example">Carregar exemplo</button></div>
+<div class="actions"><button class="button" type="submit">Analisar</button><button class="outline" id="save" type="button" disabled>Baixar resultado</button></div>
+</form>
+<pre id="result" role="status" aria-live="polite">O resultado da análise aparece aqui.</pre>
+</section>
+<section class="section" id="central">
+<p class="eyebrow">EVIDÊNCIAS E RELATÓRIOS</p><h2>Central de ferramentas</h2>
+<p class="muted">Consulte os guias e documente resultados de ferramentas externas.</p>
+<label for="tool-search">Buscar ferramenta</label><input id="tool-search" type="search" placeholder="Nome ou categoria">
+<div class="cards" id="tool-library"></div>
+<p id="tool-empty" hidden>Nenhuma ferramenta corresponde à busca.</p>
+</section>
+<dialog id="tool-detail" aria-labelledby="detail-title">
+<form method="dialog" class="close-detail"><button class="outline">Fechar</button></form>
+<p class="eyebrow" id="detail-category"></p><h2 id="detail-title"></h2>
+<p id="detail-description"></p><button class="outline" id="show-help" aria-controls="tool-help" aria-expanded="false">Ajuda</button>
+<p id="tool-help" hidden></p>
+<form id="tool-report">
+<div><label for="tool-note">Evidência ou trecho do relatório</label><textarea id="tool-note" rows="5" maxlength="100000" required></textarea></div>
+<button class="outline">Baixar registro JSON</button>
+</form>
+<button class="minor" id="ask-about-tool">Abrir ajuda no chat</button>
+</dialog>
+<section class="section" id="laboratorios">
+<p class="eyebrow">TREINAMENTO DEFENSIVO</p>
+<h2>Laboratórios Vigília</h2>
+<p class="muted">Pratique investigação com casos fictícios, pistas e feedback. Use o orquestrador para sustentar a resposta com evidências.</p>
+<div class="cards" id="lab-list"></div>
+<div class="bench lab-panel" id="lab-panel" hidden>
+<h3 id="lab-title"></h3><p id="lab-brief"></p>
+<pre id="lab-evidence"></pre>
+<div class="actions lab-actions">
+<button class="outline" type="button" id="lab-hint-toggle" aria-expanded="false" aria-controls="lab-hint">Mostrar pista</button>
+<button class="outline" type="button" id="lab-triage">Abrir evidência no orquestrador</button>
+</div>
+<p id="lab-hint" hidden></p>
+<form id="lab-answer"><div><label for="lab-response" id="lab-question"></label><input id="lab-response" type="text" maxlength="100" required></div>
+<div><button class="button">Verificar resposta</button></div></form>
+<p id="lab-feedback" role="status"></p>
+</div>
+<p class="muted">Referências de formato <a href="https://tryhackme.com/">TryHackMe</a> e <a href="https://academy.hackthebox.com/">Hack The Box Academy</a>.</p>
+</section>
+<section class="section bench" id="orquestrador">
+<p class="eyebrow">TRIAGEM DEFENSIVA</p><h2>Orquestrador de análise</h2>
+<p class="muted">Cole um log ou uma resposta HTTP salva. Os módulos processam a evidência neste navegador e produzem um parecer rastreável.</p>
+<form id="orchestrator-form">
+<div><label for="artifact-type">Tipo de evidência</label><select id="artifact-type"><option value="log">Log ou texto</option><option value="http">Resposta HTTP salva</option></select></div>
+<div><label for="artifact-text">Evidência</label><textarea id="artifact-text" rows="6" maxlength="50000" required></textarea>
+<button class="minor" type="button" id="artifact-example">Carregar exemplo fictício</button></div>
+<div class="actions"><button class="button">Executar triagem</button><button class="outline" type="button" id="export-triage" disabled>Baixar parecer JSON</button></div>
+</form>
+<p id="triage-status" role="status"></p>
+<ol class="triage-steps" id="triage-steps"></ol>
+</section>
+<section class="section bench" id="chat"><p class="eyebrow">ORIENTAÇÃO LOCAL</p><h2>Chat Vigília</h2>
+<p class="muted">Respostas guiadas pelo catálogo. Pergunte por uma ferramenta ou, após rodar a triagem, peça “diagnóstico do caso”, “ações do caso” ou “conclusão do caso”.</p>
+<ol id="chat-log" role="log" aria-label="Histórico do chat"></ol>
+<form id="chat-form"><div><label for="chat-message">Sua pergunta</label><input id="chat-message" required maxlength="600" placeholder="Como documentar um relatório do Trivy?"></div>
+<div><button class="button">Enviar</button></div></form>
+</section>
+<section class="section method" id="metodo"><p class="eyebrow">METODOLOGIA</p><h2>Da coleta ao relatório</h2><div class="cards"><article class="card"><strong>Preservar</strong><p>Registre a origem da evidência e calcule o hash do arquivo original.</p></article><article class="card"><strong>Analisar</strong><p>Trabalhe sobre uma cópia e use os indicadores para orientar a revisão.</p></article><article class="card"><strong>Registrar</strong><p>Exporte os resultados e anote o contexto e as limitações da análise.</p></article></div></section>
+</main>
+<footer><b>VIGÍLIA</b><span>Investigação digital defensiva</span></footer>
+</body></html>
