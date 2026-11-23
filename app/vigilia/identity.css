@@ -58,3 +58,33 @@ h1.graffiti-title {
 @media (max-width: 520px) {
   h1.graffiti-title { font-size: clamp(1.9rem, 8vw, 2.6rem); }
 }
+
+.hero .artex-tag {
+  width: fit-content;
+  margin: -.1em 0 .9em;
+  color: #ffc797;
+  font: italic 900 clamp(1.05rem, 2.65vw, 2rem) / 1.2 Impact, "Arial Black", system-ui, sans-serif;
+  letter-spacing: .065em;
+  transform: rotate(-4deg) skewX(-6deg);
+  transform-origin: left center;
+  filter: drop-shadow(.09em .11em 0 #472036) drop-shadow(.03em .07em .13em #da603f8c);
+}
+
+@supports (background-clip: text) {
+  .hero .artex-tag {
+    background: linear-gradient(105deg, #ff995f 27%, #fff0cf 45%, #ffb7df 50%, #ff995f 65%);
+    background-size: 250% 100%;
+    background-clip: text;
+    color: transparent;
+    animation: artex-shimmer 4.5s ease-in-out infinite;
+  }
+}
+
+@keyframes artex-shimmer {
+  0%, 15% { background-position: 100% 0; }
+  70%, 100% { background-position: 0 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .artex-tag { animation: none; }
+}
