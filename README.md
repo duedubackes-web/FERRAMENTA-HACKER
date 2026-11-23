@@ -1,6 +1,6 @@
-# Atlas — Evidence & Build Studio / FERRAMENTA-HACKER
+# Lion'sMaskSec XZ
 
-Projeto de duedubackes-web, sem vínculo com Kali, Wireshark, THC, REA ou Craft Anything.
+Plataforma de investigação digital que reúne Atlas e Vigília. Projeto de duedubackes-web, sem vínculo com Kali, Wireshark, THC, REA ou Craft Anything.
 
 Repositório: https://github.com/duedubackes-web/FERRAMENTA-HACKER
 
@@ -26,6 +26,19 @@ Abra **http://127.0.0.1:8765** e selecione **Explorar demonstração**. Requer P
 - Estúdio de código-fonte ZIP: mapa estático, plano de produto, backlog e protótipo próprio com quadro de tarefas e chat local.
 
 [Guia do aplicativo](docs/APLICATIVO-ATLAS.md): instalação, uso, configuração do modelo, backup, exportação e limites. Esta é a versão **local para um usuário**. REA/Craft/Kali estão documentados como pesquisa; os adaptadores funcionais não embutem seus motores. O protótipo é gerado por template próprio, e a novidade comercial permanece hipótese a validar.
+
+## Vigília e laboratórios
+
+No menu do Atlas, abra **Vigília e laboratórios** para calcular SHA-256,
+extrair indicadores, revisar cabeçalhos HTTP, consultar as fichas de ferramentas
+e praticar com três casos fictícios. O orquestrador gera um parecer exportável
+em JSON e o chat local responde sobre a triagem atual.
+
+O Vigília processa as entradas na aba do navegador. O Atlas mantém seu
+fluxo de projetos persistentes e importação de relatórios. Os registros
+exportados pelo Vigília são arquivos independentes, sem sincronização com o
+banco do Atlas. O módulo vem do projeto Vigília na revisão `c652ea2` e inclui
+a arte original com tratamento psicodélico.
 
 ## Usar a ferramenta de revisão
 

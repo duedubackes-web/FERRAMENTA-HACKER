@@ -91,6 +91,9 @@ async function until(test, label) {
   $("#demo").click();
   await until(() => $("#stat-items").textContent === "8", "demo 8 items");
   assert.equal($("#stat-first").textContent, "4");
+  assert.equal($("#dashboard-priorities .review-first").value, 4);
+  assert.equal($("#dashboard-priorities .review-first").max, 8);
+  assert.equal($("#dashboard-progress").value, 0);
   assert.equal($("#stat-sources").textContent, "4");
   $('[data-view="review"]').click();
   assert.equal($$("#review-list .queue-item").length, 8);
@@ -108,6 +111,8 @@ async function until(test, label) {
     () => $("#stat-decisions").textContent === "1",
     "decision persistence",
   );
+  assert.equal($("#dashboard-progress").value, 1);
+  assert.equal($("#dashboard-progress").max, 8);
   $('[data-view="chat"]').click();
   $("#question").value = "O que revisar primeiro?";
   $("#chat-form").dispatchEvent(
@@ -135,6 +140,7 @@ async function until(test, label) {
   );
   await until(() => $("#stat-sources").textContent === "5", "UI file import");
   assert.equal($("#stale").hidden, false);
+  assert.match($("#dashboard-trend").textContent, /Novas fontes/);
   $('#view-review [data-action="review"]').click();
   await until(() => $("#stale").hidden === true, "new review");
   assert.equal($("#stat-decisions").textContent, "0");

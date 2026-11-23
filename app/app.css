@@ -201,6 +201,7 @@ nav {
   padding: 13px 11px;
   border-radius: 8px;
   text-align: left;
+  text-decoration: none;
   font-size: 12px;
   white-space: nowrap;
 }
@@ -1396,4 +1397,60 @@ dialog::backdrop {
     transition: none !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Atlas Vigília dashboard */
+:root {
+  --paper: #fbf8f5;
+  --line: #e8dfd7;
+  --lime: #ffad6b;
+  --ink: #271d19;
+}
+.sidebar { background: var(--identity-dark); }
+.sidebar .nav { color: #ebd9ce; }
+.sidebar .nav:hover, .sidebar .nav.active { background: #493028; color: #fff4e9; }
+.identity-mark { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; border: 1px solid #a96848; }
+.command-hero {
+  display: flex;
+  align-items: center;
+  min-height: 305px;
+  background-color: #1d1215;
+  background-image: linear-gradient(90deg, #190f12 8%, #190f12f5 38%, #190f1250 72%, #190f1210), url("/vigilia/lionmask-hero.webp");
+  background-repeat: no-repeat;
+  background-position: center, right 40%;
+  background-size: cover, min(62%, 680px) auto;
+}
+.command-copy { max-width: 31rem; }
+.command-hero .hero-label { color: var(--identity-ember); font-size: .82rem; margin: 0 0 12px; }
+.command-hero h1 { margin: 0 0 12px; font-size: clamp(2rem, 4vw, 4rem); line-height: 1; letter-spacing: -.055em; }
+.command-hero p { color: #f1ded3; font-size: 1.05rem; }
+.command-hero .lime { color: #2e170b; }
+.command-hero .lime:hover { background: #ffd0ab; }
+.command-hero .hero-link { font-size: .95rem; color: #ffdfc8; }
+.command-hero .hero-actions { flex-wrap: wrap; }
+.command-grid, .command-assistants { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-block: 18px; }
+.command-card, .command-shortcut { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.command-card h2 { font-size: 1.15rem; margin: 0 0 6px; }
+.command-note { color: #66574f; margin: 0 0 12px; line-height: 1.5; }
+.command-chart { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
+.command-chart-row { display: grid; grid-template-columns: 1fr auto; gap: 3px 8px; }
+.command-meter, .command-progress { width: 100%; height: .85rem; grid-column: 1 / -1; accent-color: #a8482e; }
+.command-meter::-webkit-meter-bar, .command-progress::-webkit-meter-bar { background: #f1e8e1; border: 0; }
+.command-meter::-webkit-meter-optimum-value { background: #a8482e; }
+.command-meter.review-next::-webkit-meter-optimum-value { background: #99621e; }
+.command-meter.context::-webkit-meter-optimum-value { background: #674470; }
+.command-progress::-webkit-meter-optimum-value { background: #674470; }
+.command-shortcut { display: grid; gap: 5px; color: var(--ink); text-align: left; text-decoration: none; }
+.command-shortcut:hover { background: #fff2e7; border-color: #a96848; }
+.command-shortcut span { color: #66574f; line-height: 1.45; }
+.command-card > .command-shortcut { margin-top: 14px; padding: 8px 12px; }
+@media (max-width: 760px) {
+  .command-hero {
+    background-image: linear-gradient(90deg, #190f12f5 8%, #190f12b8 60%, #190f1220), url("/vigilia/lionmask-hero-small.webp");
+    background-size: cover, auto 100%;
+  }
+  .command-hero p { max-width: 17rem; }
+}
+@media (max-width: 460px) {
+  .command-grid, .command-assistants { grid-template-columns: 1fr; }
 }

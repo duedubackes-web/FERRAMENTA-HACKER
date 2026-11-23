@@ -17,6 +17,24 @@ from json_reports import decode_object
 
 MAX_REQUEST = 44 * 1024 * 1024
 STATIC = {'/': ('index.html', 'text/html; charset=utf-8'), '/app.css': ('app.css', 'text/css; charset=utf-8'), '/app.js': ('app.js', 'text/javascript; charset=utf-8')}
+STATIC.update({
+    f'/vigilia/{name}': (f'vigilia/{name}', mime)
+    for name, mime in {
+        'style.css': 'text/css; charset=utf-8',
+        'identity.css': 'text/css; charset=utf-8',
+        'lion-paw.png': 'image/png',
+        'app.js': 'text/javascript; charset=utf-8',
+        'orchestrator.js': 'text/javascript; charset=utf-8',
+        'imports.js': 'text/javascript; charset=utf-8',
+        'hub.js': 'text/javascript; charset=utf-8',
+        'fraud.js': 'text/javascript; charset=utf-8',
+        'labs.js': 'text/javascript; charset=utf-8',
+        'lionmask-hero.webp': 'image/webp',
+        'lionmask-hero-small.webp': 'image/webp',
+        'lionmask-icon.webp': 'image/webp',
+    }.items()
+})
+STATIC['/vigilia/'] = ('vigilia/index.html', 'text/html; charset=utf-8')
 
 
 class LocalServer(ThreadingHTTPServer):

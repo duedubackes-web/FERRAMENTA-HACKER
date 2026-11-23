@@ -187,13 +187,15 @@ function render() {
     report?.summary.by_priority["review-first"] || 0;
   $("#stat-items").textContent = report?.items.length || 0;
   $("#nav-count").textContent = report?.items.length || 0;
-  $("#stat-decisions").textContent = snapshot
+  const decisionCount = snapshot
     ? new Set(
         snapshot.decisions
           .filter((d) => d.review === snapshot.review?.id)
           .map((d) => d.item),
       ).size
     : 0;
+  $("#stat-decisions").textContent = decisionCount;
+  renderDashboard(report, decisionCount, snapshot?.review_stale);
   $("#stale").hidden = !snapshot?.review_stale;
   $("#delete-project").disabled = !snapshot;
   $("#compare-reviews").disabled = (snapshot?.reviews.length || 0) < 2;
@@ -205,6 +207,36 @@ function render() {
   renderMessages();
   renderActivity();
   renderStudio();
+}
+function renderDashboard(report, decisions, stale) {
+  const total = report?.items.length ?? 0;
+  const priorities = [
+    ["review-first", "Revisar primeiro"],
+    ["review-next", "Revisar depois"],
+    ["context", "Contexto"],
+  ];
+  const chart = $("#dashboard-priorities");
+  chart.replaceChildren(...priorities.map(([key, label]) => {
+    const count = report?.summary.by_priority[key] ?? 0;
+    const row = el("li", "command-chart-row");
+    const meter = el("meter", "command-meter " + key);
+    meter.max = Math.max(1, total);
+    meter.value = count;
+    meter.setAttribute("aria-label", label + ": " + count + " de " + total);
+    row.append(el("span", "", label), el("strong", "", String(count)), meter);
+    return row;
+  }));
+  const progress = $("#dashboard-progress");
+  progress.max = Math.max(1, total);
+  progress.value = decisions;
+  $("#dashboard-progress-label").textContent = report
+    ? decisions + " de " + total + " itens com decisão registrada"
+    : "Nenhuma revisão disponível.";
+  $("#dashboard-trend").textContent = stale
+    ? "Novas fontes disponíveis. Gere outra revisão para incluir os arquivos."
+    : report
+      ? "Distribuição dos itens na revisão atual."
+      : "Importe relatórios para gerar uma revisão.";
 }
 function showView(view) {
   state.view = view;

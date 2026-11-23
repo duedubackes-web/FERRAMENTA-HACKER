@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Atlas: um espaço local para investigar evidências, conversar com fontes e construir produtos próprios."
+      content="Lion'sMaskSec XZ: um espaço local para investigar evidências, conversar com fontes e construir produtos próprios."
     />
-    <title>Atlas — Evidence & Build Studio</title>
+    <title>Lion'sMaskSec XZ — Central de investigação</title>
     <link rel="stylesheet" href="/app.css" />
+    <link rel="stylesheet" href="/vigilia/identity.css" />
     <script src="/app.js" defer></script>
   </head>
   <body>
     <a class="skip" href="#main">Pular para o conteúdo</a>
     <aside class="sidebar">
-      <a class="brand" href="/" aria-label="Atlas, início"
-        ><span class="brand-symbol">A<span>↗</span></span
-        ><span
-          >atlas<span class="brand-sub">EVIDENCE & BUILD STUDIO</span></span
-        ></a
-      >
+      <a class="brand" href="/" aria-label="Lion'sMaskSec XZ, início">
+        <img src="/vigilia/lionmask-icon.webp" alt="" class="identity-mark" />
+        <span>Lion'sMaskSec XZ<span class="brand-sub">INVESTIGAÇÃO DIGITAL</span></span>
+      </a>
       <div class="workspace-label">SEU ESPAÇO DE TRABALHO</div>
       <label class="sr-only" for="project-select">Projeto atual</label
       ><select id="project-select">
@@ -51,6 +50,7 @@
         <button class="nav" data-view="chat">
           <span>✳</span> Assistente Atlas
         </button>
+        <a class="nav" href="/vigilia/"><span aria-hidden="true">⌖</span> Vigília e laboratórios</a>
       </nav>
       <div class="sidebar-bottom">
         <span class="status-dot"></span> Workspace local<span
@@ -92,45 +92,16 @@
       <div class="workarea">
         <main id="main" tabindex="-1">
           <section class="view" id="view-overview">
-            <div class="page-heading">
-              <div>
-                <p class="eyebrow">CLAREZA ANTES DA AÇÃO</p>
-                <h1>Entenda. Questione. Construa.</h1>
-                <p class="subtitle">
-                  Transforme relatórios em uma investigação que você consegue
-                  explicar.
-                </p>
-              </div>
-              <button class="primary" data-action="import">
-                ＋ Importar relatório
-              </button>
-            </div>
-            <div class="hero">
-              <div>
-                <span class="hero-label">INTELIGÊNCIA COM ORIGEM</span>
-                <h2>Uma boa resposta<br />começa com uma evidência.</h2>
-                <p>
-                  Reúna rede, componentes e alertas web. Descubra o que revisar
-                  e converse com as fontes — sem perder o contexto.
-                </p>
+            <div class="hero command-hero">
+              <div class="command-copy">
+                <p class="hero-label">CENTRAL DE INVESTIGAÇÃO</p>
+                <h1 class="graffiti-title">Lion'sMaskSec XZ</h1>
+                <p class="artex-tag">FERRAMENTA NMAP &amp; ARTEX</p>
+                <p>Importe evidências, acompanhe a fila e documente suas decisões.</p>
                 <div class="hero-actions">
-                  <button id="demo" class="lime">
-                    Explorar demonstração <span>↗</span></button
-                  ><button class="hero-link" data-go="sources">
-                    Ver evidências →
-                  </button>
+                  <button class="lime" data-action="import">Importar relatório</button>
+                  <button id="demo" class="hero-link">Explorar demonstração</button>
                 </div>
-              </div>
-              <div class="orbit" aria-hidden="true">
-                <div class="orbit-ring one"></div>
-                <div class="orbit-ring two"></div>
-                <div class="orbit-core">a<span>↗</span></div>
-                <span class="orbit-node node-one">NMAP</span
-                ><span class="orbit-node node-two">TRIVY</span
-                ><span class="orbit-node node-three">ZAP</span
-                ><span class="orbit-caption"
-                  >CONECTE O CONTEXTO.<br />PRESERVE A ORIGEM.</span
-                >
               </div>
             </div>
             <div id="stale" class="notice" hidden>
@@ -163,33 +134,25 @@
                 ><small>Histórico declarado pelo usuário</small>
               </article>
             </div>
-            <div class="section-heading">
-              <h2>Seu próximo passo</h2>
-              <span class="muted">UM FLUXO, TRÊS PERSPECTIVAS</span>
+            <div class="command-grid">
+              <section class="command-card" aria-labelledby="priority-heading">
+                <h2 id="priority-heading">Prioridades da revisão</h2>
+                <p id="dashboard-trend" class="command-note" role="status">Importe relatórios para gerar uma revisão.</p>
+                <ul id="dashboard-priorities" class="command-chart" aria-label="Distribuição de itens por prioridade"></ul>
+              </section>
+              <section class="command-card" aria-labelledby="progress-heading">
+                <h2 id="progress-heading">Decisões na fila</h2>
+                <p id="dashboard-progress-label" class="command-note">Nenhuma revisão disponível.</p>
+                <meter class="command-progress" id="dashboard-progress" min="0" max="1" value="0" aria-labelledby="dashboard-progress-label"></meter>
+                <button class="command-shortcut" data-go="review">Abrir fila de revisão</button>
+              </section>
             </div>
-            <div class="steps">
-              <button data-action="import">
-                <span class="step-number">01</span>
-                <h3>Reúna as fontes <span>↗</span></h3>
-                <p>
-                  Importe XML Nmap ou JSON Trivy e ZAP, com limites de cobertura
-                  explícitos.
-                </p></button
-              ><button data-action="review">
-                <span class="step-number">02</span>
-                <h3>Gere uma revisão <span>↗</span></h3>
-                <p>
-                  Prioridades explicáveis, sem inferir relações entre IPs,
-                  pacotes e sites.
-                </p></button
-              ><button data-go="chat">
-                <span class="step-number">03</span>
-                <h3>Converse com o contexto <span>↗</span></h3>
-                <p>
-                  Pergunte sobre a fila, consulte tecnologias e volte à origem
-                  de cada resposta.
-                </p>
-              </button>
+            <div class="section-heading"><h2>Assistentes de investigação</h2></div>
+            <div class="command-assistants">
+              <button class="command-shortcut" data-go="chat"><strong>Assistente Atlas</strong><span>Consulte a revisão e volte às fontes.</span></button>
+              <button class="command-shortcut" data-action="review"><strong>Gerar revisão</strong><span>Monte a fila com os relatórios importados.</span></button>
+              <a class="command-shortcut" href="/vigilia/#orquestrador"><strong>Orquestrador Vigília</strong><span>Faça a triagem de logs e respostas HTTP.</span></a>
+              <a class="command-shortcut" href="/vigilia/#laboratorios"><strong>Laboratórios</strong><span>Pratique com três casos guiados.</span></a>
             </div>
             <div class="section-heading">
               <h2>Na sua fila</h2>
