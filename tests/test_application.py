@@ -439,6 +439,8 @@ class HttpTests(unittest.TestCase):
         self.assertIn(b'href="/"', html)
         for asset, mime in [
             ('style.css', 'text/css'),
+            ('identity.css', 'text/css'),
+            ('lion-paw.png', 'image/png'),
             ('app.js', 'text/javascript'),
             ('orchestrator.js', 'text/javascript'),
             ('hub.js', 'text/javascript'),

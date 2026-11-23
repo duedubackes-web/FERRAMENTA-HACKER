@@ -21,6 +21,8 @@ STATIC.update({
     f'/vigilia/{name}': (f'vigilia/{name}', mime)
     for name, mime in {
         'style.css': 'text/css; charset=utf-8',
+        'identity.css': 'text/css; charset=utf-8',
+        'lion-paw.png': 'image/png',
         'app.js': 'text/javascript; charset=utf-8',
         'orchestrator.js': 'text/javascript; charset=utf-8',
         'hub.js': 'text/javascript; charset=utf-8',

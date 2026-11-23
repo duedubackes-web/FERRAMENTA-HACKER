@@ -1,0 +1,12 @@
+:root {
+  --identity-ember: #ffad6b;
+  --identity-dark: #211714;
+}
+@media (any-pointer: fine) {
+  a[href], button:not(:disabled), summary, select:not(:disabled) {
+    cursor: url("lion-paw.png") 15 15, pointer;
+  }
+}
+:where(a, button, summary):focus-visible {
+  outline-color: #cd6729;
+}
