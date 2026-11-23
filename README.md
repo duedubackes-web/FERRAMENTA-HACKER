@@ -1,6 +1,6 @@
-# Atlas — Evidence & Build Studio / FERRAMENTA-HACKER
+# LionMaskSec
 
-Projeto de duedubackes-web, sem vínculo com Kali, Wireshark, THC, REA ou Craft Anything.
+Plataforma de investigação digital que reúne Atlas e Vigília. Projeto de duedubackes-web, sem vínculo com Kali, Wireshark, THC, REA ou Craft Anything.
 
 Repositório: https://github.com/duedubackes-web/FERRAMENTA-HACKER
 
