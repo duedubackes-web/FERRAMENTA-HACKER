@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="identity.css">
 <script src="app.js" defer></script>
 <script src="orchestrator.js" defer></script>
+<script src="imports.js" defer></script>
 <script src="hub.js" defer></script>
 <script src="labs.js" defer></script>
 </head>
@@ -55,6 +56,11 @@
 <p class="eyebrow" id="detail-category"></p><h2 id="detail-title"></h2>
 <p id="detail-description"></p><button class="outline" id="show-help" aria-controls="tool-help" aria-expanded="false">Ajuda</button>
 <p id="tool-help" hidden></p>
+<form id="tool-import" hidden>
+<div><label for="tool-file" id="tool-file-label">Relatório local</label><input type="file" id="tool-file" required></div>
+<div class="actions"><button class="button">Analisar arquivo</button><button class="outline" type="button" id="save-import" disabled>Baixar análise JSON</button></div>
+<pre id="tool-import-result" role="status"></pre>
+</form>
 <form id="tool-report">
 <div><label for="tool-note">Evidência ou trecho do relatório</label><textarea id="tool-note" rows="5" maxlength="100000" required></textarea></div>
 <button class="outline">Baixar registro JSON</button>

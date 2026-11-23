@@ -31,6 +31,51 @@ const help = byId('tool-help');
 const helpButton = byId('show-help');
 const log = byId('chat-log');
 let selected;
+let importRevision = 0;
+let importedReport;
+const importForm = byId('tool-import');
+const importFile = byId('tool-file');
+const importResult = byId('tool-import-result');
+const saveImport = byId('save-import');
+
+function resetImport() {
+  importRevision += 1;
+  importedReport = null;
+  importResult.textContent = 'O resultado aparecerá aqui.';
+  saveImport.disabled = true;
+}
+
+importFile.addEventListener('change', resetImport);
+detail.addEventListener('close', resetImport);
+importForm.addEventListener('submit', async event => {
+  event.preventDefault();
+  resetImport();
+  const revision = importRevision;
+  const analyzer = reportAnalyzers[selected?.name];
+  const file = importFile.files[0];
+  if (!analyzer || !file) return;
+  if (file.size > 5 * 1024 * 1024) {
+    importResult.textContent = 'O limite por arquivo é de 5 MB.';
+    return;
+  }
+  try {
+    const input = (await file.text()).replace(/^\uFEFF/, '');
+    if (revision !== importRevision) return;
+    const result = analyzer.run(input);
+    importedReport = { ferramenta: selected.name, arquivo: file.name, analisado_em: new Date().toISOString(), resultado: result };
+    const formatted = JSON.stringify(importedReport, null, 2);
+    importResult.textContent = formatted.length > 15000
+      ? formatted.slice(0, 15000) + '\n… Baixe o JSON para ler a análise completa.'
+      : formatted;
+    saveImport.disabled = false;
+  } catch (error) {
+    if (revision !== importRevision) return;
+    importResult.textContent = error instanceof SyntaxError ? 'O arquivo não contém JSON válido.' : error.message;
+  }
+});
+saveImport.addEventListener('click', () => {
+  if (importedReport) downloadJson(importedReport, 'lionmasksec-analise.json');
+});
 
 function renderLibrary() {
   const query = normalize(byId('tool-search').value.trim());
@@ -52,10 +97,16 @@ function renderLibrary() {
     const button = document.createElement('button');
     button.className = 'outline';
     button.type = 'button';
-    button.textContent = 'Abrir ficha';
+    button.textContent = reportAnalyzers[tool.name] ? 'Importar relatório' : 'Abrir guia';
     button.setAttribute('aria-label', 'Abrir ficha de ' + tool.name);
     button.addEventListener('click', () => {
       selected = tool;
+      const analyzer = reportAnalyzers[tool.name];
+      importForm.hidden = !analyzer;
+      importFile.value = '';
+      importFile.accept = analyzer?.accept ?? '';
+      byId('tool-file-label').textContent = analyzer?.label ?? 'Relatório local';
+      resetImport();
       byId('detail-title').textContent = tool.name;
       byId('detail-category').textContent = tool.category;
       byId('detail-description').textContent = tool.description;

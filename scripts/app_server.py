@@ -25,6 +25,7 @@ STATIC.update({
         'lion-paw.png': 'image/png',
         'app.js': 'text/javascript; charset=utf-8',
         'orchestrator.js': 'text/javascript; charset=utf-8',
+        'imports.js': 'text/javascript; charset=utf-8',
         'hub.js': 'text/javascript; charset=utf-8',
         'labs.js': 'text/javascript; charset=utf-8',
         'lionmask-hero.webp': 'image/webp',
