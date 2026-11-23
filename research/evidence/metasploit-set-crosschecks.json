@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "scope": "Root tracked entries and archive bytes only; nested contents, submodules and semantics are separate limitations",
+  "records": [
+    {
+      "source_id": "metasploit",
+      "commit": "bea1fb069e79cb610fe3981f16b8697790369c63",
+      "snapshot_verification": {
+        "source": "metasploit",
+        "source_commit": "bea1fb069e79cb610fe3981f16b8697790369c63",
+        "checked_files": 15151,
+        "unfetched_gitlinks": 1,
+        "archive_sha256_verified": true,
+        "per_entry_sha256_verified": true
+      },
+      "root_files": 15151,
+      "craft": {
+        "version": "0.6.1",
+        "evidence_id": "ev_7425e48eac6f5b00d6178b87575db91df2df79e75ba247fe5573732bb3343375",
+        "coverage": {
+          "examined": 15151,
+          "status": "partial",
+          "total": 15151
+        },
+        "params": {
+          "if_tampered": true,
+          "limit": 20000,
+          "max_depth": 0,
+          "max_entries": 20000,
+          "max_total_bytes": 1073741824,
+          "offset": 0,
+          "path": "/workspace/output/source-snapshots/metasploit-bea1fb069e79.zip"
+        },
+        "limitations": [
+          {
+            "code": "nested_not_opened",
+            "message": "29 nested archive(s) were not opened (depth or size limit; each entry's note says which); raise max_depth to open deeper ones."
+          },
+          {
+            "code": "no_disk_images",
+            "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+          }
+        ],
+        "all_root_hashes_matched": 15151
+      },
+      "rea": {
+        "version": "6.9.0",
+        "evidence_id": "ev_cf6b773a5e5d83f7b082fccae294a48c12dc1507827a024489637f96b2231822",
+        "coverage": {
+          "scope": "container-entries",
+          "status": "complete"
+        },
+        "manifest": {
+          "manifest_id": "agm_a4203814ea51c10d94adbd8ed49e7319eb71bdd821c1420b04cc7c72bb4cb4e6",
+          "root_artifact_id": "art_8fba1409a0546af270be97a2b5a5cdcf6d46c4c6cf75dcb463c646186ea5c8f8",
+          "root_sha256": "3be1e07a67f35a3be3709f38b41e6d6223734197cbc2b5807235f2e737926e31",
+          "root_format": "zip",
+          "graph_sha256": "1c1a2eb4b44de654309fdd175b6c10eeacfa214b077cd3144f447b3b4e620f51",
+          "node_count": 14907,
+          "occurrence_count": 15152,
+          "edge_count": 15151
+        },
+        "root_hashes_matched": 15151,
+        "unhashed_root_entries": [],
+        "limitations": [
+          "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+          "ZIP inventory lists central-directory entries only. Non-entry bytes, including leading bytes before the first entry such as a self-extractor stub, an APK Signing Block before the central directory or a ZIP comment after it, are not occurrences."
+        ]
+      },
+      "unfetched_gitlinks": [
+        "external/source/ReflectiveDLLInjection"
+      ],
+      "target_executed": false
+    },
+    {
+      "source_id": "set",
+      "commit": "5e0fbb50ca8b156ac93532a0a4d138900c6e0827",
+      "snapshot_verification": {
+        "source": "set",
+        "source_commit": "5e0fbb50ca8b156ac93532a0a4d138900c6e0827",
+        "checked_files": 232,
+        "unfetched_gitlinks": 0,
+        "archive_sha256_verified": true,
+        "per_entry_sha256_verified": true
+      },
+      "root_files": 232,
+      "craft": {
+        "version": "0.6.1",
+        "evidence_id": "ev_7ecfc47a4ebde3738121d3c5b8c8b02f6658aa66c9b89e5d3db8d4939d38fe8d",
+        "coverage": {
+          "examined": 232,
+          "status": "partial",
+          "total": 232
+        },
+        "params": {
+          "if_tampered": true,
+          "limit": 20000,
+          "max_depth": 0,
+          "max_entries": 20000,
+          "max_total_bytes": 1073741824,
+          "offset": 0,
+          "path": "/workspace/output/source-snapshots/set-5e0fbb50ca8b.zip"
+        },
+        "limitations": [
+          {
+            "code": "nested_not_opened",
+            "message": "3 nested archive(s) were not opened (depth or size limit; each entry's note says which); raise max_depth to open deeper ones."
+          },
+          {
+            "code": "no_disk_images",
+            "message": "Disk images (DMG), installers (PKG/MSI) and compressed tarballs are listed as single files, not opened."
+          }
+        ],
+        "all_root_hashes_matched": 232
+      },
+      "rea": {
+        "version": "6.9.0",
+        "evidence_id": "ev_e2b47852541163de2ee96094a50c4f540e8ddc8acb23a93095847dec8d5c88eb",
+        "coverage": {
+          "scope": "container-entries",
+          "status": "complete"
+        },
+        "manifest": {
+          "manifest_id": "agm_adb52cb447299ab0988683fa86ddb16e3de51f560c350ddc06781c904356526e",
+          "root_artifact_id": "art_a4b099181485fa2f92b4d0ea1e536d0241e704d1f86a2488e80b8f927d557026",
+          "root_sha256": "ed7b8d074dc563b72962f8c6f65b827ef351347c054d2d07b68d73f1bb01c079",
+          "root_format": "zip",
+          "graph_sha256": "870a29ebc77554ebb2bf2c69ed6b291b82826a255f0bd165c553fa80d73b8553",
+          "node_count": 197,
+          "occurrence_count": 233,
+          "edge_count": 232
+        },
+        "root_hashes_matched": 232,
+        "unhashed_root_entries": [],
+        "limitations": [
+          "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+          "ZIP inventory lists central-directory entries only. Non-entry bytes, including leading bytes before the first entry such as a self-extractor stub, an APK Signing Block before the central directory or a ZIP comment after it, are not occurrences."
+        ]
+      },
+      "unfetched_gitlinks": [],
+      "target_executed": false
+    }
+  ]
+}

@@ -571,6 +571,8 @@ function renderMessages() {
           } catch (error) {
             toast(error.message, true);
           }
+        } else if (citation.kind === "source-research") {
+          await openDossier(citation.tool_id);
         } else if (citation.kind === "studio") {
           const record = state.snapshot?.studio.find(
             (r) => r.id === citation.record_id,
@@ -676,7 +678,54 @@ function renderCapabilities() {
         $("#question").focus();
       }),
     );
+    if (capability.dossier_id)
+      card.append(
+        btn("Abrir dossiê com fontes →", () =>
+          openDossier(capability.dossier_id),
+        ),
+      );
     root.append(card);
+  }
+}
+async function openDossier(id) {
+  try {
+    const dossier = await api("/api/research/" + encodeURIComponent(id));
+    const content = el("div");
+    content.append(
+      el(
+        "p",
+        "notice",
+        "Pesquisa estática seletiva. O motor não foi executado. Commit: " +
+          dossier.commit,
+      ),
+    );
+    for (const fact of dossier.facts) {
+      const section = el("article", "queue-item");
+      section.append(
+        el("h3", "", fact.id + " · " + fact.claim),
+        pre({
+          path: fact.path,
+          line: fact.line,
+          quote: fact.quote,
+          commit: fact.commit,
+          url: fact.url,
+        }),
+      );
+      content.append(section);
+    }
+    content.append(el("h3", "", "Oportunidades para implementação própria"));
+    for (const proposal of dossier.opportunities)
+      content.append(el("p", "feedback", proposal));
+    content.append(
+      pre({
+        limitations: dossier.limitations,
+        inventory_evidence: dossier.inventory_evidence,
+        unfetched_gitlinks: dossier.unfetched_gitlinks,
+      }),
+    );
+    modal(dossier.name + " · dossiê", content);
+  } catch (error) {
+    toast(error.message, true);
   }
 }
 function renderStudio() {
@@ -955,6 +1004,8 @@ async function init() {
       api("/api/catalog"),
       api("/api/capabilities"),
     ]);
+    $("#catalog-search").placeholder =
+      "Buscar nas " + state.catalog.count + " tecnologias…";
     renderCatalog();
     renderCapabilities();
     await loadProjects();

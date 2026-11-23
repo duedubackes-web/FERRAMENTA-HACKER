@@ -15,7 +15,7 @@ Não contém uma distribuição nova, um substituto do Wireshark ou uma implemen
 python scripts/app_server.py
 ```
 
-Versão **0.2.0**. Use o botão **✓ Verificar workspace** ou `python scripts/app_server.py --check` para conferir arquivos, banco e modelo opcional.
+Versão **0.3.0**. Use o botão **✓ Verificar workspace** ou `python scripts/app_server.py --check` para conferir arquivos, banco e modelo opcional.
 
 Abra **http://127.0.0.1:8765** e selecione **Explorar demonstração**. Requer Python 3.11+; o aplicativo local padrão não precisa de chave de API ou instalação de ferramentas externas.
 
@@ -57,14 +57,14 @@ python -m unittest discover -s tests -v
 
 ## O que foi extraído
 
-- Árvores Git rastreadas de dezenove repositórios, fixadas por commit em `sources.lock.json`.
+- Árvores Git rastreadas de vinte e um repositórios, fixadas por commit em `sources.lock.json`.
 - Inventários de arquivos, tamanho, modo e SHA-256 em `research/inventories/`.
 - Evidências seletivas com trecho, arquivo, linha e URL fixada em `research/findings.json`.
 - Inventários reais pelo Craft Anything de Kali, Wireshark, Hydra, Nmap, sqlmap, John the Ripper e as novas fontes descritas no catálogo; a cobertura de arquivos internos é detalhada por rodada.
 - Evidências reais REA dos scripts públicos recebidos dos sites Wireshark, Nmap e sqlmap e da inspeção do ZIP de fontes do John, com proveniência e limites de cobertura.
 - Textos de licença preservados em `third_party/notices/`.
 
-Os dezenove snapshots de fontes foram gerados separadamente em `/workspace/output/source-snapshots/` no ambiente de trabalho. O GitHub recebe o lock e os inventários; as fontes podem ser recuperadas pelo script abaixo.
+Os 21 snapshots de fontes foram gerados separadamente em `/workspace/output/source-snapshots/` no ambiente de trabalho. O GitHub recebe o lock e os inventários; as fontes podem ser recuperadas pelo script abaixo.
 Não adicione esses ZIPs ao Git: Wireshark e REA tornam o histórico pesado.
 O inventário cobre arquivos rastreados no commit, não histórico, submódulos recursivos, conteúdo externo ou todos os pacotes Kali.
 O material foi indexado integralmente nesse recorte; a revisão semântica foi seletiva.
@@ -76,7 +76,7 @@ O material foi indexado integralmente nesse recorte; a revisão semântica foi s
 - `docs/IMPORTAR-NMAP.md`: usar a importação offline e entender seu contrato.
 - `docs/IMPORTAR-ZAP.md`: importação web, confiança/risco, omissão de mensagens e regras v2.
 - `docs/REVISAO-INTELIGENTE.md`: novo fluxo Nmap/Trivy, regras explicáveis, contrato e limites.
-- `docs/CATALOGO-FERRAMENTAS.md`: 38 projetos, categorias, estados de evidência e 409 candidatos de pacotes Kali.
+- `docs/CATALOGO-FERRAMENTAS.md`: 39 projetos, categorias, estados de evidência e 409 candidatos de pacotes Kali.
 - `docs/GEMINI.md`: observação pública do app e fontes abertas relacionadas, com limites explícitos.
 - `docs/JOHN-THE-RIPPER.md`: coleta, arquitetura, catálogo estático e corroboração de inventários.
 - `docs/COMPARAR-NMAP.md`: comparar observações, entender lacunas e gerar relatórios HTML.
@@ -100,7 +100,7 @@ Instalações de ferramentas e comandos executados nesta pesquisa estão documen
 
 ## Estado
 
-Pesquisa estática ampliada, importação Nmap XML/Trivy JSON/ZAP Traditional JSON, comparação e fila de revisão explicável em JSON/HTML disponíveis. O corpus atual tem 59.740 entradas rastreadas em dezenove repositórios. Engenharia reversa dinâmica,
+Pesquisa estática ampliada, importação Nmap XML/Trivy JSON/ZAP Traditional JSON, comparação e fila de revisão explicável em JSON/HTML disponíveis. O corpus atual tem 75.124 entradas rastreadas em 21 repositórios. Engenharia reversa dinâmica,
 decompilação nativa, revisão completa dos pacotes Kali, testes dos produtos originais e evolução do produto final são trabalho futuro.
 Nenhum teste de intrusão, tentativa de autenticação ou captura de rede de terceiros foi realizado.
 
@@ -127,7 +127,7 @@ O novo verificador também funciona com as demais fontes do lock. O detalhe das 
 
 ## Catálogo ampliado e Gemini
 
-A busca offline reúne 38 projetos por categoria, com metadados, estado da coleta, avisos de licença e proveniência. O índice Kali cobre 409 candidatos diretamente declarados em 29 perfis de ferramentas; não é uma relação de pacotes instalados ou dependências transitivas.
+A busca offline reúne 39 projetos por categoria, com metadados, estado da coleta, avisos de licença e proveniência. O índice Kali cobre 409 candidatos diretamente declarados em 29 perfis de ferramentas; não é uma relação de pacotes instalados ou dependências transitivas.
 A pesquisa Gemini mantém separados o app hospedado, o Gemini CLI e o SDK Google Gen AI. Foram analisados estaticamente dois scripts iniciais públicos; o backend e os modelos não foram obtidos.
 Os bundles proprietários e o HTML bruto do app não são republicados no Git; a observação original, hashes, URLs e limitações estão em `research/gemini-public-observation.json`.
 Os dois projetos abertos relacionados têm snapshots e licenças próprios, sem implicar direitos sobre o serviço web.
@@ -148,3 +148,5 @@ O novo `replay-review` reconstrói a fila a partir de fontes locais explícitas 
 [Comparar revisões ao longo do tempo](docs/EVOLUCAO-REVISOES.md): interface, chat, CLI, chaves declaradas e limites de interpretação.
 
 [Metasploit Framework no chat](docs/METASPLOIT.md): ficha documental, aliases MSF/msfconsole e limites da integração.
+
+[Metasploit + SET](docs/METASPLOIT-SET.md): fontes fixadas, inventários reais REA/Craft e dossiês de arquitetura consultáveis no chat.

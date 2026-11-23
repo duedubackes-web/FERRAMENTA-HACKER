@@ -538,5 +538,89 @@
     "quote": "export class GoogleGenAI {",
     "url": "https://github.com/googleapis/js-genai/blob/4e849b1434ba0c7dbb3a49e35ca31d5d689b2af4/src/client.ts#L152",
     "limit": "Selective static reading; source declarations do not establish runtime functionality, integration or security."
+  },
+  {
+    "id": "MSF01",
+    "kind": "source-derived",
+    "claim": "O ponto de entrada msfconsole delega a inicialização à camada de comando do framework.",
+    "source_id": "metasploit",
+    "commit": "bea1fb069e79cb610fe3981f16b8697790369c63",
+    "path": "msfconsole",
+    "line": 23,
+    "quote": "Metasploit::Framework::Command::Console.start",
+    "url": "https://github.com/rapid7/metasploit-framework/blob/bea1fb069e79cb610fe3981f16b8697790369c63/msfconsole#L23",
+    "limit": "Leitura estática seletiva; não comprova execução, cobertura semântica integral ou segurança."
+  },
+  {
+    "id": "MSF02",
+    "kind": "source-derived",
+    "claim": "O contexto do framework compõe gerenciadores de módulos, eventos e plugins.",
+    "source_id": "metasploit",
+    "commit": "bea1fb069e79cb610fe3981f16b8697790369c63",
+    "path": "lib/msf/core/framework.rb",
+    "line": 70,
+    "quote": "self.modules   = ModuleManager.new(self,types)",
+    "url": "https://github.com/rapid7/metasploit-framework/blob/bea1fb069e79cb610fe3981f16b8697790369c63/lib/msf/core/framework.rb#L70",
+    "limit": "Leitura estática seletiva; não comprova execução, cobertura semântica integral ou segurança."
+  },
+  {
+    "id": "MSF03",
+    "kind": "source-derived",
+    "claim": "DBExport define exportação de workspace com raiz MetasploitV5; nenhum contrato de importação Atlas foi validado.",
+    "source_id": "metasploit",
+    "commit": "bea1fb069e79cb610fe3981f16b8697790369c63",
+    "path": "lib/msf/core/db_export.rb",
+    "line": 49,
+    "quote": "def to_xml_file(path, &block)",
+    "url": "https://github.com/rapid7/metasploit-framework/blob/bea1fb069e79cb610fe3981f16b8697790369c63/lib/msf/core/db_export.rb#L49",
+    "limit": "Leitura estática seletiva; não comprova execução, cobertura semântica integral ou segurança."
+  },
+  {
+    "id": "SET01",
+    "kind": "source-derived",
+    "claim": "O manifesto declara suporte Python >=3.11,<3.14; declaração não é teste de compatibilidade executado.",
+    "source_id": "set",
+    "commit": "5e0fbb50ca8b156ac93532a0a4d138900c6e0827",
+    "path": "pyproject.toml",
+    "line": 10,
+    "quote": "requires-python = \">=3.11,<3.14\"",
+    "url": "https://github.com/trustedsec/social-engineer-toolkit/blob/5e0fbb50ca8b156ac93532a0a4d138900c6e0827/pyproject.toml#L10",
+    "limit": "Leitura estática seletiva; não comprova execução, cobertura semântica integral ou segurança."
+  },
+  {
+    "id": "SET02",
+    "kind": "source-derived",
+    "claim": "O console importa helpers de src.core; sua leitura mostra preparação de configuração e diretórios antes do menu.",
+    "source_id": "set",
+    "commit": "5e0fbb50ca8b156ac93532a0a4d138900c6e0827",
+    "path": "setoolkit",
+    "line": 17,
+    "quote": "import src.core.setcore as core",
+    "url": "https://github.com/trustedsec/social-engineer-toolkit/blob/5e0fbb50ca8b156ac93532a0a4d138900c6e0827/setoolkit#L17",
+    "limit": "Leitura estática seletiva; não comprova execução, cobertura semântica integral ou segurança."
+  },
+  {
+    "id": "SET03",
+    "kind": "source-derived",
+    "claim": "O instalador legado possui efeitos de instalação e escrita em caminhos do sistema; não foi executado.",
+    "source_id": "set",
+    "commit": "5e0fbb50ca8b156ac93532a0a4d138900c6e0827",
+    "path": "setup.py",
+    "line": 10,
+    "quote": "def legacy_install():",
+    "url": "https://github.com/trustedsec/social-engineer-toolkit/blob/5e0fbb50ca8b156ac93532a0a4d138900c6e0827/setup.py#L10",
+    "limit": "Leitura estática seletiva; não comprova execução, cobertura semântica integral ou segurança."
+  },
+  {
+    "id": "SET04",
+    "kind": "source-derived",
+    "claim": "A licença exige preservação de avisos e limita uso do nome para endosso; não há endosso ao Atlas.",
+    "source_id": "set",
+    "commit": "5e0fbb50ca8b156ac93532a0a4d138900c6e0827",
+    "path": "readme/LICENSE",
+    "line": 8,
+    "quote": "* Neither the name of Social-Engineer Toolkit nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.",
+    "url": "https://github.com/trustedsec/social-engineer-toolkit/blob/5e0fbb50ca8b156ac93532a0a4d138900c6e0827/readme/LICENSE#L8",
+    "limit": "Leitura estática seletiva; não comprova execução, cobertura semântica integral ou segurança."
   }
 ]

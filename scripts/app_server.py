@@ -92,6 +92,8 @@ class Handler(BaseHTTPRequestHandler):
             self.connection.settimeout(30)
             payload = decode_object(self.rfile.read(int(length)), 'API request', MAX_REQUEST)
         parts = path.strip('/').split('/')
+        if len(parts) == 3 and parts[:2] == ['api', 'research'] and method == 'GET':
+            return self.respond(200, app.dossier(parts[2]))
         if path == '/api/projects':
             if method == 'GET':
                 return self.respond(200, app.store.projects())

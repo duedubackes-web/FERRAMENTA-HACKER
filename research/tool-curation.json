@@ -515,14 +515,16 @@
       ],
       "purpose": "Framework modular de testes de intrusão, catalogado apenas como referência.",
       "repository": "rapid7/metasploit-framework",
-      "source_ids": [],
+      "source_ids": [
+        "metasploit"
+      ],
       "aliases": [
         "msf",
         "msfconsole"
       ],
       "project_integration": {
-        "status": "documented-chat-reference",
-        "reference": "research/metasploit-reference.json",
+        "status": "static-source-dossier",
+        "reference": "research/technology-dossiers.json",
         "engine_executed": false
       }
     },
@@ -559,6 +561,27 @@
       "source_ids": [
         "google-genai-js"
       ]
+    },
+    {
+      "id": "set",
+      "name": "Social-Engineer Toolkit (SET)",
+      "categories": [
+        "exploit-frameworks"
+      ],
+      "purpose": "Pesquisa estática de arquitetura e empacotamento para avaliações de engenharia social; sem campanhas ou execução integrada.",
+      "repository": "trustedsec/social-engineer-toolkit",
+      "source_ids": [
+        "set"
+      ],
+      "aliases": [
+        "setoolkit",
+        "social-engineer-toolkit"
+      ],
+      "project_integration": {
+        "status": "static-source-dossier",
+        "reference": "research/technology-dossiers.json",
+        "engine_executed": false
+      }
     }
   ]
 }

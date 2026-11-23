@@ -50,9 +50,22 @@
         "msf",
         "msfconsole"
       ],
-      "status": "Referência documentada",
-      "description": "Framework de testes de segurança com msfconsole como interface principal. Disponível no chat como referência com proveniência; sem runtime, módulos, payloads, sessões ou execução de exploração integrados.",
-      "source": "research/metasploit-reference.json"
+      "status": "Fonte indexada / análise seletiva",
+      "description": "Árvore rastreada indexada e ZIP inspecionado por REA/Craft. Dossiê de arquitetura com fontes verificáveis; sem runtime, RPC ou execução de módulos no Atlas.",
+      "source": "research/technology-dossiers.json",
+      "dossier_id": "metasploit"
+    },
+    {
+      "id": "set",
+      "name": "Social-Engineer Toolkit (SET)",
+      "aliases": [
+        "setoolkit",
+        "social-engineer-toolkit"
+      ],
+      "status": "Fonte indexada / análise seletiva",
+      "description": "Dossiê de empacotamento, console e licenças com inventário REA/Craft. Sem instalação do SET, envio de mensagens ou captura de credenciais.",
+      "source": "research/technology-dossiers.json",
+      "dossier_id": "set"
     }
   ],
   "limits": "Integração de formato não equivale a incorporar o motor. Referência de pesquisa não é funcionalidade de execução."

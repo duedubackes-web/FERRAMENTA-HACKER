@@ -85,7 +85,7 @@ async function until(test, label) {
     $ = (s) => d.querySelector(s),
     $$ = (s) => [...d.querySelectorAll(s)];
   await until(
-    () => $("#capabilities").children.length === 7,
+    () => $("#capabilities").children.length === 8,
     "bootstrap and capabilities",
   );
   $("#demo").click();
@@ -157,11 +157,31 @@ async function until(test, label) {
   );
   $("#modal-close").click();
   $('[data-view="chat"]').click();
+  $("#question").value = "Qual a arquitetura do Metasploit e SET?";
+  $("#chat-form").dispatchEvent(
+    new w.Event("submit", { bubbles: true, cancelable: true }),
+  );
+  await until(
+    () => $$(".message.assistant").length === 2,
+    "source research chat",
+  );
+  assert.equal(
+    $$(".message.assistant").at(-1).querySelectorAll(".citations button")
+      .length,
+    2,
+  );
+  $$(".message.assistant").at(-1).querySelector(".citations button").click();
+  await until(
+    () => $("#modal-title").textContent === "Metasploit Framework · dossiê",
+    "source dossier API",
+  );
+  assert.ok($("#modal-body").textContent.includes("MSF03"));
+  $("#modal-close").click();
   $("#question").value = "O que mudou entre as revisões?";
   $("#chat-form").dispatchEvent(
     new w.Event("submit", { bubbles: true, cancelable: true }),
   );
-  await until(() => $$(".message.assistant").length === 2, "evolution chat");
+  await until(() => $$(".message.assistant").length === 3, "evolution chat");
   $$(".message.assistant").at(-1).querySelector(".citations button").click();
   await until(
     () =>
@@ -214,7 +234,7 @@ async function until(test, label) {
     await w.fetch("/api/projects/" + projects[0].id)
   ).json();
   assert.equal(snapshot.decisions.length, 1);
-  assert.equal(snapshot.messages.length, 2);
+  assert.equal(snapshot.messages.length, 3);
   assert.equal(snapshot.studio.length, 2);
   // Delay an old workspace response until a newer selection has loaded.
   const originalProject = projects[0].id;
@@ -280,7 +300,7 @@ async function until(test, label) {
   const diagnostic = JSON.parse($("#modal-body pre").textContent);
   assert.equal(diagnostic.database.status, "ok");
   assert.equal(diagnostic.chat.optional_model.status, "not-configured");
-  assert.equal(diagnostic.version, "0.2.0");
+  assert.equal(diagnostic.version, "0.3.0");
   assert.deepEqual(errors, []);
   process.stdout.write(
     JSON.stringify(
@@ -302,6 +322,7 @@ async function until(test, label) {
           "delayed-workspace-response",
           "review-evolution",
           "evolution-chat-reference",
+          "source-research-dossier",
           "workspace-diagnostics",
         ],
         javascriptErrors: errors.length,

@@ -33,6 +33,7 @@ class Application:
     def __init__(self, database):
         self.store = Store(database)
         self.capabilities = json.loads((ROOT/'research/app-capabilities.json').read_text())
+        self.dossiers = json.loads((ROOT/'research/technology-dossiers.json').read_text())
         self.catalog = json.loads((ROOT/'research/tool-catalog.json').read_text())
 
     def create_project(self, name):
@@ -117,6 +118,12 @@ class Application:
                 else:
                     response['text'] = doc['name']+'\nBrief declarado: '+doc['brief']+'\n\n'+ '\n'.join(t['priority']+' · '+t['task'] for t in doc['backlog'])+'\n\nPlano baseado em template; requer validação.'
                 response['citations'] = [{'kind': 'studio', 'record_id': record['id'], 'method': doc['method']}]
+        research_ids = {c['id'] for c in matched}
+        selected_dossiers = [d for d in self.dossiers['dossiers'] if d['id'] in research_ids]
+        research_question = bool(query & {'arquitetura', 'estrutura', 'pesquisa', 'licenca', 'licencas', 'fontes', 'codigo', 'empacotamento', 'inventario'})
+        if selected_dossiers and research_question:
+            response['text'] = '\n\n'.join(d['name']+' · pesquisa estática seletiva\n'+str(d['tracked_entries'])+' entradas rastreadas · commit '+d['commit']+'\n'+'\n'.join('• '+f['claim'] for f in d['facts'])+'\nLimites: '+' '.join(d['limitations']) for d in selected_dossiers)
+            response['citations'] = [{'kind': 'source-research', 'tool_id': d['id'], 'commit': d['commit'], 'finding_ids': [f['id'] for f in d['facts']]} for d in selected_dossiers]
         if query & {'evolucao', 'mudou', 'comparar', 'comparacao'}:
             history = self.store.reviews(project)
             if len(history) >= 2:
@@ -255,3 +262,10 @@ class Application:
         after = self.store.review_by_id(project, after_id)
         return {'before_record_id': before['id'], 'after_record_id': after['id'],
                 'comparison': compare_reviews(before['document'], after['document'])}
+
+    def dossier(self, ident):
+        if isinstance(ident, str):
+            for dossier in self.dossiers['dossiers']:
+                if dossier['id'] == ident:
+                    return dossier
+        raise ValueError('Dossiê não encontrado')

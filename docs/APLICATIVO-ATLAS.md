@@ -1,4 +1,4 @@
-# Atlas — aplicativo local v0.2.0
+# Atlas — aplicativo local v0.3.0
 
 Atlas transforma a base FERRAMENTA-HACKER em um aplicativo web local com projetos, evidências, decisões, chat e estúdio de produto. O código do aplicativo é próprio; as fontes de pesquisa continuam com suas licenças e proveniência.
 
@@ -65,9 +65,10 @@ A integração foi verificada com resposta e falha simuladas do transporte; não
 | Nmap | Importação e comparação XML offline; scanner não executado |
 | Trivy | Importação de campos selecionados JSON v2 |
 | ZAP | Importação de campos selecionados Traditional JSON/Plus |
-| Metasploit Framework | Referência documental no chat; aliases MSF/msfconsole; sem runtime ou RPC |
+| Metasploit Framework | Fonte indexada e dossiê estático; sem runtime ou RPC |
+| Social-Engineer Toolkit (SET) | Fonte indexada e dossiê estático; sem instalação, campanhas ou captura |
 
-As fichas da interface e do chat usam `research/app-capabilities.json`. O catálogo de 38 tecnologias mantém as fontes e os limites de cada registro. “Embutir uma tecnologia” não é usado como sinônimo de simplesmente mencionar seu nome.
+As fichas da interface e do chat usam `research/app-capabilities.json`. O catálogo de 39 tecnologias mantém as fontes e os limites de cada registro. “Embutir uma tecnologia” não é usado como sinônimo de simplesmente mencionar seu nome.
 
 ## Estúdio e produção própria
 
@@ -135,3 +136,7 @@ Correções da v0.1.1: respostas atrasadas não substituem a seleção atual de 
 ## Evolução das revisões — v0.2.0
 
 A fila agora lista quantas revisões estão salvas e permite compará-las. O chat consulta as duas mais recentes ao perguntar “O que mudou?”. A exportação inclui a baseline e a comparação quando disponíveis, com originais opcionais de ambos os lados. Consulte [o contrato da comparação](EVOLUCAO-REVISOES.md). O esquema SQLite continua 1.
+
+## Pesquisa com fontes — v0.3.0
+
+Perguntas sobre arquitetura, fontes e licenças do Metasploit e SET usam dossiês estáticos selecionados, com referências ao commit, arquivo e linha. Abra a referência do chat ou o botão da ficha em Tecnologias. Isso consulta pesquisa já preservada, sem instalar ou executar os motores. O recorte está em `METASPLOIT-SET.md`.

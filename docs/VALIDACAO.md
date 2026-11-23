@@ -88,3 +88,9 @@ O diagnóstico verifica integridade sem reparar os arquivos, estrutura SQLite e 
 ## Evolução temporal v0.2.0
 
 A suíte passa a 117 testes Python, com 12 testes novos do comparador, histórico, escopo por projeto e CLI. Foram verificados reordenação, mudança de severidade/confiança, mudança de versão instalada, duplicatas, chaves incompletas, versões incompatíveis, integridade interna de referências, persistência e exportação da baseline. A rota HTTP foi exercitada no fluxo do aplicativo. Os fluxos DOM incluem comparação pela interface e abertura da referência retornada pelo chat, totalizando 16 cenários do aplicativo e sete do protótipo. Não houve validação visual em navegador real ou execução de modelo nesta etapa.
+
+## Pesquisa Metasploit/SET — 16/11/2026
+
+Os dois snapshots tiveram SHA-256 de arquivo e de cada entrada conferidos contra o inventário próprio. Craft e REA coincidiram com os 15.151 hashes raiz Metasploit e 232 hashes raiz SET. Um gitlink Metasploit ficou sem conteúdo; Craft reportou partial por 29/3 arquivos internos não abertos. O resultado completo e seus limites estão em `research/evidence/metasploit-set-crosschecks.json`. REA/Craft inspecionaram arquivos, sem executar os motores originais ou seus testes.
+
+A suíte soma 122 testes Python, incluindo cinco testes de proveniência, concordância dos inventários, perguntas do chat e limites dos dossiês. Os fluxos DOM agora têm 17 cenários do aplicativo, incluindo consulta e abertura de fonte por API, e sete do protótipo. Não foi realizada validação visual em navegador real ou inferência por modelo nesta rodada.

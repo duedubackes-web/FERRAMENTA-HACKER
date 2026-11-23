@@ -295,6 +295,34 @@
       "scope": "HEAD tracked tree; no history, no recursive submodules, no LFS hydration",
       "snapshot_method": "Git tracked working tree bytes; symlink text preserved; gitlinks omitted; no export transformations",
       "unfetched_gitlinks": []
+    },
+    {
+      "id": "metasploit",
+      "url": "https://github.com/rapid7/metasploit-framework.git",
+      "commit": "bea1fb069e79cb610fe3981f16b8697790369c63",
+      "tracked_files": 15152,
+      "archive": "metasploit-bea1fb069e79.zip",
+      "archive_sha256": "3be1e07a67f35a3be3709f38b41e6d6223734197cbc2b5807235f2e737926e31",
+      "archive_bytes": 91997905,
+      "collected_at": "2026-11-16T07:52:56.628726+00:00",
+      "scope": "HEAD tracked tree; no history, no recursive submodules, no LFS hydration",
+      "snapshot_method": "Git tracked working tree bytes; symlink text preserved; gitlinks omitted; no export transformations",
+      "unfetched_gitlinks": [
+        "external/source/ReflectiveDLLInjection"
+      ]
+    },
+    {
+      "id": "set",
+      "url": "https://github.com/trustedsec/social-engineer-toolkit.git",
+      "commit": "5e0fbb50ca8b156ac93532a0a4d138900c6e0827",
+      "tracked_files": 232,
+      "archive": "set-5e0fbb50ca8b.zip",
+      "archive_sha256": "ed7b8d074dc563b72962f8c6f65b827ef351347c054d2d07b68d73f1bb01c079",
+      "archive_bytes": 23167081,
+      "collected_at": "2026-11-16T07:52:57.832526+00:00",
+      "scope": "HEAD tracked tree; no history, no recursive submodules, no LFS hydration",
+      "snapshot_method": "Git tracked working tree bytes; symlink text preserved; gitlinks omitted; no export transformations",
+      "unfetched_gitlinks": []
     }
   ]
 }

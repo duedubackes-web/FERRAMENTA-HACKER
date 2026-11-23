@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "application_version": "0.2.0",
-  "date": "2026-11-16",
+  "application_version": "0.3.0",
+  "date": "2026-11-23",
   "python": "3.12.14",
   "node": "v24.22.1",
   "python_tests": {
     "command": "python -m unittest discover -s tests",
-    "passed": 117,
+    "passed": 122,
     "application_tests": 27
   },
   "ui_tests": {
     "command": "npm run test:ui",
     "method": "jsdom DOM plus ephemeral local HTTP server; not real browser QA",
-    "application_scenarios": 16,
+    "application_scenarios": 17,
     "prototype_scenarios": 7,
     "javascript_errors": 0,
     "downloads": 2
@@ -29,24 +29,28 @@
   "model_adapter_test": "fixed-loopback transport response and error mocked; no live inference or quality evaluation",
   "visual_browser_check": "unavailable: no browser-control tool in this session; not bypassed",
   "file_sha256": {
-    "app/index.html": "9fb242d27f25464779ad15ea3d3117a10f884f88c664ed865f70a8e2757201ee",
+    "app/index.html": "e3f072e92bad000d30da3b4f60ac3a0b810fdf08667be1253d2bdcdde4b6e465",
     "app/app.css": "30c27d37aa841089d4b01895b756b59b4b198780be70d04ee6f585baf01b8637",
-    "app/app.js": "cd889e3fdb6829071a6ac2cc31a9f732fa46ffe0e333013f57d551783124ad4f",
-    "scripts/app_server.py": "6719447004f6ff28a856e33bfd1a00cb1d2054ea59b5884bbe6d85f610d2c3c5",
-    "scripts/app_service.py": "7f9266d0520cb32fcc83723018a8b2583cc1818398af16c4f591e45931fd9905",
+    "app/app.js": "71e5f8345522af340be5ce2b2e3ad31f39ff17cc1741a32b5190d0a236177445",
+    "scripts/app_server.py": "614bf2fc5a8a767d4be9ee359a96d23426679bae7607a2c1c27ad3fff0ecb58a",
+    "scripts/app_service.py": "df4db100a3a35c1fec2b85e9aef56e380a38d132a6165324b28e8b868c4b45b8",
     "scripts/app_store.py": "4cd46b835f679c067ad652a6277382a81fa3ed8fc21e2d352deb15f9220d00e8",
     "scripts/app_chat.py": "7f3b2fd69509c01e12f342a99de6814949b3f90ee201a2337ee6eb457a3c5c16",
     "scripts/app_ai.py": "84bf589042478bcf8a284ed51980110e70097029bd4fc6be355f4eafde10d343",
     "scripts/app_studio.py": "2bc733029a0d41c74a97866369d10b32d4be0c27eda6759e3dee749d5b4dc797",
     "scripts/app_scaffold.py": "e54998aa71ad3a51d48437edf3a83c9899c0afcaf2256105b3f51ee7bec04c58",
     "tests/test_application.py": "568e9b75cf4c94e497614b972c40340848aff355008b0877ff483a6b3071371c",
-    "tests/ui_flow.cjs": "e7de5f5ff7dbc9062ab33f40643a2b1b264af026a6bcd097cf182aaf139d900c",
+    "tests/ui_flow.cjs": "3c11e508303a081ff5868aa212a2d36f7f124b9aef5f220ea4dfe44babe028df",
     "tests/prototype_flow.cjs": "558686e3c99291c096e2e2d5b681cb8d1ae381a731e9d3f88c40ac89565ba190",
-    "package-lock.json": "48abd5dafd3c3037ccd65dccbd2c9c80511ab6cc0954c8f7661d55e18d4a3667",
-    "scripts/app_version.py": "5eda6c1c207adbfee46a920c6d833fd6d0279b51b24d1642e60936ded0544b9f",
+    "package-lock.json": "b4dcfa51ac626febbaf1ee220bc4033f28280a586906cd8898129d2831d6ee33",
+    "scripts/app_version.py": "a3d0c092603687d954704e47e844317fbcb0ca49f9fa6d9da36b61dfb14399c1",
     "scripts/review_evolution.py": "c90c26a53f54c0f257d12919c35de42b921eb135b0e80ab889dc77bdbb3cbf21",
     "tests/test_review_evolution.py": "8a3dc772db26a4b311f2158d5de5a8e1290b24b2b35c10a830e9867e4bcadb2a",
-    "scripts/workbench.py": "23fc13f78600f793a1d113ab35100709483e81bae171163291e93cc155e42512"
+    "scripts/workbench.py": "23fc13f78600f793a1d113ab35100709483e81bae171163291e93cc155e42512",
+    "scripts/verify_tool_inventory.py": "83595eea28c237d561992589df9000f26293a07152533b86b8e6e7874bda1a6e",
+    "tests/test_technology_dossiers.py": "fd9962b2e5ecf937dc33aa1f2b4b025b33af854d13029295c4dd23479fc7f3dc",
+    "research/technology-dossiers.json": "a37de67f8fe71f35e6080e05470b4dae6202e768e5f21ce519ad55441aa07c5a",
+    "research/evidence/metasploit-set-crosschecks.json": "0429db05316aae0382701d32a110204c0088d7d324345ab94179ab70c774490a"
   },
   "limits": [
     "Local single-user product version, not a production multi-tenant SaaS.",
@@ -95,7 +99,7 @@
     "limits": "Declared-key correspondence is not verified asset identity, equivalence of coverage or confirmed remediation."
   },
   "metasploit_reference": {
-    "capability_cards": 7,
+    "capability_cards": 8,
     "aliases_tested": [
       "Metasploit Framework",
       "MSF",
@@ -104,5 +108,26 @@
     "reference": "research/metasploit-reference.json",
     "runtime_executed": false,
     "report_adapter_implemented": false
+  },
+  "source_research_round": {
+    "observed_date": "2026-11-16",
+    "targets": [
+      "metasploit",
+      "set"
+    ],
+    "corpus_entries": 75124,
+    "snapshots": 21,
+    "catalog_projects": 39,
+    "source_indexed_projects": 20,
+    "source_dossier_tests": 5,
+    "crosscheck_reference": "research/evidence/metasploit-set-crosschecks.json",
+    "scope": "Static tracked-tree inventory and selected architecture; no source, module, installer or payload executed",
+    "nested_archive_coverage": "Craft partial: 29 Metasploit and 3 SET nested entries not opened",
+    "gitlinks_not_collected": {
+      "metasploit": [
+        "external/source/ReflectiveDLLInjection"
+      ],
+      "set": []
+    }
   }
 }

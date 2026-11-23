@@ -89,3 +89,7 @@ O inventário Craft de Trivy é parcial para arquivos aninhados não abertos; os
 Para os dois ZIPs relacionados a Gemini, Craft usou o mesmo orçamento, até 20.000 entradas e profundidade 1; isso não analisa o serviço hospedado.
 REA e Craft também leram dois scripts públicos iniciais referenciados pelo HTML Gemini, sem executar esses scripts. A evidência REA completa do material proprietário permanece local; a síntese publicada guarda estatísticas, hashes e limitações.
 A separação entre inspeção do ZIP, leitura seletiva de fonte e observação pública do app está detalhada em `CATALOGO-FERRAMENTAS.md` e `GEMINI.md`.
+
+## Rodada Metasploit e SET — 16/11/2026
+
+REA 6.9.0 inspecionou os dois ZIPs com orçamento expandido de 1 GiB. Craft 0.6.1 usou `core-archive-show --deep`, profundidade 0 e até 20.000 entradas. Ambos conferiram os 15.151 hashes raiz do Metasploit e os 232 do SET contra inventário próprio e snapshot. Craft declarou partial por 29/3 contêineres internos não abertos; REA complete refere-se a entradas do contêiner. Um gitlink do Metasploit permaneceu não coletado. A leitura de arquitetura foi seletiva e feita com ferramentas normais, conforme a skill REA. Evidências e parâmetros estão em `research/evidence/metasploit-set-crosschecks.json`; síntese em `METASPLOIT-SET.md`. Nenhum código dos dois alvos foi executado.

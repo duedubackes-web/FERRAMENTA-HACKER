@@ -2,7 +2,7 @@
 
 ## Escopo da ampliação
 
-O diretório reúne **38 projetos** por categoria e um índice separado de **409 candidatos de pacotes diretamente declarados em 29 perfis kali-tools-*** do commit fixado de kali-meta.
+O diretório reúne **39 projetos** por categoria e um índice separado de **409 candidatos de pacotes diretamente declarados em 29 perfis kali-tools-*** do commit fixado de kali-meta.
 As declarações de pacotes não são 409 projetos distintos nem uma lista de software instalado. Alternativas, versões, arquiteturas, campos Depends/Recommends/Suggests e substituições não resolvidas são preservados.
 Não houve resolução APT, fechamento transitivo, instalação dos pacotes ou execução dos motores catalogados.
 
@@ -15,7 +15,7 @@ O catálogo é uma seleção verificável, não um levantamento exaustivo de tod
 - **public-page-inspected:** observação pública do app hospedado, sem código de backend.
 - **runtime_evidence:** registra o uso limitado de REA/Craft como CLIs de inspeção; os demais motores não foram executados.
 
-São 18 projetos com fontes indexadas, representados por 19 snapshots, pois a composição Kali tem duas árvores separadas.
+São 20 projetos com fontes indexadas, representados por 21 snapshots, pois a composição Kali tem duas árvores separadas.
 As revisões semânticas são seletivas. Não há ranking de eficácia, indicação automática de execução ou encadeamento operacional das ferramentas.
 
 ## Projetos
@@ -56,7 +56,8 @@ As revisões semânticas são seletivas. Não há ranking de eficácia, indicaç
 | [Atomic Red Team](https://github.com/redcanaryco/atomic-red-team) | Validação de detecções, Emulação de adversário | cataloged-only |
 | [BloodHound CE](https://github.com/SpecterOps/BloodHound) | Análise de identidades e relações | cataloged-only |
 | [Impacket](https://github.com/fortra/impacket) | Bibliotecas de protocolos | cataloged-only |
-| [Metasploit Framework](https://github.com/rapid7/metasploit-framework) | Frameworks de testes de intrusão | cataloged-only |
+| [Metasploit Framework](https://github.com/rapid7/metasploit-framework) | Frameworks de testes de intrusão | source-indexed |
+| [Social-Engineer Toolkit (SET)](https://github.com/trustedsec/social-engineer-toolkit) | Frameworks de testes de intrusão | source-indexed |
 | [Google Gemini (app)](https://gemini.google.com/app?hl=pt-BR) | Assistentes e interfaces de IA | public-page-inspected |
 | [Gemini CLI](https://github.com/google-gemini/gemini-cli) | Assistentes e interfaces de IA | source-indexed |
 | [Google Gen AI SDK](https://github.com/googleapis/js-genai) | Assistentes e interfaces de IA | source-indexed |
@@ -65,7 +66,7 @@ As revisões semânticas são seletivas. Não há ranking de eficácia, indicaç
 
 Foram coletadas oito árvores adicionais de segurança: ZAP, Nuclei, mitmproxy, Aircrack-ng, Zeek, Trivy, DefectDojo e CALDERA.
 O pedido posterior acrescentou o estudo público do Gemini e as árvores abertas Gemini CLI e Google Gen AI SDK; esses produtos são tratados separadamente em GEMINI.md.
-O total atual é **59.740 entradas rastreadas em 19 repositórios**. Gitlinks não baixados estão registrados; conteúdos externos e Git LFS não foram hidratados.
+O total atual é **75.124 entradas rastreadas em 21 repositórios**. Gitlinks não baixados estão registrados; conteúdos externos e Git LFS não foram hidratados.
 Os ZIPs ficam fora do Git do projeto, com hashes no lock e recuperação das árvores pelo script fetch_sources.py.
 
 Craft Anything 0.6.1 inventariou os dez novos ZIPs. REA 6.9.0 executou inspect-artifact nos oito ZIPs de segurança.
@@ -141,3 +142,5 @@ Licenças no catálogo são metadados ou avisos raiz preservados, sem avaliaçã
 - [Documentação de desenvolvimento ZAP](https://www.zaproxy.org/docs/developer/quick-start-build/)
 - [BloodHound Community Edition](https://specterops.io/open-source-tools/bloodhound-community-edition/)
 - Os endpoints GitHub e repositórios canônicos de cada registro estão retidos no conjunto de metadados.
+
+A rodada de 16/11/2026 acrescentou Metasploit e SET. Ambos têm inventários e hashes raiz conferidos por REA/Craft; há um gitlink não coletado no Metasploit e conteúdo aninhado não aberto. Consulte `METASPLOIT-SET.md` para parâmetros e limites.

@@ -102,7 +102,7 @@
       ]
     }
   ],
-  "count": 38,
+  "count": 39,
   "tools": [
     {
       "id": "kali",
@@ -1400,12 +1400,27 @@
         "msfconsole"
       ],
       "project_integration": {
-        "status": "documented-chat-reference",
-        "reference": "research/metasploit-reference.json",
+        "status": "static-source-dossier",
+        "reference": "research/technology-dossiers.json",
         "engine_executed": false
       },
-      "source_status": "cataloged-only",
-      "source_snapshots": [],
+      "source_status": "source-indexed",
+      "source_snapshots": [
+        {
+          "id": "metasploit",
+          "url": "https://github.com/rapid7/metasploit-framework.git",
+          "commit": "bea1fb069e79cb610fe3981f16b8697790369c63",
+          "tracked_entries": 15152,
+          "unfetched_gitlinks": [
+            "external/source/ReflectiveDLLInjection"
+          ],
+          "notices": [
+            "third_party/notices/metasploit/COPYING",
+            "third_party/notices/metasploit/LICENSE",
+            "third_party/notices/metasploit/LICENSE_GEMS"
+          ]
+        }
+      ],
       "runtime_evidence": "tool-not-executed",
       "evidence_reference": "research/tool-repository-metadata.json",
       "repository_metadata": {
@@ -1428,7 +1443,7 @@
         "html_url": "https://github.com/rapid7/metasploit-framework",
         "clone_url": "https://github.com/rapid7/metasploit-framework.git"
       },
-      "license_review": "metadata-only; no integration license determination"
+      "license_review": "root-notices-preserved; component review incomplete"
     },
     {
       "id": "gemini-app",
@@ -1534,6 +1549,41 @@
         "html_url": "https://github.com/googleapis/js-genai",
         "clone_url": "https://github.com/googleapis/js-genai.git"
       },
+      "license_review": "root-notices-preserved; component review incomplete"
+    },
+    {
+      "id": "set",
+      "name": "Social-Engineer Toolkit (SET)",
+      "categories": [
+        "exploit-frameworks"
+      ],
+      "purpose": "Pesquisa estática de arquitetura e empacotamento para avaliações de engenharia social; sem campanhas ou execução integrada.",
+      "repository": "trustedsec/social-engineer-toolkit",
+      "aliases": [
+        "setoolkit",
+        "social-engineer-toolkit"
+      ],
+      "project_integration": {
+        "status": "static-source-dossier",
+        "reference": "research/technology-dossiers.json",
+        "engine_executed": false
+      },
+      "source_status": "source-indexed",
+      "source_snapshots": [
+        {
+          "id": "set",
+          "url": "https://github.com/trustedsec/social-engineer-toolkit.git",
+          "commit": "5e0fbb50ca8b156ac93532a0a4d138900c6e0827",
+          "tracked_entries": 232,
+          "unfetched_gitlinks": [],
+          "notices": [
+            "third_party/notices/set/readme/LICENSE"
+          ]
+        }
+      ],
+      "runtime_evidence": "tool-not-executed",
+      "evidence_reference": "sources.lock.json",
+      "repository_metadata": null,
       "license_review": "root-notices-preserved; component review incomplete"
     }
   ]

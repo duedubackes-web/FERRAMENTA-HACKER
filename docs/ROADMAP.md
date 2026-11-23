@@ -160,3 +160,11 @@ Use `.github/ISSUE_TEMPLATE/work-item.yml` para converter cada item em uma taref
 - [x] Expor ficha documental no chat e na tela Tecnologias, com aliases MSF/msfconsole.
 - [x] Preservar catálogo, pesquisa selecionada e runtime como estados distintos.
 - [ ] Definir contrato de relatório e minimização de dados antes de adicionar um adaptador Metasploit.
+
+## Pesquisa consultável — v0.3.0
+
+- [x] Coletar commits públicos de Metasploit e SET, indexar árvores e verificar snapshots.
+- [x] Aplicar REA/Craft aos artefatos ZIP e preservar cobertura parcial e gitlinks.
+- [x] Registrar sete observações seletivas de arquitetura/licença com origem.
+- [x] Expor dossiês no chat e na interface, separando fatos, propostas e runtime.
+- [ ] Validar formatos de exportação e critérios de minimização antes de criar adaptadores novos.
