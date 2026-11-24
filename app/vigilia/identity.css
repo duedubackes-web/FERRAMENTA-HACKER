@@ -89,10 +89,26 @@ h1.graffiti-title {
   .hero .artex-tag { animation: none; }
 }
 
-.hero .site-seal {
-  display: block;
-  width: clamp(64px, 8vw, 96px);
-  height: auto;
-  margin: 0 0 16px;
-  filter: drop-shadow(0 0 10px #d97f4e72);
+/* The same seal anchors the dashboard and the public-facing identity. */
+.brand img.brand-seal {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  padding: 3px;
+  border: 1px solid #996348;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 70%, #39223e, #17101c 72%);
+  box-shadow: 0 0 0 2px #c8855726, 0 0 20px #8d4cab55, inset 0 0 10px #c080e838;
+  object-fit: contain;
+  transition: box-shadow .25s ease, border-color .25s ease;
+}
+.brand:hover img.brand-seal, .brand:focus-visible img.brand-seal {
+  border-color: #ffc391;
+  box-shadow: 0 0 0 2px #ffc39145, 0 0 22px #b46bc78c;
+}
+@media (max-width: 420px) {
+  .brand img.brand-seal { width: 40px; height: 40px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .brand img.brand-seal { transition: none; }
 }
