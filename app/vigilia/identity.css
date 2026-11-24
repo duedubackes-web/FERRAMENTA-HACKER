@@ -89,26 +89,41 @@ h1.graffiti-title {
   .hero .artex-tag { animation: none; }
 }
 
-/* The same seal anchors the dashboard and the public-facing identity. */
-.brand img.brand-seal {
+/* Keep the seal legible against both dark headers. */
+.brand .brand-seal-frame {
+  display: grid;
   flex: 0 0 auto;
-  width: 48px;
-  height: 48px;
-  padding: 3px;
-  border: 1px solid #996348;
+  place-items: center;
+  width: 68px;
+  height: 68px;
+  border: 1px solid #b5805e;
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 70%, #39223e, #17101c 72%);
-  box-shadow: 0 0 0 2px #c8855726, 0 0 20px #8d4cab55, inset 0 0 10px #c080e838;
-  object-fit: contain;
+  background: radial-gradient(circle at 50% 70%, #302138, #100c17 72%);
+  box-shadow: 0 0 0 2px #c8855733, 0 0 20px #8d4cab55;
   transition: box-shadow .25s ease, border-color .25s ease;
 }
-.brand:hover img.brand-seal, .brand:focus-visible img.brand-seal {
+.brand img.brand-seal {
+  display: block;
+  width: 58px;
+  height: 58px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  object-fit: contain;
+  filter: brightness(1.18)
+          drop-shadow(.35px 0 0 #ffcf9e)
+          drop-shadow(-.35px 0 0 #ffcf9e)
+          drop-shadow(0 .35px 0 #ffcf9e)
+          drop-shadow(0 -.35px 0 #ffcf9e);
+}
+.brand:hover .brand-seal-frame, .brand:focus-visible .brand-seal-frame {
   border-color: #ffc391;
   box-shadow: 0 0 0 2px #ffc39145, 0 0 22px #b46bc78c;
 }
 @media (max-width: 420px) {
-  .brand img.brand-seal { width: 40px; height: 40px; }
+  .brand .brand-seal-frame { width: 54px; height: 54px; }
+  .brand img.brand-seal { width: 46px; height: 46px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .brand img.brand-seal { transition: none; }
+  .brand .brand-seal-frame { transition: none; }
 }
