@@ -88,3 +88,11 @@ h1.graffiti-title {
 @media (prefers-reduced-motion: reduce) {
   .hero .artex-tag { animation: none; }
 }
+
+.hero .site-seal {
+  display: block;
+  width: clamp(64px, 8vw, 96px);
+  height: auto;
+  margin: 0 0 16px;
+  filter: drop-shadow(0 0 10px #d97f4e72);
+}

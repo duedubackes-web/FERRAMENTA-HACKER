@@ -32,6 +32,7 @@ STATIC.update({
         'lionmask-hero.webp': 'image/webp',
         'lionmask-hero-small.webp': 'image/webp',
         'lionmask-icon.webp': 'image/webp',
+        'site-seal.webp': 'image/webp',
     }.items()
 })
 STATIC['/vigilia/'] = ('vigilia/index.html', 'text/html; charset=utf-8')
