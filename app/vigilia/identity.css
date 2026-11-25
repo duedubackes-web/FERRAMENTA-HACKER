@@ -89,29 +89,28 @@ h1.graffiti-title {
   .hero .artex-tag { animation: none; }
 }
 
-/* Keep the seal legible against both dark headers. */
+/* Show the original ink lines directly on the dark header. */
 .brand .brand-seal-frame {
   display: grid;
   flex: 0 0 auto;
   place-items: center;
   width: 68px;
   height: 68px;
-  border: 1px solid #c9c5bd;
-  border-radius: 50%;
-  background: #fff;
+  mix-blend-mode: screen;
 }
 .brand img.brand-seal {
   display: block;
-  width: 58px;
-  height: 58px;
+  width: 68px;
+  height: 68px;
   padding: 0;
   border: 0;
   border-radius: 0;
   object-fit: contain;
+  filter: grayscale(1) invert(1) contrast(1.35)
+          drop-shadow(.3px 0 0 #ddd3c6)
+          drop-shadow(0 .3px 0 #ddd3c6);
 }
 @media (max-width: 420px) {
-  .brand .brand-seal-frame { width: 54px; height: 54px; }
-  .brand img.brand-seal { width: 46px; height: 46px; }
+  .brand .brand-seal-frame, .brand img.brand-seal { width: 54px; height: 54px; }
 }
-
 .hero h1.graffiti-title { max-width: 15ch; font-size: clamp(2rem, 5.7vw, 5.2rem); overflow-wrap: anywhere; }
