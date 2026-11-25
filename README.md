@@ -1,4 +1,4 @@
-# Lion'sMaskSec XZ
+# Anonymous Golden Lion's
 
 Plataforma de investigação digital que reúne Atlas e Vigília. Projeto de duedubackes-web, sem vínculo com Kali, Wireshark, THC, REA ou Craft Anything.
 

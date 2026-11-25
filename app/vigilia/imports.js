@@ -151,7 +151,40 @@ function reviewPhpSource(input) {
   };
 }
 
+function analyzeShodan(input) {
+  let parsed;
+  try {
+    parsed = JSON.parse(input);
+  } catch {
+    parsed = input.split(/\r?\n/).filter(line => line.trim()).map((line, index) => {
+      try { return JSON.parse(line); }
+      catch { throw new Error('Registro JSON inválido na posição ' + (index + 1) + '.'); }
+    });
+  }
+  const records = Array.isArray(parsed) ? parsed : (parsed?.matches ?? parsed?.data ?? [parsed]);
+  if (!Array.isArray(records) || !records.length) throw new Error('O arquivo não contém observações de serviços.');
+  const observations = records.map(record => {
+    if (!record || typeof record.ip_str !== 'string' || !record.ip_str.trim() ||
+        !Number.isInteger(record.port) || record.port < 1 || record.port > 65535) {
+      throw new Error('Cada observação deve conter ip_str e uma porta válida.');
+    }
+    return {
+      endereco: record.ip_str,
+      porta: record.port,
+      transporte: typeof record.transport === 'string' ? record.transport : null,
+      produto: typeof record.product === 'string' ? record.product : null,
+      observado_em: typeof record.timestamp === 'string' ? record.timestamp : null
+    };
+  });
+  return {
+    ativos_observados: new Set(observations.map(item => item.endereco)).size,
+    observacoes: observations,
+    alcance: 'Inventário histórico do arquivo fornecido. Confirme o escopo e a atualidade em registros próprios.'
+  };
+}
+
 const reportAnalyzers = {
+  Shodan: { accept: ".json,.jsonl,.ndjson", label: "Relatório Shodan em JSON ou JSONL", run: analyzeShodan },
   "Revisão PHP": { accept: ".php,.phtml,.inc", label: "Arquivo de código PHP", run: reviewPhpSource },
   "Auditoria Android": { accept: ".xml", label: "AndroidManifest.xml em texto", run: analyzeAndroidManifest },
   Nmap: { accept: '.xml', label: 'XML exportado pelo Nmap', run: analyzeNmap },

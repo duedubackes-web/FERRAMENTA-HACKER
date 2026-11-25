@@ -98,7 +98,7 @@ h1.graffiti-title {
   height: 68px;
   border: 1px solid #b5805e;
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 70%, #302138, #100c17 72%);
+  background: radial-gradient(circle at 50% 70%, #281a2f, #100c17 72%);
   box-shadow: 0 0 0 2px #c8855733, 0 0 20px #8d4cab55;
   transition: box-shadow .25s ease, border-color .25s ease;
 }
@@ -110,11 +110,11 @@ h1.graffiti-title {
   border: 0;
   border-radius: 0;
   object-fit: contain;
-  filter: brightness(1.18)
-          drop-shadow(.35px 0 0 #ffcf9e)
-          drop-shadow(-.35px 0 0 #ffcf9e)
-          drop-shadow(0 .35px 0 #ffcf9e)
-          drop-shadow(0 -.35px 0 #ffcf9e);
+  filter: brightness(1.28)
+          drop-shadow(.42px 0 0 #ffcf9e)
+          drop-shadow(-.42px 0 0 #ffcf9e)
+          drop-shadow(0 .42px 0 #ffcf9e)
+          drop-shadow(0 -.42px 0 #ffcf9e);
 }
 .brand:hover .brand-seal-frame, .brand:focus-visible .brand-seal-frame {
   border-color: #ffc391;
@@ -127,3 +127,5 @@ h1.graffiti-title {
 @media (prefers-reduced-motion: reduce) {
   .brand .brand-seal-frame { transition: none; }
 }
+
+.hero h1.graffiti-title { max-width: 15ch; font-size: clamp(2rem, 5.7vw, 5.2rem); overflow-wrap: anywhere; }
