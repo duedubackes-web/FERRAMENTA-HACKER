@@ -60,6 +60,7 @@
 
 /* Show the original ink lines directly on the dark header. */
 .brand .brand-seal-frame {
+  position: relative;
   display: grid;
   flex: 0 0 auto;
   place-items: center;
@@ -75,8 +76,23 @@
   border: 0;
   border-radius: 0;
   object-fit: contain;
-  filter: grayscale(1) invert(1) contrast(2.2);
 }
+.brand img.brand-seal,
+.brand .brand-seal-frame::before,
+.brand .brand-seal-frame::after {
+  filter: grayscale(1) invert(1) contrast(2.2);
+  mix-blend-mode: screen;
+}
+.brand .brand-seal-frame::before,
+.brand .brand-seal-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("jupiter-seal.webp") center / contain no-repeat;
+  pointer-events: none;
+}
+.brand .brand-seal-frame::before { transform: translate(.55px, .55px); }
+.brand .brand-seal-frame::after { transform: translate(-.55px, -.55px); }
 @media (max-width: 420px) {
   .brand .brand-seal-frame, .brand img.brand-seal { width: 54px; height: 54px; }
 }
