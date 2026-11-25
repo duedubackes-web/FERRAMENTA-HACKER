@@ -106,9 +106,7 @@ h1.graffiti-title {
   border: 0;
   border-radius: 0;
   object-fit: contain;
-  filter: grayscale(1) invert(1) contrast(1.35)
-          drop-shadow(.3px 0 0 #ddd3c6)
-          drop-shadow(0 .3px 0 #ddd3c6);
+  filter: grayscale(1) invert(1) contrast(1.5);
 }
 @media (max-width: 420px) {
   .brand .brand-seal-frame, .brand img.brand-seal { width: 54px; height: 54px; }
