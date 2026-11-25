@@ -11,52 +11,21 @@
   outline-color: #cd6729;
 }
 
-/* Shared sprayed lettering for the investigation dashboard and workbench. */
-h1.graffiti-title {
-  position: relative;
-  isolation: isolate;
-  width: fit-content;
-  margin: 0 0 .55em;
-  color: #ffd2a8;
-  font-family: Impact, "Arial Black", system-ui, sans-serif;
-  font-size: clamp(2.05rem, 5.6vw, 5.5rem);
-  font-weight: 950;
-  font-style: italic;
-  letter-spacing: -.075em;
-  line-height: 1.1;
-  text-shadow: .026em .03em #ab3e26, .06em .06em #431d2d, .075em .075em #130a15;
-  transform: rotate(-5deg) skewX(-5deg);
-  transform-origin: 0 70%;
+/* Shared wordmark for the dashboard and workbench. */
+.hero h1.graffiti-title {
+  margin: 0 0 .42em;
+  color: #fff;
+  font: italic 850 clamp(2.15rem, 6.2vw, 6rem) / .98 system-ui, sans-serif;
+  letter-spacing: -.067em;
+  text-shadow: 0 2px 12px #080609c9;
+  overflow-wrap: anywhere;
 }
 
-.graffiti-title::before,
-.graffiti-title::after {
-  content: "";
-  position: absolute;
-  pointer-events: none;
-}
+.graffiti-title span { display: block; }
+.graffiti-title span + span { color: #f2c4a4; }
 
-.graffiti-title::before {
-  z-index: -1;
-  inset: -.19em -.17em -.19em -.08em;
-  background:
-    radial-gradient(circle at 6% 30%, #f59664 0 1px, transparent 2px),
-    radial-gradient(circle at 10% 72%, #f59664 0 2px, transparent 3px),
-    radial-gradient(circle at 94% 20%, #cb628e 0 2px, transparent 3px),
-    radial-gradient(circle at 98% 59%, #a84c83 0 1px, transparent 2px),
-    radial-gradient(ellipse at 58% 57%, #8e2c665e, transparent 67%),
-    radial-gradient(ellipse at 28% 56%, #d55a353d, transparent 65%);
-}
-
-.graffiti-title::after {
-  inset: auto 3% -.16em 1%;
-  height: .19em;
-  background: linear-gradient(100deg, #f39a61, #c64c59 68%, #aa588b);
-  clip-path: polygon(0 34%, 20% 13%, 100% 0, 93% 47%, 76% 64%, 73% 100%, 72% 60%, 49% 68%, 47% 100%, 46% 72%, 7% 88%);
-}
-
-@media (max-width: 520px) {
-  h1.graffiti-title { font-size: clamp(1.65rem, 7vw, 2.6rem); }
+@media (max-width: 420px) {
+  .hero h1.graffiti-title { font-size: clamp(1.9rem, 8.4vw, 2.25rem); }
 }
 
 .hero .artex-tag {
@@ -106,9 +75,8 @@ h1.graffiti-title {
   border: 0;
   border-radius: 0;
   object-fit: contain;
-  filter: grayscale(1) invert(1) contrast(1.5);
+  filter: grayscale(1) invert(1) contrast(2.2);
 }
 @media (max-width: 420px) {
   .brand .brand-seal-frame, .brand img.brand-seal { width: 54px; height: 54px; }
 }
-.hero h1.graffiti-title { max-width: 15ch; font-size: clamp(2rem, 5.7vw, 5.2rem); overflow-wrap: anywhere; }
